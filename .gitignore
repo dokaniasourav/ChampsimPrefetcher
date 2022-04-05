@@ -1,0 +1,7 @@
+/output
+/trace_files
+/logs
+/bin
+/data_*
+/obj
+*.d

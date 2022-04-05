@@ -1,0 +1,28 @@
+{
+  "ooo_cpu": [
+    {
+      "branch_predictor": "perceptron1"
+    }
+  ],
+
+  "L1I": {
+    "prefetch_as_load": false,
+    "virtual_prefetch": true,
+    "prefetch_activate": "LOAD,PREFETCH",
+    "prefetcher": "no_instr"
+  },
+
+  "L1D": {
+    "prefetch_as_load": false,
+    "virtual_prefetch": false,
+    "prefetch_activate": "LOAD,PREFETCH",
+    "prefetcher": "ip_stride"
+  },
+
+  "L2C": {
+    "prefetch_as_load": false,
+    "virtual_prefetch": false,
+    "prefetch_activate": "LOAD,PREFETCH",
+    "prefetcher": "ip_stride"
+  }
+}
