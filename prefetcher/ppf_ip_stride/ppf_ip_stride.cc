@@ -26,14 +26,6 @@ constexpr int FT_IP_FOLD_1_ENTRIES = 1 << FT_IP_FOLD_1_BITS;        // entries o
 #define THRESHOLD(X) (X = (X>0) ? 1 : 0)
 #define MOVE_PTR_UP(X) (X = (X == (TRANSFER_BUFFER_ENTRIES-1) ? 0 : X+1))
 
-struct transfer_buff_entry {
-    uint64_t pf_addr = 0;
-    int ip_fold_1 = 0;
-    int pf_degree = 0;
-    int valid = 0;
-    int ppf_prediction = 0;                            // indicates the prediction that was made by Perceptron
-};
-
 struct tracker_entry {
     uint64_t ip = 0;              // the IP we're tracking
     uint64_t last_cl_addr = 0;    // the last address accessed by this IP
@@ -48,11 +40,19 @@ struct lookahead_entry {
     uint64_t ip = 0;              // the IP we're tracking
 };
 
-int ft_degree[FT_DEGREE_ENTRIES];                        // array to declare degree feature table
-int ft_ip_fold_1[FT_IP_FOLD_1_ENTRIES];                    // array to declare IP folding 1 feature table
+int ft_degree[FT_DEGREE_ENTRIES];                       // array to declare degree feature table
+int ft_ip_fold_1[FT_IP_FOLD_1_ENTRIES];                 // array to declare IP folding 1 feature table
 int bias;
 
+struct transfer_buff_entry {
+    uint64_t pf_addr = 0;
+    int ip_fold_1 = 0;
+    int pf_degree = 0;
+    int valid = 0;
+    int ppf_prediction = 0;                            // indicates the prediction that was made by Perceptron
+};
 transfer_buff_entry trans_buff[TRANSFER_BUFFER_ENTRIES];
+
 int ptr_to_trans_buff = 0;
 int ppf_decision(int, uint64_t);
 int func_ip_fold_1(uint64_t);
@@ -71,9 +71,21 @@ std::map<CACHE *, std::array < tracker_entry, TRACKER_SETS * TRACKER_WAYS>> trac
 void CACHE::prefetcher_initialize() {
 
     std::cout << NAME << " PPF over IP-based stride prefetcher" << std::endl;
-    /******* Initialization Phase of Cache prefetcher code *********/
 
-    // Make a directory for storing all the data
+    /******* Initialization Phase of Cache prefetcher code *********/
+    srand(time(0));
+    bias = 1;
+    for (int i = 0; i < FT_DEGREE_ENTRIES; i++) {
+        ft_degree[i] = (rand() % 6) - 2;                // initialize weights between -2 and 3
+    }
+    for (int i = 0; i < FT_IP_FOLD_1_ENTRIES; i++) {
+        ft_ip_fold_1[i] = (rand() % 6) - 2;                // initialize weights between -2 and 3
+    }
+    /******* Initial data writing to a file in new directory ************/
+
+
+
+    /********************* ALL FILE OPERATIONS **************************/
     auto t = std::time(nullptr);
     auto tm = *std::localtime(&t);
     std::ostringstream oss;
@@ -83,35 +95,31 @@ void CACHE::prefetcher_initialize() {
     if (stat(dir_name.c_str(), &sst) == -1) {
         mkdir(dir_name.c_str(), 0777);
     }
-
-    // Make a file for storing all of this data
-    ofstream my_file;
     string file_name = dir_name + "/Weights_initial_" + NAME + ".txt";
-    my_file.open(file_name);
 
-    bias = 1;
+    ofstream my_file;
+    my_file.open(file_name);
     my_file << "Bias: " << bias << endl << endl;
-    srand(time(0));
     my_file << "Feature Table 1: Degree" << endl;
     for (int i = 0; i < FT_DEGREE_ENTRIES; i++) {
         ft_degree[i] = (rand() % 6) - 2;                // initialize weights between -2 and 3
         my_file << "i: " << i << "\tw: " << ft_degree[i] << endl;
     }
     my_file << endl;
-
     my_file << "Feature Table 2: IP_Fold_1" << endl;
     for (int i = 0; i < FT_IP_FOLD_1_ENTRIES; i++) {
         ft_ip_fold_1[i] = (rand() % 6) - 2;                // initialize weights between -2 and 3
         my_file << "i: " << i << "\tw: " << ft_ip_fold_1[i] << endl;
     }
     my_file << endl;
-
     my_file << "Printing trans buff:" << endl;
     for (int i = 0; i < TRANSFER_BUFFER_ENTRIES; i++) {
         my_file << "Entry number: " << i << "\tAddress: " << trans_buff[i].pf_addr << "\tValid: " << trans_buff[i].valid
                 << "\tDegree: " << trans_buff[i].pf_degree << endl;
     }
+    my_file << endl;
     my_file.close();
+    /****************** End of the writing file code *****************************/
 }
 
 void CACHE::prefetcher_cycle_operate() {
@@ -123,16 +131,6 @@ void CACHE::prefetcher_cycle_operate() {
         //auto pf_address = old_pf_address + (stride << LOG2_BLOCK_SIZE);
         auto pf_address = old_pf_address + stride;
 
-        // Only happens once to store some details
-        if (cache_operate_count == 0) {
-            ofstream my_file_pf_addr;
-            string filename = dir_name + "/pf_address_" + NAME + ".txt";
-            my_file_pf_addr.open(filename);
-            my_file_pf_addr << "Old_pf_address: " << std::hex << old_pf_address << "\tPf_address: " << std::hex << pf_address
-            << "\tStride: " << std::hex << stride << endl;
-            my_file_pf_addr.close();
-            cache_operate_count++;
-        }
         // If the next step would exceed the degree or run off the page, stop
         if (virtual_prefetch || (pf_address >> LOG2_PAGE_SIZE) == (old_pf_address >> LOG2_PAGE_SIZE)) {
             // check the MSHR occupancy to decide if we're going to prefetch to this
@@ -195,17 +193,9 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip, uint8_t cac
         // calculate the stride between the current address and the last address
         // no need to check for overflow since these values are downshifted
         stride = (int64_t) cl_addr - (int64_t) found->last_cl_addr;
-
         // Initialize prefetch state unless we somehow saw the same address twice in
         // a row or if this is the first time we've seen this stride
         if (stride != 0 && stride == found->last_stride) {
-            if (cache_operate_count == 0) {
-                ofstream my_file_cl_addr;
-                string filename = dir_name + "/Cl_pf_address_" + NAME + ".txt";
-                my_file_cl_addr.open(filename);
-                my_file_cl_addr << "Cl_address: " << std::hex << cl_addr << endl;
-                my_file_cl_addr.close();
-            }
             lookahead[this] = {cl_addr, stride, PREFETCH_DEGREE, ip};
         }
     } else {
@@ -217,23 +207,11 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip, uint8_t cac
 
     // update tracking set
     *found = {ip, cl_addr, stride, current_cycle};
-
     if (cache_hit) {
-        // Writing to a file for records, only 10 access counts
-        if (cache_hit_count < 10) {
-            ofstream my_file_cache_hit;
-            string filename = dir_name + "/Cache_hit_" + NAME + ".txt";
-            my_file_cache_hit.open(filename);
-            my_file_cache_hit << "Cache Hit number: " << cache_hit_count << endl;
-            for (int i = 0; i < TRANSFER_BUFFER_ENTRIES; i++) {
-                my_file_cache_hit << "Entry number: " << i << "\tAddress: " << trans_buff[i].pf_addr << "\tValid: "
-                << trans_buff[i].valid << "\tDegree: " << trans_buff[i].pf_degree << endl;
-            }
-            my_file_cache_hit.close();
-        }
         cache_hit_count++;
         if(inverted_address.find(cl_addr) != inverted_address.end()) {
             for(auto & ind: inverted_address[cl_addr]) {
+                // Here ind = inverted_address[cl_addr][i]
                 if(trans_buff[ind].valid == 1) {
                     retrain_ppf(trans_buff, ind, 1);        // 1 means the entry was useful
                 }
@@ -258,29 +236,27 @@ uint32_t CACHE::prefetcher_cache_fill(uint64_t addr, uint32_t set, uint32_t way,
 
 void CACHE::prefetcher_final_stats() {
 
-    ofstream my_file1;
     string filename = dir_name + "/weights_final_" + NAME + ".txt";
-    my_file1.open(filename);
 
-    my_file1 << "Bias: " << bias << endl << endl;
-    my_file1 << "Feature Table 1: Degree" << endl;
+    ofstream my_file;
+    my_file.open(filename);
+    my_file << "Bias: " << bias << endl << endl;
+    my_file << "Feature Table 1: Degree" << endl;
     for (int i = 0; i < FT_DEGREE_ENTRIES; i++) {
-        my_file1 << "i: " << i << "\tw: " << ft_degree[i] << endl;
+        my_file << "i: " << i << "\tw: " << ft_degree[i] << endl;
     }
-    my_file1 << endl;
-
-    my_file1 << "Feature Table 2: IP_Fold_1" << endl;
+    my_file << endl;
+    my_file << "Feature Table 2: IP_Fold_1" << endl;
     for (int i = 0; i < FT_IP_FOLD_1_ENTRIES; i++) {
-        my_file1 << "i: " << i << "\tw: " << ft_ip_fold_1[i] << endl;
+        my_file << "i: " << i << "\tw: " << ft_ip_fold_1[i] << endl;
     }
-    my_file1 << endl;
-
-    my_file1 << "Printing trans buff:" << endl;
+    my_file << endl;
+    my_file << "Printing trans buff:" << endl;
     for (int i = 0; i < TRANSFER_BUFFER_ENTRIES; i++) {
-        my_file1 << "Entry number: " << i << "\tAddress: " << trans_buff[i].pf_addr << "\tValid: " << trans_buff[i].valid
+        my_file << "Entry number: " << i << "\tAddress: " << trans_buff[i].pf_addr << "\tValid: " << trans_buff[i].valid
                 << "\tDegree: " << trans_buff[i].pf_degree << endl;
     }
-    my_file1.close();
+    my_file.close();
 }
 
 int ppf_decision(int degree, uint64_t ip) {
