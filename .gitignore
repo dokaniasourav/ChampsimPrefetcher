@@ -5,3 +5,5 @@
 /data_*
 /obj
 *.d
+*.o
+*.log

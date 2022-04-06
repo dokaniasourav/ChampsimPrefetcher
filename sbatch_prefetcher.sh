@@ -31,7 +31,6 @@ files=(
 #      )
 
 prefs=(
-      "ip_stride_modified"
       "ppf_ip_stride"
       )
 

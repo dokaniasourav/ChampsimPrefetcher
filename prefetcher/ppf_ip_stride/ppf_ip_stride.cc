@@ -15,13 +15,9 @@ int cache_hit_count = 0;
 int cache_operate_count = 0;
 
 constexpr int PREFETCH_DEGREE = 3;
-
 constexpr int TRANSFER_BUFFER_ENTRIES = 2048;                // entries of transfer buffer
-
 constexpr int NUM_FEATURES_USED = 3;                    // defines the number of features used by us in this perceptron (including bias)
-
 constexpr int FT_DEGREE_ENTRIES = pow(2, ceil(log2(PREFETCH_DEGREE)));        // entries of degree feature table
-
 constexpr int FT_IP_FOLD_1_BITS = 10;                    // define the final folding bits of IP as feature 1 (e.g. 10-bit folded IP)
 constexpr int FT_IP_FOLD_1_ENTRIES = 1 << FT_IP_FOLD_1_BITS;        // entries of IP folding 1 feature table
 
@@ -58,11 +54,8 @@ int bias;
 
 transfer_buff_entry trans_buff[TRANSFER_BUFFER_ENTRIES];
 int ptr_to_trans_buff = 0;
-
 int ppf_decision(int, uint64_t);
-
 int func_ip_fold_1(uint64_t);
-
 void retrain_ppf(transfer_buff_entry *, int, int);
 
 string dir_name;
@@ -73,8 +66,7 @@ TRACKER_SETS = 256;
 constexpr std::size_t
 TRACKER_WAYS = 4;
 std::map<CACHE *, lookahead_entry> lookahead;
-std::map<CACHE *, std::array < tracker_entry, TRACKER_SETS * TRACKER_WAYS>>
-trackers;
+std::map<CACHE *, std::array < tracker_entry, TRACKER_SETS * TRACKER_WAYS>> trackers;
 
 void CACHE::prefetcher_initialize() {
 
@@ -125,7 +117,9 @@ void CACHE::prefetcher_initialize() {
 void CACHE::prefetcher_cycle_operate() {
     int ppf_prediction;
     // If a lookahead is active
-    if (auto[old_pf_address, stride, degree, ip] = lookahead[this]; degree > 0) {
+    auto[old_pf_address, stride, degree, ip] = lookahead[this];
+
+    if (degree > 0) {
         //auto pf_address = old_pf_address + (stride << LOG2_BLOCK_SIZE);
         auto pf_address = old_pf_address + stride;
 
@@ -143,41 +137,39 @@ void CACHE::prefetcher_cycle_operate() {
         if (virtual_prefetch || (pf_address >> LOG2_PAGE_SIZE) == (old_pf_address >> LOG2_PAGE_SIZE)) {
             // check the MSHR occupancy to decide if we're going to prefetch to this
             // level or not
-            ppf_prediction = ppf_decision(degree - 1,
-                                          ip);            // entry is -1 of degree....e.g. for degree=1, entry accessed is 0
-            if (ppf_prediction) {
-                bool success = prefetch_line(0, 0, pf_address,
-                                             (get_occupancy(0, pf_address) < get_size(0, pf_address) / 2), 0);
-                if (success) {
-                    MOVE_PTR_UP(ptr_to_trans_buff);
-                    if (trans_buff[ptr_to_trans_buff].valid == 1) {
-                        // Coming back to it must mean that its useless
-                        retrain_ppf(trans_buff, ptr_to_trans_buff, 0);            // 0 means: ground truth = useless
-                    }
-                    trans_buff[ptr_to_trans_buff].pf_addr = pf_address;
-                    trans_buff[ptr_to_trans_buff].ip_fold_1 = func_ip_fold_1(ip);
-                    trans_buff[ptr_to_trans_buff].pf_degree = degree;
-                    trans_buff[ptr_to_trans_buff].valid = 1;
-                    trans_buff[ptr_to_trans_buff].ppf_prediction = ppf_prediction;
-
-                    if(inverted_address.find(pf_address) != inverted_address.end()) {
-                        inverted_address.
-                    }
-                    lookahead[this] = {pf_address, stride, degree - 1};
-                }
-            } else {
+            ppf_prediction = ppf_decision(degree - 1, ip);
+            // entry is -1 of degree....e.g. for degree=1, entry accessed is 0
+            bool success = true;
+            if(ppf_prediction) {
+                success = prefetch_line(pf_address, (get_occupancy(0, pf_address) < get_size(0, pf_address) / 2), 0);
+            }
+            if (success) {
+                // Different way to run same logic
                 MOVE_PTR_UP(ptr_to_trans_buff);
                 if (trans_buff[ptr_to_trans_buff].valid == 1) {
-                    retrain_ppf(trans_buff, ptr_to_trans_buff, 0);            // 0 means: ground truth = useless
+                    // Coming back to it must mean that its useless
+                    retrain_ppf(trans_buff, ptr_to_trans_buff, 0);  // 0 = useless
                 }
-
+                uint64_t old_pf_address_2 = trans_buff[ptr_to_trans_buff].pf_addr;
                 trans_buff[ptr_to_trans_buff].pf_addr = pf_address;
                 trans_buff[ptr_to_trans_buff].ip_fold_1 = func_ip_fold_1(ip);
                 trans_buff[ptr_to_trans_buff].pf_degree = degree;
                 trans_buff[ptr_to_trans_buff].valid = 1;
                 trans_buff[ptr_to_trans_buff].ppf_prediction = ppf_prediction;
 
+                if (inverted_address.find(old_pf_address_2) != inverted_address.end()) {
+                    for (int i = 0; i < inverted_address[old_pf_address_2].size(); ++i) {
+                        if (inverted_address[old_pf_address_2][i] == ptr_to_trans_buff) {
+                            inverted_address[old_pf_address_2].erase(inverted_address[old_pf_address_2].begin() + i);
+                            break;
+                        }
+                    }
+                    if (inverted_address[old_pf_address_2].size() == 0) {
+                        inverted_address.erase(old_pf_address_2);
+                    }
+                }
                 lookahead[this] = {pf_address, stride, degree - 1};
+                inverted_address[pf_address].push_back(ptr_to_trans_buff);
             }
             // If we fail, try again next cycle
         } else {
@@ -241,17 +233,20 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip, uint8_t cac
         }
         cache_hit_count++;
         if(inverted_address.find(cl_addr) != inverted_address.end()) {
-            for(auto & ind in inverted_address[cl_addr]) {
-                retrain_ppf(trans_buff, inverted_address[ind], 1);        // 1 means the entry was useful
+            for(auto & ind: inverted_address[cl_addr]) {
+                if(trans_buff[ind].valid == 1) {
+                    retrain_ppf(trans_buff, ind, 1);        // 1 means the entry was useful
+                }
             }
         }
-//        for (int i = 0; i < TRANSFER_BUFFER_ENTRIES; i++) {
-//            // Needs a break statement when the address is found
-//            if ((trans_buff[i].pf_addr == cl_addr) && (trans_buff[i].valid == 1)) {
-//                retrain_ppf(trans_buff, i, 1);        // 1 means the entry was useful
-//                break;
-//            }
-//        }
+        /*
+        for (int i = 0; i < TRANSFER_BUFFER_ENTRIES; i++) {
+            // Needs a break statement when the address is found
+            if ((trans_buff[i].pf_addr == cl_addr) && (trans_buff[i].valid == 1)) {
+                retrain_ppf(trans_buff, i, 1);        // 1 means the entry was useful
+            }
+        }
+        */
     }
     return metadata_in;
 }

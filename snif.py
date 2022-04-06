@@ -6,14 +6,16 @@ from pprint import pprint
 
 
 # Directory Names to use
-dir_names = ['output/prefetcher_220321/', 'output/prefetcher_220322/', 'output/prefetcher_220323/',
-             'output/prefetcher_220330', 'output/prefetcher_220331/']
+# dir_names = ['output/prefetcher_220321/', 'output/prefetcher_220322/', 'output/prefetcher_220323/',
+#              'output/prefetcher_220330', 'output/prefetcher_220331/']
+
+dir_names = ['output/prefetcher_220405']
 filenames = []
 for dir_name in dir_names:
     for filename in os.listdir(dir_name):
         if filename.endswith('.txt'):
             filenames.append(os.path.join(dir_name, filename))
-out = {}
+
 temp = {}
 
 for filename in filenames:
@@ -49,7 +51,7 @@ for filename in filenames:
             if 'Heartbeat CPU 0' in lines[line_num]:
                 # print('Breaking at heartbeat for '+filename)
                 break
-        print(prefAvail)
+        # print(prefAvail)
         if line_index == last_line_index:
             temp[filename]['pref_no'] = 'no'
 
@@ -82,8 +84,15 @@ for filename in filenames:
                         temp[filename][level_name][word.rstrip(':')] = words[i+1]
                 line_index = line_num
 
-# for key in temp.keys():
-#     pprint(len(temp[key].keys()))
+for f_name in temp.keys():
+    out = []
+    for key in temp[f_name].keys():
+        if type(temp[f_name][key]) is not dict:
+            out.append(str(temp[f_name][key]))
+        else:
+            for s in temp[f_name][key].keys():
+                out.append(temp[f_name][key][s])
+    print(out)
 
 file = open('Output_file.csv', 'w+', encoding='UTF8', newline='')
 wrt = csv.writer(file)
