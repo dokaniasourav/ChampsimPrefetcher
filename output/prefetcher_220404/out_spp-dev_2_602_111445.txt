@@ -1,0 +1,1 @@
+Started running file 602.gcc_s-734B.champsimtrace.xz at time Mon Apr  4 11:14:45 CDT 2022 with prefetcher spp-dev

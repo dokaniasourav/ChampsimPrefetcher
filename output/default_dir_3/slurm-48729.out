@@ -1,0 +1,8 @@
+/var/spool/slurmdspool/job48729/slurm_script: line 4: SBATCH: command not found
+/var/spool/slurmdspool/job48729/slurm_script: line 6: SBATCH: command not found
+/var/spool/slurmdspool/job48729/slurm_script: line 7: SBATCH: command not found
+Started running 600.perlbench_s-210B.champsimtrace.xz at Tue Feb  8 18:52:43 CST 2022
+Started running 627.cam4_s-573B.champsimtrace.xz at Tue Feb  8 20:14:08 CST 2022
+Started running 602.gcc_s-734B.champsimtrace.xz at Tue Feb  8 22:08:45 CST 2022
+Started running 628.pop2_s-17B.champsimtrace.xz at Tue Feb  8 23:30:24 CST 2022
+Started running 603.bwaves_s-3699B.champsimtrace.xz at Wed Feb  9 00:42:48 CST 2022

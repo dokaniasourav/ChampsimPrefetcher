@@ -1,0 +1,21 @@
+Started running file 600.perlbench_s-210B.champsimtrace.xz at time Sun Feb 20 22:35:33 CST 2022 with predictor 0
+Descriptor text: bimodal1
+
+*** ChampSim Multicore Out-of-Order Simulator ***
+
+Warmup Instructions: 200000000
+Simulation Instructions: 1000000000
+Number of CPUs: 1
+Off-chip DRAM Size: 4 GiB Channels: 1 Width: 64-bit Data Rate: 3200 MT/s
+
+VirtualMemory physical capacity: 8588881920 num_ppages: 2096895
+VirtualMemory page size: 4096 log2_page_size: 12
+
+CPU 0 runs /home/faculty/p/pgratz/dpc3_traces/600.perlbench_s-210B.champsimtrace.xz
+CPU 0 GSHARE branch predictor
+Basic BTB sets: 1024 ways: 8 indirect buffer size: 4096 RAS size: 64
+Heartbeat CPU 0 instructions: 10000001 cycles: 2511431 heartbeat IPC: 3.98179 cumulative IPC: 3.98179 (Simulation time: 0 hr 0 min 27 sec) 
+Heartbeat CPU 0 instructions: 20000001 cycles: 5011431 heartbeat IPC: 4 cumulative IPC: 3.99088 (Simulation time: 0 hr 0 min 57 sec) 
+Heartbeat CPU 0 instructions: 30000001 cycles: 7511431 heartbeat IPC: 4 cumulative IPC: 3.99391 (Simulation time: 0 hr 1 min 27 sec) 
+Heartbeat CPU 0 instructions: 40000001 cycles: 10011765 heartbeat IPC: 3.99947 cumulative IPC: 3.9953 (Simulation time: 0 hr 1 min 57 sec) 
+Heartbeat CPU 0 instructions: 50000003 cycles: 12512223 heartbeat IPC: 3.99927 cumulative IPC: 3.99609 (Simulation time: 0 hr 2 min 27 sec) 

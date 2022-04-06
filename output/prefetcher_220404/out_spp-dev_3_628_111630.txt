@@ -1,0 +1,1 @@
+Started running file 628.pop2_s-17B.champsimtrace.xz at time Mon Apr  4 11:16:30 CDT 2022 with prefetcher spp-dev

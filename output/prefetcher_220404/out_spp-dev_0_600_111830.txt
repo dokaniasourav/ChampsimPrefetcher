@@ -1,0 +1,1 @@
+Started running file 600.perlbench_s-210B.champsimtrace.xz at time Mon Apr  4 11:18:30 CDT 2022 with prefetcher spp-dev

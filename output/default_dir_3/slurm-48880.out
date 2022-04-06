@@ -1,0 +1,43 @@
+/var/spool/slurmdspool/job48880/slurm_script: line 4: SBATCH: command not found
+/var/spool/slurmdspool/job48880/slurm_script: line 6: SBATCH: command not found
+/var/spool/slurmdspool/job48880/slurm_script: line 7: SBATCH: command not found
+Started running 600.perlbench_s-210B.champsimtrace.xz at Wed Feb  9 09:37:00 CST 2022
+***************** Done with 600 at  Wed Feb  9 09:37:00 CST 2022 ****************** 
+Started running 627.cam4_s-573B.champsimtrace.xz at Wed Feb  9 09:37:00 CST 2022
+***************** Done with 627 at  Wed Feb  9 09:37:00 CST 2022 ****************** 
+Started running 602.gcc_s-734B.champsimtrace.xz at Wed Feb  9 09:37:00 CST 2022
+***************** Done with 602 at  Wed Feb  9 09:37:00 CST 2022 ****************** 
+Started running 628.pop2_s-17B.champsimtrace.xz at Wed Feb  9 09:37:00 CST 2022
+***************** Done with 628 at  Wed Feb  9 09:37:00 CST 2022 ****************** 
+Started running 603.bwaves_s-3699B.champsimtrace.xz at Wed Feb  9 09:37:00 CST 2022
+***************** Done with 603 at  Wed Feb  9 09:37:00 CST 2022 ****************** 
+Started running 631.deepsjeng_s-928B.champsimtrace.xz at Wed Feb  9 09:37:00 CST 2022
+***************** Done with 631 at  Wed Feb  9 09:37:00 CST 2022 ****************** 
+Started running 605.mcf_s-665B.champsimtrace.xz at Wed Feb  9 09:37:00 CST 2022
+***************** Done with 605 at  Wed Feb  9 09:37:00 CST 2022 ****************** 
+Started running 638.imagick_s-10316B.champsimtrace.xz at Wed Feb  9 09:37:00 CST 2022
+***************** Done with 638 at  Wed Feb  9 09:37:00 CST 2022 ****************** 
+Started running 607.cactuBSSN_s-2421B.champsimtrace.xz at Wed Feb  9 09:37:00 CST 2022
+***************** Done with 607 at  Wed Feb  9 09:37:00 CST 2022 ****************** 
+Started running 641.leela_s-800B.champsimtrace.xz at Wed Feb  9 09:37:00 CST 2022
+***************** Done with 641 at  Wed Feb  9 09:37:00 CST 2022 ****************** 
+Started running 619.lbm_s-4268B.champsimtrace.xz at Wed Feb  9 09:37:00 CST 2022
+***************** Done with 619 at  Wed Feb  9 09:37:00 CST 2022 ****************** 
+Started running 644.nab_s-5853B.champsimtrace.xz at Wed Feb  9 09:37:00 CST 2022
+***************** Done with 644 at  Wed Feb  9 09:37:01 CST 2022 ****************** 
+Started running 620.omnetpp_s-874B.champsimtrace.xz at Wed Feb  9 09:37:01 CST 2022
+***************** Done with 620 at  Wed Feb  9 09:37:01 CST 2022 ****************** 
+Started running 648.exchange2_s-1699B.champsimtrace.xz at Wed Feb  9 09:37:01 CST 2022
+***************** Done with 648 at  Wed Feb  9 09:37:01 CST 2022 ****************** 
+Started running 621.wrf_s-575B.champsimtrace.xz at Wed Feb  9 09:37:01 CST 2022
+***************** Done with 621 at  Wed Feb  9 09:37:01 CST 2022 ****************** 
+Started running 649.fotonik3d_s-1176B.champsimtrace.xz at Wed Feb  9 09:37:01 CST 2022
+***************** Done with 649 at  Wed Feb  9 09:37:01 CST 2022 ****************** 
+Started running 623.xalancbmk_s-700B.champsimtrace.xz at Wed Feb  9 09:37:01 CST 2022
+***************** Done with 623 at  Wed Feb  9 09:37:01 CST 2022 ****************** 
+Started running 654.roms_s-842B.champsimtrace.xz at Wed Feb  9 09:37:01 CST 2022
+***************** Done with 654 at  Wed Feb  9 09:37:01 CST 2022 ****************** 
+Started running 625.x264_s-18B.champsimtrace.xz at Wed Feb  9 09:37:01 CST 2022
+***************** Done with 625 at  Wed Feb  9 09:37:02 CST 2022 ****************** 
+Started running 657.xz_s-3167B.champsimtrace.xz at Wed Feb  9 09:37:02 CST 2022
+***************** Done with 657 at  Wed Feb  9 09:37:02 CST 2022 ****************** 

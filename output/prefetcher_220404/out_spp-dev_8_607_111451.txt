@@ -1,0 +1,1 @@
+Started running file 607.cactuBSSN_s-2421B.champsimtrace.xz at time Mon Apr  4 11:14:51 CDT 2022 with prefetcher spp-dev

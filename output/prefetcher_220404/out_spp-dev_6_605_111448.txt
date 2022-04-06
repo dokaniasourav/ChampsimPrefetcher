@@ -1,0 +1,1 @@
+Started running file 605.mcf_s-665B.champsimtrace.xz at time Mon Apr  4 11:14:48 CDT 2022 with prefetcher spp-dev

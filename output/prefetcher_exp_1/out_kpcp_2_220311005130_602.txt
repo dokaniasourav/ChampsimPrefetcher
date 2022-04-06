@@ -1,0 +1,2 @@
+Started running file 602.gcc_s-734B.champsimtrace.xz at time Fri Mar 11 00:51:30 CST 2022 with prefetchor kpcp
+Descriptor text: NA

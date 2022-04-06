@@ -1,0 +1,1 @@
+Started running file 603.bwaves_s-3699B.champsimtrace.xz at time Mon Apr  4 11:14:48 CDT 2022 with prefetcher spp-dev
