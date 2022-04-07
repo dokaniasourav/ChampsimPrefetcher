@@ -63,7 +63,7 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip, uint8_t cac
 
         if ((addr & ~(PAGE_SIZE - 1)) == (pf_addr & ~(PAGE_SIZE - 1))) { // Prefetch request is in the same physical page
           if (FILTER.check(pf_addr, ((confidence_q[i] >= FILL_THRESHOLD) ? SPP_L2C_PREFETCH : SPP_LLC_PREFETCH))) {
-            prefetch_line(ip, addr, pf_addr, (confidence_q[i] >= FILL_THRESHOLD),
+            prefetch_line(pf_addr, (confidence_q[i] >= FILL_THRESHOLD),
                           0); // Use addr (not base_addr) to obey the same
                               // physical page boundary
 
