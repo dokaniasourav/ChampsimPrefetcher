@@ -8,11 +8,8 @@
 #include <iostream>
 #include <iomanip>
 #include <sys/stat.h>
-
 #include "cache.h"
 
-int cache_hit_count = 0;
-int cache_operate_count = 0;
 
 constexpr int PREFETCH_DEGREE = 3;
 constexpr int TRANSFER_BUFFER_ENTRIES = 2048;                // entries of transfer buffer
@@ -52,6 +49,24 @@ struct transfer_buff_entry {
     int ppf_prediction = 0;                            // indicates the prediction that was made by Perceptron
 };
 transfer_buff_entry trans_buff[TRANSFER_BUFFER_ENTRIES];
+
+uint64_t cache_operate_count = 0;
+uint64_t cache_hit_count = 0;
+
+uint64_t total_training_count = 0;
+uint64_t useful_training_count = 0;
+
+// uint64_t pf_requested = 0, pf_issued = 0, pf_useful = 0, pf_useless = 0, pf_fill = 0;
+// Above vars are used in cache.h to record the pf_data
+
+#define REC_TB_SIZE 2048
+struct recorder_str {
+    uint64_t total_training;
+    uint64_t useful_training;
+    uint64_t total_prefetch;
+    uint64_t useful_prefetch;
+};
+recorder_str record_table[REC_TB_SIZE];
 
 int ptr_to_trans_buff = 0;
 int ppf_decision(int, uint64_t);
@@ -128,21 +143,17 @@ void CACHE::prefetcher_cycle_operate() {
     auto[old_pf_address, stride, degree, ip] = lookahead[this];
 
     if (degree > 0) {
-        //auto pf_address = old_pf_address + (stride << LOG2_BLOCK_SIZE);
         auto pf_address = old_pf_address + stride;
-
         // If the next step would exceed the degree or run off the page, stop
+        // check MSHR occupancy, decide if we're going to prefetch to this level or not
         if (virtual_prefetch || (pf_address >> LOG2_PAGE_SIZE) == (old_pf_address >> LOG2_PAGE_SIZE)) {
-            // check the MSHR occupancy to decide if we're going to prefetch to this
-            // level or not
-            ppf_prediction = ppf_decision(degree - 1, ip);
             // entry is -1 of degree....e.g. for degree=1, entry accessed is 0
+            ppf_prediction = ppf_decision(degree - 1, ip);
             bool success = true;
             if(ppf_prediction) {
                 success = prefetch_line(pf_address, (get_occupancy(0, pf_address) < get_size(0, pf_address) / 2), 0);
             }
             if (success) {
-                // Different way to run same logic
                 MOVE_PTR_UP(ptr_to_trans_buff);
                 if (trans_buff[ptr_to_trans_buff].valid == 1) {
                     // Coming back to it must mean that its useless
@@ -169,7 +180,7 @@ void CACHE::prefetcher_cycle_operate() {
                 lookahead[this] = {pf_address, stride, degree - 1};
                 inverted_address[pf_address].push_back(ptr_to_trans_buff);
             }
-            // If we fail, try again next cycle
+            // If we fail this cycle, we try again the next cycle
         } else {
             lookahead[this] = {};
         }
@@ -264,13 +275,10 @@ int ppf_decision(int degree, uint64_t ip) {
     int feature[NUM_FEATURES_USED];
 
     feature[0] = bias;
-
     int index_degree = degree;
     feature[1] = ft_degree[index_degree];
-
     int index_ip_fold_1 = func_ip_fold_1(ip);
     feature[2] = ft_ip_fold_1[index_ip_fold_1];
-
     for (int i = 0; i < NUM_FEATURES_USED; i++) {
         sum += feature[i];
     }
@@ -290,7 +298,6 @@ int func_ip_fold_1(uint64_t ip) {
         new_ip = new_ip >> FT_IP_FOLD_1_BITS;
         folded_ip = lsb_bits ^ folded_ip;
     }
-
     return folded_ip;
 }
 
@@ -302,10 +309,12 @@ void retrain_ppf(transfer_buff_entry *trans_buff, int ptr_to_trans_buff, int use
     index_degree = trans_buff[ptr_to_trans_buff].pf_degree - 1;
     // index_degree is 1 less than the actual degree, e.g., for degree=1, it should index entry number 0
 
+    total_training_count++;
     if (useful) {
         INCREMENT(ft_ip_fold_1[index_ip_fold_1]);
         INCREMENT(ft_degree[index_degree]);
         INCREMENT(bias);
+        useful_training_count++;
     } else {
         DECREMENT(ft_ip_fold_1[index_ip_fold_1]);
         DECREMENT(ft_degree[index_degree]);

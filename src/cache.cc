@@ -543,6 +543,7 @@ int CACHE::prefetch_line(uint64_t pf_addr, bool fill_this_level, uint32_t prefet
   return 0;
 }
 
+/*
 int CACHE::prefetch_line(uint64_t ip, uint64_t base_addr, uint64_t pf_addr, bool fill_this_level, uint32_t prefetch_metadata)
 {
   static bool deprecate_printed = false;
@@ -558,6 +559,7 @@ int CACHE::prefetch_line(uint64_t ip, uint64_t base_addr, uint64_t pf_addr, bool
   }
   return prefetch_line(pf_addr, fill_this_level, prefetch_metadata);
 }
+*/
 
 void CACHE::va_translate_prefetches()
 {

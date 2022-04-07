@@ -133,3 +133,88 @@ Heartbeat CPU 0 instructions: 1130000000 cycles: 958473881 heartbeat IPC: 1.5079
 Heartbeat CPU 0 instructions: 1140000003 cycles: 965094528 heartbeat IPC: 1.51043 cumulative IPC: 1.02897 (Simulation time: 1 hr 44 min 2 sec) 
 Heartbeat CPU 0 instructions: 1150000000 cycles: 971198883 heartbeat IPC: 1.63817 cumulative IPC: 1.03302 (Simulation time: 1 hr 44 min 33 sec) 
 Heartbeat CPU 0 instructions: 1160000001 cycles: 979623834 heartbeat IPC: 1.18695 cumulative IPC: 1.03441 (Simulation time: 1 hr 45 min 6 sec) 
+Heartbeat CPU 0 instructions: 1170000000 cycles: 989611401 heartbeat IPC: 1.00124 cumulative IPC: 1.03406 (Simulation time: 1 hr 45 min 38 sec) 
+Heartbeat CPU 0 instructions: 1180000002 cycles: 1017939375 heartbeat IPC: 0.353008 cumulative IPC: 1.0141 (Simulation time: 1 hr 49 min 58 sec) 
+Heartbeat CPU 0 instructions: 1190000004 cycles: 1032130819 heartbeat IPC: 0.70465 cumulative IPC: 1.00962 (Simulation time: 1 hr 51 min 19 sec) 
+Heartbeat CPU 0 instructions: 1200000003 cycles: 1037597584 heartbeat IPC: 1.82924 cumulative IPC: 1.01416 (Simulation time: 1 hr 51 min 54 sec) 
+Finished CPU 0 instructions: 1000000002 cycles: 986036493 cumulative IPC: 1.01416 (Simulation time: 1 hr 51 min 54 sec) 
+
+ChampSim completed all CPUs
+
+Region of Interest Statistics
+
+CPU 0 cumulative IPC: 1.01416 instructions: 1000000002 cycles: 986036493
+cpu0_DTLB TOTAL     ACCESS:  158928361  HIT:  158283625  MISS:     644736
+cpu0_DTLB LOAD      ACCESS:  105533183  HIT:  105052079  MISS:     481104
+cpu0_DTLB RFO       ACCESS:   53395178  HIT:   53231546  MISS:     163632
+cpu0_DTLB PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+cpu0_DTLB WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+cpu0_DTLB TRANSLATION ACCESS:          0  HIT:          0  MISS:          0
+cpu0_DTLB PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+cpu0_DTLB AVERAGE MISS LATENCY: 13.4875 cycles
+cpu0_ITLB TOTAL     ACCESS:   73841870  HIT:   73829670  MISS:      12200
+cpu0_ITLB LOAD      ACCESS:   73841870  HIT:   73829670  MISS:      12200
+cpu0_ITLB RFO       ACCESS:          0  HIT:          0  MISS:          0
+cpu0_ITLB PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+cpu0_ITLB WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+cpu0_ITLB TRANSLATION ACCESS:          0  HIT:          0  MISS:          0
+cpu0_ITLB PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+cpu0_ITLB AVERAGE MISS LATENCY: 12.233 cycles
+cpu0_L1I TOTAL     ACCESS:   60455985  HIT:   60052870  MISS:     403115
+cpu0_L1I LOAD      ACCESS:   60455985  HIT:   60052870  MISS:     403115
+cpu0_L1I RFO       ACCESS:          0  HIT:          0  MISS:          0
+cpu0_L1I PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+cpu0_L1I WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+cpu0_L1I TRANSLATION ACCESS:          0  HIT:          0  MISS:          0
+cpu0_L1I PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+cpu0_L1I AVERAGE MISS LATENCY: 76.1623 cycles
+cpu0_STLB TOTAL     ACCESS:     656936  HIT:     651723  MISS:       5213
+cpu0_STLB LOAD      ACCESS:     493304  HIT:     490573  MISS:       2731
+cpu0_STLB RFO       ACCESS:     163632  HIT:     161150  MISS:       2482
+cpu0_STLB PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+cpu0_STLB WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+cpu0_STLB TRANSLATION ACCESS:          0  HIT:          0  MISS:          0
+cpu0_STLB PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+cpu0_STLB AVERAGE MISS LATENCY: 303.767 cycles
+cpu0_L1D TOTAL     ACCESS:  188578126  HIT:  178937067  MISS:    9641059
+cpu0_L1D LOAD      ACCESS:  105509775  HIT:  102432007  MISS:    3077768
+cpu0_L1D RFO       ACCESS:   83063328  HIT:   76501525  MISS:    6561803
+cpu0_L1D PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+cpu0_L1D WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+cpu0_L1D TRANSLATION ACCESS:       5023  HIT:       3535  MISS:       1488
+cpu0_L1D PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+cpu0_L1D AVERAGE MISS LATENCY: 569.348 cycles
+cpu0_L2C TOTAL     ACCESS:   17515228  HIT:   11463187  MISS:    6052041
+cpu0_L2C LOAD      ACCESS:    3480532  HIT:    2781476  MISS:     699056
+cpu0_L2C RFO       ACCESS:    6561546  HIT:    1220098  MISS:    5341448
+cpu0_L2C PREFETCH  ACCESS:     513962  HIT:     504408  MISS:       9554
+cpu0_L2C WRITEBACK ACCESS:    6957700  HIT:    6956280  MISS:       1420
+cpu0_L2C TRANSLATION ACCESS:       1488  HIT:        925  MISS:        563
+cpu0_L2C PREFETCH  REQUESTED:     727811  ISSUED:     524453  USEFUL:       7307  USELESS:       2196
+cpu0_L2C AVERAGE MISS LATENCY: 894.053 cycles
+LLC TOTAL     ACCESS:   11468491  HIT:    5857362  MISS:    5611129
+LLC LOAD      ACCESS:     699021  HIT:     313919  MISS:     385102
+LLC RFO       ACCESS:    5341448  HIT:     127010  MISS:    5214438
+LLC PREFETCH  ACCESS:       9579  HIT:       2552  MISS:       7027
+LLC WRITEBACK ACCESS:    5417880  HIT:    5413659  MISS:       4221
+LLC TRANSLATION ACCESS:        563  HIT:        222  MISS:        341
+LLC PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+LLC AVERAGE MISS LATENCY: 941.667 cycles
+
+DRAM Statistics
+ CHANNEL 0
+ RQ ROW_BUFFER_HIT:    1232196  ROW_BUFFER_MISS:    4374217
+ DBUS AVG_CONGESTED_CYCLE:    3.99105
+ WQ ROW_BUFFER_HIT:     899226  ROW_BUFFER_MISS:    4343930  FULL:          0
+
+
+CPU 0 Branch Prediction Accuracy: 90.1568% MPKI: 13.1722 Average ROB Occupancy at Mispredict: 71.5878
+Branch type MPKI
+BRANCH_DIRECT_JUMP: 0.003136
+BRANCH_INDIRECT: 0.001297
+BRANCH_CONDITIONAL: 13.1522
+BRANCH_DIRECT_CALL: 0.015511
+BRANCH_INDIRECT_CALL: 0
+BRANCH_RETURN: 4e-06
+
+***************** Done with 627.cam4_s-573B.champsimtrace.xz using ppf-ip-stride, on Wed Apr  6 17:40:47 CDT 2022 ******************
