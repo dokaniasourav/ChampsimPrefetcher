@@ -56,14 +56,19 @@ uint64_t cache_hit_count = 0;
 
 uint64_t total_training_count = 0;
 uint64_t useful_training_count = 0;
+uint64_t total_prediction_count = 0;
+uint64_t true_prediction_count = 0;
+
 
 // uint64_t pf_requested = 0, pf_issued = 0, pf_useful = 0, pf_useless = 0, pf_fill = 0;
 // Above vars are used in cache.h to record the pf_data
 
-#define REC_TB_SIZE 1024
+#define REC_TB_SIZE 2048
 struct recorder_str {
     uint64_t total_training;
     uint64_t useful_training;
+    uint64_t total_prediction;
+    uint64_t true_prediction;
     uint64_t total_prefetch;
     uint64_t useful_prefetch;
     uint64_t cache_operate;
@@ -110,8 +115,9 @@ void CACHE::prefetcher_initialize() {
     auto t = std::time(nullptr);
     auto tm = *std::localtime(&t);
     std::ostringstream oss;
-    oss << std::put_time(&tm, "./data/data_%Y%m%d%H%M%S");
-    dir_name = oss.str();
+    oss << std::put_time(&tm, "./data/data_%Y%m%d%H%M%S_");
+    dir_name = oss.str() + std::to_string(rand()%10000);
+    std::cout << NAME << " -- Directory Name = " << dir_name << std::endl;
     struct stat sst = {0};
     if (stat(dir_name.c_str(), &sst) == -1) {
         mkdir(dir_name.c_str(), 0777);
@@ -149,7 +155,9 @@ void CACHE::prefetcher_cycle_operate() {
     if(cycle_operate_count > next_cycle_update) {
         next_cycle_update += CYCLE_UPDATE_INTERVAL;
         if(record_table_ind <  REC_TB_SIZE) {
-            record_table[record_table_ind] = {total_training_count, useful_training_count, pf_requested, pf_useful,
+            record_table[record_table_ind] = {total_training_count, useful_training_count,
+                                              total_prediction_count, true_prediction_count,
+                                              pf_requested, pf_useful,
                                               cache_operate_count, cache_hit_count};
             record_table_ind++;
         }
@@ -166,6 +174,7 @@ void CACHE::prefetcher_cycle_operate() {
             ppf_prediction = ppf_decision(degree - 1, ip);
             bool success = true;
             if(ppf_prediction) {
+                true_prediction_count++;
                 success = prefetch_line(pf_address, (get_occupancy(0, pf_address) < get_size(0, pf_address) / 2), 0);
             }
             if (success) {
@@ -265,11 +274,14 @@ void CACHE::prefetcher_final_stats() {
 
     ofstream my_file;
     my_file.open(dir_name + "/prefetcher_stat_" + NAME + ".csv");
-    my_file << "index, total_training, useful_training, total_prefetch, useful_prefetch, cache_operate, cache_hit" << std::endl;
+    my_file << "index, total_training, useful_training, total_prediction, true_prediction, "
+               "total_prefetch, useful_prefetch, cache_operate, cache_hit" << std::endl;
 
     for (int i = 0; i < record_table_ind; i++) {
         my_file << i << ", "  << record_table[i].total_training
                      << ", "  << record_table[i].useful_training
+                     << ", "  << record_table[i].total_prediction
+                     << ", "  << record_table[i].true_prediction
                      << ", "  << record_table[i].total_prefetch
                      << ", "  << record_table[i].useful_prefetch
                      << ", "  << record_table[i].cache_operate
@@ -302,7 +314,7 @@ void CACHE::prefetcher_final_stats() {
 int ppf_decision(int degree, uint64_t ip) {
     int sum = 0;
     int feature[NUM_FEATURES_USED];
-
+    total_prediction_count++;
     feature[0] = bias;
     int index_degree = degree;
     feature[1] = ft_degree[index_degree];

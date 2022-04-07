@@ -1,0 +1,3084 @@
+Bias: 1
+
+Feature Table 1: Degree
+i: 0	w: 2
+i: 1	w: 2
+i: 2	w: -2
+i: 3	w: -2
+
+Feature Table 2: IP_Fold_1
+i: 0	w: 1
+i: 1	w: 3
+i: 2	w: 3
+i: 3	w: 0
+i: 4	w: 3
+i: 5	w: -2
+i: 6	w: -1
+i: 7	w: 0
+i: 8	w: -1
+i: 9	w: -2
+i: 10	w: 3
+i: 11	w: -2
+i: 12	w: 0
+i: 13	w: -2
+i: 14	w: 0
+i: 15	w: 2
+i: 16	w: 2
+i: 17	w: 3
+i: 18	w: 2
+i: 19	w: 2
+i: 20	w: -2
+i: 21	w: -2
+i: 22	w: 1
+i: 23	w: 0
+i: 24	w: -1
+i: 25	w: -2
+i: 26	w: -1
+i: 27	w: 1
+i: 28	w: 3
+i: 29	w: -1
+i: 30	w: 2
+i: 31	w: -2
+i: 32	w: -2
+i: 33	w: 1
+i: 34	w: 0
+i: 35	w: 1
+i: 36	w: -1
+i: 37	w: -1
+i: 38	w: 2
+i: 39	w: 1
+i: 40	w: -1
+i: 41	w: 1
+i: 42	w: -1
+i: 43	w: 0
+i: 44	w: 1
+i: 45	w: 2
+i: 46	w: -2
+i: 47	w: 3
+i: 48	w: -1
+i: 49	w: 1
+i: 50	w: 0
+i: 51	w: -1
+i: 52	w: 1
+i: 53	w: 3
+i: 54	w: 1
+i: 55	w: 1
+i: 56	w: 2
+i: 57	w: 0
+i: 58	w: 2
+i: 59	w: -1
+i: 60	w: 1
+i: 61	w: 0
+i: 62	w: 3
+i: 63	w: -1
+i: 64	w: 1
+i: 65	w: 3
+i: 66	w: 1
+i: 67	w: 1
+i: 68	w: -2
+i: 69	w: -1
+i: 70	w: 2
+i: 71	w: 0
+i: 72	w: 2
+i: 73	w: 3
+i: 74	w: 2
+i: 75	w: 3
+i: 76	w: 1
+i: 77	w: 0
+i: 78	w: 1
+i: 79	w: 0
+i: 80	w: 1
+i: 81	w: 1
+i: 82	w: 1
+i: 83	w: 3
+i: 84	w: 0
+i: 85	w: 2
+i: 86	w: 0
+i: 87	w: -2
+i: 88	w: -2
+i: 89	w: -2
+i: 90	w: 3
+i: 91	w: -1
+i: 92	w: -1
+i: 93	w: 2
+i: 94	w: -1
+i: 95	w: 0
+i: 96	w: 1
+i: 97	w: 2
+i: 98	w: 3
+i: 99	w: 2
+i: 100	w: 3
+i: 101	w: 1
+i: 102	w: 2
+i: 103	w: -1
+i: 104	w: -1
+i: 105	w: 0
+i: 106	w: 2
+i: 107	w: 0
+i: 108	w: 0
+i: 109	w: -1
+i: 110	w: 3
+i: 111	w: -2
+i: 112	w: 2
+i: 113	w: 0
+i: 114	w: 1
+i: 115	w: 3
+i: 116	w: 3
+i: 117	w: 3
+i: 118	w: 1
+i: 119	w: 3
+i: 120	w: 1
+i: 121	w: 1
+i: 122	w: 3
+i: 123	w: 0
+i: 124	w: -1
+i: 125	w: -2
+i: 126	w: 1
+i: 127	w: 1
+i: 128	w: 0
+i: 129	w: -2
+i: 130	w: -1
+i: 131	w: -1
+i: 132	w: 0
+i: 133	w: 3
+i: 134	w: -2
+i: 135	w: 1
+i: 136	w: 3
+i: 137	w: 2
+i: 138	w: 3
+i: 139	w: 3
+i: 140	w: -2
+i: 141	w: 2
+i: 142	w: 1
+i: 143	w: 0
+i: 144	w: 3
+i: 145	w: -2
+i: 146	w: 3
+i: 147	w: 2
+i: 148	w: 1
+i: 149	w: 1
+i: 150	w: -1
+i: 151	w: 3
+i: 152	w: 2
+i: 153	w: -2
+i: 154	w: 3
+i: 155	w: 1
+i: 156	w: 2
+i: 157	w: 0
+i: 158	w: -2
+i: 159	w: -2
+i: 160	w: 1
+i: 161	w: 3
+i: 162	w: -1
+i: 163	w: 1
+i: 164	w: 0
+i: 165	w: -1
+i: 166	w: -2
+i: 167	w: -1
+i: 168	w: 2
+i: 169	w: 3
+i: 170	w: 3
+i: 171	w: 2
+i: 172	w: 0
+i: 173	w: -2
+i: 174	w: 2
+i: 175	w: -1
+i: 176	w: -1
+i: 177	w: 2
+i: 178	w: 3
+i: 179	w: 0
+i: 180	w: 3
+i: 181	w: 2
+i: 182	w: -1
+i: 183	w: 1
+i: 184	w: 3
+i: 185	w: 3
+i: 186	w: -2
+i: 187	w: 1
+i: 188	w: 3
+i: 189	w: -1
+i: 190	w: 0
+i: 191	w: -2
+i: 192	w: 2
+i: 193	w: -1
+i: 194	w: 1
+i: 195	w: -1
+i: 196	w: -1
+i: 197	w: 1
+i: 198	w: -2
+i: 199	w: 3
+i: 200	w: -1
+i: 201	w: 3
+i: 202	w: -1
+i: 203	w: 1
+i: 204	w: -2
+i: 205	w: 3
+i: 206	w: 2
+i: 207	w: 3
+i: 208	w: -1
+i: 209	w: -1
+i: 210	w: -1
+i: 211	w: -2
+i: 212	w: 3
+i: 213	w: -1
+i: 214	w: 1
+i: 215	w: 0
+i: 216	w: 2
+i: 217	w: 2
+i: 218	w: 2
+i: 219	w: 1
+i: 220	w: 1
+i: 221	w: -2
+i: 222	w: 2
+i: 223	w: -1
+i: 224	w: -1
+i: 225	w: -1
+i: 226	w: 0
+i: 227	w: 0
+i: 228	w: 1
+i: 229	w: -1
+i: 230	w: -1
+i: 231	w: 2
+i: 232	w: -2
+i: 233	w: 0
+i: 234	w: -1
+i: 235	w: 2
+i: 236	w: -2
+i: 237	w: 1
+i: 238	w: -1
+i: 239	w: -1
+i: 240	w: 0
+i: 241	w: -1
+i: 242	w: 0
+i: 243	w: -1
+i: 244	w: -2
+i: 245	w: 1
+i: 246	w: 2
+i: 247	w: 2
+i: 248	w: -1
+i: 249	w: -2
+i: 250	w: -1
+i: 251	w: 0
+i: 252	w: -2
+i: 253	w: 1
+i: 254	w: 0
+i: 255	w: 3
+i: 256	w: 1
+i: 257	w: 0
+i: 258	w: 0
+i: 259	w: -2
+i: 260	w: 1
+i: 261	w: -1
+i: 262	w: 0
+i: 263	w: 0
+i: 264	w: 0
+i: 265	w: -1
+i: 266	w: -2
+i: 267	w: 0
+i: 268	w: 2
+i: 269	w: 0
+i: 270	w: -1
+i: 271	w: -2
+i: 272	w: 1
+i: 273	w: -1
+i: 274	w: 3
+i: 275	w: -1
+i: 276	w: 3
+i: 277	w: -1
+i: 278	w: 3
+i: 279	w: 2
+i: 280	w: -1
+i: 281	w: 2
+i: 282	w: -1
+i: 283	w: 3
+i: 284	w: -2
+i: 285	w: -1
+i: 286	w: 3
+i: 287	w: 1
+i: 288	w: 1
+i: 289	w: 3
+i: 290	w: -1
+i: 291	w: -1
+i: 292	w: -2
+i: 293	w: 1
+i: 294	w: 1
+i: 295	w: -2
+i: 296	w: 2
+i: 297	w: 1
+i: 298	w: -2
+i: 299	w: -2
+i: 300	w: 1
+i: 301	w: 0
+i: 302	w: 2
+i: 303	w: 2
+i: 304	w: -1
+i: 305	w: 1
+i: 306	w: 3
+i: 307	w: -2
+i: 308	w: 1
+i: 309	w: 0
+i: 310	w: 1
+i: 311	w: 2
+i: 312	w: -1
+i: 313	w: 0
+i: 314	w: 2
+i: 315	w: -1
+i: 316	w: 1
+i: 317	w: -1
+i: 318	w: 0
+i: 319	w: -2
+i: 320	w: -2
+i: 321	w: 1
+i: 322	w: -1
+i: 323	w: -2
+i: 324	w: -2
+i: 325	w: 2
+i: 326	w: 3
+i: 327	w: 0
+i: 328	w: -2
+i: 329	w: 3
+i: 330	w: -2
+i: 331	w: -1
+i: 332	w: 3
+i: 333	w: 2
+i: 334	w: -2
+i: 335	w: -1
+i: 336	w: 3
+i: 337	w: 1
+i: 338	w: 3
+i: 339	w: 0
+i: 340	w: -2
+i: 341	w: 0
+i: 342	w: 3
+i: 343	w: 3
+i: 344	w: 2
+i: 345	w: -1
+i: 346	w: 2
+i: 347	w: -1
+i: 348	w: 0
+i: 349	w: -2
+i: 350	w: 0
+i: 351	w: 0
+i: 352	w: 1
+i: 353	w: -1
+i: 354	w: -2
+i: 355	w: -1
+i: 356	w: 2
+i: 357	w: 3
+i: 358	w: 1
+i: 359	w: 2
+i: 360	w: 1
+i: 361	w: 1
+i: 362	w: 3
+i: 363	w: 0
+i: 364	w: 3
+i: 365	w: 1
+i: 366	w: 1
+i: 367	w: 0
+i: 368	w: 3
+i: 369	w: 1
+i: 370	w: 1
+i: 371	w: 3
+i: 372	w: 1
+i: 373	w: 0
+i: 374	w: 0
+i: 375	w: 0
+i: 376	w: -1
+i: 377	w: -2
+i: 378	w: -1
+i: 379	w: -1
+i: 380	w: -2
+i: 381	w: -1
+i: 382	w: -1
+i: 383	w: 1
+i: 384	w: 1
+i: 385	w: 3
+i: 386	w: 0
+i: 387	w: -1
+i: 388	w: 1
+i: 389	w: 3
+i: 390	w: 1
+i: 391	w: -2
+i: 392	w: -2
+i: 393	w: -2
+i: 394	w: 0
+i: 395	w: 1
+i: 396	w: 0
+i: 397	w: 2
+i: 398	w: 3
+i: 399	w: -1
+i: 400	w: 3
+i: 401	w: 0
+i: 402	w: 2
+i: 403	w: 0
+i: 404	w: 0
+i: 405	w: -2
+i: 406	w: 0
+i: 407	w: -1
+i: 408	w: -2
+i: 409	w: 0
+i: 410	w: 0
+i: 411	w: -2
+i: 412	w: 1
+i: 413	w: -1
+i: 414	w: -1
+i: 415	w: 2
+i: 416	w: -1
+i: 417	w: 1
+i: 418	w: 1
+i: 419	w: 2
+i: 420	w: -2
+i: 421	w: -2
+i: 422	w: 2
+i: 423	w: 2
+i: 424	w: 3
+i: 425	w: 2
+i: 426	w: 3
+i: 427	w: -1
+i: 428	w: -2
+i: 429	w: 2
+i: 430	w: -2
+i: 431	w: 3
+i: 432	w: 3
+i: 433	w: 2
+i: 434	w: -2
+i: 435	w: 3
+i: 436	w: 2
+i: 437	w: 0
+i: 438	w: 3
+i: 439	w: 0
+i: 440	w: 2
+i: 441	w: 3
+i: 442	w: 0
+i: 443	w: -2
+i: 444	w: -1
+i: 445	w: -1
+i: 446	w: 2
+i: 447	w: 0
+i: 448	w: 0
+i: 449	w: 0
+i: 450	w: 2
+i: 451	w: 0
+i: 452	w: -2
+i: 453	w: 0
+i: 454	w: 2
+i: 455	w: 1
+i: 456	w: 2
+i: 457	w: 1
+i: 458	w: 0
+i: 459	w: 3
+i: 460	w: -1
+i: 461	w: 0
+i: 462	w: 0
+i: 463	w: 2
+i: 464	w: -2
+i: 465	w: 0
+i: 466	w: 0
+i: 467	w: 0
+i: 468	w: 3
+i: 469	w: -1
+i: 470	w: 2
+i: 471	w: -1
+i: 472	w: -2
+i: 473	w: 2
+i: 474	w: -1
+i: 475	w: -1
+i: 476	w: 3
+i: 477	w: 2
+i: 478	w: -1
+i: 479	w: -1
+i: 480	w: 2
+i: 481	w: 3
+i: 482	w: -1
+i: 483	w: 0
+i: 484	w: 3
+i: 485	w: 3
+i: 486	w: -2
+i: 487	w: 0
+i: 488	w: 0
+i: 489	w: 0
+i: 490	w: -1
+i: 491	w: 0
+i: 492	w: 3
+i: 493	w: -1
+i: 494	w: 2
+i: 495	w: 1
+i: 496	w: 2
+i: 497	w: -2
+i: 498	w: -2
+i: 499	w: -1
+i: 500	w: 3
+i: 501	w: 2
+i: 502	w: 0
+i: 503	w: -2
+i: 504	w: 1
+i: 505	w: 0
+i: 506	w: 3
+i: 507	w: -2
+i: 508	w: 2
+i: 509	w: 3
+i: 510	w: 0
+i: 511	w: 0
+i: 512	w: 0
+i: 513	w: 1
+i: 514	w: 2
+i: 515	w: 0
+i: 516	w: 1
+i: 517	w: 0
+i: 518	w: 0
+i: 519	w: 1
+i: 520	w: 1
+i: 521	w: -1
+i: 522	w: 3
+i: 523	w: 0
+i: 524	w: 0
+i: 525	w: 2
+i: 526	w: 1
+i: 527	w: -2
+i: 528	w: 2
+i: 529	w: 1
+i: 530	w: -1
+i: 531	w: 2
+i: 532	w: -2
+i: 533	w: 0
+i: 534	w: 0
+i: 535	w: -1
+i: 536	w: 0
+i: 537	w: 3
+i: 538	w: -1
+i: 539	w: -2
+i: 540	w: 2
+i: 541	w: -1
+i: 542	w: -2
+i: 543	w: -1
+i: 544	w: 3
+i: 545	w: 0
+i: 546	w: -1
+i: 547	w: -2
+i: 548	w: 3
+i: 549	w: 1
+i: 550	w: 1
+i: 551	w: 0
+i: 552	w: 0
+i: 553	w: -1
+i: 554	w: 0
+i: 555	w: 2
+i: 556	w: 3
+i: 557	w: 3
+i: 558	w: 3
+i: 559	w: -1
+i: 560	w: -1
+i: 561	w: 2
+i: 562	w: 1
+i: 563	w: 3
+i: 564	w: 2
+i: 565	w: 1
+i: 566	w: -2
+i: 567	w: -2
+i: 568	w: 1
+i: 569	w: 3
+i: 570	w: 2
+i: 571	w: -1
+i: 572	w: -1
+i: 573	w: 2
+i: 574	w: -2
+i: 575	w: 2
+i: 576	w: -1
+i: 577	w: -1
+i: 578	w: 2
+i: 579	w: 2
+i: 580	w: 0
+i: 581	w: 3
+i: 582	w: 2
+i: 583	w: 2
+i: 584	w: -2
+i: 585	w: 2
+i: 586	w: -1
+i: 587	w: 1
+i: 588	w: 1
+i: 589	w: -2
+i: 590	w: 3
+i: 591	w: 0
+i: 592	w: 0
+i: 593	w: -2
+i: 594	w: -1
+i: 595	w: 3
+i: 596	w: 2
+i: 597	w: 3
+i: 598	w: 3
+i: 599	w: -1
+i: 600	w: 1
+i: 601	w: 0
+i: 602	w: -2
+i: 603	w: 2
+i: 604	w: -2
+i: 605	w: 3
+i: 606	w: -2
+i: 607	w: 3
+i: 608	w: -2
+i: 609	w: 0
+i: 610	w: -1
+i: 611	w: -1
+i: 612	w: -1
+i: 613	w: 3
+i: 614	w: 1
+i: 615	w: -2
+i: 616	w: 1
+i: 617	w: 2
+i: 618	w: 1
+i: 619	w: 3
+i: 620	w: 0
+i: 621	w: -2
+i: 622	w: 3
+i: 623	w: 1
+i: 624	w: -1
+i: 625	w: 3
+i: 626	w: 0
+i: 627	w: 1
+i: 628	w: 2
+i: 629	w: 3
+i: 630	w: 2
+i: 631	w: -1
+i: 632	w: -1
+i: 633	w: 0
+i: 634	w: 1
+i: 635	w: -2
+i: 636	w: -1
+i: 637	w: 1
+i: 638	w: 1
+i: 639	w: -2
+i: 640	w: 3
+i: 641	w: 3
+i: 642	w: 3
+i: 643	w: 3
+i: 644	w: 0
+i: 645	w: 0
+i: 646	w: 3
+i: 647	w: 2
+i: 648	w: -1
+i: 649	w: -2
+i: 650	w: 1
+i: 651	w: 1
+i: 652	w: -1
+i: 653	w: -2
+i: 654	w: -2
+i: 655	w: -2
+i: 656	w: 3
+i: 657	w: -2
+i: 658	w: 1
+i: 659	w: 0
+i: 660	w: -2
+i: 661	w: 3
+i: 662	w: -1
+i: 663	w: -1
+i: 664	w: 3
+i: 665	w: 3
+i: 666	w: -1
+i: 667	w: 3
+i: 668	w: -2
+i: 669	w: 3
+i: 670	w: 3
+i: 671	w: 2
+i: 672	w: 0
+i: 673	w: 2
+i: 674	w: 1
+i: 675	w: 2
+i: 676	w: 2
+i: 677	w: -2
+i: 678	w: 0
+i: 679	w: 3
+i: 680	w: -2
+i: 681	w: 1
+i: 682	w: -1
+i: 683	w: 3
+i: 684	w: 2
+i: 685	w: 3
+i: 686	w: 1
+i: 687	w: 1
+i: 688	w: -2
+i: 689	w: 2
+i: 690	w: 1
+i: 691	w: -2
+i: 692	w: 1
+i: 693	w: 3
+i: 694	w: -1
+i: 695	w: -1
+i: 696	w: 0
+i: 697	w: -1
+i: 698	w: -2
+i: 699	w: 0
+i: 700	w: 2
+i: 701	w: 1
+i: 702	w: -2
+i: 703	w: -2
+i: 704	w: -1
+i: 705	w: 1
+i: 706	w: 2
+i: 707	w: 3
+i: 708	w: 1
+i: 709	w: 3
+i: 710	w: 1
+i: 711	w: 0
+i: 712	w: -2
+i: 713	w: 2
+i: 714	w: -1
+i: 715	w: 2
+i: 716	w: -1
+i: 717	w: 1
+i: 718	w: -2
+i: 719	w: -1
+i: 720	w: -1
+i: 721	w: 1
+i: 722	w: -1
+i: 723	w: 1
+i: 724	w: 0
+i: 725	w: -1
+i: 726	w: 2
+i: 727	w: 2
+i: 728	w: -2
+i: 729	w: 2
+i: 730	w: 3
+i: 731	w: 2
+i: 732	w: -1
+i: 733	w: 3
+i: 734	w: 2
+i: 735	w: -2
+i: 736	w: -1
+i: 737	w: -2
+i: 738	w: 1
+i: 739	w: 0
+i: 740	w: 1
+i: 741	w: -2
+i: 742	w: 2
+i: 743	w: 2
+i: 744	w: 0
+i: 745	w: 2
+i: 746	w: 0
+i: 747	w: 2
+i: 748	w: -1
+i: 749	w: -2
+i: 750	w: 1
+i: 751	w: 0
+i: 752	w: 2
+i: 753	w: 1
+i: 754	w: 3
+i: 755	w: 2
+i: 756	w: 0
+i: 757	w: -1
+i: 758	w: -1
+i: 759	w: 0
+i: 760	w: 1
+i: 761	w: 2
+i: 762	w: -2
+i: 763	w: 0
+i: 764	w: 1
+i: 765	w: 0
+i: 766	w: 0
+i: 767	w: 0
+i: 768	w: 0
+i: 769	w: 2
+i: 770	w: 1
+i: 771	w: 2
+i: 772	w: 0
+i: 773	w: 3
+i: 774	w: 0
+i: 775	w: 3
+i: 776	w: 1
+i: 777	w: 2
+i: 778	w: -1
+i: 779	w: 0
+i: 780	w: 1
+i: 781	w: 0
+i: 782	w: 1
+i: 783	w: -1
+i: 784	w: 1
+i: 785	w: -2
+i: 786	w: 1
+i: 787	w: 3
+i: 788	w: -2
+i: 789	w: 0
+i: 790	w: -1
+i: 791	w: 1
+i: 792	w: -2
+i: 793	w: 3
+i: 794	w: -2
+i: 795	w: 2
+i: 796	w: -1
+i: 797	w: -2
+i: 798	w: 2
+i: 799	w: 0
+i: 800	w: 2
+i: 801	w: -1
+i: 802	w: -2
+i: 803	w: 3
+i: 804	w: -1
+i: 805	w: 0
+i: 806	w: 0
+i: 807	w: 0
+i: 808	w: 2
+i: 809	w: -1
+i: 810	w: 1
+i: 811	w: -1
+i: 812	w: 1
+i: 813	w: 2
+i: 814	w: -2
+i: 815	w: -1
+i: 816	w: 0
+i: 817	w: 0
+i: 818	w: -2
+i: 819	w: 0
+i: 820	w: 2
+i: 821	w: -2
+i: 822	w: -2
+i: 823	w: 3
+i: 824	w: 3
+i: 825	w: 2
+i: 826	w: -1
+i: 827	w: 3
+i: 828	w: 0
+i: 829	w: 1
+i: 830	w: 3
+i: 831	w: 3
+i: 832	w: 3
+i: 833	w: 3
+i: 834	w: 2
+i: 835	w: 2
+i: 836	w: 3
+i: 837	w: -2
+i: 838	w: 2
+i: 839	w: -1
+i: 840	w: -1
+i: 841	w: 3
+i: 842	w: -1
+i: 843	w: 2
+i: 844	w: 1
+i: 845	w: 3
+i: 846	w: 1
+i: 847	w: -2
+i: 848	w: -1
+i: 849	w: 0
+i: 850	w: -2
+i: 851	w: 2
+i: 852	w: 0
+i: 853	w: 2
+i: 854	w: 1
+i: 855	w: 3
+i: 856	w: 0
+i: 857	w: 0
+i: 858	w: 2
+i: 859	w: 3
+i: 860	w: 3
+i: 861	w: -1
+i: 862	w: 0
+i: 863	w: 0
+i: 864	w: -2
+i: 865	w: -2
+i: 866	w: -2
+i: 867	w: 1
+i: 868	w: -2
+i: 869	w: 1
+i: 870	w: 3
+i: 871	w: -1
+i: 872	w: 0
+i: 873	w: 2
+i: 874	w: 1
+i: 875	w: 2
+i: 876	w: 1
+i: 877	w: 3
+i: 878	w: 0
+i: 879	w: 1
+i: 880	w: -1
+i: 881	w: 0
+i: 882	w: -1
+i: 883	w: 1
+i: 884	w: -1
+i: 885	w: 0
+i: 886	w: -2
+i: 887	w: -1
+i: 888	w: 2
+i: 889	w: 1
+i: 890	w: 2
+i: 891	w: 1
+i: 892	w: 2
+i: 893	w: -2
+i: 894	w: -2
+i: 895	w: 1
+i: 896	w: -2
+i: 897	w: 2
+i: 898	w: -2
+i: 899	w: 2
+i: 900	w: -1
+i: 901	w: 1
+i: 902	w: 1
+i: 903	w: 0
+i: 904	w: 3
+i: 905	w: -1
+i: 906	w: -2
+i: 907	w: 1
+i: 908	w: -2
+i: 909	w: 0
+i: 910	w: 2
+i: 911	w: -1
+i: 912	w: 2
+i: 913	w: 1
+i: 914	w: 0
+i: 915	w: 1
+i: 916	w: 3
+i: 917	w: -2
+i: 918	w: 3
+i: 919	w: -1
+i: 920	w: 1
+i: 921	w: -1
+i: 922	w: 2
+i: 923	w: 0
+i: 924	w: 0
+i: 925	w: 0
+i: 926	w: 3
+i: 927	w: -2
+i: 928	w: 3
+i: 929	w: 1
+i: 930	w: 3
+i: 931	w: 2
+i: 932	w: 3
+i: 933	w: 0
+i: 934	w: -2
+i: 935	w: 2
+i: 936	w: -1
+i: 937	w: -2
+i: 938	w: -1
+i: 939	w: -1
+i: 940	w: -2
+i: 941	w: 1
+i: 942	w: -2
+i: 943	w: 3
+i: 944	w: -2
+i: 945	w: -2
+i: 946	w: -2
+i: 947	w: 3
+i: 948	w: -1
+i: 949	w: 3
+i: 950	w: -2
+i: 951	w: 0
+i: 952	w: 3
+i: 953	w: 1
+i: 954	w: 2
+i: 955	w: -1
+i: 956	w: 1
+i: 957	w: -1
+i: 958	w: -1
+i: 959	w: 0
+i: 960	w: 1
+i: 961	w: 2
+i: 962	w: 3
+i: 963	w: 0
+i: 964	w: 3
+i: 965	w: 3
+i: 966	w: -2
+i: 967	w: -2
+i: 968	w: 2
+i: 969	w: -2
+i: 970	w: -2
+i: 971	w: 2
+i: 972	w: -1
+i: 973	w: -2
+i: 974	w: -1
+i: 975	w: 0
+i: 976	w: 3
+i: 977	w: 0
+i: 978	w: 3
+i: 979	w: 2
+i: 980	w: 3
+i: 981	w: 2
+i: 982	w: -2
+i: 983	w: 2
+i: 984	w: -1
+i: 985	w: 1
+i: 986	w: 1
+i: 987	w: 0
+i: 988	w: 2
+i: 989	w: 1
+i: 990	w: 1
+i: 991	w: 3
+i: 992	w: 3
+i: 993	w: 0
+i: 994	w: 3
+i: 995	w: 2
+i: 996	w: 3
+i: 997	w: -2
+i: 998	w: 3
+i: 999	w: -1
+i: 1000	w: 2
+i: 1001	w: 3
+i: 1002	w: 2
+i: 1003	w: 3
+i: 1004	w: 1
+i: 1005	w: 3
+i: 1006	w: 3
+i: 1007	w: 0
+i: 1008	w: 3
+i: 1009	w: 3
+i: 1010	w: -2
+i: 1011	w: 1
+i: 1012	w: -1
+i: 1013	w: -1
+i: 1014	w: 3
+i: 1015	w: -2
+i: 1016	w: 2
+i: 1017	w: -1
+i: 1018	w: 0
+i: 1019	w: -2
+i: 1020	w: 2
+i: 1021	w: 3
+i: 1022	w: 2
+i: 1023	w: 1
+
+Printing trans buff:
+Entry number: 0	Address: 0	Valid: 0	Degree: 0
+Entry number: 1	Address: 0	Valid: 0	Degree: 0
+Entry number: 2	Address: 0	Valid: 0	Degree: 0
+Entry number: 3	Address: 0	Valid: 0	Degree: 0
+Entry number: 4	Address: 0	Valid: 0	Degree: 0
+Entry number: 5	Address: 0	Valid: 0	Degree: 0
+Entry number: 6	Address: 0	Valid: 0	Degree: 0
+Entry number: 7	Address: 0	Valid: 0	Degree: 0
+Entry number: 8	Address: 0	Valid: 0	Degree: 0
+Entry number: 9	Address: 0	Valid: 0	Degree: 0
+Entry number: 10	Address: 0	Valid: 0	Degree: 0
+Entry number: 11	Address: 0	Valid: 0	Degree: 0
+Entry number: 12	Address: 0	Valid: 0	Degree: 0
+Entry number: 13	Address: 0	Valid: 0	Degree: 0
+Entry number: 14	Address: 0	Valid: 0	Degree: 0
+Entry number: 15	Address: 0	Valid: 0	Degree: 0
+Entry number: 16	Address: 0	Valid: 0	Degree: 0
+Entry number: 17	Address: 0	Valid: 0	Degree: 0
+Entry number: 18	Address: 0	Valid: 0	Degree: 0
+Entry number: 19	Address: 0	Valid: 0	Degree: 0
+Entry number: 20	Address: 0	Valid: 0	Degree: 0
+Entry number: 21	Address: 0	Valid: 0	Degree: 0
+Entry number: 22	Address: 0	Valid: 0	Degree: 0
+Entry number: 23	Address: 0	Valid: 0	Degree: 0
+Entry number: 24	Address: 0	Valid: 0	Degree: 0
+Entry number: 25	Address: 0	Valid: 0	Degree: 0
+Entry number: 26	Address: 0	Valid: 0	Degree: 0
+Entry number: 27	Address: 0	Valid: 0	Degree: 0
+Entry number: 28	Address: 0	Valid: 0	Degree: 0
+Entry number: 29	Address: 0	Valid: 0	Degree: 0
+Entry number: 30	Address: 0	Valid: 0	Degree: 0
+Entry number: 31	Address: 0	Valid: 0	Degree: 0
+Entry number: 32	Address: 0	Valid: 0	Degree: 0
+Entry number: 33	Address: 0	Valid: 0	Degree: 0
+Entry number: 34	Address: 0	Valid: 0	Degree: 0
+Entry number: 35	Address: 0	Valid: 0	Degree: 0
+Entry number: 36	Address: 0	Valid: 0	Degree: 0
+Entry number: 37	Address: 0	Valid: 0	Degree: 0
+Entry number: 38	Address: 0	Valid: 0	Degree: 0
+Entry number: 39	Address: 0	Valid: 0	Degree: 0
+Entry number: 40	Address: 0	Valid: 0	Degree: 0
+Entry number: 41	Address: 0	Valid: 0	Degree: 0
+Entry number: 42	Address: 0	Valid: 0	Degree: 0
+Entry number: 43	Address: 0	Valid: 0	Degree: 0
+Entry number: 44	Address: 0	Valid: 0	Degree: 0
+Entry number: 45	Address: 0	Valid: 0	Degree: 0
+Entry number: 46	Address: 0	Valid: 0	Degree: 0
+Entry number: 47	Address: 0	Valid: 0	Degree: 0
+Entry number: 48	Address: 0	Valid: 0	Degree: 0
+Entry number: 49	Address: 0	Valid: 0	Degree: 0
+Entry number: 50	Address: 0	Valid: 0	Degree: 0
+Entry number: 51	Address: 0	Valid: 0	Degree: 0
+Entry number: 52	Address: 0	Valid: 0	Degree: 0
+Entry number: 53	Address: 0	Valid: 0	Degree: 0
+Entry number: 54	Address: 0	Valid: 0	Degree: 0
+Entry number: 55	Address: 0	Valid: 0	Degree: 0
+Entry number: 56	Address: 0	Valid: 0	Degree: 0
+Entry number: 57	Address: 0	Valid: 0	Degree: 0
+Entry number: 58	Address: 0	Valid: 0	Degree: 0
+Entry number: 59	Address: 0	Valid: 0	Degree: 0
+Entry number: 60	Address: 0	Valid: 0	Degree: 0
+Entry number: 61	Address: 0	Valid: 0	Degree: 0
+Entry number: 62	Address: 0	Valid: 0	Degree: 0
+Entry number: 63	Address: 0	Valid: 0	Degree: 0
+Entry number: 64	Address: 0	Valid: 0	Degree: 0
+Entry number: 65	Address: 0	Valid: 0	Degree: 0
+Entry number: 66	Address: 0	Valid: 0	Degree: 0
+Entry number: 67	Address: 0	Valid: 0	Degree: 0
+Entry number: 68	Address: 0	Valid: 0	Degree: 0
+Entry number: 69	Address: 0	Valid: 0	Degree: 0
+Entry number: 70	Address: 0	Valid: 0	Degree: 0
+Entry number: 71	Address: 0	Valid: 0	Degree: 0
+Entry number: 72	Address: 0	Valid: 0	Degree: 0
+Entry number: 73	Address: 0	Valid: 0	Degree: 0
+Entry number: 74	Address: 0	Valid: 0	Degree: 0
+Entry number: 75	Address: 0	Valid: 0	Degree: 0
+Entry number: 76	Address: 0	Valid: 0	Degree: 0
+Entry number: 77	Address: 0	Valid: 0	Degree: 0
+Entry number: 78	Address: 0	Valid: 0	Degree: 0
+Entry number: 79	Address: 0	Valid: 0	Degree: 0
+Entry number: 80	Address: 0	Valid: 0	Degree: 0
+Entry number: 81	Address: 0	Valid: 0	Degree: 0
+Entry number: 82	Address: 0	Valid: 0	Degree: 0
+Entry number: 83	Address: 0	Valid: 0	Degree: 0
+Entry number: 84	Address: 0	Valid: 0	Degree: 0
+Entry number: 85	Address: 0	Valid: 0	Degree: 0
+Entry number: 86	Address: 0	Valid: 0	Degree: 0
+Entry number: 87	Address: 0	Valid: 0	Degree: 0
+Entry number: 88	Address: 0	Valid: 0	Degree: 0
+Entry number: 89	Address: 0	Valid: 0	Degree: 0
+Entry number: 90	Address: 0	Valid: 0	Degree: 0
+Entry number: 91	Address: 0	Valid: 0	Degree: 0
+Entry number: 92	Address: 0	Valid: 0	Degree: 0
+Entry number: 93	Address: 0	Valid: 0	Degree: 0
+Entry number: 94	Address: 0	Valid: 0	Degree: 0
+Entry number: 95	Address: 0	Valid: 0	Degree: 0
+Entry number: 96	Address: 0	Valid: 0	Degree: 0
+Entry number: 97	Address: 0	Valid: 0	Degree: 0
+Entry number: 98	Address: 0	Valid: 0	Degree: 0
+Entry number: 99	Address: 0	Valid: 0	Degree: 0
+Entry number: 100	Address: 0	Valid: 0	Degree: 0
+Entry number: 101	Address: 0	Valid: 0	Degree: 0
+Entry number: 102	Address: 0	Valid: 0	Degree: 0
+Entry number: 103	Address: 0	Valid: 0	Degree: 0
+Entry number: 104	Address: 0	Valid: 0	Degree: 0
+Entry number: 105	Address: 0	Valid: 0	Degree: 0
+Entry number: 106	Address: 0	Valid: 0	Degree: 0
+Entry number: 107	Address: 0	Valid: 0	Degree: 0
+Entry number: 108	Address: 0	Valid: 0	Degree: 0
+Entry number: 109	Address: 0	Valid: 0	Degree: 0
+Entry number: 110	Address: 0	Valid: 0	Degree: 0
+Entry number: 111	Address: 0	Valid: 0	Degree: 0
+Entry number: 112	Address: 0	Valid: 0	Degree: 0
+Entry number: 113	Address: 0	Valid: 0	Degree: 0
+Entry number: 114	Address: 0	Valid: 0	Degree: 0
+Entry number: 115	Address: 0	Valid: 0	Degree: 0
+Entry number: 116	Address: 0	Valid: 0	Degree: 0
+Entry number: 117	Address: 0	Valid: 0	Degree: 0
+Entry number: 118	Address: 0	Valid: 0	Degree: 0
+Entry number: 119	Address: 0	Valid: 0	Degree: 0
+Entry number: 120	Address: 0	Valid: 0	Degree: 0
+Entry number: 121	Address: 0	Valid: 0	Degree: 0
+Entry number: 122	Address: 0	Valid: 0	Degree: 0
+Entry number: 123	Address: 0	Valid: 0	Degree: 0
+Entry number: 124	Address: 0	Valid: 0	Degree: 0
+Entry number: 125	Address: 0	Valid: 0	Degree: 0
+Entry number: 126	Address: 0	Valid: 0	Degree: 0
+Entry number: 127	Address: 0	Valid: 0	Degree: 0
+Entry number: 128	Address: 0	Valid: 0	Degree: 0
+Entry number: 129	Address: 0	Valid: 0	Degree: 0
+Entry number: 130	Address: 0	Valid: 0	Degree: 0
+Entry number: 131	Address: 0	Valid: 0	Degree: 0
+Entry number: 132	Address: 0	Valid: 0	Degree: 0
+Entry number: 133	Address: 0	Valid: 0	Degree: 0
+Entry number: 134	Address: 0	Valid: 0	Degree: 0
+Entry number: 135	Address: 0	Valid: 0	Degree: 0
+Entry number: 136	Address: 0	Valid: 0	Degree: 0
+Entry number: 137	Address: 0	Valid: 0	Degree: 0
+Entry number: 138	Address: 0	Valid: 0	Degree: 0
+Entry number: 139	Address: 0	Valid: 0	Degree: 0
+Entry number: 140	Address: 0	Valid: 0	Degree: 0
+Entry number: 141	Address: 0	Valid: 0	Degree: 0
+Entry number: 142	Address: 0	Valid: 0	Degree: 0
+Entry number: 143	Address: 0	Valid: 0	Degree: 0
+Entry number: 144	Address: 0	Valid: 0	Degree: 0
+Entry number: 145	Address: 0	Valid: 0	Degree: 0
+Entry number: 146	Address: 0	Valid: 0	Degree: 0
+Entry number: 147	Address: 0	Valid: 0	Degree: 0
+Entry number: 148	Address: 0	Valid: 0	Degree: 0
+Entry number: 149	Address: 0	Valid: 0	Degree: 0
+Entry number: 150	Address: 0	Valid: 0	Degree: 0
+Entry number: 151	Address: 0	Valid: 0	Degree: 0
+Entry number: 152	Address: 0	Valid: 0	Degree: 0
+Entry number: 153	Address: 0	Valid: 0	Degree: 0
+Entry number: 154	Address: 0	Valid: 0	Degree: 0
+Entry number: 155	Address: 0	Valid: 0	Degree: 0
+Entry number: 156	Address: 0	Valid: 0	Degree: 0
+Entry number: 157	Address: 0	Valid: 0	Degree: 0
+Entry number: 158	Address: 0	Valid: 0	Degree: 0
+Entry number: 159	Address: 0	Valid: 0	Degree: 0
+Entry number: 160	Address: 0	Valid: 0	Degree: 0
+Entry number: 161	Address: 0	Valid: 0	Degree: 0
+Entry number: 162	Address: 0	Valid: 0	Degree: 0
+Entry number: 163	Address: 0	Valid: 0	Degree: 0
+Entry number: 164	Address: 0	Valid: 0	Degree: 0
+Entry number: 165	Address: 0	Valid: 0	Degree: 0
+Entry number: 166	Address: 0	Valid: 0	Degree: 0
+Entry number: 167	Address: 0	Valid: 0	Degree: 0
+Entry number: 168	Address: 0	Valid: 0	Degree: 0
+Entry number: 169	Address: 0	Valid: 0	Degree: 0
+Entry number: 170	Address: 0	Valid: 0	Degree: 0
+Entry number: 171	Address: 0	Valid: 0	Degree: 0
+Entry number: 172	Address: 0	Valid: 0	Degree: 0
+Entry number: 173	Address: 0	Valid: 0	Degree: 0
+Entry number: 174	Address: 0	Valid: 0	Degree: 0
+Entry number: 175	Address: 0	Valid: 0	Degree: 0
+Entry number: 176	Address: 0	Valid: 0	Degree: 0
+Entry number: 177	Address: 0	Valid: 0	Degree: 0
+Entry number: 178	Address: 0	Valid: 0	Degree: 0
+Entry number: 179	Address: 0	Valid: 0	Degree: 0
+Entry number: 180	Address: 0	Valid: 0	Degree: 0
+Entry number: 181	Address: 0	Valid: 0	Degree: 0
+Entry number: 182	Address: 0	Valid: 0	Degree: 0
+Entry number: 183	Address: 0	Valid: 0	Degree: 0
+Entry number: 184	Address: 0	Valid: 0	Degree: 0
+Entry number: 185	Address: 0	Valid: 0	Degree: 0
+Entry number: 186	Address: 0	Valid: 0	Degree: 0
+Entry number: 187	Address: 0	Valid: 0	Degree: 0
+Entry number: 188	Address: 0	Valid: 0	Degree: 0
+Entry number: 189	Address: 0	Valid: 0	Degree: 0
+Entry number: 190	Address: 0	Valid: 0	Degree: 0
+Entry number: 191	Address: 0	Valid: 0	Degree: 0
+Entry number: 192	Address: 0	Valid: 0	Degree: 0
+Entry number: 193	Address: 0	Valid: 0	Degree: 0
+Entry number: 194	Address: 0	Valid: 0	Degree: 0
+Entry number: 195	Address: 0	Valid: 0	Degree: 0
+Entry number: 196	Address: 0	Valid: 0	Degree: 0
+Entry number: 197	Address: 0	Valid: 0	Degree: 0
+Entry number: 198	Address: 0	Valid: 0	Degree: 0
+Entry number: 199	Address: 0	Valid: 0	Degree: 0
+Entry number: 200	Address: 0	Valid: 0	Degree: 0
+Entry number: 201	Address: 0	Valid: 0	Degree: 0
+Entry number: 202	Address: 0	Valid: 0	Degree: 0
+Entry number: 203	Address: 0	Valid: 0	Degree: 0
+Entry number: 204	Address: 0	Valid: 0	Degree: 0
+Entry number: 205	Address: 0	Valid: 0	Degree: 0
+Entry number: 206	Address: 0	Valid: 0	Degree: 0
+Entry number: 207	Address: 0	Valid: 0	Degree: 0
+Entry number: 208	Address: 0	Valid: 0	Degree: 0
+Entry number: 209	Address: 0	Valid: 0	Degree: 0
+Entry number: 210	Address: 0	Valid: 0	Degree: 0
+Entry number: 211	Address: 0	Valid: 0	Degree: 0
+Entry number: 212	Address: 0	Valid: 0	Degree: 0
+Entry number: 213	Address: 0	Valid: 0	Degree: 0
+Entry number: 214	Address: 0	Valid: 0	Degree: 0
+Entry number: 215	Address: 0	Valid: 0	Degree: 0
+Entry number: 216	Address: 0	Valid: 0	Degree: 0
+Entry number: 217	Address: 0	Valid: 0	Degree: 0
+Entry number: 218	Address: 0	Valid: 0	Degree: 0
+Entry number: 219	Address: 0	Valid: 0	Degree: 0
+Entry number: 220	Address: 0	Valid: 0	Degree: 0
+Entry number: 221	Address: 0	Valid: 0	Degree: 0
+Entry number: 222	Address: 0	Valid: 0	Degree: 0
+Entry number: 223	Address: 0	Valid: 0	Degree: 0
+Entry number: 224	Address: 0	Valid: 0	Degree: 0
+Entry number: 225	Address: 0	Valid: 0	Degree: 0
+Entry number: 226	Address: 0	Valid: 0	Degree: 0
+Entry number: 227	Address: 0	Valid: 0	Degree: 0
+Entry number: 228	Address: 0	Valid: 0	Degree: 0
+Entry number: 229	Address: 0	Valid: 0	Degree: 0
+Entry number: 230	Address: 0	Valid: 0	Degree: 0
+Entry number: 231	Address: 0	Valid: 0	Degree: 0
+Entry number: 232	Address: 0	Valid: 0	Degree: 0
+Entry number: 233	Address: 0	Valid: 0	Degree: 0
+Entry number: 234	Address: 0	Valid: 0	Degree: 0
+Entry number: 235	Address: 0	Valid: 0	Degree: 0
+Entry number: 236	Address: 0	Valid: 0	Degree: 0
+Entry number: 237	Address: 0	Valid: 0	Degree: 0
+Entry number: 238	Address: 0	Valid: 0	Degree: 0
+Entry number: 239	Address: 0	Valid: 0	Degree: 0
+Entry number: 240	Address: 0	Valid: 0	Degree: 0
+Entry number: 241	Address: 0	Valid: 0	Degree: 0
+Entry number: 242	Address: 0	Valid: 0	Degree: 0
+Entry number: 243	Address: 0	Valid: 0	Degree: 0
+Entry number: 244	Address: 0	Valid: 0	Degree: 0
+Entry number: 245	Address: 0	Valid: 0	Degree: 0
+Entry number: 246	Address: 0	Valid: 0	Degree: 0
+Entry number: 247	Address: 0	Valid: 0	Degree: 0
+Entry number: 248	Address: 0	Valid: 0	Degree: 0
+Entry number: 249	Address: 0	Valid: 0	Degree: 0
+Entry number: 250	Address: 0	Valid: 0	Degree: 0
+Entry number: 251	Address: 0	Valid: 0	Degree: 0
+Entry number: 252	Address: 0	Valid: 0	Degree: 0
+Entry number: 253	Address: 0	Valid: 0	Degree: 0
+Entry number: 254	Address: 0	Valid: 0	Degree: 0
+Entry number: 255	Address: 0	Valid: 0	Degree: 0
+Entry number: 256	Address: 0	Valid: 0	Degree: 0
+Entry number: 257	Address: 0	Valid: 0	Degree: 0
+Entry number: 258	Address: 0	Valid: 0	Degree: 0
+Entry number: 259	Address: 0	Valid: 0	Degree: 0
+Entry number: 260	Address: 0	Valid: 0	Degree: 0
+Entry number: 261	Address: 0	Valid: 0	Degree: 0
+Entry number: 262	Address: 0	Valid: 0	Degree: 0
+Entry number: 263	Address: 0	Valid: 0	Degree: 0
+Entry number: 264	Address: 0	Valid: 0	Degree: 0
+Entry number: 265	Address: 0	Valid: 0	Degree: 0
+Entry number: 266	Address: 0	Valid: 0	Degree: 0
+Entry number: 267	Address: 0	Valid: 0	Degree: 0
+Entry number: 268	Address: 0	Valid: 0	Degree: 0
+Entry number: 269	Address: 0	Valid: 0	Degree: 0
+Entry number: 270	Address: 0	Valid: 0	Degree: 0
+Entry number: 271	Address: 0	Valid: 0	Degree: 0
+Entry number: 272	Address: 0	Valid: 0	Degree: 0
+Entry number: 273	Address: 0	Valid: 0	Degree: 0
+Entry number: 274	Address: 0	Valid: 0	Degree: 0
+Entry number: 275	Address: 0	Valid: 0	Degree: 0
+Entry number: 276	Address: 0	Valid: 0	Degree: 0
+Entry number: 277	Address: 0	Valid: 0	Degree: 0
+Entry number: 278	Address: 0	Valid: 0	Degree: 0
+Entry number: 279	Address: 0	Valid: 0	Degree: 0
+Entry number: 280	Address: 0	Valid: 0	Degree: 0
+Entry number: 281	Address: 0	Valid: 0	Degree: 0
+Entry number: 282	Address: 0	Valid: 0	Degree: 0
+Entry number: 283	Address: 0	Valid: 0	Degree: 0
+Entry number: 284	Address: 0	Valid: 0	Degree: 0
+Entry number: 285	Address: 0	Valid: 0	Degree: 0
+Entry number: 286	Address: 0	Valid: 0	Degree: 0
+Entry number: 287	Address: 0	Valid: 0	Degree: 0
+Entry number: 288	Address: 0	Valid: 0	Degree: 0
+Entry number: 289	Address: 0	Valid: 0	Degree: 0
+Entry number: 290	Address: 0	Valid: 0	Degree: 0
+Entry number: 291	Address: 0	Valid: 0	Degree: 0
+Entry number: 292	Address: 0	Valid: 0	Degree: 0
+Entry number: 293	Address: 0	Valid: 0	Degree: 0
+Entry number: 294	Address: 0	Valid: 0	Degree: 0
+Entry number: 295	Address: 0	Valid: 0	Degree: 0
+Entry number: 296	Address: 0	Valid: 0	Degree: 0
+Entry number: 297	Address: 0	Valid: 0	Degree: 0
+Entry number: 298	Address: 0	Valid: 0	Degree: 0
+Entry number: 299	Address: 0	Valid: 0	Degree: 0
+Entry number: 300	Address: 0	Valid: 0	Degree: 0
+Entry number: 301	Address: 0	Valid: 0	Degree: 0
+Entry number: 302	Address: 0	Valid: 0	Degree: 0
+Entry number: 303	Address: 0	Valid: 0	Degree: 0
+Entry number: 304	Address: 0	Valid: 0	Degree: 0
+Entry number: 305	Address: 0	Valid: 0	Degree: 0
+Entry number: 306	Address: 0	Valid: 0	Degree: 0
+Entry number: 307	Address: 0	Valid: 0	Degree: 0
+Entry number: 308	Address: 0	Valid: 0	Degree: 0
+Entry number: 309	Address: 0	Valid: 0	Degree: 0
+Entry number: 310	Address: 0	Valid: 0	Degree: 0
+Entry number: 311	Address: 0	Valid: 0	Degree: 0
+Entry number: 312	Address: 0	Valid: 0	Degree: 0
+Entry number: 313	Address: 0	Valid: 0	Degree: 0
+Entry number: 314	Address: 0	Valid: 0	Degree: 0
+Entry number: 315	Address: 0	Valid: 0	Degree: 0
+Entry number: 316	Address: 0	Valid: 0	Degree: 0
+Entry number: 317	Address: 0	Valid: 0	Degree: 0
+Entry number: 318	Address: 0	Valid: 0	Degree: 0
+Entry number: 319	Address: 0	Valid: 0	Degree: 0
+Entry number: 320	Address: 0	Valid: 0	Degree: 0
+Entry number: 321	Address: 0	Valid: 0	Degree: 0
+Entry number: 322	Address: 0	Valid: 0	Degree: 0
+Entry number: 323	Address: 0	Valid: 0	Degree: 0
+Entry number: 324	Address: 0	Valid: 0	Degree: 0
+Entry number: 325	Address: 0	Valid: 0	Degree: 0
+Entry number: 326	Address: 0	Valid: 0	Degree: 0
+Entry number: 327	Address: 0	Valid: 0	Degree: 0
+Entry number: 328	Address: 0	Valid: 0	Degree: 0
+Entry number: 329	Address: 0	Valid: 0	Degree: 0
+Entry number: 330	Address: 0	Valid: 0	Degree: 0
+Entry number: 331	Address: 0	Valid: 0	Degree: 0
+Entry number: 332	Address: 0	Valid: 0	Degree: 0
+Entry number: 333	Address: 0	Valid: 0	Degree: 0
+Entry number: 334	Address: 0	Valid: 0	Degree: 0
+Entry number: 335	Address: 0	Valid: 0	Degree: 0
+Entry number: 336	Address: 0	Valid: 0	Degree: 0
+Entry number: 337	Address: 0	Valid: 0	Degree: 0
+Entry number: 338	Address: 0	Valid: 0	Degree: 0
+Entry number: 339	Address: 0	Valid: 0	Degree: 0
+Entry number: 340	Address: 0	Valid: 0	Degree: 0
+Entry number: 341	Address: 0	Valid: 0	Degree: 0
+Entry number: 342	Address: 0	Valid: 0	Degree: 0
+Entry number: 343	Address: 0	Valid: 0	Degree: 0
+Entry number: 344	Address: 0	Valid: 0	Degree: 0
+Entry number: 345	Address: 0	Valid: 0	Degree: 0
+Entry number: 346	Address: 0	Valid: 0	Degree: 0
+Entry number: 347	Address: 0	Valid: 0	Degree: 0
+Entry number: 348	Address: 0	Valid: 0	Degree: 0
+Entry number: 349	Address: 0	Valid: 0	Degree: 0
+Entry number: 350	Address: 0	Valid: 0	Degree: 0
+Entry number: 351	Address: 0	Valid: 0	Degree: 0
+Entry number: 352	Address: 0	Valid: 0	Degree: 0
+Entry number: 353	Address: 0	Valid: 0	Degree: 0
+Entry number: 354	Address: 0	Valid: 0	Degree: 0
+Entry number: 355	Address: 0	Valid: 0	Degree: 0
+Entry number: 356	Address: 0	Valid: 0	Degree: 0
+Entry number: 357	Address: 0	Valid: 0	Degree: 0
+Entry number: 358	Address: 0	Valid: 0	Degree: 0
+Entry number: 359	Address: 0	Valid: 0	Degree: 0
+Entry number: 360	Address: 0	Valid: 0	Degree: 0
+Entry number: 361	Address: 0	Valid: 0	Degree: 0
+Entry number: 362	Address: 0	Valid: 0	Degree: 0
+Entry number: 363	Address: 0	Valid: 0	Degree: 0
+Entry number: 364	Address: 0	Valid: 0	Degree: 0
+Entry number: 365	Address: 0	Valid: 0	Degree: 0
+Entry number: 366	Address: 0	Valid: 0	Degree: 0
+Entry number: 367	Address: 0	Valid: 0	Degree: 0
+Entry number: 368	Address: 0	Valid: 0	Degree: 0
+Entry number: 369	Address: 0	Valid: 0	Degree: 0
+Entry number: 370	Address: 0	Valid: 0	Degree: 0
+Entry number: 371	Address: 0	Valid: 0	Degree: 0
+Entry number: 372	Address: 0	Valid: 0	Degree: 0
+Entry number: 373	Address: 0	Valid: 0	Degree: 0
+Entry number: 374	Address: 0	Valid: 0	Degree: 0
+Entry number: 375	Address: 0	Valid: 0	Degree: 0
+Entry number: 376	Address: 0	Valid: 0	Degree: 0
+Entry number: 377	Address: 0	Valid: 0	Degree: 0
+Entry number: 378	Address: 0	Valid: 0	Degree: 0
+Entry number: 379	Address: 0	Valid: 0	Degree: 0
+Entry number: 380	Address: 0	Valid: 0	Degree: 0
+Entry number: 381	Address: 0	Valid: 0	Degree: 0
+Entry number: 382	Address: 0	Valid: 0	Degree: 0
+Entry number: 383	Address: 0	Valid: 0	Degree: 0
+Entry number: 384	Address: 0	Valid: 0	Degree: 0
+Entry number: 385	Address: 0	Valid: 0	Degree: 0
+Entry number: 386	Address: 0	Valid: 0	Degree: 0
+Entry number: 387	Address: 0	Valid: 0	Degree: 0
+Entry number: 388	Address: 0	Valid: 0	Degree: 0
+Entry number: 389	Address: 0	Valid: 0	Degree: 0
+Entry number: 390	Address: 0	Valid: 0	Degree: 0
+Entry number: 391	Address: 0	Valid: 0	Degree: 0
+Entry number: 392	Address: 0	Valid: 0	Degree: 0
+Entry number: 393	Address: 0	Valid: 0	Degree: 0
+Entry number: 394	Address: 0	Valid: 0	Degree: 0
+Entry number: 395	Address: 0	Valid: 0	Degree: 0
+Entry number: 396	Address: 0	Valid: 0	Degree: 0
+Entry number: 397	Address: 0	Valid: 0	Degree: 0
+Entry number: 398	Address: 0	Valid: 0	Degree: 0
+Entry number: 399	Address: 0	Valid: 0	Degree: 0
+Entry number: 400	Address: 0	Valid: 0	Degree: 0
+Entry number: 401	Address: 0	Valid: 0	Degree: 0
+Entry number: 402	Address: 0	Valid: 0	Degree: 0
+Entry number: 403	Address: 0	Valid: 0	Degree: 0
+Entry number: 404	Address: 0	Valid: 0	Degree: 0
+Entry number: 405	Address: 0	Valid: 0	Degree: 0
+Entry number: 406	Address: 0	Valid: 0	Degree: 0
+Entry number: 407	Address: 0	Valid: 0	Degree: 0
+Entry number: 408	Address: 0	Valid: 0	Degree: 0
+Entry number: 409	Address: 0	Valid: 0	Degree: 0
+Entry number: 410	Address: 0	Valid: 0	Degree: 0
+Entry number: 411	Address: 0	Valid: 0	Degree: 0
+Entry number: 412	Address: 0	Valid: 0	Degree: 0
+Entry number: 413	Address: 0	Valid: 0	Degree: 0
+Entry number: 414	Address: 0	Valid: 0	Degree: 0
+Entry number: 415	Address: 0	Valid: 0	Degree: 0
+Entry number: 416	Address: 0	Valid: 0	Degree: 0
+Entry number: 417	Address: 0	Valid: 0	Degree: 0
+Entry number: 418	Address: 0	Valid: 0	Degree: 0
+Entry number: 419	Address: 0	Valid: 0	Degree: 0
+Entry number: 420	Address: 0	Valid: 0	Degree: 0
+Entry number: 421	Address: 0	Valid: 0	Degree: 0
+Entry number: 422	Address: 0	Valid: 0	Degree: 0
+Entry number: 423	Address: 0	Valid: 0	Degree: 0
+Entry number: 424	Address: 0	Valid: 0	Degree: 0
+Entry number: 425	Address: 0	Valid: 0	Degree: 0
+Entry number: 426	Address: 0	Valid: 0	Degree: 0
+Entry number: 427	Address: 0	Valid: 0	Degree: 0
+Entry number: 428	Address: 0	Valid: 0	Degree: 0
+Entry number: 429	Address: 0	Valid: 0	Degree: 0
+Entry number: 430	Address: 0	Valid: 0	Degree: 0
+Entry number: 431	Address: 0	Valid: 0	Degree: 0
+Entry number: 432	Address: 0	Valid: 0	Degree: 0
+Entry number: 433	Address: 0	Valid: 0	Degree: 0
+Entry number: 434	Address: 0	Valid: 0	Degree: 0
+Entry number: 435	Address: 0	Valid: 0	Degree: 0
+Entry number: 436	Address: 0	Valid: 0	Degree: 0
+Entry number: 437	Address: 0	Valid: 0	Degree: 0
+Entry number: 438	Address: 0	Valid: 0	Degree: 0
+Entry number: 439	Address: 0	Valid: 0	Degree: 0
+Entry number: 440	Address: 0	Valid: 0	Degree: 0
+Entry number: 441	Address: 0	Valid: 0	Degree: 0
+Entry number: 442	Address: 0	Valid: 0	Degree: 0
+Entry number: 443	Address: 0	Valid: 0	Degree: 0
+Entry number: 444	Address: 0	Valid: 0	Degree: 0
+Entry number: 445	Address: 0	Valid: 0	Degree: 0
+Entry number: 446	Address: 0	Valid: 0	Degree: 0
+Entry number: 447	Address: 0	Valid: 0	Degree: 0
+Entry number: 448	Address: 0	Valid: 0	Degree: 0
+Entry number: 449	Address: 0	Valid: 0	Degree: 0
+Entry number: 450	Address: 0	Valid: 0	Degree: 0
+Entry number: 451	Address: 0	Valid: 0	Degree: 0
+Entry number: 452	Address: 0	Valid: 0	Degree: 0
+Entry number: 453	Address: 0	Valid: 0	Degree: 0
+Entry number: 454	Address: 0	Valid: 0	Degree: 0
+Entry number: 455	Address: 0	Valid: 0	Degree: 0
+Entry number: 456	Address: 0	Valid: 0	Degree: 0
+Entry number: 457	Address: 0	Valid: 0	Degree: 0
+Entry number: 458	Address: 0	Valid: 0	Degree: 0
+Entry number: 459	Address: 0	Valid: 0	Degree: 0
+Entry number: 460	Address: 0	Valid: 0	Degree: 0
+Entry number: 461	Address: 0	Valid: 0	Degree: 0
+Entry number: 462	Address: 0	Valid: 0	Degree: 0
+Entry number: 463	Address: 0	Valid: 0	Degree: 0
+Entry number: 464	Address: 0	Valid: 0	Degree: 0
+Entry number: 465	Address: 0	Valid: 0	Degree: 0
+Entry number: 466	Address: 0	Valid: 0	Degree: 0
+Entry number: 467	Address: 0	Valid: 0	Degree: 0
+Entry number: 468	Address: 0	Valid: 0	Degree: 0
+Entry number: 469	Address: 0	Valid: 0	Degree: 0
+Entry number: 470	Address: 0	Valid: 0	Degree: 0
+Entry number: 471	Address: 0	Valid: 0	Degree: 0
+Entry number: 472	Address: 0	Valid: 0	Degree: 0
+Entry number: 473	Address: 0	Valid: 0	Degree: 0
+Entry number: 474	Address: 0	Valid: 0	Degree: 0
+Entry number: 475	Address: 0	Valid: 0	Degree: 0
+Entry number: 476	Address: 0	Valid: 0	Degree: 0
+Entry number: 477	Address: 0	Valid: 0	Degree: 0
+Entry number: 478	Address: 0	Valid: 0	Degree: 0
+Entry number: 479	Address: 0	Valid: 0	Degree: 0
+Entry number: 480	Address: 0	Valid: 0	Degree: 0
+Entry number: 481	Address: 0	Valid: 0	Degree: 0
+Entry number: 482	Address: 0	Valid: 0	Degree: 0
+Entry number: 483	Address: 0	Valid: 0	Degree: 0
+Entry number: 484	Address: 0	Valid: 0	Degree: 0
+Entry number: 485	Address: 0	Valid: 0	Degree: 0
+Entry number: 486	Address: 0	Valid: 0	Degree: 0
+Entry number: 487	Address: 0	Valid: 0	Degree: 0
+Entry number: 488	Address: 0	Valid: 0	Degree: 0
+Entry number: 489	Address: 0	Valid: 0	Degree: 0
+Entry number: 490	Address: 0	Valid: 0	Degree: 0
+Entry number: 491	Address: 0	Valid: 0	Degree: 0
+Entry number: 492	Address: 0	Valid: 0	Degree: 0
+Entry number: 493	Address: 0	Valid: 0	Degree: 0
+Entry number: 494	Address: 0	Valid: 0	Degree: 0
+Entry number: 495	Address: 0	Valid: 0	Degree: 0
+Entry number: 496	Address: 0	Valid: 0	Degree: 0
+Entry number: 497	Address: 0	Valid: 0	Degree: 0
+Entry number: 498	Address: 0	Valid: 0	Degree: 0
+Entry number: 499	Address: 0	Valid: 0	Degree: 0
+Entry number: 500	Address: 0	Valid: 0	Degree: 0
+Entry number: 501	Address: 0	Valid: 0	Degree: 0
+Entry number: 502	Address: 0	Valid: 0	Degree: 0
+Entry number: 503	Address: 0	Valid: 0	Degree: 0
+Entry number: 504	Address: 0	Valid: 0	Degree: 0
+Entry number: 505	Address: 0	Valid: 0	Degree: 0
+Entry number: 506	Address: 0	Valid: 0	Degree: 0
+Entry number: 507	Address: 0	Valid: 0	Degree: 0
+Entry number: 508	Address: 0	Valid: 0	Degree: 0
+Entry number: 509	Address: 0	Valid: 0	Degree: 0
+Entry number: 510	Address: 0	Valid: 0	Degree: 0
+Entry number: 511	Address: 0	Valid: 0	Degree: 0
+Entry number: 512	Address: 0	Valid: 0	Degree: 0
+Entry number: 513	Address: 0	Valid: 0	Degree: 0
+Entry number: 514	Address: 0	Valid: 0	Degree: 0
+Entry number: 515	Address: 0	Valid: 0	Degree: 0
+Entry number: 516	Address: 0	Valid: 0	Degree: 0
+Entry number: 517	Address: 0	Valid: 0	Degree: 0
+Entry number: 518	Address: 0	Valid: 0	Degree: 0
+Entry number: 519	Address: 0	Valid: 0	Degree: 0
+Entry number: 520	Address: 0	Valid: 0	Degree: 0
+Entry number: 521	Address: 0	Valid: 0	Degree: 0
+Entry number: 522	Address: 0	Valid: 0	Degree: 0
+Entry number: 523	Address: 0	Valid: 0	Degree: 0
+Entry number: 524	Address: 0	Valid: 0	Degree: 0
+Entry number: 525	Address: 0	Valid: 0	Degree: 0
+Entry number: 526	Address: 0	Valid: 0	Degree: 0
+Entry number: 527	Address: 0	Valid: 0	Degree: 0
+Entry number: 528	Address: 0	Valid: 0	Degree: 0
+Entry number: 529	Address: 0	Valid: 0	Degree: 0
+Entry number: 530	Address: 0	Valid: 0	Degree: 0
+Entry number: 531	Address: 0	Valid: 0	Degree: 0
+Entry number: 532	Address: 0	Valid: 0	Degree: 0
+Entry number: 533	Address: 0	Valid: 0	Degree: 0
+Entry number: 534	Address: 0	Valid: 0	Degree: 0
+Entry number: 535	Address: 0	Valid: 0	Degree: 0
+Entry number: 536	Address: 0	Valid: 0	Degree: 0
+Entry number: 537	Address: 0	Valid: 0	Degree: 0
+Entry number: 538	Address: 0	Valid: 0	Degree: 0
+Entry number: 539	Address: 0	Valid: 0	Degree: 0
+Entry number: 540	Address: 0	Valid: 0	Degree: 0
+Entry number: 541	Address: 0	Valid: 0	Degree: 0
+Entry number: 542	Address: 0	Valid: 0	Degree: 0
+Entry number: 543	Address: 0	Valid: 0	Degree: 0
+Entry number: 544	Address: 0	Valid: 0	Degree: 0
+Entry number: 545	Address: 0	Valid: 0	Degree: 0
+Entry number: 546	Address: 0	Valid: 0	Degree: 0
+Entry number: 547	Address: 0	Valid: 0	Degree: 0
+Entry number: 548	Address: 0	Valid: 0	Degree: 0
+Entry number: 549	Address: 0	Valid: 0	Degree: 0
+Entry number: 550	Address: 0	Valid: 0	Degree: 0
+Entry number: 551	Address: 0	Valid: 0	Degree: 0
+Entry number: 552	Address: 0	Valid: 0	Degree: 0
+Entry number: 553	Address: 0	Valid: 0	Degree: 0
+Entry number: 554	Address: 0	Valid: 0	Degree: 0
+Entry number: 555	Address: 0	Valid: 0	Degree: 0
+Entry number: 556	Address: 0	Valid: 0	Degree: 0
+Entry number: 557	Address: 0	Valid: 0	Degree: 0
+Entry number: 558	Address: 0	Valid: 0	Degree: 0
+Entry number: 559	Address: 0	Valid: 0	Degree: 0
+Entry number: 560	Address: 0	Valid: 0	Degree: 0
+Entry number: 561	Address: 0	Valid: 0	Degree: 0
+Entry number: 562	Address: 0	Valid: 0	Degree: 0
+Entry number: 563	Address: 0	Valid: 0	Degree: 0
+Entry number: 564	Address: 0	Valid: 0	Degree: 0
+Entry number: 565	Address: 0	Valid: 0	Degree: 0
+Entry number: 566	Address: 0	Valid: 0	Degree: 0
+Entry number: 567	Address: 0	Valid: 0	Degree: 0
+Entry number: 568	Address: 0	Valid: 0	Degree: 0
+Entry number: 569	Address: 0	Valid: 0	Degree: 0
+Entry number: 570	Address: 0	Valid: 0	Degree: 0
+Entry number: 571	Address: 0	Valid: 0	Degree: 0
+Entry number: 572	Address: 0	Valid: 0	Degree: 0
+Entry number: 573	Address: 0	Valid: 0	Degree: 0
+Entry number: 574	Address: 0	Valid: 0	Degree: 0
+Entry number: 575	Address: 0	Valid: 0	Degree: 0
+Entry number: 576	Address: 0	Valid: 0	Degree: 0
+Entry number: 577	Address: 0	Valid: 0	Degree: 0
+Entry number: 578	Address: 0	Valid: 0	Degree: 0
+Entry number: 579	Address: 0	Valid: 0	Degree: 0
+Entry number: 580	Address: 0	Valid: 0	Degree: 0
+Entry number: 581	Address: 0	Valid: 0	Degree: 0
+Entry number: 582	Address: 0	Valid: 0	Degree: 0
+Entry number: 583	Address: 0	Valid: 0	Degree: 0
+Entry number: 584	Address: 0	Valid: 0	Degree: 0
+Entry number: 585	Address: 0	Valid: 0	Degree: 0
+Entry number: 586	Address: 0	Valid: 0	Degree: 0
+Entry number: 587	Address: 0	Valid: 0	Degree: 0
+Entry number: 588	Address: 0	Valid: 0	Degree: 0
+Entry number: 589	Address: 0	Valid: 0	Degree: 0
+Entry number: 590	Address: 0	Valid: 0	Degree: 0
+Entry number: 591	Address: 0	Valid: 0	Degree: 0
+Entry number: 592	Address: 0	Valid: 0	Degree: 0
+Entry number: 593	Address: 0	Valid: 0	Degree: 0
+Entry number: 594	Address: 0	Valid: 0	Degree: 0
+Entry number: 595	Address: 0	Valid: 0	Degree: 0
+Entry number: 596	Address: 0	Valid: 0	Degree: 0
+Entry number: 597	Address: 0	Valid: 0	Degree: 0
+Entry number: 598	Address: 0	Valid: 0	Degree: 0
+Entry number: 599	Address: 0	Valid: 0	Degree: 0
+Entry number: 600	Address: 0	Valid: 0	Degree: 0
+Entry number: 601	Address: 0	Valid: 0	Degree: 0
+Entry number: 602	Address: 0	Valid: 0	Degree: 0
+Entry number: 603	Address: 0	Valid: 0	Degree: 0
+Entry number: 604	Address: 0	Valid: 0	Degree: 0
+Entry number: 605	Address: 0	Valid: 0	Degree: 0
+Entry number: 606	Address: 0	Valid: 0	Degree: 0
+Entry number: 607	Address: 0	Valid: 0	Degree: 0
+Entry number: 608	Address: 0	Valid: 0	Degree: 0
+Entry number: 609	Address: 0	Valid: 0	Degree: 0
+Entry number: 610	Address: 0	Valid: 0	Degree: 0
+Entry number: 611	Address: 0	Valid: 0	Degree: 0
+Entry number: 612	Address: 0	Valid: 0	Degree: 0
+Entry number: 613	Address: 0	Valid: 0	Degree: 0
+Entry number: 614	Address: 0	Valid: 0	Degree: 0
+Entry number: 615	Address: 0	Valid: 0	Degree: 0
+Entry number: 616	Address: 0	Valid: 0	Degree: 0
+Entry number: 617	Address: 0	Valid: 0	Degree: 0
+Entry number: 618	Address: 0	Valid: 0	Degree: 0
+Entry number: 619	Address: 0	Valid: 0	Degree: 0
+Entry number: 620	Address: 0	Valid: 0	Degree: 0
+Entry number: 621	Address: 0	Valid: 0	Degree: 0
+Entry number: 622	Address: 0	Valid: 0	Degree: 0
+Entry number: 623	Address: 0	Valid: 0	Degree: 0
+Entry number: 624	Address: 0	Valid: 0	Degree: 0
+Entry number: 625	Address: 0	Valid: 0	Degree: 0
+Entry number: 626	Address: 0	Valid: 0	Degree: 0
+Entry number: 627	Address: 0	Valid: 0	Degree: 0
+Entry number: 628	Address: 0	Valid: 0	Degree: 0
+Entry number: 629	Address: 0	Valid: 0	Degree: 0
+Entry number: 630	Address: 0	Valid: 0	Degree: 0
+Entry number: 631	Address: 0	Valid: 0	Degree: 0
+Entry number: 632	Address: 0	Valid: 0	Degree: 0
+Entry number: 633	Address: 0	Valid: 0	Degree: 0
+Entry number: 634	Address: 0	Valid: 0	Degree: 0
+Entry number: 635	Address: 0	Valid: 0	Degree: 0
+Entry number: 636	Address: 0	Valid: 0	Degree: 0
+Entry number: 637	Address: 0	Valid: 0	Degree: 0
+Entry number: 638	Address: 0	Valid: 0	Degree: 0
+Entry number: 639	Address: 0	Valid: 0	Degree: 0
+Entry number: 640	Address: 0	Valid: 0	Degree: 0
+Entry number: 641	Address: 0	Valid: 0	Degree: 0
+Entry number: 642	Address: 0	Valid: 0	Degree: 0
+Entry number: 643	Address: 0	Valid: 0	Degree: 0
+Entry number: 644	Address: 0	Valid: 0	Degree: 0
+Entry number: 645	Address: 0	Valid: 0	Degree: 0
+Entry number: 646	Address: 0	Valid: 0	Degree: 0
+Entry number: 647	Address: 0	Valid: 0	Degree: 0
+Entry number: 648	Address: 0	Valid: 0	Degree: 0
+Entry number: 649	Address: 0	Valid: 0	Degree: 0
+Entry number: 650	Address: 0	Valid: 0	Degree: 0
+Entry number: 651	Address: 0	Valid: 0	Degree: 0
+Entry number: 652	Address: 0	Valid: 0	Degree: 0
+Entry number: 653	Address: 0	Valid: 0	Degree: 0
+Entry number: 654	Address: 0	Valid: 0	Degree: 0
+Entry number: 655	Address: 0	Valid: 0	Degree: 0
+Entry number: 656	Address: 0	Valid: 0	Degree: 0
+Entry number: 657	Address: 0	Valid: 0	Degree: 0
+Entry number: 658	Address: 0	Valid: 0	Degree: 0
+Entry number: 659	Address: 0	Valid: 0	Degree: 0
+Entry number: 660	Address: 0	Valid: 0	Degree: 0
+Entry number: 661	Address: 0	Valid: 0	Degree: 0
+Entry number: 662	Address: 0	Valid: 0	Degree: 0
+Entry number: 663	Address: 0	Valid: 0	Degree: 0
+Entry number: 664	Address: 0	Valid: 0	Degree: 0
+Entry number: 665	Address: 0	Valid: 0	Degree: 0
+Entry number: 666	Address: 0	Valid: 0	Degree: 0
+Entry number: 667	Address: 0	Valid: 0	Degree: 0
+Entry number: 668	Address: 0	Valid: 0	Degree: 0
+Entry number: 669	Address: 0	Valid: 0	Degree: 0
+Entry number: 670	Address: 0	Valid: 0	Degree: 0
+Entry number: 671	Address: 0	Valid: 0	Degree: 0
+Entry number: 672	Address: 0	Valid: 0	Degree: 0
+Entry number: 673	Address: 0	Valid: 0	Degree: 0
+Entry number: 674	Address: 0	Valid: 0	Degree: 0
+Entry number: 675	Address: 0	Valid: 0	Degree: 0
+Entry number: 676	Address: 0	Valid: 0	Degree: 0
+Entry number: 677	Address: 0	Valid: 0	Degree: 0
+Entry number: 678	Address: 0	Valid: 0	Degree: 0
+Entry number: 679	Address: 0	Valid: 0	Degree: 0
+Entry number: 680	Address: 0	Valid: 0	Degree: 0
+Entry number: 681	Address: 0	Valid: 0	Degree: 0
+Entry number: 682	Address: 0	Valid: 0	Degree: 0
+Entry number: 683	Address: 0	Valid: 0	Degree: 0
+Entry number: 684	Address: 0	Valid: 0	Degree: 0
+Entry number: 685	Address: 0	Valid: 0	Degree: 0
+Entry number: 686	Address: 0	Valid: 0	Degree: 0
+Entry number: 687	Address: 0	Valid: 0	Degree: 0
+Entry number: 688	Address: 0	Valid: 0	Degree: 0
+Entry number: 689	Address: 0	Valid: 0	Degree: 0
+Entry number: 690	Address: 0	Valid: 0	Degree: 0
+Entry number: 691	Address: 0	Valid: 0	Degree: 0
+Entry number: 692	Address: 0	Valid: 0	Degree: 0
+Entry number: 693	Address: 0	Valid: 0	Degree: 0
+Entry number: 694	Address: 0	Valid: 0	Degree: 0
+Entry number: 695	Address: 0	Valid: 0	Degree: 0
+Entry number: 696	Address: 0	Valid: 0	Degree: 0
+Entry number: 697	Address: 0	Valid: 0	Degree: 0
+Entry number: 698	Address: 0	Valid: 0	Degree: 0
+Entry number: 699	Address: 0	Valid: 0	Degree: 0
+Entry number: 700	Address: 0	Valid: 0	Degree: 0
+Entry number: 701	Address: 0	Valid: 0	Degree: 0
+Entry number: 702	Address: 0	Valid: 0	Degree: 0
+Entry number: 703	Address: 0	Valid: 0	Degree: 0
+Entry number: 704	Address: 0	Valid: 0	Degree: 0
+Entry number: 705	Address: 0	Valid: 0	Degree: 0
+Entry number: 706	Address: 0	Valid: 0	Degree: 0
+Entry number: 707	Address: 0	Valid: 0	Degree: 0
+Entry number: 708	Address: 0	Valid: 0	Degree: 0
+Entry number: 709	Address: 0	Valid: 0	Degree: 0
+Entry number: 710	Address: 0	Valid: 0	Degree: 0
+Entry number: 711	Address: 0	Valid: 0	Degree: 0
+Entry number: 712	Address: 0	Valid: 0	Degree: 0
+Entry number: 713	Address: 0	Valid: 0	Degree: 0
+Entry number: 714	Address: 0	Valid: 0	Degree: 0
+Entry number: 715	Address: 0	Valid: 0	Degree: 0
+Entry number: 716	Address: 0	Valid: 0	Degree: 0
+Entry number: 717	Address: 0	Valid: 0	Degree: 0
+Entry number: 718	Address: 0	Valid: 0	Degree: 0
+Entry number: 719	Address: 0	Valid: 0	Degree: 0
+Entry number: 720	Address: 0	Valid: 0	Degree: 0
+Entry number: 721	Address: 0	Valid: 0	Degree: 0
+Entry number: 722	Address: 0	Valid: 0	Degree: 0
+Entry number: 723	Address: 0	Valid: 0	Degree: 0
+Entry number: 724	Address: 0	Valid: 0	Degree: 0
+Entry number: 725	Address: 0	Valid: 0	Degree: 0
+Entry number: 726	Address: 0	Valid: 0	Degree: 0
+Entry number: 727	Address: 0	Valid: 0	Degree: 0
+Entry number: 728	Address: 0	Valid: 0	Degree: 0
+Entry number: 729	Address: 0	Valid: 0	Degree: 0
+Entry number: 730	Address: 0	Valid: 0	Degree: 0
+Entry number: 731	Address: 0	Valid: 0	Degree: 0
+Entry number: 732	Address: 0	Valid: 0	Degree: 0
+Entry number: 733	Address: 0	Valid: 0	Degree: 0
+Entry number: 734	Address: 0	Valid: 0	Degree: 0
+Entry number: 735	Address: 0	Valid: 0	Degree: 0
+Entry number: 736	Address: 0	Valid: 0	Degree: 0
+Entry number: 737	Address: 0	Valid: 0	Degree: 0
+Entry number: 738	Address: 0	Valid: 0	Degree: 0
+Entry number: 739	Address: 0	Valid: 0	Degree: 0
+Entry number: 740	Address: 0	Valid: 0	Degree: 0
+Entry number: 741	Address: 0	Valid: 0	Degree: 0
+Entry number: 742	Address: 0	Valid: 0	Degree: 0
+Entry number: 743	Address: 0	Valid: 0	Degree: 0
+Entry number: 744	Address: 0	Valid: 0	Degree: 0
+Entry number: 745	Address: 0	Valid: 0	Degree: 0
+Entry number: 746	Address: 0	Valid: 0	Degree: 0
+Entry number: 747	Address: 0	Valid: 0	Degree: 0
+Entry number: 748	Address: 0	Valid: 0	Degree: 0
+Entry number: 749	Address: 0	Valid: 0	Degree: 0
+Entry number: 750	Address: 0	Valid: 0	Degree: 0
+Entry number: 751	Address: 0	Valid: 0	Degree: 0
+Entry number: 752	Address: 0	Valid: 0	Degree: 0
+Entry number: 753	Address: 0	Valid: 0	Degree: 0
+Entry number: 754	Address: 0	Valid: 0	Degree: 0
+Entry number: 755	Address: 0	Valid: 0	Degree: 0
+Entry number: 756	Address: 0	Valid: 0	Degree: 0
+Entry number: 757	Address: 0	Valid: 0	Degree: 0
+Entry number: 758	Address: 0	Valid: 0	Degree: 0
+Entry number: 759	Address: 0	Valid: 0	Degree: 0
+Entry number: 760	Address: 0	Valid: 0	Degree: 0
+Entry number: 761	Address: 0	Valid: 0	Degree: 0
+Entry number: 762	Address: 0	Valid: 0	Degree: 0
+Entry number: 763	Address: 0	Valid: 0	Degree: 0
+Entry number: 764	Address: 0	Valid: 0	Degree: 0
+Entry number: 765	Address: 0	Valid: 0	Degree: 0
+Entry number: 766	Address: 0	Valid: 0	Degree: 0
+Entry number: 767	Address: 0	Valid: 0	Degree: 0
+Entry number: 768	Address: 0	Valid: 0	Degree: 0
+Entry number: 769	Address: 0	Valid: 0	Degree: 0
+Entry number: 770	Address: 0	Valid: 0	Degree: 0
+Entry number: 771	Address: 0	Valid: 0	Degree: 0
+Entry number: 772	Address: 0	Valid: 0	Degree: 0
+Entry number: 773	Address: 0	Valid: 0	Degree: 0
+Entry number: 774	Address: 0	Valid: 0	Degree: 0
+Entry number: 775	Address: 0	Valid: 0	Degree: 0
+Entry number: 776	Address: 0	Valid: 0	Degree: 0
+Entry number: 777	Address: 0	Valid: 0	Degree: 0
+Entry number: 778	Address: 0	Valid: 0	Degree: 0
+Entry number: 779	Address: 0	Valid: 0	Degree: 0
+Entry number: 780	Address: 0	Valid: 0	Degree: 0
+Entry number: 781	Address: 0	Valid: 0	Degree: 0
+Entry number: 782	Address: 0	Valid: 0	Degree: 0
+Entry number: 783	Address: 0	Valid: 0	Degree: 0
+Entry number: 784	Address: 0	Valid: 0	Degree: 0
+Entry number: 785	Address: 0	Valid: 0	Degree: 0
+Entry number: 786	Address: 0	Valid: 0	Degree: 0
+Entry number: 787	Address: 0	Valid: 0	Degree: 0
+Entry number: 788	Address: 0	Valid: 0	Degree: 0
+Entry number: 789	Address: 0	Valid: 0	Degree: 0
+Entry number: 790	Address: 0	Valid: 0	Degree: 0
+Entry number: 791	Address: 0	Valid: 0	Degree: 0
+Entry number: 792	Address: 0	Valid: 0	Degree: 0
+Entry number: 793	Address: 0	Valid: 0	Degree: 0
+Entry number: 794	Address: 0	Valid: 0	Degree: 0
+Entry number: 795	Address: 0	Valid: 0	Degree: 0
+Entry number: 796	Address: 0	Valid: 0	Degree: 0
+Entry number: 797	Address: 0	Valid: 0	Degree: 0
+Entry number: 798	Address: 0	Valid: 0	Degree: 0
+Entry number: 799	Address: 0	Valid: 0	Degree: 0
+Entry number: 800	Address: 0	Valid: 0	Degree: 0
+Entry number: 801	Address: 0	Valid: 0	Degree: 0
+Entry number: 802	Address: 0	Valid: 0	Degree: 0
+Entry number: 803	Address: 0	Valid: 0	Degree: 0
+Entry number: 804	Address: 0	Valid: 0	Degree: 0
+Entry number: 805	Address: 0	Valid: 0	Degree: 0
+Entry number: 806	Address: 0	Valid: 0	Degree: 0
+Entry number: 807	Address: 0	Valid: 0	Degree: 0
+Entry number: 808	Address: 0	Valid: 0	Degree: 0
+Entry number: 809	Address: 0	Valid: 0	Degree: 0
+Entry number: 810	Address: 0	Valid: 0	Degree: 0
+Entry number: 811	Address: 0	Valid: 0	Degree: 0
+Entry number: 812	Address: 0	Valid: 0	Degree: 0
+Entry number: 813	Address: 0	Valid: 0	Degree: 0
+Entry number: 814	Address: 0	Valid: 0	Degree: 0
+Entry number: 815	Address: 0	Valid: 0	Degree: 0
+Entry number: 816	Address: 0	Valid: 0	Degree: 0
+Entry number: 817	Address: 0	Valid: 0	Degree: 0
+Entry number: 818	Address: 0	Valid: 0	Degree: 0
+Entry number: 819	Address: 0	Valid: 0	Degree: 0
+Entry number: 820	Address: 0	Valid: 0	Degree: 0
+Entry number: 821	Address: 0	Valid: 0	Degree: 0
+Entry number: 822	Address: 0	Valid: 0	Degree: 0
+Entry number: 823	Address: 0	Valid: 0	Degree: 0
+Entry number: 824	Address: 0	Valid: 0	Degree: 0
+Entry number: 825	Address: 0	Valid: 0	Degree: 0
+Entry number: 826	Address: 0	Valid: 0	Degree: 0
+Entry number: 827	Address: 0	Valid: 0	Degree: 0
+Entry number: 828	Address: 0	Valid: 0	Degree: 0
+Entry number: 829	Address: 0	Valid: 0	Degree: 0
+Entry number: 830	Address: 0	Valid: 0	Degree: 0
+Entry number: 831	Address: 0	Valid: 0	Degree: 0
+Entry number: 832	Address: 0	Valid: 0	Degree: 0
+Entry number: 833	Address: 0	Valid: 0	Degree: 0
+Entry number: 834	Address: 0	Valid: 0	Degree: 0
+Entry number: 835	Address: 0	Valid: 0	Degree: 0
+Entry number: 836	Address: 0	Valid: 0	Degree: 0
+Entry number: 837	Address: 0	Valid: 0	Degree: 0
+Entry number: 838	Address: 0	Valid: 0	Degree: 0
+Entry number: 839	Address: 0	Valid: 0	Degree: 0
+Entry number: 840	Address: 0	Valid: 0	Degree: 0
+Entry number: 841	Address: 0	Valid: 0	Degree: 0
+Entry number: 842	Address: 0	Valid: 0	Degree: 0
+Entry number: 843	Address: 0	Valid: 0	Degree: 0
+Entry number: 844	Address: 0	Valid: 0	Degree: 0
+Entry number: 845	Address: 0	Valid: 0	Degree: 0
+Entry number: 846	Address: 0	Valid: 0	Degree: 0
+Entry number: 847	Address: 0	Valid: 0	Degree: 0
+Entry number: 848	Address: 0	Valid: 0	Degree: 0
+Entry number: 849	Address: 0	Valid: 0	Degree: 0
+Entry number: 850	Address: 0	Valid: 0	Degree: 0
+Entry number: 851	Address: 0	Valid: 0	Degree: 0
+Entry number: 852	Address: 0	Valid: 0	Degree: 0
+Entry number: 853	Address: 0	Valid: 0	Degree: 0
+Entry number: 854	Address: 0	Valid: 0	Degree: 0
+Entry number: 855	Address: 0	Valid: 0	Degree: 0
+Entry number: 856	Address: 0	Valid: 0	Degree: 0
+Entry number: 857	Address: 0	Valid: 0	Degree: 0
+Entry number: 858	Address: 0	Valid: 0	Degree: 0
+Entry number: 859	Address: 0	Valid: 0	Degree: 0
+Entry number: 860	Address: 0	Valid: 0	Degree: 0
+Entry number: 861	Address: 0	Valid: 0	Degree: 0
+Entry number: 862	Address: 0	Valid: 0	Degree: 0
+Entry number: 863	Address: 0	Valid: 0	Degree: 0
+Entry number: 864	Address: 0	Valid: 0	Degree: 0
+Entry number: 865	Address: 0	Valid: 0	Degree: 0
+Entry number: 866	Address: 0	Valid: 0	Degree: 0
+Entry number: 867	Address: 0	Valid: 0	Degree: 0
+Entry number: 868	Address: 0	Valid: 0	Degree: 0
+Entry number: 869	Address: 0	Valid: 0	Degree: 0
+Entry number: 870	Address: 0	Valid: 0	Degree: 0
+Entry number: 871	Address: 0	Valid: 0	Degree: 0
+Entry number: 872	Address: 0	Valid: 0	Degree: 0
+Entry number: 873	Address: 0	Valid: 0	Degree: 0
+Entry number: 874	Address: 0	Valid: 0	Degree: 0
+Entry number: 875	Address: 0	Valid: 0	Degree: 0
+Entry number: 876	Address: 0	Valid: 0	Degree: 0
+Entry number: 877	Address: 0	Valid: 0	Degree: 0
+Entry number: 878	Address: 0	Valid: 0	Degree: 0
+Entry number: 879	Address: 0	Valid: 0	Degree: 0
+Entry number: 880	Address: 0	Valid: 0	Degree: 0
+Entry number: 881	Address: 0	Valid: 0	Degree: 0
+Entry number: 882	Address: 0	Valid: 0	Degree: 0
+Entry number: 883	Address: 0	Valid: 0	Degree: 0
+Entry number: 884	Address: 0	Valid: 0	Degree: 0
+Entry number: 885	Address: 0	Valid: 0	Degree: 0
+Entry number: 886	Address: 0	Valid: 0	Degree: 0
+Entry number: 887	Address: 0	Valid: 0	Degree: 0
+Entry number: 888	Address: 0	Valid: 0	Degree: 0
+Entry number: 889	Address: 0	Valid: 0	Degree: 0
+Entry number: 890	Address: 0	Valid: 0	Degree: 0
+Entry number: 891	Address: 0	Valid: 0	Degree: 0
+Entry number: 892	Address: 0	Valid: 0	Degree: 0
+Entry number: 893	Address: 0	Valid: 0	Degree: 0
+Entry number: 894	Address: 0	Valid: 0	Degree: 0
+Entry number: 895	Address: 0	Valid: 0	Degree: 0
+Entry number: 896	Address: 0	Valid: 0	Degree: 0
+Entry number: 897	Address: 0	Valid: 0	Degree: 0
+Entry number: 898	Address: 0	Valid: 0	Degree: 0
+Entry number: 899	Address: 0	Valid: 0	Degree: 0
+Entry number: 900	Address: 0	Valid: 0	Degree: 0
+Entry number: 901	Address: 0	Valid: 0	Degree: 0
+Entry number: 902	Address: 0	Valid: 0	Degree: 0
+Entry number: 903	Address: 0	Valid: 0	Degree: 0
+Entry number: 904	Address: 0	Valid: 0	Degree: 0
+Entry number: 905	Address: 0	Valid: 0	Degree: 0
+Entry number: 906	Address: 0	Valid: 0	Degree: 0
+Entry number: 907	Address: 0	Valid: 0	Degree: 0
+Entry number: 908	Address: 0	Valid: 0	Degree: 0
+Entry number: 909	Address: 0	Valid: 0	Degree: 0
+Entry number: 910	Address: 0	Valid: 0	Degree: 0
+Entry number: 911	Address: 0	Valid: 0	Degree: 0
+Entry number: 912	Address: 0	Valid: 0	Degree: 0
+Entry number: 913	Address: 0	Valid: 0	Degree: 0
+Entry number: 914	Address: 0	Valid: 0	Degree: 0
+Entry number: 915	Address: 0	Valid: 0	Degree: 0
+Entry number: 916	Address: 0	Valid: 0	Degree: 0
+Entry number: 917	Address: 0	Valid: 0	Degree: 0
+Entry number: 918	Address: 0	Valid: 0	Degree: 0
+Entry number: 919	Address: 0	Valid: 0	Degree: 0
+Entry number: 920	Address: 0	Valid: 0	Degree: 0
+Entry number: 921	Address: 0	Valid: 0	Degree: 0
+Entry number: 922	Address: 0	Valid: 0	Degree: 0
+Entry number: 923	Address: 0	Valid: 0	Degree: 0
+Entry number: 924	Address: 0	Valid: 0	Degree: 0
+Entry number: 925	Address: 0	Valid: 0	Degree: 0
+Entry number: 926	Address: 0	Valid: 0	Degree: 0
+Entry number: 927	Address: 0	Valid: 0	Degree: 0
+Entry number: 928	Address: 0	Valid: 0	Degree: 0
+Entry number: 929	Address: 0	Valid: 0	Degree: 0
+Entry number: 930	Address: 0	Valid: 0	Degree: 0
+Entry number: 931	Address: 0	Valid: 0	Degree: 0
+Entry number: 932	Address: 0	Valid: 0	Degree: 0
+Entry number: 933	Address: 0	Valid: 0	Degree: 0
+Entry number: 934	Address: 0	Valid: 0	Degree: 0
+Entry number: 935	Address: 0	Valid: 0	Degree: 0
+Entry number: 936	Address: 0	Valid: 0	Degree: 0
+Entry number: 937	Address: 0	Valid: 0	Degree: 0
+Entry number: 938	Address: 0	Valid: 0	Degree: 0
+Entry number: 939	Address: 0	Valid: 0	Degree: 0
+Entry number: 940	Address: 0	Valid: 0	Degree: 0
+Entry number: 941	Address: 0	Valid: 0	Degree: 0
+Entry number: 942	Address: 0	Valid: 0	Degree: 0
+Entry number: 943	Address: 0	Valid: 0	Degree: 0
+Entry number: 944	Address: 0	Valid: 0	Degree: 0
+Entry number: 945	Address: 0	Valid: 0	Degree: 0
+Entry number: 946	Address: 0	Valid: 0	Degree: 0
+Entry number: 947	Address: 0	Valid: 0	Degree: 0
+Entry number: 948	Address: 0	Valid: 0	Degree: 0
+Entry number: 949	Address: 0	Valid: 0	Degree: 0
+Entry number: 950	Address: 0	Valid: 0	Degree: 0
+Entry number: 951	Address: 0	Valid: 0	Degree: 0
+Entry number: 952	Address: 0	Valid: 0	Degree: 0
+Entry number: 953	Address: 0	Valid: 0	Degree: 0
+Entry number: 954	Address: 0	Valid: 0	Degree: 0
+Entry number: 955	Address: 0	Valid: 0	Degree: 0
+Entry number: 956	Address: 0	Valid: 0	Degree: 0
+Entry number: 957	Address: 0	Valid: 0	Degree: 0
+Entry number: 958	Address: 0	Valid: 0	Degree: 0
+Entry number: 959	Address: 0	Valid: 0	Degree: 0
+Entry number: 960	Address: 0	Valid: 0	Degree: 0
+Entry number: 961	Address: 0	Valid: 0	Degree: 0
+Entry number: 962	Address: 0	Valid: 0	Degree: 0
+Entry number: 963	Address: 0	Valid: 0	Degree: 0
+Entry number: 964	Address: 0	Valid: 0	Degree: 0
+Entry number: 965	Address: 0	Valid: 0	Degree: 0
+Entry number: 966	Address: 0	Valid: 0	Degree: 0
+Entry number: 967	Address: 0	Valid: 0	Degree: 0
+Entry number: 968	Address: 0	Valid: 0	Degree: 0
+Entry number: 969	Address: 0	Valid: 0	Degree: 0
+Entry number: 970	Address: 0	Valid: 0	Degree: 0
+Entry number: 971	Address: 0	Valid: 0	Degree: 0
+Entry number: 972	Address: 0	Valid: 0	Degree: 0
+Entry number: 973	Address: 0	Valid: 0	Degree: 0
+Entry number: 974	Address: 0	Valid: 0	Degree: 0
+Entry number: 975	Address: 0	Valid: 0	Degree: 0
+Entry number: 976	Address: 0	Valid: 0	Degree: 0
+Entry number: 977	Address: 0	Valid: 0	Degree: 0
+Entry number: 978	Address: 0	Valid: 0	Degree: 0
+Entry number: 979	Address: 0	Valid: 0	Degree: 0
+Entry number: 980	Address: 0	Valid: 0	Degree: 0
+Entry number: 981	Address: 0	Valid: 0	Degree: 0
+Entry number: 982	Address: 0	Valid: 0	Degree: 0
+Entry number: 983	Address: 0	Valid: 0	Degree: 0
+Entry number: 984	Address: 0	Valid: 0	Degree: 0
+Entry number: 985	Address: 0	Valid: 0	Degree: 0
+Entry number: 986	Address: 0	Valid: 0	Degree: 0
+Entry number: 987	Address: 0	Valid: 0	Degree: 0
+Entry number: 988	Address: 0	Valid: 0	Degree: 0
+Entry number: 989	Address: 0	Valid: 0	Degree: 0
+Entry number: 990	Address: 0	Valid: 0	Degree: 0
+Entry number: 991	Address: 0	Valid: 0	Degree: 0
+Entry number: 992	Address: 0	Valid: 0	Degree: 0
+Entry number: 993	Address: 0	Valid: 0	Degree: 0
+Entry number: 994	Address: 0	Valid: 0	Degree: 0
+Entry number: 995	Address: 0	Valid: 0	Degree: 0
+Entry number: 996	Address: 0	Valid: 0	Degree: 0
+Entry number: 997	Address: 0	Valid: 0	Degree: 0
+Entry number: 998	Address: 0	Valid: 0	Degree: 0
+Entry number: 999	Address: 0	Valid: 0	Degree: 0
+Entry number: 1000	Address: 0	Valid: 0	Degree: 0
+Entry number: 1001	Address: 0	Valid: 0	Degree: 0
+Entry number: 1002	Address: 0	Valid: 0	Degree: 0
+Entry number: 1003	Address: 0	Valid: 0	Degree: 0
+Entry number: 1004	Address: 0	Valid: 0	Degree: 0
+Entry number: 1005	Address: 0	Valid: 0	Degree: 0
+Entry number: 1006	Address: 0	Valid: 0	Degree: 0
+Entry number: 1007	Address: 0	Valid: 0	Degree: 0
+Entry number: 1008	Address: 0	Valid: 0	Degree: 0
+Entry number: 1009	Address: 0	Valid: 0	Degree: 0
+Entry number: 1010	Address: 0	Valid: 0	Degree: 0
+Entry number: 1011	Address: 0	Valid: 0	Degree: 0
+Entry number: 1012	Address: 0	Valid: 0	Degree: 0
+Entry number: 1013	Address: 0	Valid: 0	Degree: 0
+Entry number: 1014	Address: 0	Valid: 0	Degree: 0
+Entry number: 1015	Address: 0	Valid: 0	Degree: 0
+Entry number: 1016	Address: 0	Valid: 0	Degree: 0
+Entry number: 1017	Address: 0	Valid: 0	Degree: 0
+Entry number: 1018	Address: 0	Valid: 0	Degree: 0
+Entry number: 1019	Address: 0	Valid: 0	Degree: 0
+Entry number: 1020	Address: 0	Valid: 0	Degree: 0
+Entry number: 1021	Address: 0	Valid: 0	Degree: 0
+Entry number: 1022	Address: 0	Valid: 0	Degree: 0
+Entry number: 1023	Address: 0	Valid: 0	Degree: 0
+Entry number: 1024	Address: 0	Valid: 0	Degree: 0
+Entry number: 1025	Address: 0	Valid: 0	Degree: 0
+Entry number: 1026	Address: 0	Valid: 0	Degree: 0
+Entry number: 1027	Address: 0	Valid: 0	Degree: 0
+Entry number: 1028	Address: 0	Valid: 0	Degree: 0
+Entry number: 1029	Address: 0	Valid: 0	Degree: 0
+Entry number: 1030	Address: 0	Valid: 0	Degree: 0
+Entry number: 1031	Address: 0	Valid: 0	Degree: 0
+Entry number: 1032	Address: 0	Valid: 0	Degree: 0
+Entry number: 1033	Address: 0	Valid: 0	Degree: 0
+Entry number: 1034	Address: 0	Valid: 0	Degree: 0
+Entry number: 1035	Address: 0	Valid: 0	Degree: 0
+Entry number: 1036	Address: 0	Valid: 0	Degree: 0
+Entry number: 1037	Address: 0	Valid: 0	Degree: 0
+Entry number: 1038	Address: 0	Valid: 0	Degree: 0
+Entry number: 1039	Address: 0	Valid: 0	Degree: 0
+Entry number: 1040	Address: 0	Valid: 0	Degree: 0
+Entry number: 1041	Address: 0	Valid: 0	Degree: 0
+Entry number: 1042	Address: 0	Valid: 0	Degree: 0
+Entry number: 1043	Address: 0	Valid: 0	Degree: 0
+Entry number: 1044	Address: 0	Valid: 0	Degree: 0
+Entry number: 1045	Address: 0	Valid: 0	Degree: 0
+Entry number: 1046	Address: 0	Valid: 0	Degree: 0
+Entry number: 1047	Address: 0	Valid: 0	Degree: 0
+Entry number: 1048	Address: 0	Valid: 0	Degree: 0
+Entry number: 1049	Address: 0	Valid: 0	Degree: 0
+Entry number: 1050	Address: 0	Valid: 0	Degree: 0
+Entry number: 1051	Address: 0	Valid: 0	Degree: 0
+Entry number: 1052	Address: 0	Valid: 0	Degree: 0
+Entry number: 1053	Address: 0	Valid: 0	Degree: 0
+Entry number: 1054	Address: 0	Valid: 0	Degree: 0
+Entry number: 1055	Address: 0	Valid: 0	Degree: 0
+Entry number: 1056	Address: 0	Valid: 0	Degree: 0
+Entry number: 1057	Address: 0	Valid: 0	Degree: 0
+Entry number: 1058	Address: 0	Valid: 0	Degree: 0
+Entry number: 1059	Address: 0	Valid: 0	Degree: 0
+Entry number: 1060	Address: 0	Valid: 0	Degree: 0
+Entry number: 1061	Address: 0	Valid: 0	Degree: 0
+Entry number: 1062	Address: 0	Valid: 0	Degree: 0
+Entry number: 1063	Address: 0	Valid: 0	Degree: 0
+Entry number: 1064	Address: 0	Valid: 0	Degree: 0
+Entry number: 1065	Address: 0	Valid: 0	Degree: 0
+Entry number: 1066	Address: 0	Valid: 0	Degree: 0
+Entry number: 1067	Address: 0	Valid: 0	Degree: 0
+Entry number: 1068	Address: 0	Valid: 0	Degree: 0
+Entry number: 1069	Address: 0	Valid: 0	Degree: 0
+Entry number: 1070	Address: 0	Valid: 0	Degree: 0
+Entry number: 1071	Address: 0	Valid: 0	Degree: 0
+Entry number: 1072	Address: 0	Valid: 0	Degree: 0
+Entry number: 1073	Address: 0	Valid: 0	Degree: 0
+Entry number: 1074	Address: 0	Valid: 0	Degree: 0
+Entry number: 1075	Address: 0	Valid: 0	Degree: 0
+Entry number: 1076	Address: 0	Valid: 0	Degree: 0
+Entry number: 1077	Address: 0	Valid: 0	Degree: 0
+Entry number: 1078	Address: 0	Valid: 0	Degree: 0
+Entry number: 1079	Address: 0	Valid: 0	Degree: 0
+Entry number: 1080	Address: 0	Valid: 0	Degree: 0
+Entry number: 1081	Address: 0	Valid: 0	Degree: 0
+Entry number: 1082	Address: 0	Valid: 0	Degree: 0
+Entry number: 1083	Address: 0	Valid: 0	Degree: 0
+Entry number: 1084	Address: 0	Valid: 0	Degree: 0
+Entry number: 1085	Address: 0	Valid: 0	Degree: 0
+Entry number: 1086	Address: 0	Valid: 0	Degree: 0
+Entry number: 1087	Address: 0	Valid: 0	Degree: 0
+Entry number: 1088	Address: 0	Valid: 0	Degree: 0
+Entry number: 1089	Address: 0	Valid: 0	Degree: 0
+Entry number: 1090	Address: 0	Valid: 0	Degree: 0
+Entry number: 1091	Address: 0	Valid: 0	Degree: 0
+Entry number: 1092	Address: 0	Valid: 0	Degree: 0
+Entry number: 1093	Address: 0	Valid: 0	Degree: 0
+Entry number: 1094	Address: 0	Valid: 0	Degree: 0
+Entry number: 1095	Address: 0	Valid: 0	Degree: 0
+Entry number: 1096	Address: 0	Valid: 0	Degree: 0
+Entry number: 1097	Address: 0	Valid: 0	Degree: 0
+Entry number: 1098	Address: 0	Valid: 0	Degree: 0
+Entry number: 1099	Address: 0	Valid: 0	Degree: 0
+Entry number: 1100	Address: 0	Valid: 0	Degree: 0
+Entry number: 1101	Address: 0	Valid: 0	Degree: 0
+Entry number: 1102	Address: 0	Valid: 0	Degree: 0
+Entry number: 1103	Address: 0	Valid: 0	Degree: 0
+Entry number: 1104	Address: 0	Valid: 0	Degree: 0
+Entry number: 1105	Address: 0	Valid: 0	Degree: 0
+Entry number: 1106	Address: 0	Valid: 0	Degree: 0
+Entry number: 1107	Address: 0	Valid: 0	Degree: 0
+Entry number: 1108	Address: 0	Valid: 0	Degree: 0
+Entry number: 1109	Address: 0	Valid: 0	Degree: 0
+Entry number: 1110	Address: 0	Valid: 0	Degree: 0
+Entry number: 1111	Address: 0	Valid: 0	Degree: 0
+Entry number: 1112	Address: 0	Valid: 0	Degree: 0
+Entry number: 1113	Address: 0	Valid: 0	Degree: 0
+Entry number: 1114	Address: 0	Valid: 0	Degree: 0
+Entry number: 1115	Address: 0	Valid: 0	Degree: 0
+Entry number: 1116	Address: 0	Valid: 0	Degree: 0
+Entry number: 1117	Address: 0	Valid: 0	Degree: 0
+Entry number: 1118	Address: 0	Valid: 0	Degree: 0
+Entry number: 1119	Address: 0	Valid: 0	Degree: 0
+Entry number: 1120	Address: 0	Valid: 0	Degree: 0
+Entry number: 1121	Address: 0	Valid: 0	Degree: 0
+Entry number: 1122	Address: 0	Valid: 0	Degree: 0
+Entry number: 1123	Address: 0	Valid: 0	Degree: 0
+Entry number: 1124	Address: 0	Valid: 0	Degree: 0
+Entry number: 1125	Address: 0	Valid: 0	Degree: 0
+Entry number: 1126	Address: 0	Valid: 0	Degree: 0
+Entry number: 1127	Address: 0	Valid: 0	Degree: 0
+Entry number: 1128	Address: 0	Valid: 0	Degree: 0
+Entry number: 1129	Address: 0	Valid: 0	Degree: 0
+Entry number: 1130	Address: 0	Valid: 0	Degree: 0
+Entry number: 1131	Address: 0	Valid: 0	Degree: 0
+Entry number: 1132	Address: 0	Valid: 0	Degree: 0
+Entry number: 1133	Address: 0	Valid: 0	Degree: 0
+Entry number: 1134	Address: 0	Valid: 0	Degree: 0
+Entry number: 1135	Address: 0	Valid: 0	Degree: 0
+Entry number: 1136	Address: 0	Valid: 0	Degree: 0
+Entry number: 1137	Address: 0	Valid: 0	Degree: 0
+Entry number: 1138	Address: 0	Valid: 0	Degree: 0
+Entry number: 1139	Address: 0	Valid: 0	Degree: 0
+Entry number: 1140	Address: 0	Valid: 0	Degree: 0
+Entry number: 1141	Address: 0	Valid: 0	Degree: 0
+Entry number: 1142	Address: 0	Valid: 0	Degree: 0
+Entry number: 1143	Address: 0	Valid: 0	Degree: 0
+Entry number: 1144	Address: 0	Valid: 0	Degree: 0
+Entry number: 1145	Address: 0	Valid: 0	Degree: 0
+Entry number: 1146	Address: 0	Valid: 0	Degree: 0
+Entry number: 1147	Address: 0	Valid: 0	Degree: 0
+Entry number: 1148	Address: 0	Valid: 0	Degree: 0
+Entry number: 1149	Address: 0	Valid: 0	Degree: 0
+Entry number: 1150	Address: 0	Valid: 0	Degree: 0
+Entry number: 1151	Address: 0	Valid: 0	Degree: 0
+Entry number: 1152	Address: 0	Valid: 0	Degree: 0
+Entry number: 1153	Address: 0	Valid: 0	Degree: 0
+Entry number: 1154	Address: 0	Valid: 0	Degree: 0
+Entry number: 1155	Address: 0	Valid: 0	Degree: 0
+Entry number: 1156	Address: 0	Valid: 0	Degree: 0
+Entry number: 1157	Address: 0	Valid: 0	Degree: 0
+Entry number: 1158	Address: 0	Valid: 0	Degree: 0
+Entry number: 1159	Address: 0	Valid: 0	Degree: 0
+Entry number: 1160	Address: 0	Valid: 0	Degree: 0
+Entry number: 1161	Address: 0	Valid: 0	Degree: 0
+Entry number: 1162	Address: 0	Valid: 0	Degree: 0
+Entry number: 1163	Address: 0	Valid: 0	Degree: 0
+Entry number: 1164	Address: 0	Valid: 0	Degree: 0
+Entry number: 1165	Address: 0	Valid: 0	Degree: 0
+Entry number: 1166	Address: 0	Valid: 0	Degree: 0
+Entry number: 1167	Address: 0	Valid: 0	Degree: 0
+Entry number: 1168	Address: 0	Valid: 0	Degree: 0
+Entry number: 1169	Address: 0	Valid: 0	Degree: 0
+Entry number: 1170	Address: 0	Valid: 0	Degree: 0
+Entry number: 1171	Address: 0	Valid: 0	Degree: 0
+Entry number: 1172	Address: 0	Valid: 0	Degree: 0
+Entry number: 1173	Address: 0	Valid: 0	Degree: 0
+Entry number: 1174	Address: 0	Valid: 0	Degree: 0
+Entry number: 1175	Address: 0	Valid: 0	Degree: 0
+Entry number: 1176	Address: 0	Valid: 0	Degree: 0
+Entry number: 1177	Address: 0	Valid: 0	Degree: 0
+Entry number: 1178	Address: 0	Valid: 0	Degree: 0
+Entry number: 1179	Address: 0	Valid: 0	Degree: 0
+Entry number: 1180	Address: 0	Valid: 0	Degree: 0
+Entry number: 1181	Address: 0	Valid: 0	Degree: 0
+Entry number: 1182	Address: 0	Valid: 0	Degree: 0
+Entry number: 1183	Address: 0	Valid: 0	Degree: 0
+Entry number: 1184	Address: 0	Valid: 0	Degree: 0
+Entry number: 1185	Address: 0	Valid: 0	Degree: 0
+Entry number: 1186	Address: 0	Valid: 0	Degree: 0
+Entry number: 1187	Address: 0	Valid: 0	Degree: 0
+Entry number: 1188	Address: 0	Valid: 0	Degree: 0
+Entry number: 1189	Address: 0	Valid: 0	Degree: 0
+Entry number: 1190	Address: 0	Valid: 0	Degree: 0
+Entry number: 1191	Address: 0	Valid: 0	Degree: 0
+Entry number: 1192	Address: 0	Valid: 0	Degree: 0
+Entry number: 1193	Address: 0	Valid: 0	Degree: 0
+Entry number: 1194	Address: 0	Valid: 0	Degree: 0
+Entry number: 1195	Address: 0	Valid: 0	Degree: 0
+Entry number: 1196	Address: 0	Valid: 0	Degree: 0
+Entry number: 1197	Address: 0	Valid: 0	Degree: 0
+Entry number: 1198	Address: 0	Valid: 0	Degree: 0
+Entry number: 1199	Address: 0	Valid: 0	Degree: 0
+Entry number: 1200	Address: 0	Valid: 0	Degree: 0
+Entry number: 1201	Address: 0	Valid: 0	Degree: 0
+Entry number: 1202	Address: 0	Valid: 0	Degree: 0
+Entry number: 1203	Address: 0	Valid: 0	Degree: 0
+Entry number: 1204	Address: 0	Valid: 0	Degree: 0
+Entry number: 1205	Address: 0	Valid: 0	Degree: 0
+Entry number: 1206	Address: 0	Valid: 0	Degree: 0
+Entry number: 1207	Address: 0	Valid: 0	Degree: 0
+Entry number: 1208	Address: 0	Valid: 0	Degree: 0
+Entry number: 1209	Address: 0	Valid: 0	Degree: 0
+Entry number: 1210	Address: 0	Valid: 0	Degree: 0
+Entry number: 1211	Address: 0	Valid: 0	Degree: 0
+Entry number: 1212	Address: 0	Valid: 0	Degree: 0
+Entry number: 1213	Address: 0	Valid: 0	Degree: 0
+Entry number: 1214	Address: 0	Valid: 0	Degree: 0
+Entry number: 1215	Address: 0	Valid: 0	Degree: 0
+Entry number: 1216	Address: 0	Valid: 0	Degree: 0
+Entry number: 1217	Address: 0	Valid: 0	Degree: 0
+Entry number: 1218	Address: 0	Valid: 0	Degree: 0
+Entry number: 1219	Address: 0	Valid: 0	Degree: 0
+Entry number: 1220	Address: 0	Valid: 0	Degree: 0
+Entry number: 1221	Address: 0	Valid: 0	Degree: 0
+Entry number: 1222	Address: 0	Valid: 0	Degree: 0
+Entry number: 1223	Address: 0	Valid: 0	Degree: 0
+Entry number: 1224	Address: 0	Valid: 0	Degree: 0
+Entry number: 1225	Address: 0	Valid: 0	Degree: 0
+Entry number: 1226	Address: 0	Valid: 0	Degree: 0
+Entry number: 1227	Address: 0	Valid: 0	Degree: 0
+Entry number: 1228	Address: 0	Valid: 0	Degree: 0
+Entry number: 1229	Address: 0	Valid: 0	Degree: 0
+Entry number: 1230	Address: 0	Valid: 0	Degree: 0
+Entry number: 1231	Address: 0	Valid: 0	Degree: 0
+Entry number: 1232	Address: 0	Valid: 0	Degree: 0
+Entry number: 1233	Address: 0	Valid: 0	Degree: 0
+Entry number: 1234	Address: 0	Valid: 0	Degree: 0
+Entry number: 1235	Address: 0	Valid: 0	Degree: 0
+Entry number: 1236	Address: 0	Valid: 0	Degree: 0
+Entry number: 1237	Address: 0	Valid: 0	Degree: 0
+Entry number: 1238	Address: 0	Valid: 0	Degree: 0
+Entry number: 1239	Address: 0	Valid: 0	Degree: 0
+Entry number: 1240	Address: 0	Valid: 0	Degree: 0
+Entry number: 1241	Address: 0	Valid: 0	Degree: 0
+Entry number: 1242	Address: 0	Valid: 0	Degree: 0
+Entry number: 1243	Address: 0	Valid: 0	Degree: 0
+Entry number: 1244	Address: 0	Valid: 0	Degree: 0
+Entry number: 1245	Address: 0	Valid: 0	Degree: 0
+Entry number: 1246	Address: 0	Valid: 0	Degree: 0
+Entry number: 1247	Address: 0	Valid: 0	Degree: 0
+Entry number: 1248	Address: 0	Valid: 0	Degree: 0
+Entry number: 1249	Address: 0	Valid: 0	Degree: 0
+Entry number: 1250	Address: 0	Valid: 0	Degree: 0
+Entry number: 1251	Address: 0	Valid: 0	Degree: 0
+Entry number: 1252	Address: 0	Valid: 0	Degree: 0
+Entry number: 1253	Address: 0	Valid: 0	Degree: 0
+Entry number: 1254	Address: 0	Valid: 0	Degree: 0
+Entry number: 1255	Address: 0	Valid: 0	Degree: 0
+Entry number: 1256	Address: 0	Valid: 0	Degree: 0
+Entry number: 1257	Address: 0	Valid: 0	Degree: 0
+Entry number: 1258	Address: 0	Valid: 0	Degree: 0
+Entry number: 1259	Address: 0	Valid: 0	Degree: 0
+Entry number: 1260	Address: 0	Valid: 0	Degree: 0
+Entry number: 1261	Address: 0	Valid: 0	Degree: 0
+Entry number: 1262	Address: 0	Valid: 0	Degree: 0
+Entry number: 1263	Address: 0	Valid: 0	Degree: 0
+Entry number: 1264	Address: 0	Valid: 0	Degree: 0
+Entry number: 1265	Address: 0	Valid: 0	Degree: 0
+Entry number: 1266	Address: 0	Valid: 0	Degree: 0
+Entry number: 1267	Address: 0	Valid: 0	Degree: 0
+Entry number: 1268	Address: 0	Valid: 0	Degree: 0
+Entry number: 1269	Address: 0	Valid: 0	Degree: 0
+Entry number: 1270	Address: 0	Valid: 0	Degree: 0
+Entry number: 1271	Address: 0	Valid: 0	Degree: 0
+Entry number: 1272	Address: 0	Valid: 0	Degree: 0
+Entry number: 1273	Address: 0	Valid: 0	Degree: 0
+Entry number: 1274	Address: 0	Valid: 0	Degree: 0
+Entry number: 1275	Address: 0	Valid: 0	Degree: 0
+Entry number: 1276	Address: 0	Valid: 0	Degree: 0
+Entry number: 1277	Address: 0	Valid: 0	Degree: 0
+Entry number: 1278	Address: 0	Valid: 0	Degree: 0
+Entry number: 1279	Address: 0	Valid: 0	Degree: 0
+Entry number: 1280	Address: 0	Valid: 0	Degree: 0
+Entry number: 1281	Address: 0	Valid: 0	Degree: 0
+Entry number: 1282	Address: 0	Valid: 0	Degree: 0
+Entry number: 1283	Address: 0	Valid: 0	Degree: 0
+Entry number: 1284	Address: 0	Valid: 0	Degree: 0
+Entry number: 1285	Address: 0	Valid: 0	Degree: 0
+Entry number: 1286	Address: 0	Valid: 0	Degree: 0
+Entry number: 1287	Address: 0	Valid: 0	Degree: 0
+Entry number: 1288	Address: 0	Valid: 0	Degree: 0
+Entry number: 1289	Address: 0	Valid: 0	Degree: 0
+Entry number: 1290	Address: 0	Valid: 0	Degree: 0
+Entry number: 1291	Address: 0	Valid: 0	Degree: 0
+Entry number: 1292	Address: 0	Valid: 0	Degree: 0
+Entry number: 1293	Address: 0	Valid: 0	Degree: 0
+Entry number: 1294	Address: 0	Valid: 0	Degree: 0
+Entry number: 1295	Address: 0	Valid: 0	Degree: 0
+Entry number: 1296	Address: 0	Valid: 0	Degree: 0
+Entry number: 1297	Address: 0	Valid: 0	Degree: 0
+Entry number: 1298	Address: 0	Valid: 0	Degree: 0
+Entry number: 1299	Address: 0	Valid: 0	Degree: 0
+Entry number: 1300	Address: 0	Valid: 0	Degree: 0
+Entry number: 1301	Address: 0	Valid: 0	Degree: 0
+Entry number: 1302	Address: 0	Valid: 0	Degree: 0
+Entry number: 1303	Address: 0	Valid: 0	Degree: 0
+Entry number: 1304	Address: 0	Valid: 0	Degree: 0
+Entry number: 1305	Address: 0	Valid: 0	Degree: 0
+Entry number: 1306	Address: 0	Valid: 0	Degree: 0
+Entry number: 1307	Address: 0	Valid: 0	Degree: 0
+Entry number: 1308	Address: 0	Valid: 0	Degree: 0
+Entry number: 1309	Address: 0	Valid: 0	Degree: 0
+Entry number: 1310	Address: 0	Valid: 0	Degree: 0
+Entry number: 1311	Address: 0	Valid: 0	Degree: 0
+Entry number: 1312	Address: 0	Valid: 0	Degree: 0
+Entry number: 1313	Address: 0	Valid: 0	Degree: 0
+Entry number: 1314	Address: 0	Valid: 0	Degree: 0
+Entry number: 1315	Address: 0	Valid: 0	Degree: 0
+Entry number: 1316	Address: 0	Valid: 0	Degree: 0
+Entry number: 1317	Address: 0	Valid: 0	Degree: 0
+Entry number: 1318	Address: 0	Valid: 0	Degree: 0
+Entry number: 1319	Address: 0	Valid: 0	Degree: 0
+Entry number: 1320	Address: 0	Valid: 0	Degree: 0
+Entry number: 1321	Address: 0	Valid: 0	Degree: 0
+Entry number: 1322	Address: 0	Valid: 0	Degree: 0
+Entry number: 1323	Address: 0	Valid: 0	Degree: 0
+Entry number: 1324	Address: 0	Valid: 0	Degree: 0
+Entry number: 1325	Address: 0	Valid: 0	Degree: 0
+Entry number: 1326	Address: 0	Valid: 0	Degree: 0
+Entry number: 1327	Address: 0	Valid: 0	Degree: 0
+Entry number: 1328	Address: 0	Valid: 0	Degree: 0
+Entry number: 1329	Address: 0	Valid: 0	Degree: 0
+Entry number: 1330	Address: 0	Valid: 0	Degree: 0
+Entry number: 1331	Address: 0	Valid: 0	Degree: 0
+Entry number: 1332	Address: 0	Valid: 0	Degree: 0
+Entry number: 1333	Address: 0	Valid: 0	Degree: 0
+Entry number: 1334	Address: 0	Valid: 0	Degree: 0
+Entry number: 1335	Address: 0	Valid: 0	Degree: 0
+Entry number: 1336	Address: 0	Valid: 0	Degree: 0
+Entry number: 1337	Address: 0	Valid: 0	Degree: 0
+Entry number: 1338	Address: 0	Valid: 0	Degree: 0
+Entry number: 1339	Address: 0	Valid: 0	Degree: 0
+Entry number: 1340	Address: 0	Valid: 0	Degree: 0
+Entry number: 1341	Address: 0	Valid: 0	Degree: 0
+Entry number: 1342	Address: 0	Valid: 0	Degree: 0
+Entry number: 1343	Address: 0	Valid: 0	Degree: 0
+Entry number: 1344	Address: 0	Valid: 0	Degree: 0
+Entry number: 1345	Address: 0	Valid: 0	Degree: 0
+Entry number: 1346	Address: 0	Valid: 0	Degree: 0
+Entry number: 1347	Address: 0	Valid: 0	Degree: 0
+Entry number: 1348	Address: 0	Valid: 0	Degree: 0
+Entry number: 1349	Address: 0	Valid: 0	Degree: 0
+Entry number: 1350	Address: 0	Valid: 0	Degree: 0
+Entry number: 1351	Address: 0	Valid: 0	Degree: 0
+Entry number: 1352	Address: 0	Valid: 0	Degree: 0
+Entry number: 1353	Address: 0	Valid: 0	Degree: 0
+Entry number: 1354	Address: 0	Valid: 0	Degree: 0
+Entry number: 1355	Address: 0	Valid: 0	Degree: 0
+Entry number: 1356	Address: 0	Valid: 0	Degree: 0
+Entry number: 1357	Address: 0	Valid: 0	Degree: 0
+Entry number: 1358	Address: 0	Valid: 0	Degree: 0
+Entry number: 1359	Address: 0	Valid: 0	Degree: 0
+Entry number: 1360	Address: 0	Valid: 0	Degree: 0
+Entry number: 1361	Address: 0	Valid: 0	Degree: 0
+Entry number: 1362	Address: 0	Valid: 0	Degree: 0
+Entry number: 1363	Address: 0	Valid: 0	Degree: 0
+Entry number: 1364	Address: 0	Valid: 0	Degree: 0
+Entry number: 1365	Address: 0	Valid: 0	Degree: 0
+Entry number: 1366	Address: 0	Valid: 0	Degree: 0
+Entry number: 1367	Address: 0	Valid: 0	Degree: 0
+Entry number: 1368	Address: 0	Valid: 0	Degree: 0
+Entry number: 1369	Address: 0	Valid: 0	Degree: 0
+Entry number: 1370	Address: 0	Valid: 0	Degree: 0
+Entry number: 1371	Address: 0	Valid: 0	Degree: 0
+Entry number: 1372	Address: 0	Valid: 0	Degree: 0
+Entry number: 1373	Address: 0	Valid: 0	Degree: 0
+Entry number: 1374	Address: 0	Valid: 0	Degree: 0
+Entry number: 1375	Address: 0	Valid: 0	Degree: 0
+Entry number: 1376	Address: 0	Valid: 0	Degree: 0
+Entry number: 1377	Address: 0	Valid: 0	Degree: 0
+Entry number: 1378	Address: 0	Valid: 0	Degree: 0
+Entry number: 1379	Address: 0	Valid: 0	Degree: 0
+Entry number: 1380	Address: 0	Valid: 0	Degree: 0
+Entry number: 1381	Address: 0	Valid: 0	Degree: 0
+Entry number: 1382	Address: 0	Valid: 0	Degree: 0
+Entry number: 1383	Address: 0	Valid: 0	Degree: 0
+Entry number: 1384	Address: 0	Valid: 0	Degree: 0
+Entry number: 1385	Address: 0	Valid: 0	Degree: 0
+Entry number: 1386	Address: 0	Valid: 0	Degree: 0
+Entry number: 1387	Address: 0	Valid: 0	Degree: 0
+Entry number: 1388	Address: 0	Valid: 0	Degree: 0
+Entry number: 1389	Address: 0	Valid: 0	Degree: 0
+Entry number: 1390	Address: 0	Valid: 0	Degree: 0
+Entry number: 1391	Address: 0	Valid: 0	Degree: 0
+Entry number: 1392	Address: 0	Valid: 0	Degree: 0
+Entry number: 1393	Address: 0	Valid: 0	Degree: 0
+Entry number: 1394	Address: 0	Valid: 0	Degree: 0
+Entry number: 1395	Address: 0	Valid: 0	Degree: 0
+Entry number: 1396	Address: 0	Valid: 0	Degree: 0
+Entry number: 1397	Address: 0	Valid: 0	Degree: 0
+Entry number: 1398	Address: 0	Valid: 0	Degree: 0
+Entry number: 1399	Address: 0	Valid: 0	Degree: 0
+Entry number: 1400	Address: 0	Valid: 0	Degree: 0
+Entry number: 1401	Address: 0	Valid: 0	Degree: 0
+Entry number: 1402	Address: 0	Valid: 0	Degree: 0
+Entry number: 1403	Address: 0	Valid: 0	Degree: 0
+Entry number: 1404	Address: 0	Valid: 0	Degree: 0
+Entry number: 1405	Address: 0	Valid: 0	Degree: 0
+Entry number: 1406	Address: 0	Valid: 0	Degree: 0
+Entry number: 1407	Address: 0	Valid: 0	Degree: 0
+Entry number: 1408	Address: 0	Valid: 0	Degree: 0
+Entry number: 1409	Address: 0	Valid: 0	Degree: 0
+Entry number: 1410	Address: 0	Valid: 0	Degree: 0
+Entry number: 1411	Address: 0	Valid: 0	Degree: 0
+Entry number: 1412	Address: 0	Valid: 0	Degree: 0
+Entry number: 1413	Address: 0	Valid: 0	Degree: 0
+Entry number: 1414	Address: 0	Valid: 0	Degree: 0
+Entry number: 1415	Address: 0	Valid: 0	Degree: 0
+Entry number: 1416	Address: 0	Valid: 0	Degree: 0
+Entry number: 1417	Address: 0	Valid: 0	Degree: 0
+Entry number: 1418	Address: 0	Valid: 0	Degree: 0
+Entry number: 1419	Address: 0	Valid: 0	Degree: 0
+Entry number: 1420	Address: 0	Valid: 0	Degree: 0
+Entry number: 1421	Address: 0	Valid: 0	Degree: 0
+Entry number: 1422	Address: 0	Valid: 0	Degree: 0
+Entry number: 1423	Address: 0	Valid: 0	Degree: 0
+Entry number: 1424	Address: 0	Valid: 0	Degree: 0
+Entry number: 1425	Address: 0	Valid: 0	Degree: 0
+Entry number: 1426	Address: 0	Valid: 0	Degree: 0
+Entry number: 1427	Address: 0	Valid: 0	Degree: 0
+Entry number: 1428	Address: 0	Valid: 0	Degree: 0
+Entry number: 1429	Address: 0	Valid: 0	Degree: 0
+Entry number: 1430	Address: 0	Valid: 0	Degree: 0
+Entry number: 1431	Address: 0	Valid: 0	Degree: 0
+Entry number: 1432	Address: 0	Valid: 0	Degree: 0
+Entry number: 1433	Address: 0	Valid: 0	Degree: 0
+Entry number: 1434	Address: 0	Valid: 0	Degree: 0
+Entry number: 1435	Address: 0	Valid: 0	Degree: 0
+Entry number: 1436	Address: 0	Valid: 0	Degree: 0
+Entry number: 1437	Address: 0	Valid: 0	Degree: 0
+Entry number: 1438	Address: 0	Valid: 0	Degree: 0
+Entry number: 1439	Address: 0	Valid: 0	Degree: 0
+Entry number: 1440	Address: 0	Valid: 0	Degree: 0
+Entry number: 1441	Address: 0	Valid: 0	Degree: 0
+Entry number: 1442	Address: 0	Valid: 0	Degree: 0
+Entry number: 1443	Address: 0	Valid: 0	Degree: 0
+Entry number: 1444	Address: 0	Valid: 0	Degree: 0
+Entry number: 1445	Address: 0	Valid: 0	Degree: 0
+Entry number: 1446	Address: 0	Valid: 0	Degree: 0
+Entry number: 1447	Address: 0	Valid: 0	Degree: 0
+Entry number: 1448	Address: 0	Valid: 0	Degree: 0
+Entry number: 1449	Address: 0	Valid: 0	Degree: 0
+Entry number: 1450	Address: 0	Valid: 0	Degree: 0
+Entry number: 1451	Address: 0	Valid: 0	Degree: 0
+Entry number: 1452	Address: 0	Valid: 0	Degree: 0
+Entry number: 1453	Address: 0	Valid: 0	Degree: 0
+Entry number: 1454	Address: 0	Valid: 0	Degree: 0
+Entry number: 1455	Address: 0	Valid: 0	Degree: 0
+Entry number: 1456	Address: 0	Valid: 0	Degree: 0
+Entry number: 1457	Address: 0	Valid: 0	Degree: 0
+Entry number: 1458	Address: 0	Valid: 0	Degree: 0
+Entry number: 1459	Address: 0	Valid: 0	Degree: 0
+Entry number: 1460	Address: 0	Valid: 0	Degree: 0
+Entry number: 1461	Address: 0	Valid: 0	Degree: 0
+Entry number: 1462	Address: 0	Valid: 0	Degree: 0
+Entry number: 1463	Address: 0	Valid: 0	Degree: 0
+Entry number: 1464	Address: 0	Valid: 0	Degree: 0
+Entry number: 1465	Address: 0	Valid: 0	Degree: 0
+Entry number: 1466	Address: 0	Valid: 0	Degree: 0
+Entry number: 1467	Address: 0	Valid: 0	Degree: 0
+Entry number: 1468	Address: 0	Valid: 0	Degree: 0
+Entry number: 1469	Address: 0	Valid: 0	Degree: 0
+Entry number: 1470	Address: 0	Valid: 0	Degree: 0
+Entry number: 1471	Address: 0	Valid: 0	Degree: 0
+Entry number: 1472	Address: 0	Valid: 0	Degree: 0
+Entry number: 1473	Address: 0	Valid: 0	Degree: 0
+Entry number: 1474	Address: 0	Valid: 0	Degree: 0
+Entry number: 1475	Address: 0	Valid: 0	Degree: 0
+Entry number: 1476	Address: 0	Valid: 0	Degree: 0
+Entry number: 1477	Address: 0	Valid: 0	Degree: 0
+Entry number: 1478	Address: 0	Valid: 0	Degree: 0
+Entry number: 1479	Address: 0	Valid: 0	Degree: 0
+Entry number: 1480	Address: 0	Valid: 0	Degree: 0
+Entry number: 1481	Address: 0	Valid: 0	Degree: 0
+Entry number: 1482	Address: 0	Valid: 0	Degree: 0
+Entry number: 1483	Address: 0	Valid: 0	Degree: 0
+Entry number: 1484	Address: 0	Valid: 0	Degree: 0
+Entry number: 1485	Address: 0	Valid: 0	Degree: 0
+Entry number: 1486	Address: 0	Valid: 0	Degree: 0
+Entry number: 1487	Address: 0	Valid: 0	Degree: 0
+Entry number: 1488	Address: 0	Valid: 0	Degree: 0
+Entry number: 1489	Address: 0	Valid: 0	Degree: 0
+Entry number: 1490	Address: 0	Valid: 0	Degree: 0
+Entry number: 1491	Address: 0	Valid: 0	Degree: 0
+Entry number: 1492	Address: 0	Valid: 0	Degree: 0
+Entry number: 1493	Address: 0	Valid: 0	Degree: 0
+Entry number: 1494	Address: 0	Valid: 0	Degree: 0
+Entry number: 1495	Address: 0	Valid: 0	Degree: 0
+Entry number: 1496	Address: 0	Valid: 0	Degree: 0
+Entry number: 1497	Address: 0	Valid: 0	Degree: 0
+Entry number: 1498	Address: 0	Valid: 0	Degree: 0
+Entry number: 1499	Address: 0	Valid: 0	Degree: 0
+Entry number: 1500	Address: 0	Valid: 0	Degree: 0
+Entry number: 1501	Address: 0	Valid: 0	Degree: 0
+Entry number: 1502	Address: 0	Valid: 0	Degree: 0
+Entry number: 1503	Address: 0	Valid: 0	Degree: 0
+Entry number: 1504	Address: 0	Valid: 0	Degree: 0
+Entry number: 1505	Address: 0	Valid: 0	Degree: 0
+Entry number: 1506	Address: 0	Valid: 0	Degree: 0
+Entry number: 1507	Address: 0	Valid: 0	Degree: 0
+Entry number: 1508	Address: 0	Valid: 0	Degree: 0
+Entry number: 1509	Address: 0	Valid: 0	Degree: 0
+Entry number: 1510	Address: 0	Valid: 0	Degree: 0
+Entry number: 1511	Address: 0	Valid: 0	Degree: 0
+Entry number: 1512	Address: 0	Valid: 0	Degree: 0
+Entry number: 1513	Address: 0	Valid: 0	Degree: 0
+Entry number: 1514	Address: 0	Valid: 0	Degree: 0
+Entry number: 1515	Address: 0	Valid: 0	Degree: 0
+Entry number: 1516	Address: 0	Valid: 0	Degree: 0
+Entry number: 1517	Address: 0	Valid: 0	Degree: 0
+Entry number: 1518	Address: 0	Valid: 0	Degree: 0
+Entry number: 1519	Address: 0	Valid: 0	Degree: 0
+Entry number: 1520	Address: 0	Valid: 0	Degree: 0
+Entry number: 1521	Address: 0	Valid: 0	Degree: 0
+Entry number: 1522	Address: 0	Valid: 0	Degree: 0
+Entry number: 1523	Address: 0	Valid: 0	Degree: 0
+Entry number: 1524	Address: 0	Valid: 0	Degree: 0
+Entry number: 1525	Address: 0	Valid: 0	Degree: 0
+Entry number: 1526	Address: 0	Valid: 0	Degree: 0
+Entry number: 1527	Address: 0	Valid: 0	Degree: 0
+Entry number: 1528	Address: 0	Valid: 0	Degree: 0
+Entry number: 1529	Address: 0	Valid: 0	Degree: 0
+Entry number: 1530	Address: 0	Valid: 0	Degree: 0
+Entry number: 1531	Address: 0	Valid: 0	Degree: 0
+Entry number: 1532	Address: 0	Valid: 0	Degree: 0
+Entry number: 1533	Address: 0	Valid: 0	Degree: 0
+Entry number: 1534	Address: 0	Valid: 0	Degree: 0
+Entry number: 1535	Address: 0	Valid: 0	Degree: 0
+Entry number: 1536	Address: 0	Valid: 0	Degree: 0
+Entry number: 1537	Address: 0	Valid: 0	Degree: 0
+Entry number: 1538	Address: 0	Valid: 0	Degree: 0
+Entry number: 1539	Address: 0	Valid: 0	Degree: 0
+Entry number: 1540	Address: 0	Valid: 0	Degree: 0
+Entry number: 1541	Address: 0	Valid: 0	Degree: 0
+Entry number: 1542	Address: 0	Valid: 0	Degree: 0
+Entry number: 1543	Address: 0	Valid: 0	Degree: 0
+Entry number: 1544	Address: 0	Valid: 0	Degree: 0
+Entry number: 1545	Address: 0	Valid: 0	Degree: 0
+Entry number: 1546	Address: 0	Valid: 0	Degree: 0
+Entry number: 1547	Address: 0	Valid: 0	Degree: 0
+Entry number: 1548	Address: 0	Valid: 0	Degree: 0
+Entry number: 1549	Address: 0	Valid: 0	Degree: 0
+Entry number: 1550	Address: 0	Valid: 0	Degree: 0
+Entry number: 1551	Address: 0	Valid: 0	Degree: 0
+Entry number: 1552	Address: 0	Valid: 0	Degree: 0
+Entry number: 1553	Address: 0	Valid: 0	Degree: 0
+Entry number: 1554	Address: 0	Valid: 0	Degree: 0
+Entry number: 1555	Address: 0	Valid: 0	Degree: 0
+Entry number: 1556	Address: 0	Valid: 0	Degree: 0
+Entry number: 1557	Address: 0	Valid: 0	Degree: 0
+Entry number: 1558	Address: 0	Valid: 0	Degree: 0
+Entry number: 1559	Address: 0	Valid: 0	Degree: 0
+Entry number: 1560	Address: 0	Valid: 0	Degree: 0
+Entry number: 1561	Address: 0	Valid: 0	Degree: 0
+Entry number: 1562	Address: 0	Valid: 0	Degree: 0
+Entry number: 1563	Address: 0	Valid: 0	Degree: 0
+Entry number: 1564	Address: 0	Valid: 0	Degree: 0
+Entry number: 1565	Address: 0	Valid: 0	Degree: 0
+Entry number: 1566	Address: 0	Valid: 0	Degree: 0
+Entry number: 1567	Address: 0	Valid: 0	Degree: 0
+Entry number: 1568	Address: 0	Valid: 0	Degree: 0
+Entry number: 1569	Address: 0	Valid: 0	Degree: 0
+Entry number: 1570	Address: 0	Valid: 0	Degree: 0
+Entry number: 1571	Address: 0	Valid: 0	Degree: 0
+Entry number: 1572	Address: 0	Valid: 0	Degree: 0
+Entry number: 1573	Address: 0	Valid: 0	Degree: 0
+Entry number: 1574	Address: 0	Valid: 0	Degree: 0
+Entry number: 1575	Address: 0	Valid: 0	Degree: 0
+Entry number: 1576	Address: 0	Valid: 0	Degree: 0
+Entry number: 1577	Address: 0	Valid: 0	Degree: 0
+Entry number: 1578	Address: 0	Valid: 0	Degree: 0
+Entry number: 1579	Address: 0	Valid: 0	Degree: 0
+Entry number: 1580	Address: 0	Valid: 0	Degree: 0
+Entry number: 1581	Address: 0	Valid: 0	Degree: 0
+Entry number: 1582	Address: 0	Valid: 0	Degree: 0
+Entry number: 1583	Address: 0	Valid: 0	Degree: 0
+Entry number: 1584	Address: 0	Valid: 0	Degree: 0
+Entry number: 1585	Address: 0	Valid: 0	Degree: 0
+Entry number: 1586	Address: 0	Valid: 0	Degree: 0
+Entry number: 1587	Address: 0	Valid: 0	Degree: 0
+Entry number: 1588	Address: 0	Valid: 0	Degree: 0
+Entry number: 1589	Address: 0	Valid: 0	Degree: 0
+Entry number: 1590	Address: 0	Valid: 0	Degree: 0
+Entry number: 1591	Address: 0	Valid: 0	Degree: 0
+Entry number: 1592	Address: 0	Valid: 0	Degree: 0
+Entry number: 1593	Address: 0	Valid: 0	Degree: 0
+Entry number: 1594	Address: 0	Valid: 0	Degree: 0
+Entry number: 1595	Address: 0	Valid: 0	Degree: 0
+Entry number: 1596	Address: 0	Valid: 0	Degree: 0
+Entry number: 1597	Address: 0	Valid: 0	Degree: 0
+Entry number: 1598	Address: 0	Valid: 0	Degree: 0
+Entry number: 1599	Address: 0	Valid: 0	Degree: 0
+Entry number: 1600	Address: 0	Valid: 0	Degree: 0
+Entry number: 1601	Address: 0	Valid: 0	Degree: 0
+Entry number: 1602	Address: 0	Valid: 0	Degree: 0
+Entry number: 1603	Address: 0	Valid: 0	Degree: 0
+Entry number: 1604	Address: 0	Valid: 0	Degree: 0
+Entry number: 1605	Address: 0	Valid: 0	Degree: 0
+Entry number: 1606	Address: 0	Valid: 0	Degree: 0
+Entry number: 1607	Address: 0	Valid: 0	Degree: 0
+Entry number: 1608	Address: 0	Valid: 0	Degree: 0
+Entry number: 1609	Address: 0	Valid: 0	Degree: 0
+Entry number: 1610	Address: 0	Valid: 0	Degree: 0
+Entry number: 1611	Address: 0	Valid: 0	Degree: 0
+Entry number: 1612	Address: 0	Valid: 0	Degree: 0
+Entry number: 1613	Address: 0	Valid: 0	Degree: 0
+Entry number: 1614	Address: 0	Valid: 0	Degree: 0
+Entry number: 1615	Address: 0	Valid: 0	Degree: 0
+Entry number: 1616	Address: 0	Valid: 0	Degree: 0
+Entry number: 1617	Address: 0	Valid: 0	Degree: 0
+Entry number: 1618	Address: 0	Valid: 0	Degree: 0
+Entry number: 1619	Address: 0	Valid: 0	Degree: 0
+Entry number: 1620	Address: 0	Valid: 0	Degree: 0
+Entry number: 1621	Address: 0	Valid: 0	Degree: 0
+Entry number: 1622	Address: 0	Valid: 0	Degree: 0
+Entry number: 1623	Address: 0	Valid: 0	Degree: 0
+Entry number: 1624	Address: 0	Valid: 0	Degree: 0
+Entry number: 1625	Address: 0	Valid: 0	Degree: 0
+Entry number: 1626	Address: 0	Valid: 0	Degree: 0
+Entry number: 1627	Address: 0	Valid: 0	Degree: 0
+Entry number: 1628	Address: 0	Valid: 0	Degree: 0
+Entry number: 1629	Address: 0	Valid: 0	Degree: 0
+Entry number: 1630	Address: 0	Valid: 0	Degree: 0
+Entry number: 1631	Address: 0	Valid: 0	Degree: 0
+Entry number: 1632	Address: 0	Valid: 0	Degree: 0
+Entry number: 1633	Address: 0	Valid: 0	Degree: 0
+Entry number: 1634	Address: 0	Valid: 0	Degree: 0
+Entry number: 1635	Address: 0	Valid: 0	Degree: 0
+Entry number: 1636	Address: 0	Valid: 0	Degree: 0
+Entry number: 1637	Address: 0	Valid: 0	Degree: 0
+Entry number: 1638	Address: 0	Valid: 0	Degree: 0
+Entry number: 1639	Address: 0	Valid: 0	Degree: 0
+Entry number: 1640	Address: 0	Valid: 0	Degree: 0
+Entry number: 1641	Address: 0	Valid: 0	Degree: 0
+Entry number: 1642	Address: 0	Valid: 0	Degree: 0
+Entry number: 1643	Address: 0	Valid: 0	Degree: 0
+Entry number: 1644	Address: 0	Valid: 0	Degree: 0
+Entry number: 1645	Address: 0	Valid: 0	Degree: 0
+Entry number: 1646	Address: 0	Valid: 0	Degree: 0
+Entry number: 1647	Address: 0	Valid: 0	Degree: 0
+Entry number: 1648	Address: 0	Valid: 0	Degree: 0
+Entry number: 1649	Address: 0	Valid: 0	Degree: 0
+Entry number: 1650	Address: 0	Valid: 0	Degree: 0
+Entry number: 1651	Address: 0	Valid: 0	Degree: 0
+Entry number: 1652	Address: 0	Valid: 0	Degree: 0
+Entry number: 1653	Address: 0	Valid: 0	Degree: 0
+Entry number: 1654	Address: 0	Valid: 0	Degree: 0
+Entry number: 1655	Address: 0	Valid: 0	Degree: 0
+Entry number: 1656	Address: 0	Valid: 0	Degree: 0
+Entry number: 1657	Address: 0	Valid: 0	Degree: 0
+Entry number: 1658	Address: 0	Valid: 0	Degree: 0
+Entry number: 1659	Address: 0	Valid: 0	Degree: 0
+Entry number: 1660	Address: 0	Valid: 0	Degree: 0
+Entry number: 1661	Address: 0	Valid: 0	Degree: 0
+Entry number: 1662	Address: 0	Valid: 0	Degree: 0
+Entry number: 1663	Address: 0	Valid: 0	Degree: 0
+Entry number: 1664	Address: 0	Valid: 0	Degree: 0
+Entry number: 1665	Address: 0	Valid: 0	Degree: 0
+Entry number: 1666	Address: 0	Valid: 0	Degree: 0
+Entry number: 1667	Address: 0	Valid: 0	Degree: 0
+Entry number: 1668	Address: 0	Valid: 0	Degree: 0
+Entry number: 1669	Address: 0	Valid: 0	Degree: 0
+Entry number: 1670	Address: 0	Valid: 0	Degree: 0
+Entry number: 1671	Address: 0	Valid: 0	Degree: 0
+Entry number: 1672	Address: 0	Valid: 0	Degree: 0
+Entry number: 1673	Address: 0	Valid: 0	Degree: 0
+Entry number: 1674	Address: 0	Valid: 0	Degree: 0
+Entry number: 1675	Address: 0	Valid: 0	Degree: 0
+Entry number: 1676	Address: 0	Valid: 0	Degree: 0
+Entry number: 1677	Address: 0	Valid: 0	Degree: 0
+Entry number: 1678	Address: 0	Valid: 0	Degree: 0
+Entry number: 1679	Address: 0	Valid: 0	Degree: 0
+Entry number: 1680	Address: 0	Valid: 0	Degree: 0
+Entry number: 1681	Address: 0	Valid: 0	Degree: 0
+Entry number: 1682	Address: 0	Valid: 0	Degree: 0
+Entry number: 1683	Address: 0	Valid: 0	Degree: 0
+Entry number: 1684	Address: 0	Valid: 0	Degree: 0
+Entry number: 1685	Address: 0	Valid: 0	Degree: 0
+Entry number: 1686	Address: 0	Valid: 0	Degree: 0
+Entry number: 1687	Address: 0	Valid: 0	Degree: 0
+Entry number: 1688	Address: 0	Valid: 0	Degree: 0
+Entry number: 1689	Address: 0	Valid: 0	Degree: 0
+Entry number: 1690	Address: 0	Valid: 0	Degree: 0
+Entry number: 1691	Address: 0	Valid: 0	Degree: 0
+Entry number: 1692	Address: 0	Valid: 0	Degree: 0
+Entry number: 1693	Address: 0	Valid: 0	Degree: 0
+Entry number: 1694	Address: 0	Valid: 0	Degree: 0
+Entry number: 1695	Address: 0	Valid: 0	Degree: 0
+Entry number: 1696	Address: 0	Valid: 0	Degree: 0
+Entry number: 1697	Address: 0	Valid: 0	Degree: 0
+Entry number: 1698	Address: 0	Valid: 0	Degree: 0
+Entry number: 1699	Address: 0	Valid: 0	Degree: 0
+Entry number: 1700	Address: 0	Valid: 0	Degree: 0
+Entry number: 1701	Address: 0	Valid: 0	Degree: 0
+Entry number: 1702	Address: 0	Valid: 0	Degree: 0
+Entry number: 1703	Address: 0	Valid: 0	Degree: 0
+Entry number: 1704	Address: 0	Valid: 0	Degree: 0
+Entry number: 1705	Address: 0	Valid: 0	Degree: 0
+Entry number: 1706	Address: 0	Valid: 0	Degree: 0
+Entry number: 1707	Address: 0	Valid: 0	Degree: 0
+Entry number: 1708	Address: 0	Valid: 0	Degree: 0
+Entry number: 1709	Address: 0	Valid: 0	Degree: 0
+Entry number: 1710	Address: 0	Valid: 0	Degree: 0
+Entry number: 1711	Address: 0	Valid: 0	Degree: 0
+Entry number: 1712	Address: 0	Valid: 0	Degree: 0
+Entry number: 1713	Address: 0	Valid: 0	Degree: 0
+Entry number: 1714	Address: 0	Valid: 0	Degree: 0
+Entry number: 1715	Address: 0	Valid: 0	Degree: 0
+Entry number: 1716	Address: 0	Valid: 0	Degree: 0
+Entry number: 1717	Address: 0	Valid: 0	Degree: 0
+Entry number: 1718	Address: 0	Valid: 0	Degree: 0
+Entry number: 1719	Address: 0	Valid: 0	Degree: 0
+Entry number: 1720	Address: 0	Valid: 0	Degree: 0
+Entry number: 1721	Address: 0	Valid: 0	Degree: 0
+Entry number: 1722	Address: 0	Valid: 0	Degree: 0
+Entry number: 1723	Address: 0	Valid: 0	Degree: 0
+Entry number: 1724	Address: 0	Valid: 0	Degree: 0
+Entry number: 1725	Address: 0	Valid: 0	Degree: 0
+Entry number: 1726	Address: 0	Valid: 0	Degree: 0
+Entry number: 1727	Address: 0	Valid: 0	Degree: 0
+Entry number: 1728	Address: 0	Valid: 0	Degree: 0
+Entry number: 1729	Address: 0	Valid: 0	Degree: 0
+Entry number: 1730	Address: 0	Valid: 0	Degree: 0
+Entry number: 1731	Address: 0	Valid: 0	Degree: 0
+Entry number: 1732	Address: 0	Valid: 0	Degree: 0
+Entry number: 1733	Address: 0	Valid: 0	Degree: 0
+Entry number: 1734	Address: 0	Valid: 0	Degree: 0
+Entry number: 1735	Address: 0	Valid: 0	Degree: 0
+Entry number: 1736	Address: 0	Valid: 0	Degree: 0
+Entry number: 1737	Address: 0	Valid: 0	Degree: 0
+Entry number: 1738	Address: 0	Valid: 0	Degree: 0
+Entry number: 1739	Address: 0	Valid: 0	Degree: 0
+Entry number: 1740	Address: 0	Valid: 0	Degree: 0
+Entry number: 1741	Address: 0	Valid: 0	Degree: 0
+Entry number: 1742	Address: 0	Valid: 0	Degree: 0
+Entry number: 1743	Address: 0	Valid: 0	Degree: 0
+Entry number: 1744	Address: 0	Valid: 0	Degree: 0
+Entry number: 1745	Address: 0	Valid: 0	Degree: 0
+Entry number: 1746	Address: 0	Valid: 0	Degree: 0
+Entry number: 1747	Address: 0	Valid: 0	Degree: 0
+Entry number: 1748	Address: 0	Valid: 0	Degree: 0
+Entry number: 1749	Address: 0	Valid: 0	Degree: 0
+Entry number: 1750	Address: 0	Valid: 0	Degree: 0
+Entry number: 1751	Address: 0	Valid: 0	Degree: 0
+Entry number: 1752	Address: 0	Valid: 0	Degree: 0
+Entry number: 1753	Address: 0	Valid: 0	Degree: 0
+Entry number: 1754	Address: 0	Valid: 0	Degree: 0
+Entry number: 1755	Address: 0	Valid: 0	Degree: 0
+Entry number: 1756	Address: 0	Valid: 0	Degree: 0
+Entry number: 1757	Address: 0	Valid: 0	Degree: 0
+Entry number: 1758	Address: 0	Valid: 0	Degree: 0
+Entry number: 1759	Address: 0	Valid: 0	Degree: 0
+Entry number: 1760	Address: 0	Valid: 0	Degree: 0
+Entry number: 1761	Address: 0	Valid: 0	Degree: 0
+Entry number: 1762	Address: 0	Valid: 0	Degree: 0
+Entry number: 1763	Address: 0	Valid: 0	Degree: 0
+Entry number: 1764	Address: 0	Valid: 0	Degree: 0
+Entry number: 1765	Address: 0	Valid: 0	Degree: 0
+Entry number: 1766	Address: 0	Valid: 0	Degree: 0
+Entry number: 1767	Address: 0	Valid: 0	Degree: 0
+Entry number: 1768	Address: 0	Valid: 0	Degree: 0
+Entry number: 1769	Address: 0	Valid: 0	Degree: 0
+Entry number: 1770	Address: 0	Valid: 0	Degree: 0
+Entry number: 1771	Address: 0	Valid: 0	Degree: 0
+Entry number: 1772	Address: 0	Valid: 0	Degree: 0
+Entry number: 1773	Address: 0	Valid: 0	Degree: 0
+Entry number: 1774	Address: 0	Valid: 0	Degree: 0
+Entry number: 1775	Address: 0	Valid: 0	Degree: 0
+Entry number: 1776	Address: 0	Valid: 0	Degree: 0
+Entry number: 1777	Address: 0	Valid: 0	Degree: 0
+Entry number: 1778	Address: 0	Valid: 0	Degree: 0
+Entry number: 1779	Address: 0	Valid: 0	Degree: 0
+Entry number: 1780	Address: 0	Valid: 0	Degree: 0
+Entry number: 1781	Address: 0	Valid: 0	Degree: 0
+Entry number: 1782	Address: 0	Valid: 0	Degree: 0
+Entry number: 1783	Address: 0	Valid: 0	Degree: 0
+Entry number: 1784	Address: 0	Valid: 0	Degree: 0
+Entry number: 1785	Address: 0	Valid: 0	Degree: 0
+Entry number: 1786	Address: 0	Valid: 0	Degree: 0
+Entry number: 1787	Address: 0	Valid: 0	Degree: 0
+Entry number: 1788	Address: 0	Valid: 0	Degree: 0
+Entry number: 1789	Address: 0	Valid: 0	Degree: 0
+Entry number: 1790	Address: 0	Valid: 0	Degree: 0
+Entry number: 1791	Address: 0	Valid: 0	Degree: 0
+Entry number: 1792	Address: 0	Valid: 0	Degree: 0
+Entry number: 1793	Address: 0	Valid: 0	Degree: 0
+Entry number: 1794	Address: 0	Valid: 0	Degree: 0
+Entry number: 1795	Address: 0	Valid: 0	Degree: 0
+Entry number: 1796	Address: 0	Valid: 0	Degree: 0
+Entry number: 1797	Address: 0	Valid: 0	Degree: 0
+Entry number: 1798	Address: 0	Valid: 0	Degree: 0
+Entry number: 1799	Address: 0	Valid: 0	Degree: 0
+Entry number: 1800	Address: 0	Valid: 0	Degree: 0
+Entry number: 1801	Address: 0	Valid: 0	Degree: 0
+Entry number: 1802	Address: 0	Valid: 0	Degree: 0
+Entry number: 1803	Address: 0	Valid: 0	Degree: 0
+Entry number: 1804	Address: 0	Valid: 0	Degree: 0
+Entry number: 1805	Address: 0	Valid: 0	Degree: 0
+Entry number: 1806	Address: 0	Valid: 0	Degree: 0
+Entry number: 1807	Address: 0	Valid: 0	Degree: 0
+Entry number: 1808	Address: 0	Valid: 0	Degree: 0
+Entry number: 1809	Address: 0	Valid: 0	Degree: 0
+Entry number: 1810	Address: 0	Valid: 0	Degree: 0
+Entry number: 1811	Address: 0	Valid: 0	Degree: 0
+Entry number: 1812	Address: 0	Valid: 0	Degree: 0
+Entry number: 1813	Address: 0	Valid: 0	Degree: 0
+Entry number: 1814	Address: 0	Valid: 0	Degree: 0
+Entry number: 1815	Address: 0	Valid: 0	Degree: 0
+Entry number: 1816	Address: 0	Valid: 0	Degree: 0
+Entry number: 1817	Address: 0	Valid: 0	Degree: 0
+Entry number: 1818	Address: 0	Valid: 0	Degree: 0
+Entry number: 1819	Address: 0	Valid: 0	Degree: 0
+Entry number: 1820	Address: 0	Valid: 0	Degree: 0
+Entry number: 1821	Address: 0	Valid: 0	Degree: 0
+Entry number: 1822	Address: 0	Valid: 0	Degree: 0
+Entry number: 1823	Address: 0	Valid: 0	Degree: 0
+Entry number: 1824	Address: 0	Valid: 0	Degree: 0
+Entry number: 1825	Address: 0	Valid: 0	Degree: 0
+Entry number: 1826	Address: 0	Valid: 0	Degree: 0
+Entry number: 1827	Address: 0	Valid: 0	Degree: 0
+Entry number: 1828	Address: 0	Valid: 0	Degree: 0
+Entry number: 1829	Address: 0	Valid: 0	Degree: 0
+Entry number: 1830	Address: 0	Valid: 0	Degree: 0
+Entry number: 1831	Address: 0	Valid: 0	Degree: 0
+Entry number: 1832	Address: 0	Valid: 0	Degree: 0
+Entry number: 1833	Address: 0	Valid: 0	Degree: 0
+Entry number: 1834	Address: 0	Valid: 0	Degree: 0
+Entry number: 1835	Address: 0	Valid: 0	Degree: 0
+Entry number: 1836	Address: 0	Valid: 0	Degree: 0
+Entry number: 1837	Address: 0	Valid: 0	Degree: 0
+Entry number: 1838	Address: 0	Valid: 0	Degree: 0
+Entry number: 1839	Address: 0	Valid: 0	Degree: 0
+Entry number: 1840	Address: 0	Valid: 0	Degree: 0
+Entry number: 1841	Address: 0	Valid: 0	Degree: 0
+Entry number: 1842	Address: 0	Valid: 0	Degree: 0
+Entry number: 1843	Address: 0	Valid: 0	Degree: 0
+Entry number: 1844	Address: 0	Valid: 0	Degree: 0
+Entry number: 1845	Address: 0	Valid: 0	Degree: 0
+Entry number: 1846	Address: 0	Valid: 0	Degree: 0
+Entry number: 1847	Address: 0	Valid: 0	Degree: 0
+Entry number: 1848	Address: 0	Valid: 0	Degree: 0
+Entry number: 1849	Address: 0	Valid: 0	Degree: 0
+Entry number: 1850	Address: 0	Valid: 0	Degree: 0
+Entry number: 1851	Address: 0	Valid: 0	Degree: 0
+Entry number: 1852	Address: 0	Valid: 0	Degree: 0
+Entry number: 1853	Address: 0	Valid: 0	Degree: 0
+Entry number: 1854	Address: 0	Valid: 0	Degree: 0
+Entry number: 1855	Address: 0	Valid: 0	Degree: 0
+Entry number: 1856	Address: 0	Valid: 0	Degree: 0
+Entry number: 1857	Address: 0	Valid: 0	Degree: 0
+Entry number: 1858	Address: 0	Valid: 0	Degree: 0
+Entry number: 1859	Address: 0	Valid: 0	Degree: 0
+Entry number: 1860	Address: 0	Valid: 0	Degree: 0
+Entry number: 1861	Address: 0	Valid: 0	Degree: 0
+Entry number: 1862	Address: 0	Valid: 0	Degree: 0
+Entry number: 1863	Address: 0	Valid: 0	Degree: 0
+Entry number: 1864	Address: 0	Valid: 0	Degree: 0
+Entry number: 1865	Address: 0	Valid: 0	Degree: 0
+Entry number: 1866	Address: 0	Valid: 0	Degree: 0
+Entry number: 1867	Address: 0	Valid: 0	Degree: 0
+Entry number: 1868	Address: 0	Valid: 0	Degree: 0
+Entry number: 1869	Address: 0	Valid: 0	Degree: 0
+Entry number: 1870	Address: 0	Valid: 0	Degree: 0
+Entry number: 1871	Address: 0	Valid: 0	Degree: 0
+Entry number: 1872	Address: 0	Valid: 0	Degree: 0
+Entry number: 1873	Address: 0	Valid: 0	Degree: 0
+Entry number: 1874	Address: 0	Valid: 0	Degree: 0
+Entry number: 1875	Address: 0	Valid: 0	Degree: 0
+Entry number: 1876	Address: 0	Valid: 0	Degree: 0
+Entry number: 1877	Address: 0	Valid: 0	Degree: 0
+Entry number: 1878	Address: 0	Valid: 0	Degree: 0
+Entry number: 1879	Address: 0	Valid: 0	Degree: 0
+Entry number: 1880	Address: 0	Valid: 0	Degree: 0
+Entry number: 1881	Address: 0	Valid: 0	Degree: 0
+Entry number: 1882	Address: 0	Valid: 0	Degree: 0
+Entry number: 1883	Address: 0	Valid: 0	Degree: 0
+Entry number: 1884	Address: 0	Valid: 0	Degree: 0
+Entry number: 1885	Address: 0	Valid: 0	Degree: 0
+Entry number: 1886	Address: 0	Valid: 0	Degree: 0
+Entry number: 1887	Address: 0	Valid: 0	Degree: 0
+Entry number: 1888	Address: 0	Valid: 0	Degree: 0
+Entry number: 1889	Address: 0	Valid: 0	Degree: 0
+Entry number: 1890	Address: 0	Valid: 0	Degree: 0
+Entry number: 1891	Address: 0	Valid: 0	Degree: 0
+Entry number: 1892	Address: 0	Valid: 0	Degree: 0
+Entry number: 1893	Address: 0	Valid: 0	Degree: 0
+Entry number: 1894	Address: 0	Valid: 0	Degree: 0
+Entry number: 1895	Address: 0	Valid: 0	Degree: 0
+Entry number: 1896	Address: 0	Valid: 0	Degree: 0
+Entry number: 1897	Address: 0	Valid: 0	Degree: 0
+Entry number: 1898	Address: 0	Valid: 0	Degree: 0
+Entry number: 1899	Address: 0	Valid: 0	Degree: 0
+Entry number: 1900	Address: 0	Valid: 0	Degree: 0
+Entry number: 1901	Address: 0	Valid: 0	Degree: 0
+Entry number: 1902	Address: 0	Valid: 0	Degree: 0
+Entry number: 1903	Address: 0	Valid: 0	Degree: 0
+Entry number: 1904	Address: 0	Valid: 0	Degree: 0
+Entry number: 1905	Address: 0	Valid: 0	Degree: 0
+Entry number: 1906	Address: 0	Valid: 0	Degree: 0
+Entry number: 1907	Address: 0	Valid: 0	Degree: 0
+Entry number: 1908	Address: 0	Valid: 0	Degree: 0
+Entry number: 1909	Address: 0	Valid: 0	Degree: 0
+Entry number: 1910	Address: 0	Valid: 0	Degree: 0
+Entry number: 1911	Address: 0	Valid: 0	Degree: 0
+Entry number: 1912	Address: 0	Valid: 0	Degree: 0
+Entry number: 1913	Address: 0	Valid: 0	Degree: 0
+Entry number: 1914	Address: 0	Valid: 0	Degree: 0
+Entry number: 1915	Address: 0	Valid: 0	Degree: 0
+Entry number: 1916	Address: 0	Valid: 0	Degree: 0
+Entry number: 1917	Address: 0	Valid: 0	Degree: 0
+Entry number: 1918	Address: 0	Valid: 0	Degree: 0
+Entry number: 1919	Address: 0	Valid: 0	Degree: 0
+Entry number: 1920	Address: 0	Valid: 0	Degree: 0
+Entry number: 1921	Address: 0	Valid: 0	Degree: 0
+Entry number: 1922	Address: 0	Valid: 0	Degree: 0
+Entry number: 1923	Address: 0	Valid: 0	Degree: 0
+Entry number: 1924	Address: 0	Valid: 0	Degree: 0
+Entry number: 1925	Address: 0	Valid: 0	Degree: 0
+Entry number: 1926	Address: 0	Valid: 0	Degree: 0
+Entry number: 1927	Address: 0	Valid: 0	Degree: 0
+Entry number: 1928	Address: 0	Valid: 0	Degree: 0
+Entry number: 1929	Address: 0	Valid: 0	Degree: 0
+Entry number: 1930	Address: 0	Valid: 0	Degree: 0
+Entry number: 1931	Address: 0	Valid: 0	Degree: 0
+Entry number: 1932	Address: 0	Valid: 0	Degree: 0
+Entry number: 1933	Address: 0	Valid: 0	Degree: 0
+Entry number: 1934	Address: 0	Valid: 0	Degree: 0
+Entry number: 1935	Address: 0	Valid: 0	Degree: 0
+Entry number: 1936	Address: 0	Valid: 0	Degree: 0
+Entry number: 1937	Address: 0	Valid: 0	Degree: 0
+Entry number: 1938	Address: 0	Valid: 0	Degree: 0
+Entry number: 1939	Address: 0	Valid: 0	Degree: 0
+Entry number: 1940	Address: 0	Valid: 0	Degree: 0
+Entry number: 1941	Address: 0	Valid: 0	Degree: 0
+Entry number: 1942	Address: 0	Valid: 0	Degree: 0
+Entry number: 1943	Address: 0	Valid: 0	Degree: 0
+Entry number: 1944	Address: 0	Valid: 0	Degree: 0
+Entry number: 1945	Address: 0	Valid: 0	Degree: 0
+Entry number: 1946	Address: 0	Valid: 0	Degree: 0
+Entry number: 1947	Address: 0	Valid: 0	Degree: 0
+Entry number: 1948	Address: 0	Valid: 0	Degree: 0
+Entry number: 1949	Address: 0	Valid: 0	Degree: 0
+Entry number: 1950	Address: 0	Valid: 0	Degree: 0
+Entry number: 1951	Address: 0	Valid: 0	Degree: 0
+Entry number: 1952	Address: 0	Valid: 0	Degree: 0
+Entry number: 1953	Address: 0	Valid: 0	Degree: 0
+Entry number: 1954	Address: 0	Valid: 0	Degree: 0
+Entry number: 1955	Address: 0	Valid: 0	Degree: 0
+Entry number: 1956	Address: 0	Valid: 0	Degree: 0
+Entry number: 1957	Address: 0	Valid: 0	Degree: 0
+Entry number: 1958	Address: 0	Valid: 0	Degree: 0
+Entry number: 1959	Address: 0	Valid: 0	Degree: 0
+Entry number: 1960	Address: 0	Valid: 0	Degree: 0
+Entry number: 1961	Address: 0	Valid: 0	Degree: 0
+Entry number: 1962	Address: 0	Valid: 0	Degree: 0
+Entry number: 1963	Address: 0	Valid: 0	Degree: 0
+Entry number: 1964	Address: 0	Valid: 0	Degree: 0
+Entry number: 1965	Address: 0	Valid: 0	Degree: 0
+Entry number: 1966	Address: 0	Valid: 0	Degree: 0
+Entry number: 1967	Address: 0	Valid: 0	Degree: 0
+Entry number: 1968	Address: 0	Valid: 0	Degree: 0
+Entry number: 1969	Address: 0	Valid: 0	Degree: 0
+Entry number: 1970	Address: 0	Valid: 0	Degree: 0
+Entry number: 1971	Address: 0	Valid: 0	Degree: 0
+Entry number: 1972	Address: 0	Valid: 0	Degree: 0
+Entry number: 1973	Address: 0	Valid: 0	Degree: 0
+Entry number: 1974	Address: 0	Valid: 0	Degree: 0
+Entry number: 1975	Address: 0	Valid: 0	Degree: 0
+Entry number: 1976	Address: 0	Valid: 0	Degree: 0
+Entry number: 1977	Address: 0	Valid: 0	Degree: 0
+Entry number: 1978	Address: 0	Valid: 0	Degree: 0
+Entry number: 1979	Address: 0	Valid: 0	Degree: 0
+Entry number: 1980	Address: 0	Valid: 0	Degree: 0
+Entry number: 1981	Address: 0	Valid: 0	Degree: 0
+Entry number: 1982	Address: 0	Valid: 0	Degree: 0
+Entry number: 1983	Address: 0	Valid: 0	Degree: 0
+Entry number: 1984	Address: 0	Valid: 0	Degree: 0
+Entry number: 1985	Address: 0	Valid: 0	Degree: 0
+Entry number: 1986	Address: 0	Valid: 0	Degree: 0
+Entry number: 1987	Address: 0	Valid: 0	Degree: 0
+Entry number: 1988	Address: 0	Valid: 0	Degree: 0
+Entry number: 1989	Address: 0	Valid: 0	Degree: 0
+Entry number: 1990	Address: 0	Valid: 0	Degree: 0
+Entry number: 1991	Address: 0	Valid: 0	Degree: 0
+Entry number: 1992	Address: 0	Valid: 0	Degree: 0
+Entry number: 1993	Address: 0	Valid: 0	Degree: 0
+Entry number: 1994	Address: 0	Valid: 0	Degree: 0
+Entry number: 1995	Address: 0	Valid: 0	Degree: 0
+Entry number: 1996	Address: 0	Valid: 0	Degree: 0
+Entry number: 1997	Address: 0	Valid: 0	Degree: 0
+Entry number: 1998	Address: 0	Valid: 0	Degree: 0
+Entry number: 1999	Address: 0	Valid: 0	Degree: 0
+Entry number: 2000	Address: 0	Valid: 0	Degree: 0
+Entry number: 2001	Address: 0	Valid: 0	Degree: 0
+Entry number: 2002	Address: 0	Valid: 0	Degree: 0
+Entry number: 2003	Address: 0	Valid: 0	Degree: 0
+Entry number: 2004	Address: 0	Valid: 0	Degree: 0
+Entry number: 2005	Address: 0	Valid: 0	Degree: 0
+Entry number: 2006	Address: 0	Valid: 0	Degree: 0
+Entry number: 2007	Address: 0	Valid: 0	Degree: 0
+Entry number: 2008	Address: 0	Valid: 0	Degree: 0
+Entry number: 2009	Address: 0	Valid: 0	Degree: 0
+Entry number: 2010	Address: 0	Valid: 0	Degree: 0
+Entry number: 2011	Address: 0	Valid: 0	Degree: 0
+Entry number: 2012	Address: 0	Valid: 0	Degree: 0
+Entry number: 2013	Address: 0	Valid: 0	Degree: 0
+Entry number: 2014	Address: 0	Valid: 0	Degree: 0
+Entry number: 2015	Address: 0	Valid: 0	Degree: 0
+Entry number: 2016	Address: 0	Valid: 0	Degree: 0
+Entry number: 2017	Address: 0	Valid: 0	Degree: 0
+Entry number: 2018	Address: 0	Valid: 0	Degree: 0
+Entry number: 2019	Address: 0	Valid: 0	Degree: 0
+Entry number: 2020	Address: 0	Valid: 0	Degree: 0
+Entry number: 2021	Address: 0	Valid: 0	Degree: 0
+Entry number: 2022	Address: 0	Valid: 0	Degree: 0
+Entry number: 2023	Address: 0	Valid: 0	Degree: 0
+Entry number: 2024	Address: 0	Valid: 0	Degree: 0
+Entry number: 2025	Address: 0	Valid: 0	Degree: 0
+Entry number: 2026	Address: 0	Valid: 0	Degree: 0
+Entry number: 2027	Address: 0	Valid: 0	Degree: 0
+Entry number: 2028	Address: 0	Valid: 0	Degree: 0
+Entry number: 2029	Address: 0	Valid: 0	Degree: 0
+Entry number: 2030	Address: 0	Valid: 0	Degree: 0
+Entry number: 2031	Address: 0	Valid: 0	Degree: 0
+Entry number: 2032	Address: 0	Valid: 0	Degree: 0
+Entry number: 2033	Address: 0	Valid: 0	Degree: 0
+Entry number: 2034	Address: 0	Valid: 0	Degree: 0
+Entry number: 2035	Address: 0	Valid: 0	Degree: 0
+Entry number: 2036	Address: 0	Valid: 0	Degree: 0
+Entry number: 2037	Address: 0	Valid: 0	Degree: 0
+Entry number: 2038	Address: 0	Valid: 0	Degree: 0
+Entry number: 2039	Address: 0	Valid: 0	Degree: 0
+Entry number: 2040	Address: 0	Valid: 0	Degree: 0
+Entry number: 2041	Address: 0	Valid: 0	Degree: 0
+Entry number: 2042	Address: 0	Valid: 0	Degree: 0
+Entry number: 2043	Address: 0	Valid: 0	Degree: 0
+Entry number: 2044	Address: 0	Valid: 0	Degree: 0
+Entry number: 2045	Address: 0	Valid: 0	Degree: 0
+Entry number: 2046	Address: 0	Valid: 0	Degree: 0
+Entry number: 2047	Address: 0	Valid: 0	Degree: 0
+
