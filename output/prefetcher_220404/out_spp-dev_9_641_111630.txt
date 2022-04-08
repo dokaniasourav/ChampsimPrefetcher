@@ -1,1 +1,0 @@
-Started running file 641.leela_s-800B.champsimtrace.xz at time Mon Apr  4 11:16:30 CDT 2022 with prefetcher spp-dev

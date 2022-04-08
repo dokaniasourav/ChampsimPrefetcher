@@ -52,7 +52,7 @@ do
   echo ""
   ls bin
 
-  for i in {0..1}
+  for i in {0..3}
   do
     echo ""
     echo "Submitting job for the file ${files[$i]} with $pref2 prefetcher"

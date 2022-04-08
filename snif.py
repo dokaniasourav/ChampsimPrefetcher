@@ -9,7 +9,7 @@ from pprint import pprint
 # dir_names = ['output/prefetcher_220321/', 'output/prefetcher_220322/', 'output/prefetcher_220323/',
 #              'output/prefetcher_220330', 'output/prefetcher_220331/']
 
-dir_names = ['output/prefetcher_220405']
+dir_names = ['output/prefetcher_220404']
 filenames = []
 for dir_name in dir_names:
     for filename in os.listdir(dir_name):

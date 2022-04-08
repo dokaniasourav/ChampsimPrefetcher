@@ -191,7 +191,7 @@ void CACHE::prefetcher_cycle_operate() {
                 trans_buff[ptr_to_trans_buff].ppf_prediction = ppf_prediction;
 
                 if (inverted_address.find(old_pf_address_2) != inverted_address.end()) {
-                    for (unsigned int i = 0; i < inverted_address[old_pf_address_2].size(); ++i) {
+                    for (uint32_t i = 0; i < inverted_address[old_pf_address_2].size(); ++i) {
                         if (inverted_address[old_pf_address_2][i] == ptr_to_trans_buff) {
                             inverted_address[old_pf_address_2].erase(inverted_address[old_pf_address_2].begin() + i);
                             break;
@@ -276,7 +276,6 @@ void CACHE::prefetcher_final_stats() {
     my_file.open(dir_name + "/prefetcher_stat_" + NAME + ".csv");
     my_file << "index, total_training, useful_training, total_prediction, true_prediction, "
                "total_prefetch, useful_prefetch, cache_operate, cache_hit" << std::endl;
-
     for (int i = 0; i < record_table_ind; i++) {
         my_file << i << ", "  << record_table[i].total_training
                      << ", "  << record_table[i].useful_training
@@ -289,6 +288,41 @@ void CACHE::prefetcher_final_stats() {
     }
     my_file << std::endl;
     my_file.close();
+
+
+    my_file.open(dir_name + "/inverted_address_" + NAME + ".csv");
+    my_file << "index, address, array, ip_fold_1, pf_degree, valid, ppf_prediction" << std::endl;
+    int ind = 0;
+    for(auto & it:inverted_address) {
+        my_file << ++ind << ", " << it.first << ", ( ";
+        for(auto & el: it.second) {
+            my_file << el << " ";
+        }
+        my_file << "), ( ";
+
+        for(auto & el: it.second) {
+            my_file << trans_buff[el].ip_fold_1 << " ";
+        }
+        my_file << "), ( ";
+
+        for(auto & el: it.second) {
+            my_file << trans_buff[el].pf_degree << " ";
+        }
+        my_file << "), ( ";
+
+        for(auto & el: it.second) {
+            my_file << trans_buff[el].valid << " ";
+        }
+        my_file << "), ( ";
+
+        for(auto & el: it.second) {
+            my_file << trans_buff[el].ppf_prediction << " ";
+        }
+        my_file << ")" << std::endl;
+    }
+    my_file << std::endl;
+    my_file.close();
+
 
 
     my_file.open(dir_name + "/weights_final_" + NAME + ".txt");

@@ -1,1 +1,0 @@
-Started running file 627.cam4_s-573B.champsimtrace.xz at time Mon Apr  4 11:16:30 CDT 2022 with prefetcher spp-dev
