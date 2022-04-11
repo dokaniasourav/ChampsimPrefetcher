@@ -93,6 +93,7 @@ constexpr std::size_t
 TRACKER_WAYS = 4;
 std::map<CACHE *, lookahead_entry> lookahead;
 std::map<CACHE *, std::array < tracker_entry, TRACKER_SETS * TRACKER_WAYS>> trackers;
+extern string trace_name;
 
 void CACHE::prefetcher_initialize() {
 
@@ -115,8 +116,13 @@ void CACHE::prefetcher_initialize() {
     auto t = std::time(nullptr);
     auto tm = *std::localtime(&t);
     std::ostringstream oss;
-    oss << std::put_time(&tm, "./data/data_%Y%m%d%H%M%S_");
-    dir_name = oss.str() + std::to_string(rand()%10000);
+    oss << std::put_time(&tm, "./data/ppf_ip-stride_%Y%m%d%H%M%S_");
+    size_t f_ind = trace_name.find_last_of('/');
+    if (f_ind != string::npos) {
+        dir_name = oss.str() + trace_name.substr(f_ind+1, 3);
+    } else {
+        dir_name = oss.str() + std::to_string(rand() % 10000);
+    }
     std::cout << NAME << " -- Directory Name = " << dir_name << std::endl;
     struct stat sst = {0};
     if (stat(dir_name.c_str(), &sst) == -1) {

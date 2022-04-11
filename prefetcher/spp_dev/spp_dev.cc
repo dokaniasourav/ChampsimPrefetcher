@@ -16,6 +16,8 @@ void CACHE::prefetcher_cycle_operate() {}
 
 uint32_t
 CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip, uint8_t cache_hit, uint8_t type, uint32_t metadata_in) {
+    /*
+     * */
     uint64_t page = addr >> LOG2_PAGE_SIZE;
     uint32_t page_offset = (addr >> LOG2_BLOCK_SIZE) & (PAGE_SIZE / BLOCK_SIZE - 1);
     uint32_t last_sig = 0, curr_sig = 0, confidence_q[MSHR_SIZE], depth = 0;
@@ -25,7 +27,9 @@ CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip, uint8_t cache_hit, u
         confidence_q[i] = 0;
         delta_q[i] = 0;
     }
-    confidence_q[0] = 100;
+    confidence_q[0] = 100;      // Level zero confidence 100
+
+    // Percentage of useful prefetch
     GHR.global_accuracy = GHR.pf_issued ? ((100 * GHR.pf_useful) / GHR.pf_issued) : 0;
 
     SPP_DP(cout << endl
@@ -140,7 +144,7 @@ CACHE::prefetcher_cache_fill(uint64_t addr, uint32_t set, uint32_t match, uint8_
 
 void CACHE::prefetcher_final_stats() {}
 
-// TODO: Find a good 64-bit hash function
+// TODO_: Find a good 64-bit hash function
 uint64_t get_hash(uint64_t key) {
     // Robert Jenkins' 32 bit mix function
     key += (key << 12);

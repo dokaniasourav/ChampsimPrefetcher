@@ -104,12 +104,14 @@ public:
         }
     }
 
-    void update_pattern(uint32_t last_sig, int curr_delta), read_pattern(uint32_t curr_sig, int *prefetch_delta,
-                                                                         uint32_t *confidence_q,
-                                                                         uint32_t &lookahead_way,
-                                                                         uint32_t &lookahead_conf, uint32_t &pf_q_tail,
-                                                                         uint32_t &depth);
-};
+    void update_pattern(uint32_t last_sig, int curr_delta);
+
+    void read_pattern(uint32_t curr_sig, int *prefetch_delta,
+                      uint32_t *confidence_q,
+                      uint32_t &lookahead_way,
+                      uint32_t &lookahead_conf, uint32_t &pf_q_tail,
+                      uint32_t &depth);
+};/
 
 class PREFETCH_FILTER {
 public:
