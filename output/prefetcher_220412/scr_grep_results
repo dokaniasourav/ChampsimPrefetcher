@@ -1,0 +1,34 @@
+echo CELLNAME,IPC,L1D_Prefetch_Requested,L1D_Prefetch_Issued,L1D_Prefetch_Useful,L1D_Prefetch_Useless,L1D_Average_Miss_Latency,L2C_Prefetch_Requested,L2C_Prefetch_Issued,L2C_Prefetch_Useful,L2C_Prefetch_Useless,L2C_Average_Miss_Latency
+for cell in $(ls *.txt)
+do
+echo -n $cell
+echo -n ","
+echo -n `cat $cell | grep "cumulative IPC\|Branch Prediction" | grep "^CPU" | grep "IPC:" | cut -d: -f2 | cut -d" " -f2`
+echo -n ","
+echo -n `cat $cell | grep "cpu0_L1D PREFETCH  REQUESTED:" | cut -d: -f2 | tr -s " " | cut -d" " -f2`
+echo -n ","
+echo -n `cat $cell | grep "cpu0_L1D PREFETCH  REQUESTED:" | cut -d: -f3 | tr -s " " | cut -d" " -f2`
+echo -n ","
+echo -n `cat $cell | grep "cpu0_L1D PREFETCH  REQUESTED:" | cut -d: -f4 | tr -s " " | cut -d" " -f2`
+echo -n ","
+echo -n `cat $cell | grep "cpu0_L1D PREFETCH  REQUESTED:" | cut -d: -f5 | tr -s " " | cut -d" " -f2`
+echo -n ","
+echo -n `cat $cell | grep "cpu0_L1D AVERAGE MISS LATENCY:" | cut -d: -f2 | cut -d" " -f2`
+echo -n ","
+echo -n `cat $cell | grep "cpu0_L2C PREFETCH  REQUESTED:" | cut -d: -f2 | tr -s " " | cut -d" " -f2`
+echo -n ","
+echo -n `cat $cell | grep "cpu0_L2C PREFETCH  REQUESTED:" | cut -d: -f3 | tr -s " " | cut -d" " -f2`
+echo -n ","
+echo -n `cat $cell | grep "cpu0_L2C PREFETCH  REQUESTED:" | cut -d: -f4 | tr -s " " | cut -d" " -f2`
+echo -n ","
+echo -n `cat $cell | grep "cpu0_L2C PREFETCH  REQUESTED:" | cut -d: -f5 | tr -s " " | cut -d" " -f2`
+echo -n ","
+echo `cat $cell | grep "cpu0_L2C AVERAGE MISS LATENCY:" | cut -d: -f2 | cut -d" " -f2`
+
+
+
+
+
+#cat $cell | grep "cumulative IPC\|Branch Prediction" | grep "^CPU" | grep MPKI | cut -d: -f3 | cut -d" " -f2
+#cat $cell | grep "cumulative IPC\|Branch Prediction" | grep "^CPU" | grep Prediction | cut -d: -f2 | cut -d" " -f2 | sed -e "s/\%//g"
+done
