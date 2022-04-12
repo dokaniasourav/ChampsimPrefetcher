@@ -1,0 +1,3082 @@
+Bias: -5
+Feature Table 1: Degree
+i: 0	w: -12
+i: 1	w: -11
+i: 2	w: -14
+i: 3	w: 1
+
+Feature Table 2: IP_Fold_1
+i: 0	w: -7
+i: 1	w: -2
+i: 2	w: 1
+i: 3	w: 1
+i: 4	w: 1
+i: 5	w: 0
+i: 6	w: -1
+i: 7	w: 15
+i: 8	w: 11
+i: 9	w: -2
+i: 10	w: 3
+i: 11	w: 15
+i: 12	w: 3
+i: 13	w: 3
+i: 14	w: 0
+i: 15	w: -1
+i: 16	w: -2
+i: 17	w: 3
+i: 18	w: -5
+i: 19	w: 0
+i: 20	w: -16
+i: 21	w: 3
+i: 22	w: 0
+i: 23	w: -16
+i: 24	w: -15
+i: 25	w: 2
+i: 26	w: 1
+i: 27	w: -10
+i: 28	w: -16
+i: 29	w: 1
+i: 30	w: 2
+i: 31	w: -12
+i: 32	w: 1
+i: 33	w: 3
+i: 34	w: -1
+i: 35	w: 2
+i: 36	w: -2
+i: 37	w: -2
+i: 38	w: -2
+i: 39	w: 15
+i: 40	w: -16
+i: 41	w: -14
+i: 42	w: 1
+i: 43	w: 0
+i: 44	w: 1
+i: 45	w: 4
+i: 46	w: 1
+i: 47	w: 1
+i: 48	w: -1
+i: 49	w: 1
+i: 50	w: 1
+i: 51	w: 2
+i: 52	w: -2
+i: 53	w: 3
+i: 54	w: 3
+i: 55	w: 1
+i: 56	w: 0
+i: 57	w: 0
+i: 58	w: 15
+i: 59	w: 13
+i: 60	w: 3
+i: 61	w: 3
+i: 62	w: -1
+i: 63	w: -2
+i: 64	w: 2
+i: 65	w: 0
+i: 66	w: 2
+i: 67	w: 2
+i: 68	w: -2
+i: 69	w: 0
+i: 70	w: -2
+i: 71	w: 3
+i: 72	w: -2
+i: 73	w: 0
+i: 74	w: -1
+i: 75	w: 1
+i: 76	w: 2
+i: 77	w: 0
+i: 78	w: -2
+i: 79	w: 3
+i: 80	w: 1
+i: 81	w: -1
+i: 82	w: 2
+i: 83	w: -1
+i: 84	w: 3
+i: 85	w: -1
+i: 86	w: 3
+i: 87	w: -1
+i: 88	w: -9
+i: 89	w: 3
+i: 90	w: 2
+i: 91	w: 3
+i: 92	w: 2
+i: 93	w: 1
+i: 94	w: 2
+i: 95	w: 1
+i: 96	w: 3
+i: 97	w: -2
+i: 98	w: 3
+i: 99	w: 3
+i: 100	w: 1
+i: 101	w: 2
+i: 102	w: 0
+i: 103	w: 1
+i: 104	w: 2
+i: 105	w: -1
+i: 106	w: 2
+i: 107	w: 0
+i: 108	w: 2
+i: 109	w: 0
+i: 110	w: 3
+i: 111	w: 3
+i: 112	w: 2
+i: 113	w: 1
+i: 114	w: -1
+i: 115	w: 1
+i: 116	w: 1
+i: 117	w: 2
+i: 118	w: 0
+i: 119	w: 3
+i: 120	w: 1
+i: 121	w: -2
+i: 122	w: 0
+i: 123	w: 0
+i: 124	w: 1
+i: 125	w: -2
+i: 126	w: 1
+i: 127	w: -2
+i: 128	w: -1
+i: 129	w: -2
+i: 130	w: 1
+i: 131	w: 2
+i: 132	w: 0
+i: 133	w: -2
+i: 134	w: 3
+i: 135	w: -2
+i: 136	w: -1
+i: 137	w: 1
+i: 138	w: 0
+i: 139	w: 1
+i: 140	w: 3
+i: 141	w: -2
+i: 142	w: 13
+i: 143	w: 4
+i: 144	w: -16
+i: 145	w: 15
+i: 146	w: 15
+i: 147	w: 2
+i: 148	w: -2
+i: 149	w: -2
+i: 150	w: -12
+i: 151	w: 1
+i: 152	w: 2
+i: 153	w: 2
+i: 154	w: 1
+i: 155	w: 3
+i: 156	w: 0
+i: 157	w: 2
+i: 158	w: 3
+i: 159	w: -1
+i: 160	w: 3
+i: 161	w: 2
+i: 162	w: 2
+i: 163	w: -1
+i: 164	w: -4
+i: 165	w: 0
+i: 166	w: -2
+i: 167	w: 0
+i: 168	w: 1
+i: 169	w: -2
+i: 170	w: -2
+i: 171	w: -1
+i: 172	w: -2
+i: 173	w: -1
+i: 174	w: 0
+i: 175	w: 0
+i: 176	w: 1
+i: 177	w: -1
+i: 178	w: 2
+i: 179	w: 1
+i: 180	w: 3
+i: 181	w: -2
+i: 182	w: 2
+i: 183	w: 2
+i: 184	w: 0
+i: 185	w: -2
+i: 186	w: 1
+i: 187	w: 0
+i: 188	w: 2
+i: 189	w: -1
+i: 190	w: 2
+i: 191	w: -1
+i: 192	w: 0
+i: 193	w: -1
+i: 194	w: -1
+i: 195	w: 1
+i: 196	w: 0
+i: 197	w: -1
+i: 198	w: 1
+i: 199	w: 3
+i: 200	w: 3
+i: 201	w: 1
+i: 202	w: -16
+i: 203	w: -2
+i: 204	w: 0
+i: 205	w: -1
+i: 206	w: -14
+i: 207	w: -16
+i: 208	w: -2
+i: 209	w: 2
+i: 210	w: 0
+i: 211	w: 3
+i: 212	w: 0
+i: 213	w: 15
+i: 214	w: -1
+i: 215	w: 2
+i: 216	w: -1
+i: 217	w: 3
+i: 218	w: -1
+i: 219	w: 1
+i: 220	w: 2
+i: 221	w: 1
+i: 222	w: 1
+i: 223	w: -2
+i: 224	w: 3
+i: 225	w: 2
+i: 226	w: -1
+i: 227	w: -2
+i: 228	w: 1
+i: 229	w: 2
+i: 230	w: 2
+i: 231	w: -2
+i: 232	w: 0
+i: 233	w: 0
+i: 234	w: -2
+i: 235	w: 2
+i: 236	w: 2
+i: 237	w: 2
+i: 238	w: 0
+i: 239	w: -16
+i: 240	w: 1
+i: 241	w: 2
+i: 242	w: -16
+i: 243	w: 1
+i: 244	w: 1
+i: 245	w: 1
+i: 246	w: 0
+i: 247	w: 0
+i: 248	w: 3
+i: 249	w: -1
+i: 250	w: 2
+i: 251	w: -1
+i: 252	w: 0
+i: 253	w: -1
+i: 254	w: 1
+i: 255	w: -2
+i: 256	w: 1
+i: 257	w: -2
+i: 258	w: 3
+i: 259	w: 2
+i: 260	w: 3
+i: 261	w: -1
+i: 262	w: 2
+i: 263	w: 3
+i: 264	w: 1
+i: 265	w: 1
+i: 266	w: -1
+i: 267	w: 3
+i: 268	w: -1
+i: 269	w: 1
+i: 270	w: 2
+i: 271	w: 0
+i: 272	w: -2
+i: 273	w: 1
+i: 274	w: -2
+i: 275	w: 1
+i: 276	w: 2
+i: 277	w: -2
+i: 278	w: -2
+i: 279	w: -1
+i: 280	w: 3
+i: 281	w: 2
+i: 282	w: 1
+i: 283	w: -1
+i: 284	w: 1
+i: 285	w: 0
+i: 286	w: 3
+i: 287	w: -2
+i: 288	w: -1
+i: 289	w: 2
+i: 290	w: 2
+i: 291	w: -2
+i: 292	w: 3
+i: 293	w: 0
+i: 294	w: 3
+i: 295	w: -1
+i: 296	w: 3
+i: 297	w: 2
+i: 298	w: 2
+i: 299	w: 3
+i: 300	w: 0
+i: 301	w: -2
+i: 302	w: -1
+i: 303	w: 0
+i: 304	w: 2
+i: 305	w: 3
+i: 306	w: 1
+i: 307	w: 0
+i: 308	w: 3
+i: 309	w: -1
+i: 310	w: -1
+i: 311	w: 2
+i: 312	w: 1
+i: 313	w: 0
+i: 314	w: 1
+i: 315	w: -2
+i: 316	w: 3
+i: 317	w: 1
+i: 318	w: -2
+i: 319	w: -2
+i: 320	w: 3
+i: 321	w: 0
+i: 322	w: 2
+i: 323	w: 3
+i: 324	w: 1
+i: 325	w: -1
+i: 326	w: 2
+i: 327	w: -2
+i: 328	w: 3
+i: 329	w: -2
+i: 330	w: 3
+i: 331	w: 3
+i: 332	w: -2
+i: 333	w: 3
+i: 334	w: -1
+i: 335	w: 0
+i: 336	w: 0
+i: 337	w: 1
+i: 338	w: 0
+i: 339	w: 0
+i: 340	w: 2
+i: 341	w: 2
+i: 342	w: 2
+i: 343	w: 0
+i: 344	w: -2
+i: 345	w: -2
+i: 346	w: -2
+i: 347	w: 1
+i: 348	w: 1
+i: 349	w: 3
+i: 350	w: -1
+i: 351	w: 0
+i: 352	w: -1
+i: 353	w: 3
+i: 354	w: 3
+i: 355	w: 0
+i: 356	w: 2
+i: 357	w: -1
+i: 358	w: 1
+i: 359	w: 2
+i: 360	w: -1
+i: 361	w: -2
+i: 362	w: 1
+i: 363	w: -2
+i: 364	w: 1
+i: 365	w: 1
+i: 366	w: -2
+i: 367	w: -2
+i: 368	w: -2
+i: 369	w: 1
+i: 370	w: -2
+i: 371	w: 0
+i: 372	w: 3
+i: 373	w: 0
+i: 374	w: 2
+i: 375	w: 3
+i: 376	w: 0
+i: 377	w: 3
+i: 378	w: -1
+i: 379	w: 3
+i: 380	w: 0
+i: 381	w: -2
+i: 382	w: 0
+i: 383	w: 1
+i: 384	w: -2
+i: 385	w: 3
+i: 386	w: -2
+i: 387	w: 0
+i: 388	w: -1
+i: 389	w: -1
+i: 390	w: -2
+i: 391	w: -2
+i: 392	w: -1
+i: 393	w: 0
+i: 394	w: 2
+i: 395	w: 3
+i: 396	w: 1
+i: 397	w: 3
+i: 398	w: 1
+i: 399	w: 1
+i: 400	w: 0
+i: 401	w: 1
+i: 402	w: 1
+i: 403	w: 3
+i: 404	w: 3
+i: 405	w: 0
+i: 406	w: 0
+i: 407	w: 0
+i: 408	w: 3
+i: 409	w: 1
+i: 410	w: -1
+i: 411	w: -1
+i: 412	w: 2
+i: 413	w: -1
+i: 414	w: 0
+i: 415	w: 0
+i: 416	w: -1
+i: 417	w: -2
+i: 418	w: 2
+i: 419	w: -2
+i: 420	w: -1
+i: 421	w: 1
+i: 422	w: -2
+i: 423	w: -1
+i: 424	w: 3
+i: 425	w: 3
+i: 426	w: 2
+i: 427	w: 0
+i: 428	w: 2
+i: 429	w: -1
+i: 430	w: 1
+i: 431	w: 2
+i: 432	w: 2
+i: 433	w: -2
+i: 434	w: 1
+i: 435	w: -1
+i: 436	w: -2
+i: 437	w: 3
+i: 438	w: 1
+i: 439	w: 1
+i: 440	w: -1
+i: 441	w: 1
+i: 442	w: 0
+i: 443	w: 1
+i: 444	w: 0
+i: 445	w: 1
+i: 446	w: 3
+i: 447	w: 1
+i: 448	w: 1
+i: 449	w: -1
+i: 450	w: 1
+i: 451	w: 1
+i: 452	w: 2
+i: 453	w: 0
+i: 454	w: 2
+i: 455	w: -1
+i: 456	w: -1
+i: 457	w: -2
+i: 458	w: -1
+i: 459	w: 1
+i: 460	w: -1
+i: 461	w: 2
+i: 462	w: -1
+i: 463	w: 1
+i: 464	w: 1
+i: 465	w: 0
+i: 466	w: 2
+i: 467	w: 1
+i: 468	w: -1
+i: 469	w: -2
+i: 470	w: 3
+i: 471	w: -2
+i: 472	w: 1
+i: 473	w: 3
+i: 474	w: 1
+i: 475	w: 3
+i: 476	w: 0
+i: 477	w: -2
+i: 478	w: -1
+i: 479	w: -2
+i: 480	w: 0
+i: 481	w: 0
+i: 482	w: -1
+i: 483	w: 2
+i: 484	w: 0
+i: 485	w: 1
+i: 486	w: -2
+i: 487	w: 1
+i: 488	w: 1
+i: 489	w: -1
+i: 490	w: -2
+i: 491	w: 2
+i: 492	w: 2
+i: 493	w: 3
+i: 494	w: 3
+i: 495	w: -1
+i: 496	w: -1
+i: 497	w: 1
+i: 498	w: 0
+i: 499	w: -1
+i: 500	w: 1
+i: 501	w: 3
+i: 502	w: -1
+i: 503	w: 2
+i: 504	w: 3
+i: 505	w: 3
+i: 506	w: 0
+i: 507	w: -1
+i: 508	w: 3
+i: 509	w: -1
+i: 510	w: 3
+i: 511	w: 3
+i: 512	w: 1
+i: 513	w: -2
+i: 514	w: 2
+i: 515	w: -2
+i: 516	w: 1
+i: 517	w: 2
+i: 518	w: -1
+i: 519	w: -2
+i: 520	w: 1
+i: 521	w: -2
+i: 522	w: 0
+i: 523	w: 3
+i: 524	w: 3
+i: 525	w: -1
+i: 526	w: -2
+i: 527	w: -1
+i: 528	w: 1
+i: 529	w: -1
+i: 530	w: 0
+i: 531	w: -2
+i: 532	w: -2
+i: 533	w: 1
+i: 534	w: 1
+i: 535	w: 1
+i: 536	w: -2
+i: 537	w: 3
+i: 538	w: 3
+i: 539	w: 2
+i: 540	w: -2
+i: 541	w: 0
+i: 542	w: 1
+i: 543	w: -1
+i: 544	w: 1
+i: 545	w: -1
+i: 546	w: 3
+i: 547	w: 2
+i: 548	w: 1
+i: 549	w: 3
+i: 550	w: 1
+i: 551	w: 3
+i: 552	w: -16
+i: 553	w: -13
+i: 554	w: 2
+i: 555	w: 2
+i: 556	w: 1
+i: 557	w: 3
+i: 558	w: 3
+i: 559	w: -2
+i: 560	w: 2
+i: 561	w: 3
+i: 562	w: 2
+i: 563	w: 0
+i: 564	w: -1
+i: 565	w: -1
+i: 566	w: -2
+i: 567	w: -1
+i: 568	w: 2
+i: 569	w: 3
+i: 570	w: 3
+i: 571	w: 2
+i: 572	w: 3
+i: 573	w: -1
+i: 574	w: 2
+i: 575	w: -2
+i: 576	w: 0
+i: 577	w: -1
+i: 578	w: 3
+i: 579	w: 2
+i: 580	w: -2
+i: 581	w: -2
+i: 582	w: 1
+i: 583	w: 3
+i: 584	w: 1
+i: 585	w: -1
+i: 586	w: 0
+i: 587	w: -2
+i: 588	w: 2
+i: 589	w: 3
+i: 590	w: 2
+i: 591	w: -2
+i: 592	w: 3
+i: 593	w: 1
+i: 594	w: 1
+i: 595	w: -2
+i: 596	w: 2
+i: 597	w: 1
+i: 598	w: 3
+i: 599	w: -1
+i: 600	w: -2
+i: 601	w: 1
+i: 602	w: 1
+i: 603	w: 3
+i: 604	w: 2
+i: 605	w: -1
+i: 606	w: -2
+i: 607	w: 2
+i: 608	w: 1
+i: 609	w: 1
+i: 610	w: -2
+i: 611	w: -1
+i: 612	w: 1
+i: 613	w: 1
+i: 614	w: -1
+i: 615	w: 2
+i: 616	w: 1
+i: 617	w: -1
+i: 618	w: 1
+i: 619	w: -1
+i: 620	w: -2
+i: 621	w: -1
+i: 622	w: 0
+i: 623	w: 3
+i: 624	w: 2
+i: 625	w: 1
+i: 626	w: 1
+i: 627	w: -1
+i: 628	w: -2
+i: 629	w: -1
+i: 630	w: 0
+i: 631	w: 2
+i: 632	w: -16
+i: 633	w: -16
+i: 634	w: 1
+i: 635	w: -2
+i: 636	w: 3
+i: 637	w: -1
+i: 638	w: 0
+i: 639	w: -2
+i: 640	w: 2
+i: 641	w: 1
+i: 642	w: -1
+i: 643	w: 3
+i: 644	w: -2
+i: 645	w: -2
+i: 646	w: 2
+i: 647	w: -1
+i: 648	w: 15
+i: 649	w: 3
+i: 650	w: -1
+i: 651	w: 0
+i: 652	w: -2
+i: 653	w: -1
+i: 654	w: 3
+i: 655	w: 1
+i: 656	w: 2
+i: 657	w: 1
+i: 658	w: 2
+i: 659	w: 2
+i: 660	w: 0
+i: 661	w: 2
+i: 662	w: 0
+i: 663	w: 2
+i: 664	w: -1
+i: 665	w: 1
+i: 666	w: 2
+i: 667	w: -2
+i: 668	w: 1
+i: 669	w: -2
+i: 670	w: -2
+i: 671	w: 3
+i: 672	w: -1
+i: 673	w: 0
+i: 674	w: 3
+i: 675	w: -2
+i: 676	w: -2
+i: 677	w: -1
+i: 678	w: -1
+i: 679	w: 0
+i: 680	w: -2
+i: 681	w: 0
+i: 682	w: 2
+i: 683	w: 2
+i: 684	w: 1
+i: 685	w: -1
+i: 686	w: -1
+i: 687	w: -1
+i: 688	w: 0
+i: 689	w: 1
+i: 690	w: 1
+i: 691	w: 2
+i: 692	w: -1
+i: 693	w: 1
+i: 694	w: 0
+i: 695	w: 1
+i: 696	w: 3
+i: 697	w: 2
+i: 698	w: 1
+i: 699	w: 0
+i: 700	w: 3
+i: 701	w: 0
+i: 702	w: -1
+i: 703	w: -2
+i: 704	w: 0
+i: 705	w: 2
+i: 706	w: 2
+i: 707	w: 0
+i: 708	w: 3
+i: 709	w: -2
+i: 710	w: 2
+i: 711	w: 1
+i: 712	w: 0
+i: 713	w: -2
+i: 714	w: -2
+i: 715	w: -2
+i: 716	w: -2
+i: 717	w: -1
+i: 718	w: 3
+i: 719	w: 0
+i: 720	w: 3
+i: 721	w: 1
+i: 722	w: -1
+i: 723	w: 2
+i: 724	w: 2
+i: 725	w: 1
+i: 726	w: -1
+i: 727	w: 1
+i: 728	w: 0
+i: 729	w: 1
+i: 730	w: 3
+i: 731	w: 3
+i: 732	w: 1
+i: 733	w: 3
+i: 734	w: 1
+i: 735	w: 3
+i: 736	w: 1
+i: 737	w: 0
+i: 738	w: -1
+i: 739	w: -1
+i: 740	w: -2
+i: 741	w: 2
+i: 742	w: 2
+i: 743	w: 0
+i: 744	w: 0
+i: 745	w: 0
+i: 746	w: -2
+i: 747	w: 0
+i: 748	w: 2
+i: 749	w: 2
+i: 750	w: 3
+i: 751	w: -1
+i: 752	w: -1
+i: 753	w: 2
+i: 754	w: 1
+i: 755	w: 3
+i: 756	w: 3
+i: 757	w: 3
+i: 758	w: -1
+i: 759	w: 3
+i: 760	w: -2
+i: 761	w: -2
+i: 762	w: 0
+i: 763	w: 1
+i: 764	w: 3
+i: 765	w: -2
+i: 766	w: -2
+i: 767	w: -1
+i: 768	w: -2
+i: 769	w: 3
+i: 770	w: 0
+i: 771	w: -2
+i: 772	w: 1
+i: 773	w: 2
+i: 774	w: -2
+i: 775	w: 2
+i: 776	w: -1
+i: 777	w: 3
+i: 778	w: -2
+i: 779	w: 1
+i: 780	w: 1
+i: 781	w: 1
+i: 782	w: 2
+i: 783	w: 0
+i: 784	w: -1
+i: 785	w: -1
+i: 786	w: 3
+i: 787	w: 3
+i: 788	w: 2
+i: 789	w: -2
+i: 790	w: 2
+i: 791	w: 0
+i: 792	w: -1
+i: 793	w: -1
+i: 794	w: 1
+i: 795	w: 2
+i: 796	w: 3
+i: 797	w: -1
+i: 798	w: -16
+i: 799	w: 15
+i: 800	w: 3
+i: 801	w: 15
+i: 802	w: -1
+i: 803	w: 0
+i: 804	w: 2
+i: 805	w: -1
+i: 806	w: -3
+i: 807	w: 1
+i: 808	w: 2
+i: 809	w: 3
+i: 810	w: -2
+i: 811	w: -1
+i: 812	w: -2
+i: 813	w: 0
+i: 814	w: 1
+i: 815	w: -2
+i: 816	w: -1
+i: 817	w: -15
+i: 818	w: 15
+i: 819	w: 3
+i: 820	w: -16
+i: 821	w: 1
+i: 822	w: 2
+i: 823	w: -2
+i: 824	w: 0
+i: 825	w: 0
+i: 826	w: 1
+i: 827	w: -1
+i: 828	w: 1
+i: 829	w: -2
+i: 830	w: -16
+i: 831	w: 2
+i: 832	w: -2
+i: 833	w: 1
+i: 834	w: 3
+i: 835	w: 0
+i: 836	w: 1
+i: 837	w: 3
+i: 838	w: 3
+i: 839	w: -1
+i: 840	w: 0
+i: 841	w: 1
+i: 842	w: -1
+i: 843	w: 1
+i: 844	w: 3
+i: 845	w: 0
+i: 846	w: -1
+i: 847	w: 2
+i: 848	w: 3
+i: 849	w: -2
+i: 850	w: 0
+i: 851	w: 3
+i: 852	w: -1
+i: 853	w: -1
+i: 854	w: 3
+i: 855	w: 2
+i: 856	w: -1
+i: 857	w: 0
+i: 858	w: 1
+i: 859	w: 0
+i: 860	w: 1
+i: 861	w: -2
+i: 862	w: 3
+i: 863	w: 1
+i: 864	w: -1
+i: 865	w: 2
+i: 866	w: 1
+i: 867	w: 2
+i: 868	w: -1
+i: 869	w: 0
+i: 870	w: 2
+i: 871	w: 2
+i: 872	w: 1
+i: 873	w: 3
+i: 874	w: 3
+i: 875	w: 0
+i: 876	w: -1
+i: 877	w: -2
+i: 878	w: 2
+i: 879	w: 3
+i: 880	w: -2
+i: 881	w: -1
+i: 882	w: 2
+i: 883	w: 3
+i: 884	w: -2
+i: 885	w: 1
+i: 886	w: 1
+i: 887	w: -1
+i: 888	w: -2
+i: 889	w: 3
+i: 890	w: 1
+i: 891	w: 1
+i: 892	w: 3
+i: 893	w: -2
+i: 894	w: 2
+i: 895	w: -2
+i: 896	w: 1
+i: 897	w: -1
+i: 898	w: 3
+i: 899	w: -2
+i: 900	w: -1
+i: 901	w: -1
+i: 902	w: 0
+i: 903	w: 2
+i: 904	w: -2
+i: 905	w: -1
+i: 906	w: 2
+i: 907	w: -1
+i: 908	w: 3
+i: 909	w: 0
+i: 910	w: -2
+i: 911	w: 1
+i: 912	w: -1
+i: 913	w: 2
+i: 914	w: 15
+i: 915	w: 15
+i: 916	w: -2
+i: 917	w: -2
+i: 918	w: 2
+i: 919	w: 2
+i: 920	w: 3
+i: 921	w: -2
+i: 922	w: -1
+i: 923	w: 0
+i: 924	w: -2
+i: 925	w: 1
+i: 926	w: -2
+i: 927	w: 3
+i: 928	w: 0
+i: 929	w: 1
+i: 930	w: 3
+i: 931	w: -1
+i: 932	w: 2
+i: 933	w: 3
+i: 934	w: 3
+i: 935	w: 2
+i: 936	w: -2
+i: 937	w: -1
+i: 938	w: -2
+i: 939	w: 3
+i: 940	w: -1
+i: 941	w: 2
+i: 942	w: -2
+i: 943	w: -1
+i: 944	w: -1
+i: 945	w: 0
+i: 946	w: -2
+i: 947	w: -1
+i: 948	w: -2
+i: 949	w: 3
+i: 950	w: 3
+i: 951	w: 1
+i: 952	w: 1
+i: 953	w: 2
+i: 954	w: 14
+i: 955	w: 1
+i: 956	w: 3
+i: 957	w: -2
+i: 958	w: 0
+i: 959	w: -1
+i: 960	w: 1
+i: 961	w: -9
+i: 962	w: 15
+i: 963	w: -14
+i: 964	w: 0
+i: 965	w: 1
+i: 966	w: 2
+i: 967	w: 0
+i: 968	w: 2
+i: 969	w: 0
+i: 970	w: 3
+i: 971	w: 1
+i: 972	w: 3
+i: 973	w: 3
+i: 974	w: 0
+i: 975	w: -2
+i: 976	w: 0
+i: 977	w: 1
+i: 978	w: 3
+i: 979	w: 0
+i: 980	w: -2
+i: 981	w: 0
+i: 982	w: 2
+i: 983	w: 1
+i: 984	w: 2
+i: 985	w: 1
+i: 986	w: -2
+i: 987	w: -1
+i: 988	w: -1
+i: 989	w: -1
+i: 990	w: -2
+i: 991	w: 1
+i: 992	w: -2
+i: 993	w: -2
+i: 994	w: 1
+i: 995	w: 1
+i: 996	w: 1
+i: 997	w: 3
+i: 998	w: 3
+i: 999	w: 3
+i: 1000	w: 0
+i: 1001	w: 3
+i: 1002	w: 0
+i: 1003	w: 3
+i: 1004	w: 2
+i: 1005	w: 3
+i: 1006	w: 3
+i: 1007	w: 2
+i: 1008	w: -2
+i: 1009	w: 0
+i: 1010	w: 3
+i: 1011	w: 2
+i: 1012	w: 0
+i: 1013	w: 1
+i: 1014	w: -1
+i: 1015	w: 2
+i: 1016	w: 2
+i: 1017	w: 3
+i: 1018	w: 3
+i: 1019	w: -2
+i: 1020	w: 2
+i: 1021	w: 3
+i: 1022	w: -1
+i: 1023	w: 3
+
+Printing trans buff:
+Entry number: 0	Address: 105326441	Valid: 1	Degree: 1
+Entry number: 1	Address: 105326440	Valid: 1	Degree: 3
+Entry number: 2	Address: 105326441	Valid: 1	Degree: 2
+Entry number: 3	Address: 105326442	Valid: 1	Degree: 1
+Entry number: 4	Address: 105326441	Valid: 1	Degree: 3
+Entry number: 5	Address: 105326442	Valid: 1	Degree: 2
+Entry number: 6	Address: 105326443	Valid: 1	Degree: 1
+Entry number: 7	Address: 105326442	Valid: 1	Degree: 3
+Entry number: 8	Address: 105326443	Valid: 1	Degree: 2
+Entry number: 9	Address: 105326444	Valid: 1	Degree: 1
+Entry number: 10	Address: 105326443	Valid: 1	Degree: 3
+Entry number: 11	Address: 105326444	Valid: 1	Degree: 2
+Entry number: 12	Address: 105326445	Valid: 1	Degree: 1
+Entry number: 13	Address: 105326444	Valid: 1	Degree: 3
+Entry number: 14	Address: 105326445	Valid: 1	Degree: 2
+Entry number: 15	Address: 105326446	Valid: 1	Degree: 1
+Entry number: 16	Address: 105326445	Valid: 1	Degree: 3
+Entry number: 17	Address: 105326446	Valid: 1	Degree: 2
+Entry number: 18	Address: 105326447	Valid: 1	Degree: 1
+Entry number: 19	Address: 105326446	Valid: 1	Degree: 3
+Entry number: 20	Address: 105326447	Valid: 1	Degree: 2
+Entry number: 21	Address: 105326448	Valid: 1	Degree: 1
+Entry number: 22	Address: 105326447	Valid: 1	Degree: 3
+Entry number: 23	Address: 105326448	Valid: 1	Degree: 2
+Entry number: 24	Address: 105326449	Valid: 1	Degree: 1
+Entry number: 25	Address: 105326448	Valid: 1	Degree: 3
+Entry number: 26	Address: 105326449	Valid: 1	Degree: 2
+Entry number: 27	Address: 105326450	Valid: 1	Degree: 1
+Entry number: 28	Address: 105326449	Valid: 1	Degree: 3
+Entry number: 29	Address: 105326450	Valid: 1	Degree: 2
+Entry number: 30	Address: 105326451	Valid: 1	Degree: 1
+Entry number: 31	Address: 105326450	Valid: 1	Degree: 3
+Entry number: 32	Address: 105326451	Valid: 1	Degree: 2
+Entry number: 33	Address: 105326452	Valid: 1	Degree: 1
+Entry number: 34	Address: 105326451	Valid: 1	Degree: 3
+Entry number: 35	Address: 105326452	Valid: 1	Degree: 2
+Entry number: 36	Address: 105326453	Valid: 1	Degree: 1
+Entry number: 37	Address: 105326452	Valid: 1	Degree: 3
+Entry number: 38	Address: 105326453	Valid: 1	Degree: 2
+Entry number: 39	Address: 105326454	Valid: 1	Degree: 1
+Entry number: 40	Address: 105326453	Valid: 1	Degree: 3
+Entry number: 41	Address: 105326454	Valid: 1	Degree: 2
+Entry number: 42	Address: 105326455	Valid: 1	Degree: 1
+Entry number: 43	Address: 105326454	Valid: 1	Degree: 3
+Entry number: 44	Address: 105326455	Valid: 1	Degree: 2
+Entry number: 45	Address: 105326456	Valid: 1	Degree: 1
+Entry number: 46	Address: 105326455	Valid: 1	Degree: 3
+Entry number: 47	Address: 105326456	Valid: 1	Degree: 2
+Entry number: 48	Address: 105326457	Valid: 1	Degree: 1
+Entry number: 49	Address: 105326456	Valid: 1	Degree: 3
+Entry number: 50	Address: 105326457	Valid: 1	Degree: 2
+Entry number: 51	Address: 105326458	Valid: 1	Degree: 1
+Entry number: 52	Address: 105326457	Valid: 1	Degree: 3
+Entry number: 53	Address: 105326458	Valid: 1	Degree: 2
+Entry number: 54	Address: 105326459	Valid: 1	Degree: 1
+Entry number: 55	Address: 105326458	Valid: 1	Degree: 3
+Entry number: 56	Address: 105326459	Valid: 1	Degree: 2
+Entry number: 57	Address: 105326460	Valid: 1	Degree: 1
+Entry number: 58	Address: 105326459	Valid: 1	Degree: 3
+Entry number: 59	Address: 105326460	Valid: 1	Degree: 2
+Entry number: 60	Address: 105326461	Valid: 1	Degree: 1
+Entry number: 61	Address: 105326460	Valid: 1	Degree: 3
+Entry number: 62	Address: 105326461	Valid: 1	Degree: 2
+Entry number: 63	Address: 105326462	Valid: 1	Degree: 1
+Entry number: 64	Address: 105326461	Valid: 1	Degree: 3
+Entry number: 65	Address: 105326462	Valid: 1	Degree: 2
+Entry number: 66	Address: 105326463	Valid: 1	Degree: 1
+Entry number: 67	Address: 105326462	Valid: 1	Degree: 3
+Entry number: 68	Address: 105326463	Valid: 1	Degree: 2
+Entry number: 69	Address: 105326464	Valid: 1	Degree: 1
+Entry number: 70	Address: 105326463	Valid: 1	Degree: 3
+Entry number: 71	Address: 105326464	Valid: 1	Degree: 2
+Entry number: 72	Address: 105326465	Valid: 1	Degree: 1
+Entry number: 73	Address: 105326464	Valid: 1	Degree: 3
+Entry number: 74	Address: 105326465	Valid: 1	Degree: 2
+Entry number: 75	Address: 105326466	Valid: 1	Degree: 1
+Entry number: 76	Address: 31934937	Valid: 0	Degree: 3
+Entry number: 77	Address: 31934941	Valid: 0	Degree: 2
+Entry number: 78	Address: 31934945	Valid: 0	Degree: 1
+Entry number: 79	Address: 109431149	Valid: 1	Degree: 3
+Entry number: 80	Address: 109431150	Valid: 1	Degree: 2
+Entry number: 81	Address: 109431151	Valid: 1	Degree: 1
+Entry number: 82	Address: 31934928	Valid: 1	Degree: 3
+Entry number: 83	Address: 31934925	Valid: 1	Degree: 2
+Entry number: 84	Address: 31934922	Valid: 1	Degree: 1
+Entry number: 85	Address: 123166309	Valid: 1	Degree: 3
+Entry number: 86	Address: 123166308	Valid: 1	Degree: 2
+Entry number: 87	Address: 123166307	Valid: 1	Degree: 1
+Entry number: 88	Address: 12219543	Valid: 1	Degree: 3
+Entry number: 89	Address: 12219545	Valid: 0	Degree: 2
+Entry number: 90	Address: 12219547	Valid: 0	Degree: 1
+Entry number: 91	Address: 68288924	Valid: 0	Degree: 3
+Entry number: 92	Address: 68288925	Valid: 1	Degree: 2
+Entry number: 93	Address: 68288926	Valid: 1	Degree: 1
+Entry number: 94	Address: 68288925	Valid: 1	Degree: 3
+Entry number: 95	Address: 68288926	Valid: 1	Degree: 2
+Entry number: 96	Address: 68288927	Valid: 1	Degree: 1
+Entry number: 97	Address: 12219544	Valid: 1	Degree: 3
+Entry number: 98	Address: 12219545	Valid: 0	Degree: 2
+Entry number: 99	Address: 12219546	Valid: 0	Degree: 1
+Entry number: 100	Address: 12219545	Valid: 0	Degree: 3
+Entry number: 101	Address: 12219546	Valid: 0	Degree: 2
+Entry number: 102	Address: 12219547	Valid: 0	Degree: 1
+Entry number: 103	Address: 12219546	Valid: 0	Degree: 3
+Entry number: 104	Address: 12219547	Valid: 0	Degree: 2
+Entry number: 105	Address: 12219548	Valid: 0	Degree: 1
+Entry number: 106	Address: 39413948	Valid: 1	Degree: 3
+Entry number: 107	Address: 39413949	Valid: 0	Degree: 2
+Entry number: 108	Address: 39413950	Valid: 1	Degree: 1
+Entry number: 109	Address: 12219529	Valid: 0	Degree: 3
+Entry number: 110	Address: 12219527	Valid: 0	Degree: 2
+Entry number: 111	Address: 12219525	Valid: 0	Degree: 1
+Entry number: 112	Address: 31934937	Valid: 0	Degree: 3
+Entry number: 113	Address: 31934936	Valid: 1	Degree: 2
+Entry number: 114	Address: 31934935	Valid: 1	Degree: 1
+Entry number: 115	Address: 39413952	Valid: 1	Degree: 3
+Entry number: 116	Address: 39413953	Valid: 1	Degree: 2
+Entry number: 117	Address: 39413954	Valid: 1	Degree: 1
+Entry number: 118	Address: 12219550	Valid: 0	Degree: 3
+Entry number: 119	Address: 12219551	Valid: 0	Degree: 2
+Entry number: 120	Address: 12219552	Valid: 0	Degree: 1
+Entry number: 121	Address: 12219551	Valid: 0	Degree: 3
+Entry number: 122	Address: 12219552	Valid: 0	Degree: 2
+Entry number: 123	Address: 12219553	Valid: 0	Degree: 1
+Entry number: 124	Address: 19908630	Valid: 1	Degree: 3
+Entry number: 125	Address: 19908631	Valid: 1	Degree: 2
+Entry number: 126	Address: 19908632	Valid: 1	Degree: 1
+Entry number: 127	Address: 19908631	Valid: 1	Degree: 3
+Entry number: 128	Address: 19908632	Valid: 1	Degree: 2
+Entry number: 129	Address: 19908633	Valid: 1	Degree: 1
+Entry number: 130	Address: 31934945	Valid: 0	Degree: 3
+Entry number: 131	Address: 31934943	Valid: 0	Degree: 2
+Entry number: 132	Address: 31934941	Valid: 0	Degree: 1
+Entry number: 133	Address: 120966802	Valid: 0	Degree: 3
+Entry number: 134	Address: 120966793	Valid: 0	Degree: 2
+Entry number: 135	Address: 120966784	Valid: 0	Degree: 1
+Entry number: 136	Address: 19908632	Valid: 1	Degree: 3
+Entry number: 137	Address: 19908633	Valid: 1	Degree: 2
+Entry number: 138	Address: 19908634	Valid: 1	Degree: 1
+Entry number: 139	Address: 19908633	Valid: 1	Degree: 3
+Entry number: 140	Address: 19908634	Valid: 1	Degree: 2
+Entry number: 141	Address: 19908635	Valid: 1	Degree: 1
+Entry number: 142	Address: 19908634	Valid: 1	Degree: 3
+Entry number: 143	Address: 19908635	Valid: 1	Degree: 2
+Entry number: 144	Address: 19908636	Valid: 1	Degree: 1
+Entry number: 145	Address: 19908635	Valid: 1	Degree: 3
+Entry number: 146	Address: 19908636	Valid: 1	Degree: 2
+Entry number: 147	Address: 19908637	Valid: 1	Degree: 1
+Entry number: 148	Address: 12219552	Valid: 0	Degree: 3
+Entry number: 149	Address: 12219553	Valid: 0	Degree: 2
+Entry number: 150	Address: 12219554	Valid: 1	Degree: 1
+Entry number: 151	Address: 12219553	Valid: 0	Degree: 3
+Entry number: 152	Address: 12219554	Valid: 1	Degree: 2
+Entry number: 153	Address: 12219555	Valid: 0	Degree: 1
+Entry number: 154	Address: 12219554	Valid: 1	Degree: 3
+Entry number: 155	Address: 12219555	Valid: 0	Degree: 2
+Entry number: 156	Address: 12219556	Valid: 1	Degree: 1
+Entry number: 157	Address: 12219555	Valid: 0	Degree: 3
+Entry number: 158	Address: 12219556	Valid: 1	Degree: 2
+Entry number: 159	Address: 34794283	Valid: 1	Degree: 3
+Entry number: 160	Address: 34794284	Valid: 1	Degree: 2
+Entry number: 161	Address: 34794285	Valid: 1	Degree: 1
+Entry number: 162	Address: 117178708	Valid: 0	Degree: 3
+Entry number: 163	Address: 117178709	Valid: 1	Degree: 2
+Entry number: 164	Address: 117178710	Valid: 1	Degree: 1
+Entry number: 165	Address: 117178709	Valid: 1	Degree: 3
+Entry number: 166	Address: 117178710	Valid: 1	Degree: 2
+Entry number: 167	Address: 117178711	Valid: 1	Degree: 1
+Entry number: 168	Address: 117178710	Valid: 1	Degree: 3
+Entry number: 169	Address: 117178711	Valid: 1	Degree: 2
+Entry number: 170	Address: 117178712	Valid: 1	Degree: 1
+Entry number: 171	Address: 117178711	Valid: 1	Degree: 3
+Entry number: 172	Address: 117178712	Valid: 1	Degree: 2
+Entry number: 173	Address: 117178713	Valid: 1	Degree: 1
+Entry number: 174	Address: 29038680	Valid: 0	Degree: 3
+Entry number: 175	Address: 29038679	Valid: 0	Degree: 2
+Entry number: 176	Address: 29038678	Valid: 0	Degree: 1
+Entry number: 177	Address: 117178714	Valid: 1	Degree: 3
+Entry number: 178	Address: 117178715	Valid: 1	Degree: 2
+Entry number: 179	Address: 117178716	Valid: 1	Degree: 1
+Entry number: 180	Address: 117178715	Valid: 1	Degree: 3
+Entry number: 181	Address: 117178716	Valid: 1	Degree: 2
+Entry number: 182	Address: 117178717	Valid: 1	Degree: 1
+Entry number: 183	Address: 117178721	Valid: 1	Degree: 3
+Entry number: 184	Address: 117178722	Valid: 1	Degree: 2
+Entry number: 185	Address: 117178723	Valid: 1	Degree: 1
+Entry number: 186	Address: 117178722	Valid: 1	Degree: 3
+Entry number: 187	Address: 117178723	Valid: 1	Degree: 2
+Entry number: 188	Address: 117178724	Valid: 1	Degree: 1
+Entry number: 189	Address: 117178723	Valid: 1	Degree: 3
+Entry number: 190	Address: 117178724	Valid: 1	Degree: 2
+Entry number: 191	Address: 117178725	Valid: 1	Degree: 1
+Entry number: 192	Address: 117178724	Valid: 1	Degree: 3
+Entry number: 193	Address: 117178725	Valid: 1	Degree: 2
+Entry number: 194	Address: 117178726	Valid: 1	Degree: 1
+Entry number: 195	Address: 74200561	Valid: 1	Degree: 3
+Entry number: 196	Address: 74200557	Valid: 0	Degree: 2
+Entry number: 197	Address: 74200553	Valid: 1	Degree: 1
+Entry number: 198	Address: 117178725	Valid: 1	Degree: 3
+Entry number: 199	Address: 117178726	Valid: 1	Degree: 2
+Entry number: 200	Address: 117178727	Valid: 1	Degree: 1
+Entry number: 201	Address: 117178726	Valid: 1	Degree: 3
+Entry number: 202	Address: 117178727	Valid: 1	Degree: 2
+Entry number: 203	Address: 117178728	Valid: 1	Degree: 1
+Entry number: 204	Address: 117178727	Valid: 1	Degree: 3
+Entry number: 205	Address: 117178728	Valid: 1	Degree: 2
+Entry number: 206	Address: 117178729	Valid: 1	Degree: 1
+Entry number: 207	Address: 117178728	Valid: 1	Degree: 3
+Entry number: 208	Address: 117178729	Valid: 1	Degree: 2
+Entry number: 209	Address: 117178730	Valid: 1	Degree: 1
+Entry number: 210	Address: 117178729	Valid: 1	Degree: 3
+Entry number: 211	Address: 117178730	Valid: 1	Degree: 2
+Entry number: 212	Address: 117178731	Valid: 1	Degree: 1
+Entry number: 213	Address: 117178730	Valid: 1	Degree: 3
+Entry number: 214	Address: 117178731	Valid: 1	Degree: 2
+Entry number: 215	Address: 117178732	Valid: 1	Degree: 1
+Entry number: 216	Address: 117178731	Valid: 1	Degree: 3
+Entry number: 217	Address: 117178732	Valid: 1	Degree: 2
+Entry number: 218	Address: 117178733	Valid: 1	Degree: 1
+Entry number: 219	Address: 12219559	Valid: 0	Degree: 3
+Entry number: 220	Address: 12219560	Valid: 0	Degree: 2
+Entry number: 221	Address: 12219561	Valid: 0	Degree: 1
+Entry number: 222	Address: 45581508	Valid: 1	Degree: 3
+Entry number: 223	Address: 45581509	Valid: 1	Degree: 2
+Entry number: 224	Address: 45581510	Valid: 0	Degree: 1
+Entry number: 225	Address: 12219560	Valid: 0	Degree: 3
+Entry number: 226	Address: 12219561	Valid: 0	Degree: 2
+Entry number: 227	Address: 12219562	Valid: 0	Degree: 1
+Entry number: 228	Address: 34794286	Valid: 1	Degree: 3
+Entry number: 229	Address: 34794287	Valid: 0	Degree: 2
+Entry number: 230	Address: 34794288	Valid: 1	Degree: 1
+Entry number: 231	Address: 34794287	Valid: 0	Degree: 3
+Entry number: 232	Address: 34794288	Valid: 1	Degree: 2
+Entry number: 233	Address: 34794289	Valid: 1	Degree: 1
+Entry number: 234	Address: 34794288	Valid: 1	Degree: 3
+Entry number: 235	Address: 34794289	Valid: 1	Degree: 2
+Entry number: 236	Address: 34794290	Valid: 1	Degree: 1
+Entry number: 237	Address: 13189750	Valid: 1	Degree: 3
+Entry number: 238	Address: 63374222	Valid: 1	Degree: 3
+Entry number: 239	Address: 63374226	Valid: 1	Degree: 2
+Entry number: 240	Address: 63374230	Valid: 1	Degree: 1
+Entry number: 241	Address: 117178745	Valid: 1	Degree: 3
+Entry number: 242	Address: 117178746	Valid: 1	Degree: 2
+Entry number: 243	Address: 117178747	Valid: 1	Degree: 1
+Entry number: 244	Address: 117178748	Valid: 1	Degree: 3
+Entry number: 245	Address: 117178749	Valid: 1	Degree: 2
+Entry number: 246	Address: 117178750	Valid: 1	Degree: 1
+Entry number: 247	Address: 51041923	Valid: 1	Degree: 3
+Entry number: 248	Address: 51041924	Valid: 1	Degree: 2
+Entry number: 249	Address: 51041925	Valid: 1	Degree: 1
+Entry number: 250	Address: 51041924	Valid: 1	Degree: 3
+Entry number: 251	Address: 51041925	Valid: 1	Degree: 2
+Entry number: 252	Address: 51041926	Valid: 1	Degree: 1
+Entry number: 253	Address: 51041925	Valid: 1	Degree: 3
+Entry number: 254	Address: 51041926	Valid: 1	Degree: 2
+Entry number: 255	Address: 51041927	Valid: 1	Degree: 1
+Entry number: 256	Address: 51041929	Valid: 1	Degree: 3
+Entry number: 257	Address: 51041930	Valid: 1	Degree: 2
+Entry number: 258	Address: 51041931	Valid: 1	Degree: 1
+Entry number: 259	Address: 51041930	Valid: 1	Degree: 3
+Entry number: 260	Address: 51041931	Valid: 1	Degree: 2
+Entry number: 261	Address: 51041932	Valid: 1	Degree: 1
+Entry number: 262	Address: 51041931	Valid: 1	Degree: 3
+Entry number: 263	Address: 51041932	Valid: 1	Degree: 2
+Entry number: 264	Address: 51041933	Valid: 1	Degree: 1
+Entry number: 265	Address: 51041932	Valid: 1	Degree: 3
+Entry number: 266	Address: 51041933	Valid: 1	Degree: 2
+Entry number: 267	Address: 51041934	Valid: 1	Degree: 1
+Entry number: 268	Address: 18189527	Valid: 1	Degree: 3
+Entry number: 269	Address: 18189529	Valid: 0	Degree: 2
+Entry number: 270	Address: 18189531	Valid: 1	Degree: 1
+Entry number: 271	Address: 34794289	Valid: 1	Degree: 3
+Entry number: 272	Address: 34794290	Valid: 1	Degree: 2
+Entry number: 273	Address: 34794291	Valid: 1	Degree: 1
+Entry number: 274	Address: 34794290	Valid: 1	Degree: 3
+Entry number: 275	Address: 34794291	Valid: 1	Degree: 2
+Entry number: 276	Address: 34794292	Valid: 1	Degree: 1
+Entry number: 277	Address: 12219563	Valid: 0	Degree: 3
+Entry number: 278	Address: 12219564	Valid: 0	Degree: 2
+Entry number: 279	Address: 34794291	Valid: 1	Degree: 3
+Entry number: 280	Address: 34794292	Valid: 1	Degree: 2
+Entry number: 281	Address: 34794293	Valid: 1	Degree: 1
+Entry number: 282	Address: 12219564	Valid: 0	Degree: 3
+Entry number: 283	Address: 12219565	Valid: 0	Degree: 2
+Entry number: 284	Address: 34794292	Valid: 1	Degree: 3
+Entry number: 285	Address: 34794293	Valid: 1	Degree: 2
+Entry number: 286	Address: 34794294	Valid: 1	Degree: 1
+Entry number: 287	Address: 51041941	Valid: 1	Degree: 3
+Entry number: 288	Address: 51041942	Valid: 1	Degree: 2
+Entry number: 289	Address: 51041943	Valid: 1	Degree: 1
+Entry number: 290	Address: 51041942	Valid: 1	Degree: 3
+Entry number: 291	Address: 51041943	Valid: 1	Degree: 2
+Entry number: 292	Address: 51041944	Valid: 1	Degree: 1
+Entry number: 293	Address: 51041948	Valid: 1	Degree: 3
+Entry number: 294	Address: 51041949	Valid: 1	Degree: 2
+Entry number: 295	Address: 51041950	Valid: 1	Degree: 1
+Entry number: 296	Address: 51041952	Valid: 1	Degree: 3
+Entry number: 297	Address: 51041953	Valid: 1	Degree: 2
+Entry number: 298	Address: 51041954	Valid: 0	Degree: 1
+Entry number: 299	Address: 51041953	Valid: 1	Degree: 3
+Entry number: 300	Address: 51041954	Valid: 0	Degree: 2
+Entry number: 301	Address: 51041955	Valid: 1	Degree: 1
+Entry number: 302	Address: 51041954	Valid: 0	Degree: 3
+Entry number: 303	Address: 51041955	Valid: 1	Degree: 2
+Entry number: 304	Address: 51041956	Valid: 0	Degree: 1
+Entry number: 305	Address: 51041955	Valid: 1	Degree: 3
+Entry number: 306	Address: 51041956	Valid: 0	Degree: 2
+Entry number: 307	Address: 51041957	Valid: 0	Degree: 1
+Entry number: 308	Address: 51041956	Valid: 0	Degree: 3
+Entry number: 309	Address: 51041957	Valid: 0	Degree: 2
+Entry number: 310	Address: 51041958	Valid: 1	Degree: 1
+Entry number: 311	Address: 51041957	Valid: 0	Degree: 3
+Entry number: 312	Address: 51041958	Valid: 1	Degree: 2
+Entry number: 313	Address: 51041959	Valid: 0	Degree: 1
+Entry number: 314	Address: 51041958	Valid: 1	Degree: 3
+Entry number: 315	Address: 51041959	Valid: 0	Degree: 2
+Entry number: 316	Address: 51041960	Valid: 1	Degree: 1
+Entry number: 317	Address: 51041959	Valid: 0	Degree: 3
+Entry number: 318	Address: 51041960	Valid: 1	Degree: 2
+Entry number: 319	Address: 51041961	Valid: 1	Degree: 1
+Entry number: 320	Address: 51041960	Valid: 1	Degree: 3
+Entry number: 321	Address: 51041961	Valid: 1	Degree: 2
+Entry number: 322	Address: 51041962	Valid: 0	Degree: 1
+Entry number: 323	Address: 51041961	Valid: 1	Degree: 3
+Entry number: 324	Address: 51041962	Valid: 0	Degree: 2
+Entry number: 325	Address: 51041963	Valid: 0	Degree: 1
+Entry number: 326	Address: 51041962	Valid: 0	Degree: 3
+Entry number: 327	Address: 51041963	Valid: 0	Degree: 2
+Entry number: 328	Address: 51041964	Valid: 1	Degree: 1
+Entry number: 329	Address: 51041965	Valid: 1	Degree: 3
+Entry number: 330	Address: 51041966	Valid: 1	Degree: 2
+Entry number: 331	Address: 51041967	Valid: 1	Degree: 1
+Entry number: 332	Address: 18189524	Valid: 1	Degree: 3
+Entry number: 333	Address: 18189525	Valid: 0	Degree: 2
+Entry number: 334	Address: 18189526	Valid: 1	Degree: 1
+Entry number: 335	Address: 12219567	Valid: 0	Degree: 3
+Entry number: 336	Address: 12219568	Valid: 0	Degree: 2
+Entry number: 337	Address: 12219569	Valid: 0	Degree: 1
+Entry number: 338	Address: 12219568	Valid: 0	Degree: 3
+Entry number: 339	Address: 12219569	Valid: 0	Degree: 2
+Entry number: 340	Address: 12219570	Valid: 0	Degree: 1
+Entry number: 341	Address: 34794293	Valid: 1	Degree: 3
+Entry number: 342	Address: 34794294	Valid: 1	Degree: 2
+Entry number: 343	Address: 34794295	Valid: 0	Degree: 1
+Entry number: 344	Address: 34794294	Valid: 1	Degree: 3
+Entry number: 345	Address: 34794295	Valid: 0	Degree: 2
+Entry number: 346	Address: 34794296	Valid: 1	Degree: 1
+Entry number: 347	Address: 34794295	Valid: 0	Degree: 3
+Entry number: 348	Address: 34794296	Valid: 1	Degree: 2
+Entry number: 349	Address: 34794297	Valid: 1	Degree: 1
+Entry number: 350	Address: 34794296	Valid: 1	Degree: 3
+Entry number: 351	Address: 34794297	Valid: 1	Degree: 2
+Entry number: 352	Address: 34794298	Valid: 1	Degree: 1
+Entry number: 353	Address: 51041972	Valid: 1	Degree: 3
+Entry number: 354	Address: 51041973	Valid: 1	Degree: 2
+Entry number: 355	Address: 51041974	Valid: 1	Degree: 1
+Entry number: 356	Address: 51041977	Valid: 1	Degree: 3
+Entry number: 357	Address: 51041979	Valid: 1	Degree: 2
+Entry number: 358	Address: 51041981	Valid: 1	Degree: 1
+Entry number: 359	Address: 120966789	Valid: 1	Degree: 3
+Entry number: 360	Address: 120966790	Valid: 1	Degree: 2
+Entry number: 361	Address: 120966791	Valid: 1	Degree: 1
+Entry number: 362	Address: 120966792	Valid: 1	Degree: 3
+Entry number: 363	Address: 120966793	Valid: 0	Degree: 2
+Entry number: 364	Address: 120966794	Valid: 1	Degree: 1
+Entry number: 365	Address: 12219569	Valid: 0	Degree: 3
+Entry number: 366	Address: 12219570	Valid: 0	Degree: 2
+Entry number: 367	Address: 12219571	Valid: 0	Degree: 1
+Entry number: 368	Address: 12219570	Valid: 0	Degree: 3
+Entry number: 369	Address: 12219571	Valid: 0	Degree: 2
+Entry number: 370	Address: 12219572	Valid: 0	Degree: 1
+Entry number: 371	Address: 12219571	Valid: 0	Degree: 3
+Entry number: 372	Address: 12219572	Valid: 0	Degree: 2
+Entry number: 373	Address: 12219573	Valid: 1	Degree: 1
+Entry number: 374	Address: 12219572	Valid: 0	Degree: 3
+Entry number: 375	Address: 12219573	Valid: 1	Degree: 2
+Entry number: 376	Address: 12219574	Valid: 0	Degree: 1
+Entry number: 377	Address: 34794297	Valid: 1	Degree: 3
+Entry number: 378	Address: 34794298	Valid: 1	Degree: 2
+Entry number: 379	Address: 34794299	Valid: 1	Degree: 1
+Entry number: 380	Address: 34794298	Valid: 1	Degree: 3
+Entry number: 381	Address: 34794299	Valid: 1	Degree: 2
+Entry number: 382	Address: 34794300	Valid: 1	Degree: 1
+Entry number: 383	Address: 34794299	Valid: 1	Degree: 3
+Entry number: 384	Address: 34794300	Valid: 1	Degree: 2
+Entry number: 385	Address: 34794301	Valid: 1	Degree: 1
+Entry number: 386	Address: 34794300	Valid: 1	Degree: 3
+Entry number: 387	Address: 34794301	Valid: 1	Degree: 2
+Entry number: 388	Address: 34794302	Valid: 1	Degree: 1
+Entry number: 389	Address: 13189763	Valid: 1	Degree: 3
+Entry number: 390	Address: 63374235	Valid: 1	Degree: 3
+Entry number: 391	Address: 63374239	Valid: 1	Degree: 2
+Entry number: 392	Address: 63374243	Valid: 1	Degree: 1
+Entry number: 393	Address: 120966808	Valid: 0	Degree: 3
+Entry number: 394	Address: 120966809	Valid: 0	Degree: 2
+Entry number: 395	Address: 120966810	Valid: 1	Degree: 1
+Entry number: 396	Address: 120966809	Valid: 0	Degree: 3
+Entry number: 397	Address: 120966810	Valid: 1	Degree: 2
+Entry number: 398	Address: 120966811	Valid: 0	Degree: 1
+Entry number: 399	Address: 120966810	Valid: 1	Degree: 3
+Entry number: 400	Address: 120966811	Valid: 0	Degree: 2
+Entry number: 401	Address: 120966812	Valid: 0	Degree: 1
+Entry number: 402	Address: 120966811	Valid: 0	Degree: 3
+Entry number: 403	Address: 120966812	Valid: 0	Degree: 2
+Entry number: 404	Address: 120966813	Valid: 1	Degree: 1
+Entry number: 405	Address: 120966812	Valid: 0	Degree: 3
+Entry number: 406	Address: 120966813	Valid: 1	Degree: 2
+Entry number: 407	Address: 120966814	Valid: 0	Degree: 1
+Entry number: 408	Address: 120966813	Valid: 1	Degree: 3
+Entry number: 409	Address: 120966814	Valid: 0	Degree: 2
+Entry number: 410	Address: 120966815	Valid: 1	Degree: 1
+Entry number: 411	Address: 120966814	Valid: 0	Degree: 3
+Entry number: 412	Address: 120966815	Valid: 1	Degree: 2
+Entry number: 413	Address: 120966816	Valid: 1	Degree: 1
+Entry number: 414	Address: 120966815	Valid: 1	Degree: 3
+Entry number: 415	Address: 120966816	Valid: 1	Degree: 2
+Entry number: 416	Address: 120966817	Valid: 0	Degree: 1
+Entry number: 417	Address: 120966824	Valid: 1	Degree: 3
+Entry number: 418	Address: 120966825	Valid: 1	Degree: 2
+Entry number: 419	Address: 120966826	Valid: 1	Degree: 1
+Entry number: 420	Address: 24644140	Valid: 1	Degree: 3
+Entry number: 421	Address: 24644141	Valid: 0	Degree: 2
+Entry number: 422	Address: 24644142	Valid: 0	Degree: 1
+Entry number: 423	Address: 12219576	Valid: 0	Degree: 3
+Entry number: 424	Address: 12219577	Valid: 0	Degree: 2
+Entry number: 425	Address: 34794304	Valid: 1	Degree: 3
+Entry number: 426	Address: 34794305	Valid: 1	Degree: 2
+Entry number: 427	Address: 34794306	Valid: 1	Degree: 1
+Entry number: 428	Address: 12219577	Valid: 0	Degree: 3
+Entry number: 429	Address: 12219578	Valid: 0	Degree: 2
+Entry number: 430	Address: 12219579	Valid: 0	Degree: 1
+Entry number: 431	Address: 120966840	Valid: 0	Degree: 3
+Entry number: 432	Address: 120966841	Valid: 0	Degree: 2
+Entry number: 433	Address: 120966842	Valid: 1	Degree: 1
+Entry number: 434	Address: 120966841	Valid: 0	Degree: 3
+Entry number: 435	Address: 120966842	Valid: 1	Degree: 2
+Entry number: 436	Address: 120966843	Valid: 1	Degree: 1
+Entry number: 437	Address: 120966842	Valid: 1	Degree: 3
+Entry number: 438	Address: 120966843	Valid: 1	Degree: 2
+Entry number: 439	Address: 120966844	Valid: 0	Degree: 1
+Entry number: 440	Address: 120966843	Valid: 1	Degree: 3
+Entry number: 441	Address: 120966844	Valid: 0	Degree: 2
+Entry number: 442	Address: 120966845	Valid: 1	Degree: 1
+Entry number: 443	Address: 120966844	Valid: 0	Degree: 3
+Entry number: 444	Address: 120966845	Valid: 1	Degree: 2
+Entry number: 445	Address: 120966846	Valid: 1	Degree: 1
+Entry number: 446	Address: 120966845	Valid: 1	Degree: 3
+Entry number: 447	Address: 120966846	Valid: 1	Degree: 2
+Entry number: 448	Address: 120966847	Valid: 1	Degree: 1
+Entry number: 449	Address: 67557766	Valid: 1	Degree: 3
+Entry number: 450	Address: 67557767	Valid: 1	Degree: 2
+Entry number: 451	Address: 67557768	Valid: 1	Degree: 1
+Entry number: 452	Address: 67557780	Valid: 1	Degree: 3
+Entry number: 453	Address: 67557781	Valid: 0	Degree: 2
+Entry number: 454	Address: 67557782	Valid: 0	Degree: 1
+Entry number: 455	Address: 67557781	Valid: 0	Degree: 3
+Entry number: 456	Address: 67557782	Valid: 0	Degree: 2
+Entry number: 457	Address: 67557783	Valid: 1	Degree: 1
+Entry number: 458	Address: 67557782	Valid: 0	Degree: 3
+Entry number: 459	Address: 67557783	Valid: 1	Degree: 2
+Entry number: 460	Address: 67557784	Valid: 1	Degree: 1
+Entry number: 461	Address: 67557783	Valid: 1	Degree: 3
+Entry number: 462	Address: 67557784	Valid: 1	Degree: 2
+Entry number: 463	Address: 67557785	Valid: 1	Degree: 1
+Entry number: 464	Address: 18189527	Valid: 1	Degree: 3
+Entry number: 465	Address: 18189529	Valid: 0	Degree: 2
+Entry number: 466	Address: 18189531	Valid: 1	Degree: 1
+Entry number: 467	Address: 12219580	Valid: 0	Degree: 3
+Entry number: 468	Address: 12219581	Valid: 0	Degree: 2
+Entry number: 469	Address: 12219582	Valid: 1	Degree: 1
+Entry number: 470	Address: 12219581	Valid: 0	Degree: 3
+Entry number: 471	Address: 12219582	Valid: 1	Degree: 2
+Entry number: 472	Address: 12219583	Valid: 0	Degree: 1
+Entry number: 473	Address: 46615555	Valid: 1	Degree: 3
+Entry number: 474	Address: 46615556	Valid: 0	Degree: 2
+Entry number: 475	Address: 46615557	Valid: 1	Degree: 1
+Entry number: 476	Address: 46615556	Valid: 0	Degree: 3
+Entry number: 477	Address: 46615557	Valid: 1	Degree: 2
+Entry number: 478	Address: 46615558	Valid: 1	Degree: 1
+Entry number: 479	Address: 46615557	Valid: 1	Degree: 3
+Entry number: 480	Address: 46615558	Valid: 1	Degree: 2
+Entry number: 481	Address: 46615559	Valid: 1	Degree: 1
+Entry number: 482	Address: 67557784	Valid: 1	Degree: 3
+Entry number: 483	Address: 67557785	Valid: 1	Degree: 2
+Entry number: 484	Address: 67557786	Valid: 0	Degree: 1
+Entry number: 485	Address: 67557785	Valid: 1	Degree: 3
+Entry number: 486	Address: 67557786	Valid: 0	Degree: 2
+Entry number: 487	Address: 67557787	Valid: 1	Degree: 1
+Entry number: 488	Address: 67557786	Valid: 1	Degree: 3
+Entry number: 489	Address: 67557787	Valid: 1	Degree: 2
+Entry number: 490	Address: 67557788	Valid: 1	Degree: 1
+Entry number: 491	Address: 67557790	Valid: 1	Degree: 3
+Entry number: 492	Address: 67557791	Valid: 1	Degree: 2
+Entry number: 493	Address: 67557792	Valid: 1	Degree: 1
+Entry number: 494	Address: 67557791	Valid: 1	Degree: 3
+Entry number: 495	Address: 67557792	Valid: 1	Degree: 2
+Entry number: 496	Address: 67557793	Valid: 0	Degree: 1
+Entry number: 497	Address: 67557792	Valid: 1	Degree: 3
+Entry number: 498	Address: 67557793	Valid: 0	Degree: 2
+Entry number: 499	Address: 67557794	Valid: 0	Degree: 1
+Entry number: 500	Address: 67557793	Valid: 0	Degree: 3
+Entry number: 501	Address: 67557794	Valid: 0	Degree: 2
+Entry number: 502	Address: 67557795	Valid: 1	Degree: 1
+Entry number: 503	Address: 67557794	Valid: 1	Degree: 3
+Entry number: 504	Address: 67557795	Valid: 1	Degree: 2
+Entry number: 505	Address: 67557796	Valid: 1	Degree: 1
+Entry number: 506	Address: 67557802	Valid: 0	Degree: 3
+Entry number: 507	Address: 67557803	Valid: 1	Degree: 2
+Entry number: 508	Address: 67557804	Valid: 0	Degree: 1
+Entry number: 509	Address: 67557803	Valid: 1	Degree: 3
+Entry number: 510	Address: 67557804	Valid: 0	Degree: 2
+Entry number: 511	Address: 67557805	Valid: 1	Degree: 1
+Entry number: 512	Address: 67557804	Valid: 0	Degree: 3
+Entry number: 513	Address: 67557805	Valid: 1	Degree: 2
+Entry number: 514	Address: 67557806	Valid: 1	Degree: 1
+Entry number: 515	Address: 67557805	Valid: 1	Degree: 3
+Entry number: 516	Address: 67557806	Valid: 1	Degree: 2
+Entry number: 517	Address: 67557807	Valid: 1	Degree: 1
+Entry number: 518	Address: 67557806	Valid: 1	Degree: 3
+Entry number: 519	Address: 67557807	Valid: 1	Degree: 2
+Entry number: 520	Address: 67557808	Valid: 1	Degree: 1
+Entry number: 521	Address: 67557807	Valid: 1	Degree: 3
+Entry number: 522	Address: 67557808	Valid: 1	Degree: 2
+Entry number: 523	Address: 67557809	Valid: 1	Degree: 1
+Entry number: 524	Address: 67557808	Valid: 1	Degree: 3
+Entry number: 525	Address: 67557809	Valid: 1	Degree: 2
+Entry number: 526	Address: 67557810	Valid: 1	Degree: 1
+Entry number: 527	Address: 67557809	Valid: 1	Degree: 3
+Entry number: 528	Address: 67557810	Valid: 1	Degree: 2
+Entry number: 529	Address: 67557811	Valid: 1	Degree: 1
+Entry number: 530	Address: 67557812	Valid: 0	Degree: 3
+Entry number: 531	Address: 67557813	Valid: 0	Degree: 2
+Entry number: 532	Address: 67557814	Valid: 0	Degree: 1
+Entry number: 533	Address: 29038675	Valid: 1	Degree: 3
+Entry number: 534	Address: 29038674	Valid: 1	Degree: 2
+Entry number: 535	Address: 29038673	Valid: 0	Degree: 1
+Entry number: 536	Address: 67557813	Valid: 0	Degree: 3
+Entry number: 537	Address: 67557814	Valid: 0	Degree: 2
+Entry number: 538	Address: 67557815	Valid: 0	Degree: 1
+Entry number: 539	Address: 67557814	Valid: 0	Degree: 3
+Entry number: 540	Address: 67557815	Valid: 0	Degree: 2
+Entry number: 541	Address: 67557816	Valid: 0	Degree: 1
+Entry number: 542	Address: 18189533	Valid: 1	Degree: 3
+Entry number: 543	Address: 18189537	Valid: 1	Degree: 2
+Entry number: 544	Address: 18189541	Valid: 1	Degree: 1
+Entry number: 545	Address: 12219582	Valid: 1	Degree: 3
+Entry number: 546	Address: 12219583	Valid: 0	Degree: 2
+Entry number: 547	Address: 12219584	Valid: 1	Degree: 1
+Entry number: 548	Address: 45581531	Valid: 0	Degree: 3
+Entry number: 549	Address: 45581532	Valid: 0	Degree: 2
+Entry number: 550	Address: 45581533	Valid: 0	Degree: 1
+Entry number: 551	Address: 12219583	Valid: 0	Degree: 3
+Entry number: 552	Address: 12219584	Valid: 1	Degree: 2
+Entry number: 553	Address: 12219585	Valid: 1	Degree: 1
+Entry number: 554	Address: 45581532	Valid: 0	Degree: 3
+Entry number: 555	Address: 45581533	Valid: 0	Degree: 2
+Entry number: 556	Address: 45581534	Valid: 0	Degree: 1
+Entry number: 557	Address: 12219584	Valid: 1	Degree: 3
+Entry number: 558	Address: 12219585	Valid: 1	Degree: 2
+Entry number: 559	Address: 12219586	Valid: 1	Degree: 1
+Entry number: 560	Address: 45581533	Valid: 0	Degree: 3
+Entry number: 561	Address: 45581534	Valid: 0	Degree: 2
+Entry number: 562	Address: 45581535	Valid: 0	Degree: 1
+Entry number: 563	Address: 45581534	Valid: 0	Degree: 3
+Entry number: 564	Address: 45581535	Valid: 0	Degree: 2
+Entry number: 565	Address: 45581536	Valid: 1	Degree: 1
+Entry number: 566	Address: 46615559	Valid: 1	Degree: 3
+Entry number: 567	Address: 46615560	Valid: 1	Degree: 2
+Entry number: 568	Address: 46615561	Valid: 1	Degree: 1
+Entry number: 569	Address: 46615560	Valid: 1	Degree: 3
+Entry number: 570	Address: 46615561	Valid: 1	Degree: 2
+Entry number: 571	Address: 46615562	Valid: 1	Degree: 1
+Entry number: 572	Address: 46615561	Valid: 1	Degree: 3
+Entry number: 573	Address: 46615562	Valid: 1	Degree: 2
+Entry number: 574	Address: 46615563	Valid: 1	Degree: 1
+Entry number: 575	Address: 93888720	Valid: 1	Degree: 3
+Entry number: 576	Address: 93888724	Valid: 1	Degree: 2
+Entry number: 577	Address: 93888728	Valid: 1	Degree: 1
+Entry number: 578	Address: 63374248	Valid: 1	Degree: 3
+Entry number: 579	Address: 63374252	Valid: 1	Degree: 2
+Entry number: 580	Address: 63374256	Valid: 1	Degree: 1
+Entry number: 581	Address: 87130330	Valid: 0	Degree: 3
+Entry number: 582	Address: 87130326	Valid: 0	Degree: 2
+Entry number: 583	Address: 87130322	Valid: 0	Degree: 1
+Entry number: 584	Address: 95564741	Valid: 0	Degree: 3
+Entry number: 585	Address: 95564742	Valid: 0	Degree: 2
+Entry number: 586	Address: 95564743	Valid: 0	Degree: 1
+Entry number: 587	Address: 95564742	Valid: 0	Degree: 3
+Entry number: 588	Address: 95564743	Valid: 0	Degree: 2
+Entry number: 589	Address: 95564744	Valid: 0	Degree: 1
+Entry number: 590	Address: 95564743	Valid: 0	Degree: 3
+Entry number: 591	Address: 95564744	Valid: 0	Degree: 2
+Entry number: 592	Address: 95564745	Valid: 1	Degree: 1
+Entry number: 593	Address: 95564746	Valid: 1	Degree: 3
+Entry number: 594	Address: 95564747	Valid: 1	Degree: 2
+Entry number: 595	Address: 95564748	Valid: 1	Degree: 1
+Entry number: 596	Address: 95564747	Valid: 1	Degree: 3
+Entry number: 597	Address: 95564748	Valid: 1	Degree: 2
+Entry number: 598	Address: 95564749	Valid: 1	Degree: 1
+Entry number: 599	Address: 95564753	Valid: 1	Degree: 3
+Entry number: 600	Address: 95564754	Valid: 0	Degree: 2
+Entry number: 601	Address: 95564755	Valid: 1	Degree: 1
+Entry number: 602	Address: 18189524	Valid: 1	Degree: 3
+Entry number: 603	Address: 18189525	Valid: 1	Degree: 2
+Entry number: 604	Address: 18189526	Valid: 1	Degree: 1
+Entry number: 605	Address: 65847493	Valid: 1	Degree: 3
+Entry number: 606	Address: 65847494	Valid: 1	Degree: 2
+Entry number: 607	Address: 65847495	Valid: 1	Degree: 1
+Entry number: 608	Address: 65847494	Valid: 1	Degree: 3
+Entry number: 609	Address: 65847495	Valid: 1	Degree: 2
+Entry number: 610	Address: 65847496	Valid: 1	Degree: 1
+Entry number: 611	Address: 46615562	Valid: 1	Degree: 3
+Entry number: 612	Address: 46615563	Valid: 1	Degree: 2
+Entry number: 613	Address: 46615564	Valid: 1	Degree: 1
+Entry number: 614	Address: 46615563	Valid: 1	Degree: 3
+Entry number: 615	Address: 46615564	Valid: 1	Degree: 2
+Entry number: 616	Address: 46615565	Valid: 1	Degree: 1
+Entry number: 617	Address: 46615564	Valid: 1	Degree: 3
+Entry number: 618	Address: 46615565	Valid: 1	Degree: 2
+Entry number: 619	Address: 46615566	Valid: 1	Degree: 1
+Entry number: 620	Address: 46615565	Valid: 1	Degree: 3
+Entry number: 621	Address: 46615566	Valid: 1	Degree: 2
+Entry number: 622	Address: 46615567	Valid: 1	Degree: 1
+Entry number: 623	Address: 46615566	Valid: 1	Degree: 3
+Entry number: 624	Address: 46615567	Valid: 1	Degree: 2
+Entry number: 625	Address: 46615568	Valid: 1	Degree: 1
+Entry number: 626	Address: 93888724	Valid: 1	Degree: 3
+Entry number: 627	Address: 63374252	Valid: 1	Degree: 3
+Entry number: 628	Address: 63374256	Valid: 1	Degree: 2
+Entry number: 629	Address: 63374260	Valid: 1	Degree: 1
+Entry number: 630	Address: 95564767	Valid: 1	Degree: 3
+Entry number: 631	Address: 95564768	Valid: 0	Degree: 2
+Entry number: 632	Address: 95564769	Valid: 0	Degree: 1
+Entry number: 633	Address: 95564789	Valid: 1	Degree: 3
+Entry number: 634	Address: 95564790	Valid: 1	Degree: 2
+Entry number: 635	Address: 95564791	Valid: 1	Degree: 1
+Entry number: 636	Address: 95564793	Valid: 0	Degree: 3
+Entry number: 637	Address: 95564794	Valid: 1	Degree: 2
+Entry number: 638	Address: 95564795	Valid: 0	Degree: 1
+Entry number: 639	Address: 95564794	Valid: 1	Degree: 3
+Entry number: 640	Address: 95564795	Valid: 0	Degree: 2
+Entry number: 641	Address: 95564796	Valid: 1	Degree: 1
+Entry number: 642	Address: 95564797	Valid: 0	Degree: 3
+Entry number: 643	Address: 95564798	Valid: 1	Degree: 2
+Entry number: 644	Address: 95564799	Valid: 1	Degree: 1
+Entry number: 645	Address: 45581539	Valid: 1	Degree: 3
+Entry number: 646	Address: 45581540	Valid: 0	Degree: 2
+Entry number: 647	Address: 45581541	Valid: 0	Degree: 1
+Entry number: 648	Address: 65847495	Valid: 1	Degree: 3
+Entry number: 649	Address: 65847496	Valid: 1	Degree: 2
+Entry number: 650	Address: 65847497	Valid: 0	Degree: 1
+Entry number: 651	Address: 65847496	Valid: 1	Degree: 3
+Entry number: 652	Address: 65847497	Valid: 0	Degree: 2
+Entry number: 653	Address: 65847498	Valid: 1	Degree: 1
+Entry number: 654	Address: 65847497	Valid: 0	Degree: 3
+Entry number: 655	Address: 65847498	Valid: 1	Degree: 2
+Entry number: 656	Address: 65847499	Valid: 1	Degree: 1
+Entry number: 657	Address: 65847498	Valid: 1	Degree: 3
+Entry number: 658	Address: 65847499	Valid: 1	Degree: 2
+Entry number: 659	Address: 65847500	Valid: 1	Degree: 1
+Entry number: 660	Address: 46615567	Valid: 1	Degree: 3
+Entry number: 661	Address: 46615568	Valid: 1	Degree: 2
+Entry number: 662	Address: 46615569	Valid: 1	Degree: 1
+Entry number: 663	Address: 46615568	Valid: 1	Degree: 3
+Entry number: 664	Address: 46615569	Valid: 1	Degree: 2
+Entry number: 665	Address: 46615570	Valid: 1	Degree: 1
+Entry number: 666	Address: 46615569	Valid: 1	Degree: 3
+Entry number: 667	Address: 46615570	Valid: 1	Degree: 2
+Entry number: 668	Address: 46615571	Valid: 1	Degree: 1
+Entry number: 669	Address: 46615570	Valid: 1	Degree: 3
+Entry number: 670	Address: 46615571	Valid: 1	Degree: 2
+Entry number: 671	Address: 46615572	Valid: 1	Degree: 1
+Entry number: 672	Address: 125177923	Valid: 0	Degree: 3
+Entry number: 673	Address: 125177924	Valid: 0	Degree: 2
+Entry number: 674	Address: 125177925	Valid: 0	Degree: 1
+Entry number: 675	Address: 125177924	Valid: 0	Degree: 3
+Entry number: 676	Address: 125177925	Valid: 0	Degree: 2
+Entry number: 677	Address: 125177926	Valid: 1	Degree: 1
+Entry number: 678	Address: 125177925	Valid: 0	Degree: 3
+Entry number: 679	Address: 125177926	Valid: 1	Degree: 2
+Entry number: 680	Address: 125177927	Valid: 1	Degree: 1
+Entry number: 681	Address: 125177926	Valid: 1	Degree: 3
+Entry number: 682	Address: 125177927	Valid: 1	Degree: 2
+Entry number: 683	Address: 125177928	Valid: 1	Degree: 1
+Entry number: 684	Address: 29038682	Valid: 1	Degree: 3
+Entry number: 685	Address: 29038680	Valid: 1	Degree: 2
+Entry number: 686	Address: 29038678	Valid: 1	Degree: 1
+Entry number: 687	Address: 68066719	Valid: 1	Degree: 3
+Entry number: 688	Address: 68066714	Valid: 1	Degree: 2
+Entry number: 689	Address: 68066709	Valid: 1	Degree: 1
+Entry number: 690	Address: 125177927	Valid: 1	Degree: 3
+Entry number: 691	Address: 125177928	Valid: 1	Degree: 2
+Entry number: 692	Address: 125177929	Valid: 0	Degree: 1
+Entry number: 693	Address: 125177928	Valid: 1	Degree: 3
+Entry number: 694	Address: 125177929	Valid: 0	Degree: 2
+Entry number: 695	Address: 125177930	Valid: 1	Degree: 1
+Entry number: 696	Address: 125177931	Valid: 1	Degree: 3
+Entry number: 697	Address: 125177932	Valid: 1	Degree: 2
+Entry number: 698	Address: 125177933	Valid: 1	Degree: 1
+Entry number: 699	Address: 125177932	Valid: 1	Degree: 3
+Entry number: 700	Address: 125177933	Valid: 1	Degree: 2
+Entry number: 701	Address: 125177934	Valid: 1	Degree: 1
+Entry number: 702	Address: 93356331	Valid: 1	Degree: 3
+Entry number: 703	Address: 93356328	Valid: 1	Degree: 2
+Entry number: 704	Address: 93356325	Valid: 1	Degree: 1
+Entry number: 705	Address: 125177936	Valid: 0	Degree: 3
+Entry number: 706	Address: 125177937	Valid: 1	Degree: 2
+Entry number: 707	Address: 125177938	Valid: 1	Degree: 1
+Entry number: 708	Address: 125177937	Valid: 1	Degree: 3
+Entry number: 709	Address: 125177938	Valid: 1	Degree: 2
+Entry number: 710	Address: 125177939	Valid: 1	Degree: 1
+Entry number: 711	Address: 125177938	Valid: 1	Degree: 3
+Entry number: 712	Address: 125177939	Valid: 1	Degree: 2
+Entry number: 713	Address: 125177940	Valid: 0	Degree: 1
+Entry number: 714	Address: 125177939	Valid: 1	Degree: 3
+Entry number: 715	Address: 125177940	Valid: 0	Degree: 2
+Entry number: 716	Address: 125177941	Valid: 0	Degree: 1
+Entry number: 717	Address: 125177940	Valid: 0	Degree: 3
+Entry number: 718	Address: 125177941	Valid: 0	Degree: 2
+Entry number: 719	Address: 125177942	Valid: 0	Degree: 1
+Entry number: 720	Address: 125177943	Valid: 1	Degree: 3
+Entry number: 721	Address: 125177944	Valid: 1	Degree: 2
+Entry number: 722	Address: 125177945	Valid: 1	Degree: 1
+Entry number: 723	Address: 125177944	Valid: 1	Degree: 3
+Entry number: 724	Address: 125177945	Valid: 1	Degree: 2
+Entry number: 725	Address: 125177946	Valid: 1	Degree: 1
+Entry number: 726	Address: 24571583	Valid: 0	Degree: 1
+Entry number: 727	Address: 1513696	Valid: 0	Degree: 3
+Entry number: 728	Address: 1513697	Valid: 0	Degree: 2
+Entry number: 729	Address: 1513698	Valid: 0	Degree: 1
+Entry number: 730	Address: 1513697	Valid: 0	Degree: 3
+Entry number: 731	Address: 1513698	Valid: 0	Degree: 2
+Entry number: 732	Address: 1513699	Valid: 0	Degree: 1
+Entry number: 733	Address: 107344712	Valid: 1	Degree: 3
+Entry number: 734	Address: 107344713	Valid: 1	Degree: 2
+Entry number: 735	Address: 107344714	Valid: 1	Degree: 1
+Entry number: 736	Address: 107344713	Valid: 1	Degree: 3
+Entry number: 737	Address: 107344714	Valid: 1	Degree: 2
+Entry number: 738	Address: 107344715	Valid: 0	Degree: 1
+Entry number: 739	Address: 107344714	Valid: 1	Degree: 3
+Entry number: 740	Address: 107344715	Valid: 0	Degree: 2
+Entry number: 741	Address: 107344716	Valid: 0	Degree: 1
+Entry number: 742	Address: 107344718	Valid: 0	Degree: 3
+Entry number: 743	Address: 107344719	Valid: 1	Degree: 2
+Entry number: 744	Address: 107344720	Valid: 1	Degree: 1
+Entry number: 745	Address: 107344719	Valid: 1	Degree: 3
+Entry number: 746	Address: 107344720	Valid: 1	Degree: 2
+Entry number: 747	Address: 107344721	Valid: 1	Degree: 1
+Entry number: 748	Address: 1513698	Valid: 0	Degree: 3
+Entry number: 749	Address: 1513699	Valid: 0	Degree: 2
+Entry number: 750	Address: 1513700	Valid: 0	Degree: 1
+Entry number: 751	Address: 79867867	Valid: 1	Degree: 3
+Entry number: 752	Address: 79867868	Valid: 1	Degree: 2
+Entry number: 753	Address: 79867869	Valid: 1	Degree: 1
+Entry number: 754	Address: 79867868	Valid: 1	Degree: 3
+Entry number: 755	Address: 79867869	Valid: 1	Degree: 2
+Entry number: 756	Address: 79867870	Valid: 1	Degree: 1
+Entry number: 757	Address: 79867869	Valid: 1	Degree: 3
+Entry number: 758	Address: 79867870	Valid: 1	Degree: 2
+Entry number: 759	Address: 79867871	Valid: 1	Degree: 1
+Entry number: 760	Address: 132409116	Valid: 1	Degree: 3
+Entry number: 761	Address: 132409124	Valid: 1	Degree: 2
+Entry number: 762	Address: 132409132	Valid: 1	Degree: 1
+Entry number: 763	Address: 18189580	Valid: 1	Degree: 3
+Entry number: 764	Address: 18189597	Valid: 1	Degree: 2
+Entry number: 765	Address: 18189614	Valid: 1	Degree: 1
+Entry number: 766	Address: 132409115	Valid: 0	Degree: 3
+Entry number: 767	Address: 132409123	Valid: 1	Degree: 2
+Entry number: 768	Address: 132409131	Valid: 0	Degree: 1
+Entry number: 769	Address: 2467872	Valid: 0	Degree: 3
+Entry number: 770	Address: 2467873	Valid: 0	Degree: 2
+Entry number: 771	Address: 2467874	Valid: 0	Degree: 1
+Entry number: 772	Address: 1513701	Valid: 0	Degree: 3
+Entry number: 773	Address: 1513702	Valid: 1	Degree: 2
+Entry number: 774	Address: 1513703	Valid: 0	Degree: 1
+Entry number: 775	Address: 79867891	Valid: 1	Degree: 3
+Entry number: 776	Address: 79867892	Valid: 1	Degree: 2
+Entry number: 777	Address: 79867893	Valid: 1	Degree: 1
+Entry number: 778	Address: 1513704	Valid: 0	Degree: 3
+Entry number: 779	Address: 1513705	Valid: 0	Degree: 2
+Entry number: 780	Address: 1513706	Valid: 0	Degree: 1
+Entry number: 781	Address: 2467869	Valid: 0	Degree: 3
+Entry number: 782	Address: 2467871	Valid: 0	Degree: 2
+Entry number: 783	Address: 2467873	Valid: 0	Degree: 1
+Entry number: 784	Address: 100029900	Valid: 1	Degree: 3
+Entry number: 785	Address: 100029901	Valid: 1	Degree: 2
+Entry number: 786	Address: 100029902	Valid: 1	Degree: 1
+Entry number: 787	Address: 100029901	Valid: 1	Degree: 3
+Entry number: 788	Address: 100029902	Valid: 1	Degree: 2
+Entry number: 789	Address: 100029903	Valid: 1	Degree: 1
+Entry number: 790	Address: 1513709	Valid: 0	Degree: 3
+Entry number: 791	Address: 1513710	Valid: 0	Degree: 2
+Entry number: 792	Address: 1513711	Valid: 0	Degree: 1
+Entry number: 793	Address: 121217761	Valid: 1	Degree: 3
+Entry number: 794	Address: 121217762	Valid: 1	Degree: 2
+Entry number: 795	Address: 121217763	Valid: 0	Degree: 1
+Entry number: 796	Address: 1513710	Valid: 0	Degree: 3
+Entry number: 797	Address: 1513711	Valid: 0	Degree: 2
+Entry number: 798	Address: 1513712	Valid: 0	Degree: 1
+Entry number: 799	Address: 100029946	Valid: 1	Degree: 3
+Entry number: 800	Address: 100029947	Valid: 1	Degree: 2
+Entry number: 801	Address: 100029948	Valid: 1	Degree: 1
+Entry number: 802	Address: 100029947	Valid: 1	Degree: 3
+Entry number: 803	Address: 100029948	Valid: 1	Degree: 2
+Entry number: 804	Address: 100029949	Valid: 1	Degree: 1
+Entry number: 805	Address: 100029948	Valid: 1	Degree: 3
+Entry number: 806	Address: 100029949	Valid: 1	Degree: 2
+Entry number: 807	Address: 100029950	Valid: 1	Degree: 1
+Entry number: 808	Address: 24571575	Valid: 0	Degree: 3
+Entry number: 809	Address: 24571579	Valid: 0	Degree: 2
+Entry number: 810	Address: 24571583	Valid: 0	Degree: 1
+Entry number: 811	Address: 24571579	Valid: 0	Degree: 3
+Entry number: 812	Address: 24571583	Valid: 0	Degree: 2
+Entry number: 813	Address: 24571587	Valid: 1	Degree: 1
+Entry number: 814	Address: 123166321	Valid: 0	Degree: 3
+Entry number: 815	Address: 123166322	Valid: 0	Degree: 2
+Entry number: 816	Address: 123166323	Valid: 0	Degree: 1
+Entry number: 817	Address: 18189580	Valid: 1	Degree: 3
+Entry number: 818	Address: 18189597	Valid: 1	Degree: 2
+Entry number: 819	Address: 18189614	Valid: 1	Degree: 1
+Entry number: 820	Address: 1513715	Valid: 0	Degree: 3
+Entry number: 821	Address: 1513717	Valid: 0	Degree: 2
+Entry number: 822	Address: 1513719	Valid: 0	Degree: 1
+Entry number: 823	Address: 1336161	Valid: 1	Degree: 3
+Entry number: 824	Address: 1336162	Valid: 1	Degree: 2
+Entry number: 825	Address: 1336163	Valid: 1	Degree: 1
+Entry number: 826	Address: 1513716	Valid: 0	Degree: 3
+Entry number: 827	Address: 1513718	Valid: 0	Degree: 2
+Entry number: 828	Address: 1513720	Valid: 0	Degree: 1
+Entry number: 829	Address: 1513717	Valid: 0	Degree: 3
+Entry number: 830	Address: 1513719	Valid: 0	Degree: 2
+Entry number: 831	Address: 1513721	Valid: 0	Degree: 1
+Entry number: 832	Address: 6278382	Valid: 1	Degree: 3
+Entry number: 833	Address: 6278383	Valid: 1	Degree: 2
+Entry number: 834	Address: 6278384	Valid: 1	Degree: 1
+Entry number: 835	Address: 1336176	Valid: 1	Degree: 3
+Entry number: 836	Address: 1336177	Valid: 1	Degree: 2
+Entry number: 837	Address: 1336178	Valid: 0	Degree: 1
+Entry number: 838	Address: 1336177	Valid: 1	Degree: 3
+Entry number: 839	Address: 1336178	Valid: 0	Degree: 2
+Entry number: 840	Address: 1336179	Valid: 1	Degree: 1
+Entry number: 841	Address: 1513718	Valid: 0	Degree: 3
+Entry number: 842	Address: 1513720	Valid: 0	Degree: 2
+Entry number: 843	Address: 1513722	Valid: 0	Degree: 1
+Entry number: 844	Address: 18189580	Valid: 1	Degree: 3
+Entry number: 845	Address: 18189597	Valid: 1	Degree: 2
+Entry number: 846	Address: 18189614	Valid: 1	Degree: 1
+Entry number: 847	Address: 1513719	Valid: 0	Degree: 3
+Entry number: 848	Address: 1513721	Valid: 0	Degree: 2
+Entry number: 849	Address: 1513723	Valid: 0	Degree: 1
+Entry number: 850	Address: 1513720	Valid: 0	Degree: 3
+Entry number: 851	Address: 1513721	Valid: 0	Degree: 2
+Entry number: 852	Address: 1513722	Valid: 0	Degree: 1
+Entry number: 853	Address: 41725028	Valid: 1	Degree: 3
+Entry number: 854	Address: 41725020	Valid: 1	Degree: 2
+Entry number: 855	Address: 41725012	Valid: 1	Degree: 1
+Entry number: 856	Address: 2467867	Valid: 0	Degree: 3
+Entry number: 857	Address: 2467868	Valid: 0	Degree: 2
+Entry number: 858	Address: 2467869	Valid: 0	Degree: 1
+Entry number: 859	Address: 132409114	Valid: 0	Degree: 3
+Entry number: 860	Address: 132409122	Valid: 1	Degree: 2
+Entry number: 861	Address: 132409130	Valid: 1	Degree: 1
+Entry number: 862	Address: 2467897	Valid: 1	Degree: 3
+Entry number: 863	Address: 2467905	Valid: 1	Degree: 2
+Entry number: 864	Address: 2467913	Valid: 1	Degree: 1
+Entry number: 865	Address: 1513724	Valid: 0	Degree: 3
+Entry number: 866	Address: 1513725	Valid: 0	Degree: 2
+Entry number: 867	Address: 1513726	Valid: 0	Degree: 1
+Entry number: 868	Address: 73118762	Valid: 1	Degree: 3
+Entry number: 869	Address: 73118763	Valid: 1	Degree: 2
+Entry number: 870	Address: 73118764	Valid: 1	Degree: 1
+Entry number: 871	Address: 73118763	Valid: 1	Degree: 3
+Entry number: 872	Address: 73118764	Valid: 1	Degree: 2
+Entry number: 873	Address: 73118765	Valid: 1	Degree: 1
+Entry number: 874	Address: 73118764	Valid: 1	Degree: 3
+Entry number: 875	Address: 73118765	Valid: 1	Degree: 2
+Entry number: 876	Address: 73118766	Valid: 1	Degree: 1
+Entry number: 877	Address: 123166298	Valid: 1	Degree: 3
+Entry number: 878	Address: 123166301	Valid: 1	Degree: 2
+Entry number: 879	Address: 123166304	Valid: 1	Degree: 1
+Entry number: 880	Address: 2467868	Valid: 0	Degree: 3
+Entry number: 881	Address: 2467869	Valid: 0	Degree: 2
+Entry number: 882	Address: 2467870	Valid: 0	Degree: 1
+Entry number: 883	Address: 56865578	Valid: 1	Degree: 3
+Entry number: 884	Address: 56865576	Valid: 1	Degree: 2
+Entry number: 885	Address: 56865574	Valid: 1	Degree: 1
+Entry number: 886	Address: 97880232	Valid: 1	Degree: 3
+Entry number: 887	Address: 97880231	Valid: 1	Degree: 2
+Entry number: 888	Address: 97880230	Valid: 1	Degree: 1
+Entry number: 889	Address: 1513728	Valid: 1	Degree: 3
+Entry number: 890	Address: 1513729	Valid: 1	Degree: 2
+Entry number: 891	Address: 1513730	Valid: 1	Degree: 1
+Entry number: 892	Address: 104844686	Valid: 1	Degree: 3
+Entry number: 893	Address: 104844687	Valid: 1	Degree: 2
+Entry number: 894	Address: 104844688	Valid: 1	Degree: 1
+Entry number: 895	Address: 104844687	Valid: 1	Degree: 3
+Entry number: 896	Address: 104844688	Valid: 1	Degree: 2
+Entry number: 897	Address: 104844689	Valid: 1	Degree: 1
+Entry number: 898	Address: 78315188	Valid: 1	Degree: 3
+Entry number: 899	Address: 78315189	Valid: 1	Degree: 2
+Entry number: 900	Address: 78315190	Valid: 1	Degree: 1
+Entry number: 901	Address: 78315189	Valid: 1	Degree: 3
+Entry number: 902	Address: 78315190	Valid: 1	Degree: 2
+Entry number: 903	Address: 78315191	Valid: 0	Degree: 1
+Entry number: 904	Address: 78315190	Valid: 1	Degree: 3
+Entry number: 905	Address: 78315191	Valid: 0	Degree: 2
+Entry number: 906	Address: 78315192	Valid: 1	Degree: 1
+Entry number: 907	Address: 31934915	Valid: 0	Degree: 3
+Entry number: 908	Address: 31934916	Valid: 0	Degree: 2
+Entry number: 909	Address: 31934917	Valid: 0	Degree: 1
+Entry number: 910	Address: 78315191	Valid: 0	Degree: 3
+Entry number: 911	Address: 78315192	Valid: 1	Degree: 2
+Entry number: 912	Address: 78315193	Valid: 1	Degree: 1
+Entry number: 913	Address: 78315192	Valid: 1	Degree: 3
+Entry number: 914	Address: 78315193	Valid: 1	Degree: 2
+Entry number: 915	Address: 78315194	Valid: 1	Degree: 1
+Entry number: 916	Address: 24571575	Valid: 0	Degree: 3
+Entry number: 917	Address: 24571579	Valid: 0	Degree: 2
+Entry number: 918	Address: 24571583	Valid: 0	Degree: 1
+Entry number: 919	Address: 24571579	Valid: 0	Degree: 3
+Entry number: 920	Address: 24571583	Valid: 0	Degree: 2
+Entry number: 921	Address: 24571587	Valid: 1	Degree: 1
+Entry number: 922	Address: 27942908	Valid: 1	Degree: 3
+Entry number: 923	Address: 93356319	Valid: 1	Degree: 3
+Entry number: 924	Address: 93356315	Valid: 1	Degree: 2
+Entry number: 925	Address: 93356311	Valid: 1	Degree: 1
+Entry number: 926	Address: 33250178	Valid: 1	Degree: 3
+Entry number: 927	Address: 33250162	Valid: 1	Degree: 2
+Entry number: 928	Address: 33250146	Valid: 1	Degree: 1
+Entry number: 929	Address: 132409119	Valid: 1	Degree: 3
+Entry number: 930	Address: 132409127	Valid: 1	Degree: 2
+Entry number: 931	Address: 132409135	Valid: 1	Degree: 1
+Entry number: 932	Address: 18189580	Valid: 1	Degree: 3
+Entry number: 933	Address: 18189597	Valid: 1	Degree: 2
+Entry number: 934	Address: 18189614	Valid: 1	Degree: 1
+Entry number: 935	Address: 31934920	Valid: 0	Degree: 3
+Entry number: 936	Address: 31934921	Valid: 0	Degree: 2
+Entry number: 937	Address: 31934922	Valid: 0	Degree: 1
+Entry number: 938	Address: 44542564	Valid: 1	Degree: 3
+Entry number: 939	Address: 44542565	Valid: 1	Degree: 2
+Entry number: 940	Address: 44542566	Valid: 1	Degree: 1
+Entry number: 941	Address: 31934926	Valid: 1	Degree: 3
+Entry number: 942	Address: 31934927	Valid: 1	Degree: 2
+Entry number: 943	Address: 31934928	Valid: 1	Degree: 1
+Entry number: 944	Address: 34794263	Valid: 1	Degree: 3
+Entry number: 945	Address: 34794264	Valid: 1	Degree: 2
+Entry number: 946	Address: 34794265	Valid: 0	Degree: 1
+Entry number: 947	Address: 31934927	Valid: 1	Degree: 3
+Entry number: 948	Address: 31934928	Valid: 1	Degree: 2
+Entry number: 949	Address: 31934929	Valid: 0	Degree: 1
+Entry number: 950	Address: 34794264	Valid: 1	Degree: 3
+Entry number: 951	Address: 34794265	Valid: 0	Degree: 2
+Entry number: 952	Address: 34794266	Valid: 0	Degree: 1
+Entry number: 953	Address: 1513664	Valid: 1	Degree: 3
+Entry number: 954	Address: 1513661	Valid: 1	Degree: 2
+Entry number: 955	Address: 1513658	Valid: 1	Degree: 1
+Entry number: 956	Address: 31934935	Valid: 0	Degree: 3
+Entry number: 957	Address: 31934937	Valid: 0	Degree: 2
+Entry number: 958	Address: 31934939	Valid: 0	Degree: 1
+Entry number: 959	Address: 115780956	Valid: 1	Degree: 3
+Entry number: 960	Address: 115780957	Valid: 1	Degree: 2
+Entry number: 961	Address: 115780958	Valid: 1	Degree: 1
+Entry number: 962	Address: 115780957	Valid: 1	Degree: 3
+Entry number: 963	Address: 115780958	Valid: 1	Degree: 2
+Entry number: 964	Address: 115780959	Valid: 1	Degree: 1
+Entry number: 965	Address: 31934936	Valid: 0	Degree: 3
+Entry number: 966	Address: 31934937	Valid: 0	Degree: 2
+Entry number: 967	Address: 31934938	Valid: 0	Degree: 1
+Entry number: 968	Address: 31934937	Valid: 0	Degree: 3
+Entry number: 969	Address: 31934938	Valid: 0	Degree: 2
+Entry number: 970	Address: 31934939	Valid: 0	Degree: 1
+Entry number: 971	Address: 31934938	Valid: 0	Degree: 3
+Entry number: 972	Address: 31934939	Valid: 0	Degree: 2
+Entry number: 973	Address: 31934940	Valid: 0	Degree: 1
+Entry number: 974	Address: 31934939	Valid: 0	Degree: 3
+Entry number: 975	Address: 31934940	Valid: 0	Degree: 2
+Entry number: 976	Address: 31934941	Valid: 0	Degree: 1
+Entry number: 977	Address: 118183698	Valid: 1	Degree: 3
+Entry number: 978	Address: 118183699	Valid: 1	Degree: 2
+Entry number: 979	Address: 118183700	Valid: 1	Degree: 1
+Entry number: 980	Address: 115780991	Valid: 0	Degree: 3
+Entry number: 981	Address: 115780992	Valid: 1	Degree: 2
+Entry number: 982	Address: 115780993	Valid: 1	Degree: 1
+Entry number: 983	Address: 115780992	Valid: 1	Degree: 3
+Entry number: 984	Address: 115780993	Valid: 1	Degree: 2
+Entry number: 985	Address: 115780994	Valid: 1	Degree: 1
+Entry number: 986	Address: 16443907	Valid: 0	Degree: 3
+Entry number: 987	Address: 16443908	Valid: 0	Degree: 2
+Entry number: 988	Address: 16443909	Valid: 0	Degree: 1
+Entry number: 989	Address: 18189533	Valid: 1	Degree: 3
+Entry number: 990	Address: 18189537	Valid: 1	Degree: 2
+Entry number: 991	Address: 18189541	Valid: 1	Degree: 1
+Entry number: 992	Address: 16443908	Valid: 0	Degree: 3
+Entry number: 993	Address: 16443909	Valid: 0	Degree: 2
+Entry number: 994	Address: 16443910	Valid: 1	Degree: 1
+Entry number: 995	Address: 16443909	Valid: 0	Degree: 3
+Entry number: 996	Address: 16443910	Valid: 1	Degree: 2
+Entry number: 997	Address: 16443911	Valid: 1	Degree: 1
+Entry number: 998	Address: 82012231	Valid: 1	Degree: 3
+Entry number: 999	Address: 82012232	Valid: 0	Degree: 2
+Entry number: 1000	Address: 82012233	Valid: 1	Degree: 1
+Entry number: 1001	Address: 82012232	Valid: 0	Degree: 3
+Entry number: 1002	Address: 82012233	Valid: 1	Degree: 2
+Entry number: 1003	Address: 82012234	Valid: 1	Degree: 1
+Entry number: 1004	Address: 82012233	Valid: 1	Degree: 3
+Entry number: 1005	Address: 82012234	Valid: 1	Degree: 2
+Entry number: 1006	Address: 82012235	Valid: 1	Degree: 1
+Entry number: 1007	Address: 31934943	Valid: 0	Degree: 3
+Entry number: 1008	Address: 31934944	Valid: 0	Degree: 2
+Entry number: 1009	Address: 31934945	Valid: 0	Degree: 1
+Entry number: 1010	Address: 31934944	Valid: 0	Degree: 3
+Entry number: 1011	Address: 31934945	Valid: 0	Degree: 2
+Entry number: 1012	Address: 31934946	Valid: 0	Degree: 1
+Entry number: 1013	Address: 31934945	Valid: 0	Degree: 3
+Entry number: 1014	Address: 31934946	Valid: 0	Degree: 2
+Entry number: 1015	Address: 31934947	Valid: 0	Degree: 1
+Entry number: 1016	Address: 16443928	Valid: 1	Degree: 3
+Entry number: 1017	Address: 16443929	Valid: 1	Degree: 2
+Entry number: 1018	Address: 16443930	Valid: 0	Degree: 1
+Entry number: 1019	Address: 16443939	Valid: 0	Degree: 3
+Entry number: 1020	Address: 16443940	Valid: 1	Degree: 2
+Entry number: 1021	Address: 16443941	Valid: 0	Degree: 1
+Entry number: 1022	Address: 16443940	Valid: 1	Degree: 3
+Entry number: 1023	Address: 16443941	Valid: 0	Degree: 2
+Entry number: 1024	Address: 16443942	Valid: 0	Degree: 1
+Entry number: 1025	Address: 16443944	Valid: 0	Degree: 3
+Entry number: 1026	Address: 16443945	Valid: 0	Degree: 2
+Entry number: 1027	Address: 16443946	Valid: 0	Degree: 1
+Entry number: 1028	Address: 16443945	Valid: 0	Degree: 3
+Entry number: 1029	Address: 16443946	Valid: 0	Degree: 2
+Entry number: 1030	Address: 16443947	Valid: 0	Degree: 1
+Entry number: 1031	Address: 16443946	Valid: 0	Degree: 3
+Entry number: 1032	Address: 16443947	Valid: 0	Degree: 2
+Entry number: 1033	Address: 16443948	Valid: 0	Degree: 1
+Entry number: 1034	Address: 16443947	Valid: 0	Degree: 3
+Entry number: 1035	Address: 16443948	Valid: 0	Degree: 2
+Entry number: 1036	Address: 16443949	Valid: 0	Degree: 1
+Entry number: 1037	Address: 16443948	Valid: 0	Degree: 3
+Entry number: 1038	Address: 16443949	Valid: 0	Degree: 2
+Entry number: 1039	Address: 16443950	Valid: 1	Degree: 1
+Entry number: 1040	Address: 16443949	Valid: 0	Degree: 3
+Entry number: 1041	Address: 16443950	Valid: 1	Degree: 2
+Entry number: 1042	Address: 16443951	Valid: 0	Degree: 1
+Entry number: 1043	Address: 16443950	Valid: 1	Degree: 3
+Entry number: 1044	Address: 16443951	Valid: 0	Degree: 2
+Entry number: 1045	Address: 16443952	Valid: 1	Degree: 1
+Entry number: 1046	Address: 16443955	Valid: 0	Degree: 3
+Entry number: 1047	Address: 16443957	Valid: 0	Degree: 2
+Entry number: 1048	Address: 16443959	Valid: 0	Degree: 1
+Entry number: 1049	Address: 16443956	Valid: 0	Degree: 3
+Entry number: 1050	Address: 16443957	Valid: 0	Degree: 2
+Entry number: 1051	Address: 16443958	Valid: 0	Degree: 1
+Entry number: 1052	Address: 16443957	Valid: 0	Degree: 3
+Entry number: 1053	Address: 16443958	Valid: 0	Degree: 2
+Entry number: 1054	Address: 16443959	Valid: 1	Degree: 1
+Entry number: 1055	Address: 16443958	Valid: 0	Degree: 3
+Entry number: 1056	Address: 16443959	Valid: 1	Degree: 2
+Entry number: 1057	Address: 16443960	Valid: 0	Degree: 1
+Entry number: 1058	Address: 16443959	Valid: 1	Degree: 3
+Entry number: 1059	Address: 16443960	Valid: 0	Degree: 2
+Entry number: 1060	Address: 16443961	Valid: 0	Degree: 1
+Entry number: 1061	Address: 2467894	Valid: 0	Degree: 3
+Entry number: 1062	Address: 2467896	Valid: 0	Degree: 2
+Entry number: 1063	Address: 2467898	Valid: 1	Degree: 1
+Entry number: 1064	Address: 31934949	Valid: 0	Degree: 3
+Entry number: 1065	Address: 31934950	Valid: 0	Degree: 2
+Entry number: 1066	Address: 31934951	Valid: 0	Degree: 1
+Entry number: 1067	Address: 31934950	Valid: 0	Degree: 3
+Entry number: 1068	Address: 31934951	Valid: 0	Degree: 2
+Entry number: 1069	Address: 31934952	Valid: 0	Degree: 1
+Entry number: 1070	Address: 16443966	Valid: 0	Degree: 3
+Entry number: 1071	Address: 16443967	Valid: 1	Degree: 2
+Entry number: 1072	Address: 16443968	Valid: 1	Degree: 1
+Entry number: 1073	Address: 16443967	Valid: 1	Degree: 3
+Entry number: 1074	Address: 16443968	Valid: 1	Degree: 2
+Entry number: 1075	Address: 16443969	Valid: 1	Degree: 1
+Entry number: 1076	Address: 18189524	Valid: 0	Degree: 3
+Entry number: 1077	Address: 18189525	Valid: 0	Degree: 2
+Entry number: 1078	Address: 18189526	Valid: 1	Degree: 1
+Entry number: 1079	Address: 31934951	Valid: 0	Degree: 3
+Entry number: 1080	Address: 31934952	Valid: 0	Degree: 2
+Entry number: 1081	Address: 31934953	Valid: 0	Degree: 1
+Entry number: 1082	Address: 31934952	Valid: 0	Degree: 3
+Entry number: 1083	Address: 31934953	Valid: 0	Degree: 2
+Entry number: 1084	Address: 31934954	Valid: 0	Degree: 1
+Entry number: 1085	Address: 31934953	Valid: 0	Degree: 3
+Entry number: 1086	Address: 31934954	Valid: 0	Degree: 2
+Entry number: 1087	Address: 31934955	Valid: 0	Degree: 1
+Entry number: 1088	Address: 70571307	Valid: 1	Degree: 3
+Entry number: 1089	Address: 70571308	Valid: 1	Degree: 2
+Entry number: 1090	Address: 70571309	Valid: 1	Degree: 1
+Entry number: 1091	Address: 24571580	Valid: 0	Degree: 3
+Entry number: 1092	Address: 24571584	Valid: 1	Degree: 2
+Entry number: 1093	Address: 24571588	Valid: 1	Degree: 1
+Entry number: 1094	Address: 123166309	Valid: 1	Degree: 3
+Entry number: 1095	Address: 123166307	Valid: 1	Degree: 2
+Entry number: 1096	Address: 123166305	Valid: 1	Degree: 1
+Entry number: 1097	Address: 2467853	Valid: 1	Degree: 3
+Entry number: 1098	Address: 2467852	Valid: 1	Degree: 2
+Entry number: 1099	Address: 2467851	Valid: 1	Degree: 1
+Entry number: 1100	Address: 27942908	Valid: 1	Degree: 3
+Entry number: 1101	Address: 24571579	Valid: 0	Degree: 3
+Entry number: 1102	Address: 24571583	Valid: 0	Degree: 2
+Entry number: 1103	Address: 24571587	Valid: 1	Degree: 1
+Entry number: 1104	Address: 119000042	Valid: 1	Degree: 3
+Entry number: 1105	Address: 119000045	Valid: 1	Degree: 2
+Entry number: 1106	Address: 119000048	Valid: 1	Degree: 1
+Entry number: 1107	Address: 2467871	Valid: 0	Degree: 3
+Entry number: 1108	Address: 2467872	Valid: 0	Degree: 2
+Entry number: 1109	Address: 2467873	Valid: 0	Degree: 1
+Entry number: 1110	Address: 2467872	Valid: 0	Degree: 3
+Entry number: 1111	Address: 2467873	Valid: 0	Degree: 2
+Entry number: 1112	Address: 2467874	Valid: 0	Degree: 1
+Entry number: 1113	Address: 2467873	Valid: 0	Degree: 3
+Entry number: 1114	Address: 2467874	Valid: 0	Degree: 2
+Entry number: 1115	Address: 2467875	Valid: 0	Degree: 1
+Entry number: 1116	Address: 2467879	Valid: 0	Degree: 3
+Entry number: 1117	Address: 2467880	Valid: 0	Degree: 2
+Entry number: 1118	Address: 2467881	Valid: 1	Degree: 1
+Entry number: 1119	Address: 31934958	Valid: 0	Degree: 3
+Entry number: 1120	Address: 31934959	Valid: 0	Degree: 2
+Entry number: 1121	Address: 31934960	Valid: 0	Degree: 1
+Entry number: 1122	Address: 108750884	Valid: 1	Degree: 3
+Entry number: 1123	Address: 108750885	Valid: 1	Degree: 2
+Entry number: 1124	Address: 108750886	Valid: 0	Degree: 1
+Entry number: 1125	Address: 31934959	Valid: 0	Degree: 3
+Entry number: 1126	Address: 31934960	Valid: 0	Degree: 2
+Entry number: 1127	Address: 31934961	Valid: 0	Degree: 1
+Entry number: 1128	Address: 42122741	Valid: 0	Degree: 3
+Entry number: 1129	Address: 42122742	Valid: 1	Degree: 2
+Entry number: 1130	Address: 42122743	Valid: 0	Degree: 1
+Entry number: 1131	Address: 42122742	Valid: 1	Degree: 3
+Entry number: 1132	Address: 42122743	Valid: 0	Degree: 2
+Entry number: 1133	Address: 42122744	Valid: 0	Degree: 1
+Entry number: 1134	Address: 42122746	Valid: 0	Degree: 3
+Entry number: 1135	Address: 42122747	Valid: 1	Degree: 2
+Entry number: 1136	Address: 42122748	Valid: 1	Degree: 1
+Entry number: 1137	Address: 42122747	Valid: 1	Degree: 3
+Entry number: 1138	Address: 42122748	Valid: 1	Degree: 2
+Entry number: 1139	Address: 42122749	Valid: 0	Degree: 1
+Entry number: 1140	Address: 42122748	Valid: 1	Degree: 3
+Entry number: 1141	Address: 42122749	Valid: 0	Degree: 2
+Entry number: 1142	Address: 42122750	Valid: 1	Degree: 1
+Entry number: 1143	Address: 42122749	Valid: 0	Degree: 3
+Entry number: 1144	Address: 42122750	Valid: 1	Degree: 2
+Entry number: 1145	Address: 42122751	Valid: 0	Degree: 1
+Entry number: 1146	Address: 42122750	Valid: 1	Degree: 3
+Entry number: 1147	Address: 42122751	Valid: 0	Degree: 2
+Entry number: 1148	Address: 42122752	Valid: 1	Degree: 1
+Entry number: 1149	Address: 42122751	Valid: 0	Degree: 3
+Entry number: 1150	Address: 42122752	Valid: 1	Degree: 2
+Entry number: 1151	Address: 42122753	Valid: 1	Degree: 1
+Entry number: 1152	Address: 42122752	Valid: 1	Degree: 3
+Entry number: 1153	Address: 42122753	Valid: 1	Degree: 2
+Entry number: 1154	Address: 42122754	Valid: 1	Degree: 1
+Entry number: 1155	Address: 1521731	Valid: 1	Degree: 3
+Entry number: 1156	Address: 1521732	Valid: 0	Degree: 2
+Entry number: 1157	Address: 1521733	Valid: 1	Degree: 1
+Entry number: 1158	Address: 1521732	Valid: 0	Degree: 3
+Entry number: 1159	Address: 1521733	Valid: 1	Degree: 2
+Entry number: 1160	Address: 1521734	Valid: 1	Degree: 1
+Entry number: 1161	Address: 1521733	Valid: 1	Degree: 3
+Entry number: 1162	Address: 1521734	Valid: 1	Degree: 2
+Entry number: 1163	Address: 1521735	Valid: 1	Degree: 1
+Entry number: 1164	Address: 1521740	Valid: 1	Degree: 3
+Entry number: 1165	Address: 1521741	Valid: 1	Degree: 2
+Entry number: 1166	Address: 1521742	Valid: 1	Degree: 1
+Entry number: 1167	Address: 1521741	Valid: 1	Degree: 3
+Entry number: 1168	Address: 1521742	Valid: 1	Degree: 2
+Entry number: 1169	Address: 1521743	Valid: 0	Degree: 1
+Entry number: 1170	Address: 1521742	Valid: 1	Degree: 3
+Entry number: 1171	Address: 1521743	Valid: 0	Degree: 2
+Entry number: 1172	Address: 1521744	Valid: 0	Degree: 1
+Entry number: 1173	Address: 1521743	Valid: 0	Degree: 3
+Entry number: 1174	Address: 1521744	Valid: 0	Degree: 2
+Entry number: 1175	Address: 1521745	Valid: 1	Degree: 1
+Entry number: 1176	Address: 1521744	Valid: 0	Degree: 3
+Entry number: 1177	Address: 1521745	Valid: 1	Degree: 2
+Entry number: 1178	Address: 1521746	Valid: 1	Degree: 1
+Entry number: 1179	Address: 1521745	Valid: 1	Degree: 3
+Entry number: 1180	Address: 1521746	Valid: 1	Degree: 2
+Entry number: 1181	Address: 1521747	Valid: 0	Degree: 1
+Entry number: 1182	Address: 1521746	Valid: 1	Degree: 3
+Entry number: 1183	Address: 1521747	Valid: 0	Degree: 2
+Entry number: 1184	Address: 1521748	Valid: 0	Degree: 1
+Entry number: 1185	Address: 1521747	Valid: 0	Degree: 3
+Entry number: 1186	Address: 1521748	Valid: 0	Degree: 2
+Entry number: 1187	Address: 1521749	Valid: 0	Degree: 1
+Entry number: 1188	Address: 1521748	Valid: 0	Degree: 3
+Entry number: 1189	Address: 1521749	Valid: 0	Degree: 2
+Entry number: 1190	Address: 1521750	Valid: 0	Degree: 1
+Entry number: 1191	Address: 2467891	Valid: 0	Degree: 3
+Entry number: 1192	Address: 2467892	Valid: 0	Degree: 2
+Entry number: 1193	Address: 2467893	Valid: 1	Degree: 1
+Entry number: 1194	Address: 31934960	Valid: 0	Degree: 3
+Entry number: 1195	Address: 31934961	Valid: 0	Degree: 2
+Entry number: 1196	Address: 31934962	Valid: 0	Degree: 1
+Entry number: 1197	Address: 31934961	Valid: 0	Degree: 3
+Entry number: 1198	Address: 31934962	Valid: 0	Degree: 2
+Entry number: 1199	Address: 31934963	Valid: 0	Degree: 1
+Entry number: 1200	Address: 31934962	Valid: 0	Degree: 3
+Entry number: 1201	Address: 31934963	Valid: 0	Degree: 2
+Entry number: 1202	Address: 31934964	Valid: 0	Degree: 1
+Entry number: 1203	Address: 1521749	Valid: 0	Degree: 3
+Entry number: 1204	Address: 1521750	Valid: 0	Degree: 2
+Entry number: 1205	Address: 1521751	Valid: 1	Degree: 1
+Entry number: 1206	Address: 1521750	Valid: 0	Degree: 3
+Entry number: 1207	Address: 1521751	Valid: 1	Degree: 2
+Entry number: 1208	Address: 1521752	Valid: 1	Degree: 1
+Entry number: 1209	Address: 1521751	Valid: 1	Degree: 3
+Entry number: 1210	Address: 1521752	Valid: 1	Degree: 2
+Entry number: 1211	Address: 1521753	Valid: 1	Degree: 1
+Entry number: 1212	Address: 116174939	Valid: 0	Degree: 3
+Entry number: 1213	Address: 116174927	Valid: 0	Degree: 2
+Entry number: 1214	Address: 116174915	Valid: 0	Degree: 1
+Entry number: 1215	Address: 1521755	Valid: 0	Degree: 3
+Entry number: 1216	Address: 1521756	Valid: 1	Degree: 2
+Entry number: 1217	Address: 1521757	Valid: 1	Degree: 1
+Entry number: 1218	Address: 1521756	Valid: 1	Degree: 3
+Entry number: 1219	Address: 1521757	Valid: 1	Degree: 2
+Entry number: 1220	Address: 1521758	Valid: 0	Degree: 1
+Entry number: 1221	Address: 1521765	Valid: 1	Degree: 3
+Entry number: 1222	Address: 1521766	Valid: 1	Degree: 2
+Entry number: 1223	Address: 1521767	Valid: 1	Degree: 1
+Entry number: 1224	Address: 1521766	Valid: 1	Degree: 3
+Entry number: 1225	Address: 1521767	Valid: 1	Degree: 2
+Entry number: 1226	Address: 1521768	Valid: 1	Degree: 1
+Entry number: 1227	Address: 1521767	Valid: 1	Degree: 3
+Entry number: 1228	Address: 1521768	Valid: 1	Degree: 2
+Entry number: 1229	Address: 1521769	Valid: 0	Degree: 1
+Entry number: 1230	Address: 1521772	Valid: 1	Degree: 3
+Entry number: 1231	Address: 1521773	Valid: 1	Degree: 2
+Entry number: 1232	Address: 1521774	Valid: 1	Degree: 1
+Entry number: 1233	Address: 31934965	Valid: 0	Degree: 3
+Entry number: 1234	Address: 31934966	Valid: 0	Degree: 2
+Entry number: 1235	Address: 31934967	Valid: 0	Degree: 1
+Entry number: 1236	Address: 123166321	Valid: 0	Degree: 3
+Entry number: 1237	Address: 123166324	Valid: 1	Degree: 2
+Entry number: 1238	Address: 123166327	Valid: 0	Degree: 1
+Entry number: 1239	Address: 123166313	Valid: 0	Degree: 3
+Entry number: 1240	Address: 123166314	Valid: 0	Degree: 2
+Entry number: 1241	Address: 123166315	Valid: 0	Degree: 1
+Entry number: 1242	Address: 2467853	Valid: 1	Degree: 3
+Entry number: 1243	Address: 2467852	Valid: 1	Degree: 2
+Entry number: 1244	Address: 2467851	Valid: 1	Degree: 1
+Entry number: 1245	Address: 132409117	Valid: 1	Degree: 3
+Entry number: 1246	Address: 132409125	Valid: 1	Degree: 2
+Entry number: 1247	Address: 132409133	Valid: 1	Degree: 1
+Entry number: 1248	Address: 119000013	Valid: 1	Degree: 3
+Entry number: 1249	Address: 119000015	Valid: 0	Degree: 2
+Entry number: 1250	Address: 119000017	Valid: 0	Degree: 1
+Entry number: 1251	Address: 109431145	Valid: 1	Degree: 3
+Entry number: 1252	Address: 109431144	Valid: 1	Degree: 2
+Entry number: 1253	Address: 109431143	Valid: 0	Degree: 1
+Entry number: 1254	Address: 2467891	Valid: 0	Degree: 3
+Entry number: 1255	Address: 2467892	Valid: 0	Degree: 2
+Entry number: 1256	Address: 2467893	Valid: 1	Degree: 1
+Entry number: 1257	Address: 31934956	Valid: 0	Degree: 3
+Entry number: 1258	Address: 31934955	Valid: 0	Degree: 2
+Entry number: 1259	Address: 31934954	Valid: 0	Degree: 1
+Entry number: 1260	Address: 31934970	Valid: 0	Degree: 3
+Entry number: 1261	Address: 31934972	Valid: 0	Degree: 2
+Entry number: 1262	Address: 31934974	Valid: 1	Degree: 1
+Entry number: 1263	Address: 2467872	Valid: 0	Degree: 3
+Entry number: 1264	Address: 2467873	Valid: 0	Degree: 2
+Entry number: 1265	Address: 2467874	Valid: 0	Degree: 1
+Entry number: 1266	Address: 31934971	Valid: 0	Degree: 3
+Entry number: 1267	Address: 31934972	Valid: 0	Degree: 2
+Entry number: 1268	Address: 31934973	Valid: 0	Degree: 1
+Entry number: 1269	Address: 116174939	Valid: 0	Degree: 3
+Entry number: 1270	Address: 116174927	Valid: 0	Degree: 2
+Entry number: 1271	Address: 116174915	Valid: 0	Degree: 1
+Entry number: 1272	Address: 23019572	Valid: 1	Degree: 3
+Entry number: 1273	Address: 23019573	Valid: 1	Degree: 2
+Entry number: 1274	Address: 23019574	Valid: 1	Degree: 1
+Entry number: 1275	Address: 34794250	Valid: 0	Degree: 3
+Entry number: 1276	Address: 34794248	Valid: 0	Degree: 2
+Entry number: 1277	Address: 34794246	Valid: 0	Degree: 1
+Entry number: 1278	Address: 2467853	Valid: 1	Degree: 3
+Entry number: 1279	Address: 2467852	Valid: 1	Degree: 2
+Entry number: 1280	Address: 2467851	Valid: 1	Degree: 1
+Entry number: 1281	Address: 78315178	Valid: 0	Degree: 3
+Entry number: 1282	Address: 78315179	Valid: 1	Degree: 2
+Entry number: 1283	Address: 78315180	Valid: 1	Degree: 1
+Entry number: 1284	Address: 39358680	Valid: 1	Degree: 3
+Entry number: 1285	Address: 39358681	Valid: 1	Degree: 2
+Entry number: 1286	Address: 39358682	Valid: 1	Degree: 1
+Entry number: 1287	Address: 133770607	Valid: 0	Degree: 3
+Entry number: 1288	Address: 133770608	Valid: 0	Degree: 2
+Entry number: 1289	Address: 133770609	Valid: 0	Degree: 1
+Entry number: 1290	Address: 93356319	Valid: 1	Degree: 3
+Entry number: 1291	Address: 93356315	Valid: 1	Degree: 2
+Entry number: 1292	Address: 93356311	Valid: 1	Degree: 1
+Entry number: 1293	Address: 132409117	Valid: 1	Degree: 3
+Entry number: 1294	Address: 132409125	Valid: 1	Degree: 2
+Entry number: 1295	Address: 132409133	Valid: 1	Degree: 1
+Entry number: 1296	Address: 2467868	Valid: 1	Degree: 3
+Entry number: 1297	Address: 2467869	Valid: 1	Degree: 2
+Entry number: 1298	Address: 2467870	Valid: 1	Degree: 1
+Entry number: 1299	Address: 132409113	Valid: 1	Degree: 3
+Entry number: 1300	Address: 132409121	Valid: 1	Degree: 2
+Entry number: 1301	Address: 132409129	Valid: 1	Degree: 1
+Entry number: 1302	Address: 12219526	Valid: 0	Degree: 3
+Entry number: 1303	Address: 12219527	Valid: 0	Degree: 2
+Entry number: 1304	Address: 12219528	Valid: 0	Degree: 1
+Entry number: 1305	Address: 34794249	Valid: 0	Degree: 3
+Entry number: 1306	Address: 34794250	Valid: 0	Degree: 2
+Entry number: 1307	Address: 34794251	Valid: 0	Degree: 1
+Entry number: 1308	Address: 12219527	Valid: 0	Degree: 3
+Entry number: 1309	Address: 12219528	Valid: 0	Degree: 2
+Entry number: 1310	Address: 12219529	Valid: 0	Degree: 1
+Entry number: 1311	Address: 34794250	Valid: 0	Degree: 3
+Entry number: 1312	Address: 34794251	Valid: 0	Degree: 2
+Entry number: 1313	Address: 34794252	Valid: 0	Degree: 1
+Entry number: 1314	Address: 115398437	Valid: 1	Degree: 3
+Entry number: 1315	Address: 115398438	Valid: 1	Degree: 2
+Entry number: 1316	Address: 115398439	Valid: 1	Degree: 1
+Entry number: 1317	Address: 115398438	Valid: 1	Degree: 3
+Entry number: 1318	Address: 115398439	Valid: 1	Degree: 2
+Entry number: 1319	Address: 115398440	Valid: 0	Degree: 1
+Entry number: 1320	Address: 116174933	Valid: 1	Degree: 3
+Entry number: 1321	Address: 116174921	Valid: 0	Degree: 2
+Entry number: 1322	Address: 116174909	Valid: 1	Degree: 1
+Entry number: 1323	Address: 115398439	Valid: 1	Degree: 3
+Entry number: 1324	Address: 115398440	Valid: 0	Degree: 2
+Entry number: 1325	Address: 115398441	Valid: 1	Degree: 1
+Entry number: 1326	Address: 115398440	Valid: 0	Degree: 3
+Entry number: 1327	Address: 115398441	Valid: 1	Degree: 2
+Entry number: 1328	Address: 115398442	Valid: 1	Degree: 1
+Entry number: 1329	Address: 115398441	Valid: 1	Degree: 3
+Entry number: 1330	Address: 115398442	Valid: 1	Degree: 2
+Entry number: 1331	Address: 115398443	Valid: 1	Degree: 1
+Entry number: 1332	Address: 115398446	Valid: 1	Degree: 3
+Entry number: 1333	Address: 115398447	Valid: 0	Degree: 2
+Entry number: 1334	Address: 115398448	Valid: 1	Degree: 1
+Entry number: 1335	Address: 115398447	Valid: 0	Degree: 3
+Entry number: 1336	Address: 115398448	Valid: 1	Degree: 2
+Entry number: 1337	Address: 115398449	Valid: 1	Degree: 1
+Entry number: 1338	Address: 115398448	Valid: 1	Degree: 3
+Entry number: 1339	Address: 115398449	Valid: 1	Degree: 2
+Entry number: 1340	Address: 115398450	Valid: 1	Degree: 1
+Entry number: 1341	Address: 115398453	Valid: 0	Degree: 3
+Entry number: 1342	Address: 115398455	Valid: 0	Degree: 2
+Entry number: 1343	Address: 115398457	Valid: 1	Degree: 1
+Entry number: 1344	Address: 115398458	Valid: 1	Degree: 3
+Entry number: 1345	Address: 115398459	Valid: 1	Degree: 2
+Entry number: 1346	Address: 115398460	Valid: 0	Degree: 1
+Entry number: 1347	Address: 115398459	Valid: 1	Degree: 3
+Entry number: 1348	Address: 115398460	Valid: 0	Degree: 2
+Entry number: 1349	Address: 115398461	Valid: 0	Degree: 1
+Entry number: 1350	Address: 34794251	Valid: 1	Degree: 3
+Entry number: 1351	Address: 34794252	Valid: 0	Degree: 2
+Entry number: 1352	Address: 34794253	Valid: 1	Degree: 1
+Entry number: 1353	Address: 12219531	Valid: 0	Degree: 3
+Entry number: 1354	Address: 12219532	Valid: 0	Degree: 2
+Entry number: 1355	Address: 12219533	Valid: 0	Degree: 1
+Entry number: 1356	Address: 12219532	Valid: 0	Degree: 3
+Entry number: 1357	Address: 12219533	Valid: 0	Degree: 2
+Entry number: 1358	Address: 12219534	Valid: 0	Degree: 1
+Entry number: 1359	Address: 115398462	Valid: 1	Degree: 3
+Entry number: 1360	Address: 115398463	Valid: 1	Degree: 2
+Entry number: 1361	Address: 115398464	Valid: 1	Degree: 1
+Entry number: 1362	Address: 115398463	Valid: 1	Degree: 3
+Entry number: 1363	Address: 115398464	Valid: 1	Degree: 2
+Entry number: 1364	Address: 115398465	Valid: 1	Degree: 1
+Entry number: 1365	Address: 34794256	Valid: 1	Degree: 3
+Entry number: 1366	Address: 34794255	Valid: 1	Degree: 2
+Entry number: 1367	Address: 34794254	Valid: 1	Degree: 1
+Entry number: 1368	Address: 81127562	Valid: 1	Degree: 3
+Entry number: 1369	Address: 81127564	Valid: 0	Degree: 2
+Entry number: 1370	Address: 81127566	Valid: 1	Degree: 1
+Entry number: 1371	Address: 133171263	Valid: 1	Degree: 3
+Entry number: 1372	Address: 133171258	Valid: 1	Degree: 2
+Entry number: 1373	Address: 133171253	Valid: 1	Degree: 1
+Entry number: 1374	Address: 18189524	Valid: 0	Degree: 3
+Entry number: 1375	Address: 18189525	Valid: 0	Degree: 2
+Entry number: 1376	Address: 18189526	Valid: 1	Degree: 1
+Entry number: 1377	Address: 12219535	Valid: 0	Degree: 3
+Entry number: 1378	Address: 12219536	Valid: 0	Degree: 2
+Entry number: 1379	Address: 12219537	Valid: 0	Degree: 1
+Entry number: 1380	Address: 12219536	Valid: 0	Degree: 3
+Entry number: 1381	Address: 12219537	Valid: 0	Degree: 2
+Entry number: 1382	Address: 12219538	Valid: 1	Degree: 1
+Entry number: 1383	Address: 18189524	Valid: 0	Degree: 3
+Entry number: 1384	Address: 18189525	Valid: 0	Degree: 2
+Entry number: 1385	Address: 18189526	Valid: 1	Degree: 1
+Entry number: 1386	Address: 111699049	Valid: 1	Degree: 3
+Entry number: 1387	Address: 111699050	Valid: 1	Degree: 2
+Entry number: 1388	Address: 111699051	Valid: 1	Degree: 1
+Entry number: 1389	Address: 111699050	Valid: 1	Degree: 3
+Entry number: 1390	Address: 111699051	Valid: 1	Degree: 2
+Entry number: 1391	Address: 111699052	Valid: 1	Degree: 1
+Entry number: 1392	Address: 111699051	Valid: 1	Degree: 3
+Entry number: 1393	Address: 111699052	Valid: 1	Degree: 2
+Entry number: 1394	Address: 111699053	Valid: 1	Degree: 1
+Entry number: 1395	Address: 111699052	Valid: 1	Degree: 3
+Entry number: 1396	Address: 111699053	Valid: 1	Degree: 2
+Entry number: 1397	Address: 111699054	Valid: 1	Degree: 1
+Entry number: 1398	Address: 111699053	Valid: 1	Degree: 3
+Entry number: 1399	Address: 111699054	Valid: 1	Degree: 2
+Entry number: 1400	Address: 111699055	Valid: 1	Degree: 1
+Entry number: 1401	Address: 111699054	Valid: 1	Degree: 3
+Entry number: 1402	Address: 111699055	Valid: 1	Degree: 2
+Entry number: 1403	Address: 111699056	Valid: 1	Degree: 1
+Entry number: 1404	Address: 111699055	Valid: 1	Degree: 3
+Entry number: 1405	Address: 111699056	Valid: 1	Degree: 2
+Entry number: 1406	Address: 111699057	Valid: 0	Degree: 1
+Entry number: 1407	Address: 111699056	Valid: 1	Degree: 3
+Entry number: 1408	Address: 111699057	Valid: 0	Degree: 2
+Entry number: 1409	Address: 111699058	Valid: 1	Degree: 1
+Entry number: 1410	Address: 111699057	Valid: 0	Degree: 3
+Entry number: 1411	Address: 111699058	Valid: 1	Degree: 2
+Entry number: 1412	Address: 111699059	Valid: 1	Degree: 1
+Entry number: 1413	Address: 111699058	Valid: 1	Degree: 3
+Entry number: 1414	Address: 111699059	Valid: 1	Degree: 2
+Entry number: 1415	Address: 111699060	Valid: 1	Degree: 1
+Entry number: 1416	Address: 111699059	Valid: 1	Degree: 3
+Entry number: 1417	Address: 111699060	Valid: 1	Degree: 2
+Entry number: 1418	Address: 111699061	Valid: 1	Degree: 1
+Entry number: 1419	Address: 111699060	Valid: 1	Degree: 3
+Entry number: 1420	Address: 111699061	Valid: 1	Degree: 2
+Entry number: 1421	Address: 111699062	Valid: 1	Degree: 1
+Entry number: 1422	Address: 111699061	Valid: 1	Degree: 3
+Entry number: 1423	Address: 111699062	Valid: 1	Degree: 2
+Entry number: 1424	Address: 111699063	Valid: 1	Degree: 1
+Entry number: 1425	Address: 111699062	Valid: 1	Degree: 3
+Entry number: 1426	Address: 111699063	Valid: 1	Degree: 2
+Entry number: 1427	Address: 111699064	Valid: 1	Degree: 1
+Entry number: 1428	Address: 111699063	Valid: 1	Degree: 3
+Entry number: 1429	Address: 111699064	Valid: 1	Degree: 2
+Entry number: 1430	Address: 111699065	Valid: 1	Degree: 1
+Entry number: 1431	Address: 111699064	Valid: 1	Degree: 3
+Entry number: 1432	Address: 111699065	Valid: 1	Degree: 2
+Entry number: 1433	Address: 111699066	Valid: 1	Degree: 1
+Entry number: 1434	Address: 111699065	Valid: 1	Degree: 3
+Entry number: 1435	Address: 111699066	Valid: 1	Degree: 2
+Entry number: 1436	Address: 111699067	Valid: 1	Degree: 1
+Entry number: 1437	Address: 111699066	Valid: 1	Degree: 3
+Entry number: 1438	Address: 111699067	Valid: 1	Degree: 2
+Entry number: 1439	Address: 111699068	Valid: 1	Degree: 1
+Entry number: 1440	Address: 111699067	Valid: 1	Degree: 3
+Entry number: 1441	Address: 111699068	Valid: 1	Degree: 2
+Entry number: 1442	Address: 111699069	Valid: 1	Degree: 1
+Entry number: 1443	Address: 111699068	Valid: 1	Degree: 3
+Entry number: 1444	Address: 111699069	Valid: 1	Degree: 2
+Entry number: 1445	Address: 111699070	Valid: 1	Degree: 1
+Entry number: 1446	Address: 111699069	Valid: 1	Degree: 3
+Entry number: 1447	Address: 111699070	Valid: 1	Degree: 2
+Entry number: 1448	Address: 111699071	Valid: 1	Degree: 1
+Entry number: 1449	Address: 111699070	Valid: 1	Degree: 3
+Entry number: 1450	Address: 111699071	Valid: 1	Degree: 2
+Entry number: 1451	Address: 111699072	Valid: 1	Degree: 1
+Entry number: 1452	Address: 111699071	Valid: 1	Degree: 3
+Entry number: 1453	Address: 111699072	Valid: 1	Degree: 2
+Entry number: 1454	Address: 111699073	Valid: 1	Degree: 1
+Entry number: 1455	Address: 111699072	Valid: 1	Degree: 3
+Entry number: 1456	Address: 111699073	Valid: 1	Degree: 2
+Entry number: 1457	Address: 111699074	Valid: 1	Degree: 1
+Entry number: 1458	Address: 63850691	Valid: 1	Degree: 3
+Entry number: 1459	Address: 63850692	Valid: 1	Degree: 2
+Entry number: 1460	Address: 63850693	Valid: 1	Degree: 1
+Entry number: 1461	Address: 63850692	Valid: 1	Degree: 3
+Entry number: 1462	Address: 63850693	Valid: 1	Degree: 2
+Entry number: 1463	Address: 63850694	Valid: 1	Degree: 1
+Entry number: 1464	Address: 63850693	Valid: 1	Degree: 3
+Entry number: 1465	Address: 63850694	Valid: 1	Degree: 2
+Entry number: 1466	Address: 63850695	Valid: 1	Degree: 1
+Entry number: 1467	Address: 63850694	Valid: 1	Degree: 3
+Entry number: 1468	Address: 63850695	Valid: 1	Degree: 2
+Entry number: 1469	Address: 63850696	Valid: 1	Degree: 1
+Entry number: 1470	Address: 63850695	Valid: 1	Degree: 3
+Entry number: 1471	Address: 63850696	Valid: 1	Degree: 2
+Entry number: 1472	Address: 63850697	Valid: 1	Degree: 1
+Entry number: 1473	Address: 63850696	Valid: 1	Degree: 3
+Entry number: 1474	Address: 63850697	Valid: 1	Degree: 2
+Entry number: 1475	Address: 63850698	Valid: 1	Degree: 1
+Entry number: 1476	Address: 63850697	Valid: 1	Degree: 3
+Entry number: 1477	Address: 63850698	Valid: 1	Degree: 2
+Entry number: 1478	Address: 63850699	Valid: 0	Degree: 1
+Entry number: 1479	Address: 63850698	Valid: 1	Degree: 3
+Entry number: 1480	Address: 63850699	Valid: 0	Degree: 2
+Entry number: 1481	Address: 63850700	Valid: 1	Degree: 1
+Entry number: 1482	Address: 63850699	Valid: 0	Degree: 3
+Entry number: 1483	Address: 63850700	Valid: 1	Degree: 2
+Entry number: 1484	Address: 63850701	Valid: 1	Degree: 1
+Entry number: 1485	Address: 63850700	Valid: 1	Degree: 3
+Entry number: 1486	Address: 63850701	Valid: 1	Degree: 2
+Entry number: 1487	Address: 63850702	Valid: 0	Degree: 1
+Entry number: 1488	Address: 63850701	Valid: 1	Degree: 3
+Entry number: 1489	Address: 63850702	Valid: 0	Degree: 2
+Entry number: 1490	Address: 63850703	Valid: 1	Degree: 1
+Entry number: 1491	Address: 63850702	Valid: 0	Degree: 3
+Entry number: 1492	Address: 63850703	Valid: 1	Degree: 2
+Entry number: 1493	Address: 63850704	Valid: 1	Degree: 1
+Entry number: 1494	Address: 63850703	Valid: 1	Degree: 3
+Entry number: 1495	Address: 63850704	Valid: 1	Degree: 2
+Entry number: 1496	Address: 63850705	Valid: 1	Degree: 1
+Entry number: 1497	Address: 63850704	Valid: 1	Degree: 3
+Entry number: 1498	Address: 63850705	Valid: 1	Degree: 2
+Entry number: 1499	Address: 63850706	Valid: 1	Degree: 1
+Entry number: 1500	Address: 63850705	Valid: 1	Degree: 3
+Entry number: 1501	Address: 63850706	Valid: 1	Degree: 2
+Entry number: 1502	Address: 63850707	Valid: 1	Degree: 1
+Entry number: 1503	Address: 63850706	Valid: 1	Degree: 3
+Entry number: 1504	Address: 63850707	Valid: 1	Degree: 2
+Entry number: 1505	Address: 63850708	Valid: 1	Degree: 1
+Entry number: 1506	Address: 63850707	Valid: 1	Degree: 3
+Entry number: 1507	Address: 63850708	Valid: 1	Degree: 2
+Entry number: 1508	Address: 63850709	Valid: 1	Degree: 1
+Entry number: 1509	Address: 63850708	Valid: 1	Degree: 3
+Entry number: 1510	Address: 63850709	Valid: 1	Degree: 2
+Entry number: 1511	Address: 63850710	Valid: 1	Degree: 1
+Entry number: 1512	Address: 63850709	Valid: 1	Degree: 3
+Entry number: 1513	Address: 63850710	Valid: 1	Degree: 2
+Entry number: 1514	Address: 63850711	Valid: 1	Degree: 1
+Entry number: 1515	Address: 63850710	Valid: 1	Degree: 3
+Entry number: 1516	Address: 63850711	Valid: 1	Degree: 2
+Entry number: 1517	Address: 63850712	Valid: 1	Degree: 1
+Entry number: 1518	Address: 63850711	Valid: 1	Degree: 3
+Entry number: 1519	Address: 63850712	Valid: 1	Degree: 2
+Entry number: 1520	Address: 63850713	Valid: 0	Degree: 1
+Entry number: 1521	Address: 63850712	Valid: 1	Degree: 3
+Entry number: 1522	Address: 63850713	Valid: 0	Degree: 2
+Entry number: 1523	Address: 63850714	Valid: 1	Degree: 1
+Entry number: 1524	Address: 63850713	Valid: 0	Degree: 3
+Entry number: 1525	Address: 63850714	Valid: 1	Degree: 2
+Entry number: 1526	Address: 63850715	Valid: 0	Degree: 1
+Entry number: 1527	Address: 63850714	Valid: 1	Degree: 3
+Entry number: 1528	Address: 63850715	Valid: 0	Degree: 2
+Entry number: 1529	Address: 63850716	Valid: 0	Degree: 1
+Entry number: 1530	Address: 63850715	Valid: 0	Degree: 3
+Entry number: 1531	Address: 63850716	Valid: 0	Degree: 2
+Entry number: 1532	Address: 63850717	Valid: 1	Degree: 1
+Entry number: 1533	Address: 63850716	Valid: 0	Degree: 3
+Entry number: 1534	Address: 63850717	Valid: 1	Degree: 2
+Entry number: 1535	Address: 63850718	Valid: 0	Degree: 1
+Entry number: 1536	Address: 63850717	Valid: 1	Degree: 3
+Entry number: 1537	Address: 63850718	Valid: 0	Degree: 2
+Entry number: 1538	Address: 63850719	Valid: 1	Degree: 1
+Entry number: 1539	Address: 63850718	Valid: 0	Degree: 3
+Entry number: 1540	Address: 63850719	Valid: 1	Degree: 2
+Entry number: 1541	Address: 63850720	Valid: 1	Degree: 1
+Entry number: 1542	Address: 63850719	Valid: 1	Degree: 3
+Entry number: 1543	Address: 63850720	Valid: 1	Degree: 2
+Entry number: 1544	Address: 63850721	Valid: 1	Degree: 1
+Entry number: 1545	Address: 63850720	Valid: 1	Degree: 3
+Entry number: 1546	Address: 63850721	Valid: 1	Degree: 2
+Entry number: 1547	Address: 63850722	Valid: 1	Degree: 1
+Entry number: 1548	Address: 63850721	Valid: 1	Degree: 3
+Entry number: 1549	Address: 63850722	Valid: 1	Degree: 2
+Entry number: 1550	Address: 63850723	Valid: 1	Degree: 1
+Entry number: 1551	Address: 63850722	Valid: 1	Degree: 3
+Entry number: 1552	Address: 63850723	Valid: 1	Degree: 2
+Entry number: 1553	Address: 63850724	Valid: 1	Degree: 1
+Entry number: 1554	Address: 63850723	Valid: 1	Degree: 3
+Entry number: 1555	Address: 63850724	Valid: 1	Degree: 2
+Entry number: 1556	Address: 63850725	Valid: 1	Degree: 1
+Entry number: 1557	Address: 63850724	Valid: 1	Degree: 3
+Entry number: 1558	Address: 63850725	Valid: 1	Degree: 2
+Entry number: 1559	Address: 63850726	Valid: 0	Degree: 1
+Entry number: 1560	Address: 63850725	Valid: 1	Degree: 3
+Entry number: 1561	Address: 63850726	Valid: 0	Degree: 2
+Entry number: 1562	Address: 63850727	Valid: 1	Degree: 1
+Entry number: 1563	Address: 63850726	Valid: 0	Degree: 3
+Entry number: 1564	Address: 63850727	Valid: 1	Degree: 2
+Entry number: 1565	Address: 63850728	Valid: 1	Degree: 1
+Entry number: 1566	Address: 63850727	Valid: 1	Degree: 3
+Entry number: 1567	Address: 63850728	Valid: 1	Degree: 2
+Entry number: 1568	Address: 63850729	Valid: 0	Degree: 1
+Entry number: 1569	Address: 63850728	Valid: 1	Degree: 3
+Entry number: 1570	Address: 63850729	Valid: 0	Degree: 2
+Entry number: 1571	Address: 63850730	Valid: 1	Degree: 1
+Entry number: 1572	Address: 63850729	Valid: 0	Degree: 3
+Entry number: 1573	Address: 63850730	Valid: 1	Degree: 2
+Entry number: 1574	Address: 63850731	Valid: 1	Degree: 1
+Entry number: 1575	Address: 63850730	Valid: 1	Degree: 3
+Entry number: 1576	Address: 63850731	Valid: 1	Degree: 2
+Entry number: 1577	Address: 63850732	Valid: 0	Degree: 1
+Entry number: 1578	Address: 63850731	Valid: 1	Degree: 3
+Entry number: 1579	Address: 63850732	Valid: 0	Degree: 2
+Entry number: 1580	Address: 63850733	Valid: 1	Degree: 1
+Entry number: 1581	Address: 63850732	Valid: 0	Degree: 3
+Entry number: 1582	Address: 63850733	Valid: 1	Degree: 2
+Entry number: 1583	Address: 63850734	Valid: 1	Degree: 1
+Entry number: 1584	Address: 63850733	Valid: 1	Degree: 3
+Entry number: 1585	Address: 63850734	Valid: 1	Degree: 2
+Entry number: 1586	Address: 63850735	Valid: 1	Degree: 1
+Entry number: 1587	Address: 63850734	Valid: 1	Degree: 3
+Entry number: 1588	Address: 63850735	Valid: 1	Degree: 2
+Entry number: 1589	Address: 63850736	Valid: 0	Degree: 1
+Entry number: 1590	Address: 63850735	Valid: 1	Degree: 3
+Entry number: 1591	Address: 63850736	Valid: 0	Degree: 2
+Entry number: 1592	Address: 63850737	Valid: 1	Degree: 1
+Entry number: 1593	Address: 63850736	Valid: 0	Degree: 3
+Entry number: 1594	Address: 63850737	Valid: 1	Degree: 2
+Entry number: 1595	Address: 63850738	Valid: 1	Degree: 1
+Entry number: 1596	Address: 63850737	Valid: 1	Degree: 3
+Entry number: 1597	Address: 63850738	Valid: 1	Degree: 2
+Entry number: 1598	Address: 63850739	Valid: 1	Degree: 1
+Entry number: 1599	Address: 63850738	Valid: 1	Degree: 3
+Entry number: 1600	Address: 63850739	Valid: 1	Degree: 2
+Entry number: 1601	Address: 63850740	Valid: 1	Degree: 1
+Entry number: 1602	Address: 63850739	Valid: 1	Degree: 3
+Entry number: 1603	Address: 63850740	Valid: 1	Degree: 2
+Entry number: 1604	Address: 63850741	Valid: 1	Degree: 1
+Entry number: 1605	Address: 63850740	Valid: 1	Degree: 3
+Entry number: 1606	Address: 63850741	Valid: 1	Degree: 2
+Entry number: 1607	Address: 63850742	Valid: 1	Degree: 1
+Entry number: 1608	Address: 63850741	Valid: 1	Degree: 3
+Entry number: 1609	Address: 63850742	Valid: 1	Degree: 2
+Entry number: 1610	Address: 63850743	Valid: 0	Degree: 1
+Entry number: 1611	Address: 63850742	Valid: 1	Degree: 3
+Entry number: 1612	Address: 63850743	Valid: 0	Degree: 2
+Entry number: 1613	Address: 63850744	Valid: 1	Degree: 1
+Entry number: 1614	Address: 63850743	Valid: 0	Degree: 3
+Entry number: 1615	Address: 63850744	Valid: 1	Degree: 2
+Entry number: 1616	Address: 63850745	Valid: 1	Degree: 1
+Entry number: 1617	Address: 63850744	Valid: 1	Degree: 3
+Entry number: 1618	Address: 63850745	Valid: 1	Degree: 2
+Entry number: 1619	Address: 63850746	Valid: 1	Degree: 1
+Entry number: 1620	Address: 63850745	Valid: 1	Degree: 3
+Entry number: 1621	Address: 63850746	Valid: 1	Degree: 2
+Entry number: 1622	Address: 63850747	Valid: 1	Degree: 1
+Entry number: 1623	Address: 63850746	Valid: 1	Degree: 3
+Entry number: 1624	Address: 63850747	Valid: 1	Degree: 2
+Entry number: 1625	Address: 63850748	Valid: 1	Degree: 1
+Entry number: 1626	Address: 63850747	Valid: 1	Degree: 3
+Entry number: 1627	Address: 63850748	Valid: 1	Degree: 2
+Entry number: 1628	Address: 63850749	Valid: 1	Degree: 1
+Entry number: 1629	Address: 63850748	Valid: 1	Degree: 3
+Entry number: 1630	Address: 63850749	Valid: 1	Degree: 2
+Entry number: 1631	Address: 63850750	Valid: 1	Degree: 1
+Entry number: 1632	Address: 63850749	Valid: 1	Degree: 3
+Entry number: 1633	Address: 63850750	Valid: 1	Degree: 2
+Entry number: 1634	Address: 63850751	Valid: 1	Degree: 1
+Entry number: 1635	Address: 63850750	Valid: 1	Degree: 3
+Entry number: 1636	Address: 63850751	Valid: 1	Degree: 2
+Entry number: 1637	Address: 63850752	Valid: 1	Degree: 1
+Entry number: 1638	Address: 63850751	Valid: 1	Degree: 3
+Entry number: 1639	Address: 63850752	Valid: 1	Degree: 2
+Entry number: 1640	Address: 63850753	Valid: 1	Degree: 1
+Entry number: 1641	Address: 63850752	Valid: 1	Degree: 3
+Entry number: 1642	Address: 63850753	Valid: 1	Degree: 2
+Entry number: 1643	Address: 63850754	Valid: 1	Degree: 1
+Entry number: 1644	Address: 9339587	Valid: 0	Degree: 3
+Entry number: 1645	Address: 9339588	Valid: 1	Degree: 2
+Entry number: 1646	Address: 9339589	Valid: 1	Degree: 1
+Entry number: 1647	Address: 9339588	Valid: 1	Degree: 3
+Entry number: 1648	Address: 9339589	Valid: 1	Degree: 2
+Entry number: 1649	Address: 9339590	Valid: 0	Degree: 1
+Entry number: 1650	Address: 9339589	Valid: 1	Degree: 3
+Entry number: 1651	Address: 9339590	Valid: 0	Degree: 2
+Entry number: 1652	Address: 9339591	Valid: 1	Degree: 1
+Entry number: 1653	Address: 9339590	Valid: 0	Degree: 3
+Entry number: 1654	Address: 9339591	Valid: 1	Degree: 2
+Entry number: 1655	Address: 9339592	Valid: 1	Degree: 1
+Entry number: 1656	Address: 9339591	Valid: 1	Degree: 3
+Entry number: 1657	Address: 9339592	Valid: 1	Degree: 2
+Entry number: 1658	Address: 9339593	Valid: 1	Degree: 1
+Entry number: 1659	Address: 9339592	Valid: 1	Degree: 3
+Entry number: 1660	Address: 9339593	Valid: 1	Degree: 2
+Entry number: 1661	Address: 9339594	Valid: 1	Degree: 1
+Entry number: 1662	Address: 9339593	Valid: 1	Degree: 3
+Entry number: 1663	Address: 9339594	Valid: 1	Degree: 2
+Entry number: 1664	Address: 9339595	Valid: 0	Degree: 1
+Entry number: 1665	Address: 9339594	Valid: 1	Degree: 3
+Entry number: 1666	Address: 9339595	Valid: 0	Degree: 2
+Entry number: 1667	Address: 9339596	Valid: 1	Degree: 1
+Entry number: 1668	Address: 9339595	Valid: 0	Degree: 3
+Entry number: 1669	Address: 9339596	Valid: 1	Degree: 2
+Entry number: 1670	Address: 9339597	Valid: 0	Degree: 1
+Entry number: 1671	Address: 9339596	Valid: 1	Degree: 3
+Entry number: 1672	Address: 9339597	Valid: 0	Degree: 2
+Entry number: 1673	Address: 9339598	Valid: 1	Degree: 1
+Entry number: 1674	Address: 9339597	Valid: 0	Degree: 3
+Entry number: 1675	Address: 9339598	Valid: 1	Degree: 2
+Entry number: 1676	Address: 9339599	Valid: 1	Degree: 1
+Entry number: 1677	Address: 9339598	Valid: 1	Degree: 3
+Entry number: 1678	Address: 9339599	Valid: 1	Degree: 2
+Entry number: 1679	Address: 9339600	Valid: 1	Degree: 1
+Entry number: 1680	Address: 9339599	Valid: 1	Degree: 3
+Entry number: 1681	Address: 9339600	Valid: 1	Degree: 2
+Entry number: 1682	Address: 9339601	Valid: 0	Degree: 1
+Entry number: 1683	Address: 9339600	Valid: 1	Degree: 3
+Entry number: 1684	Address: 9339601	Valid: 0	Degree: 2
+Entry number: 1685	Address: 9339602	Valid: 1	Degree: 1
+Entry number: 1686	Address: 9339601	Valid: 0	Degree: 3
+Entry number: 1687	Address: 9339602	Valid: 1	Degree: 2
+Entry number: 1688	Address: 9339603	Valid: 1	Degree: 1
+Entry number: 1689	Address: 9339602	Valid: 1	Degree: 3
+Entry number: 1690	Address: 9339603	Valid: 1	Degree: 2
+Entry number: 1691	Address: 9339604	Valid: 0	Degree: 1
+Entry number: 1692	Address: 9339603	Valid: 1	Degree: 3
+Entry number: 1693	Address: 9339604	Valid: 0	Degree: 2
+Entry number: 1694	Address: 9339605	Valid: 1	Degree: 1
+Entry number: 1695	Address: 9339604	Valid: 0	Degree: 3
+Entry number: 1696	Address: 9339605	Valid: 1	Degree: 2
+Entry number: 1697	Address: 9339606	Valid: 1	Degree: 1
+Entry number: 1698	Address: 9339605	Valid: 1	Degree: 3
+Entry number: 1699	Address: 9339606	Valid: 1	Degree: 2
+Entry number: 1700	Address: 9339607	Valid: 1	Degree: 1
+Entry number: 1701	Address: 9339606	Valid: 1	Degree: 3
+Entry number: 1702	Address: 9339607	Valid: 1	Degree: 2
+Entry number: 1703	Address: 9339608	Valid: 1	Degree: 1
+Entry number: 1704	Address: 9339607	Valid: 1	Degree: 3
+Entry number: 1705	Address: 9339608	Valid: 1	Degree: 2
+Entry number: 1706	Address: 9339609	Valid: 1	Degree: 1
+Entry number: 1707	Address: 9339608	Valid: 1	Degree: 3
+Entry number: 1708	Address: 9339609	Valid: 1	Degree: 2
+Entry number: 1709	Address: 9339610	Valid: 1	Degree: 1
+Entry number: 1710	Address: 9339609	Valid: 1	Degree: 3
+Entry number: 1711	Address: 9339610	Valid: 1	Degree: 2
+Entry number: 1712	Address: 9339611	Valid: 1	Degree: 1
+Entry number: 1713	Address: 9339610	Valid: 1	Degree: 3
+Entry number: 1714	Address: 9339611	Valid: 1	Degree: 2
+Entry number: 1715	Address: 9339612	Valid: 1	Degree: 1
+Entry number: 1716	Address: 9339611	Valid: 1	Degree: 3
+Entry number: 1717	Address: 9339612	Valid: 1	Degree: 2
+Entry number: 1718	Address: 9339613	Valid: 1	Degree: 1
+Entry number: 1719	Address: 9339612	Valid: 1	Degree: 3
+Entry number: 1720	Address: 9339613	Valid: 1	Degree: 2
+Entry number: 1721	Address: 9339614	Valid: 1	Degree: 1
+Entry number: 1722	Address: 9339613	Valid: 1	Degree: 3
+Entry number: 1723	Address: 9339614	Valid: 1	Degree: 2
+Entry number: 1724	Address: 9339615	Valid: 1	Degree: 1
+Entry number: 1725	Address: 9339614	Valid: 1	Degree: 3
+Entry number: 1726	Address: 9339615	Valid: 1	Degree: 2
+Entry number: 1727	Address: 9339616	Valid: 1	Degree: 1
+Entry number: 1728	Address: 9339615	Valid: 1	Degree: 3
+Entry number: 1729	Address: 9339616	Valid: 1	Degree: 2
+Entry number: 1730	Address: 9339617	Valid: 1	Degree: 1
+Entry number: 1731	Address: 9339616	Valid: 1	Degree: 3
+Entry number: 1732	Address: 9339617	Valid: 1	Degree: 2
+Entry number: 1733	Address: 9339618	Valid: 1	Degree: 1
+Entry number: 1734	Address: 9339617	Valid: 1	Degree: 3
+Entry number: 1735	Address: 9339618	Valid: 1	Degree: 2
+Entry number: 1736	Address: 9339619	Valid: 1	Degree: 1
+Entry number: 1737	Address: 9339618	Valid: 1	Degree: 3
+Entry number: 1738	Address: 9339619	Valid: 1	Degree: 2
+Entry number: 1739	Address: 9339620	Valid: 0	Degree: 1
+Entry number: 1740	Address: 9339619	Valid: 1	Degree: 3
+Entry number: 1741	Address: 9339620	Valid: 0	Degree: 2
+Entry number: 1742	Address: 9339621	Valid: 1	Degree: 1
+Entry number: 1743	Address: 9339620	Valid: 0	Degree: 3
+Entry number: 1744	Address: 9339621	Valid: 1	Degree: 2
+Entry number: 1745	Address: 9339622	Valid: 1	Degree: 1
+Entry number: 1746	Address: 9339621	Valid: 1	Degree: 3
+Entry number: 1747	Address: 9339622	Valid: 1	Degree: 2
+Entry number: 1748	Address: 9339623	Valid: 1	Degree: 1
+Entry number: 1749	Address: 9339622	Valid: 1	Degree: 3
+Entry number: 1750	Address: 9339623	Valid: 1	Degree: 2
+Entry number: 1751	Address: 9339624	Valid: 1	Degree: 1
+Entry number: 1752	Address: 120149443	Valid: 1	Degree: 3
+Entry number: 1753	Address: 120149444	Valid: 1	Degree: 2
+Entry number: 1754	Address: 120149445	Valid: 1	Degree: 1
+Entry number: 1755	Address: 120149444	Valid: 1	Degree: 3
+Entry number: 1756	Address: 120149445	Valid: 1	Degree: 2
+Entry number: 1757	Address: 120149446	Valid: 1	Degree: 1
+Entry number: 1758	Address: 120149445	Valid: 1	Degree: 3
+Entry number: 1759	Address: 120149446	Valid: 1	Degree: 2
+Entry number: 1760	Address: 120149447	Valid: 1	Degree: 1
+Entry number: 1761	Address: 120149446	Valid: 1	Degree: 3
+Entry number: 1762	Address: 120149447	Valid: 1	Degree: 2
+Entry number: 1763	Address: 120149448	Valid: 1	Degree: 1
+Entry number: 1764	Address: 120149447	Valid: 1	Degree: 3
+Entry number: 1765	Address: 120149448	Valid: 1	Degree: 2
+Entry number: 1766	Address: 120149449	Valid: 1	Degree: 1
+Entry number: 1767	Address: 120149448	Valid: 1	Degree: 3
+Entry number: 1768	Address: 120149449	Valid: 1	Degree: 2
+Entry number: 1769	Address: 120149450	Valid: 1	Degree: 1
+Entry number: 1770	Address: 120149449	Valid: 1	Degree: 3
+Entry number: 1771	Address: 120149450	Valid: 1	Degree: 2
+Entry number: 1772	Address: 120149451	Valid: 1	Degree: 1
+Entry number: 1773	Address: 120149450	Valid: 1	Degree: 3
+Entry number: 1774	Address: 120149451	Valid: 1	Degree: 2
+Entry number: 1775	Address: 120149452	Valid: 1	Degree: 1
+Entry number: 1776	Address: 120149451	Valid: 1	Degree: 3
+Entry number: 1777	Address: 120149452	Valid: 1	Degree: 2
+Entry number: 1778	Address: 120149453	Valid: 1	Degree: 1
+Entry number: 1779	Address: 120149452	Valid: 1	Degree: 3
+Entry number: 1780	Address: 120149453	Valid: 1	Degree: 2
+Entry number: 1781	Address: 120149454	Valid: 1	Degree: 1
+Entry number: 1782	Address: 120149453	Valid: 1	Degree: 3
+Entry number: 1783	Address: 120149454	Valid: 1	Degree: 2
+Entry number: 1784	Address: 120149455	Valid: 1	Degree: 1
+Entry number: 1785	Address: 120149454	Valid: 1	Degree: 3
+Entry number: 1786	Address: 120149455	Valid: 1	Degree: 2
+Entry number: 1787	Address: 120149456	Valid: 1	Degree: 1
+Entry number: 1788	Address: 120149455	Valid: 1	Degree: 3
+Entry number: 1789	Address: 120149456	Valid: 1	Degree: 2
+Entry number: 1790	Address: 120149457	Valid: 1	Degree: 1
+Entry number: 1791	Address: 120149456	Valid: 1	Degree: 3
+Entry number: 1792	Address: 120149457	Valid: 1	Degree: 2
+Entry number: 1793	Address: 120149458	Valid: 1	Degree: 1
+Entry number: 1794	Address: 120149457	Valid: 1	Degree: 3
+Entry number: 1795	Address: 120149458	Valid: 1	Degree: 2
+Entry number: 1796	Address: 120149459	Valid: 1	Degree: 1
+Entry number: 1797	Address: 120149458	Valid: 1	Degree: 3
+Entry number: 1798	Address: 120149459	Valid: 1	Degree: 2
+Entry number: 1799	Address: 120149460	Valid: 1	Degree: 1
+Entry number: 1800	Address: 120149459	Valid: 1	Degree: 3
+Entry number: 1801	Address: 120149460	Valid: 1	Degree: 2
+Entry number: 1802	Address: 120149461	Valid: 1	Degree: 1
+Entry number: 1803	Address: 120149460	Valid: 1	Degree: 3
+Entry number: 1804	Address: 120149461	Valid: 1	Degree: 2
+Entry number: 1805	Address: 120149462	Valid: 1	Degree: 1
+Entry number: 1806	Address: 120149461	Valid: 1	Degree: 3
+Entry number: 1807	Address: 120149462	Valid: 1	Degree: 2
+Entry number: 1808	Address: 120149463	Valid: 1	Degree: 1
+Entry number: 1809	Address: 120149462	Valid: 1	Degree: 3
+Entry number: 1810	Address: 120149463	Valid: 1	Degree: 2
+Entry number: 1811	Address: 120149464	Valid: 1	Degree: 1
+Entry number: 1812	Address: 120149463	Valid: 1	Degree: 3
+Entry number: 1813	Address: 120149464	Valid: 1	Degree: 2
+Entry number: 1814	Address: 120149465	Valid: 1	Degree: 1
+Entry number: 1815	Address: 120149464	Valid: 1	Degree: 3
+Entry number: 1816	Address: 120149465	Valid: 1	Degree: 2
+Entry number: 1817	Address: 120149466	Valid: 1	Degree: 1
+Entry number: 1818	Address: 120149465	Valid: 1	Degree: 3
+Entry number: 1819	Address: 120149466	Valid: 1	Degree: 2
+Entry number: 1820	Address: 120149467	Valid: 1	Degree: 1
+Entry number: 1821	Address: 120149466	Valid: 1	Degree: 3
+Entry number: 1822	Address: 120149467	Valid: 1	Degree: 2
+Entry number: 1823	Address: 120149468	Valid: 1	Degree: 1
+Entry number: 1824	Address: 120149467	Valid: 1	Degree: 3
+Entry number: 1825	Address: 120149468	Valid: 1	Degree: 2
+Entry number: 1826	Address: 120149469	Valid: 1	Degree: 1
+Entry number: 1827	Address: 120149468	Valid: 1	Degree: 3
+Entry number: 1828	Address: 120149469	Valid: 1	Degree: 2
+Entry number: 1829	Address: 120149470	Valid: 1	Degree: 1
+Entry number: 1830	Address: 120149469	Valid: 1	Degree: 3
+Entry number: 1831	Address: 120149470	Valid: 1	Degree: 2
+Entry number: 1832	Address: 120149471	Valid: 1	Degree: 1
+Entry number: 1833	Address: 120149470	Valid: 1	Degree: 3
+Entry number: 1834	Address: 120149471	Valid: 1	Degree: 2
+Entry number: 1835	Address: 120149472	Valid: 1	Degree: 1
+Entry number: 1836	Address: 120149471	Valid: 1	Degree: 3
+Entry number: 1837	Address: 120149472	Valid: 1	Degree: 2
+Entry number: 1838	Address: 120149473	Valid: 1	Degree: 1
+Entry number: 1839	Address: 120149472	Valid: 1	Degree: 3
+Entry number: 1840	Address: 120149473	Valid: 1	Degree: 2
+Entry number: 1841	Address: 120149474	Valid: 1	Degree: 1
+Entry number: 1842	Address: 120149473	Valid: 1	Degree: 3
+Entry number: 1843	Address: 120149474	Valid: 1	Degree: 2
+Entry number: 1844	Address: 120149475	Valid: 1	Degree: 1
+Entry number: 1845	Address: 120149474	Valid: 1	Degree: 3
+Entry number: 1846	Address: 120149475	Valid: 1	Degree: 2
+Entry number: 1847	Address: 120149476	Valid: 1	Degree: 1
+Entry number: 1848	Address: 120149475	Valid: 1	Degree: 3
+Entry number: 1849	Address: 120149476	Valid: 1	Degree: 2
+Entry number: 1850	Address: 120149477	Valid: 1	Degree: 1
+Entry number: 1851	Address: 120149476	Valid: 1	Degree: 3
+Entry number: 1852	Address: 120149477	Valid: 1	Degree: 2
+Entry number: 1853	Address: 120149478	Valid: 1	Degree: 1
+Entry number: 1854	Address: 120149477	Valid: 1	Degree: 3
+Entry number: 1855	Address: 120149478	Valid: 1	Degree: 2
+Entry number: 1856	Address: 120149479	Valid: 1	Degree: 1
+Entry number: 1857	Address: 120149478	Valid: 1	Degree: 3
+Entry number: 1858	Address: 120149479	Valid: 1	Degree: 2
+Entry number: 1859	Address: 120149480	Valid: 1	Degree: 1
+Entry number: 1860	Address: 120149479	Valid: 1	Degree: 3
+Entry number: 1861	Address: 120149480	Valid: 1	Degree: 2
+Entry number: 1862	Address: 120149481	Valid: 1	Degree: 1
+Entry number: 1863	Address: 120149480	Valid: 1	Degree: 3
+Entry number: 1864	Address: 120149481	Valid: 1	Degree: 2
+Entry number: 1865	Address: 120149482	Valid: 1	Degree: 1
+Entry number: 1866	Address: 120149481	Valid: 1	Degree: 3
+Entry number: 1867	Address: 120149482	Valid: 1	Degree: 2
+Entry number: 1868	Address: 120149483	Valid: 1	Degree: 1
+Entry number: 1869	Address: 120149482	Valid: 1	Degree: 3
+Entry number: 1870	Address: 120149483	Valid: 1	Degree: 2
+Entry number: 1871	Address: 120149484	Valid: 1	Degree: 1
+Entry number: 1872	Address: 120149483	Valid: 1	Degree: 3
+Entry number: 1873	Address: 120149484	Valid: 1	Degree: 2
+Entry number: 1874	Address: 120149485	Valid: 1	Degree: 1
+Entry number: 1875	Address: 120149484	Valid: 1	Degree: 3
+Entry number: 1876	Address: 120149485	Valid: 1	Degree: 2
+Entry number: 1877	Address: 120149486	Valid: 1	Degree: 1
+Entry number: 1878	Address: 120149485	Valid: 1	Degree: 3
+Entry number: 1879	Address: 120149486	Valid: 1	Degree: 2
+Entry number: 1880	Address: 120149487	Valid: 1	Degree: 1
+Entry number: 1881	Address: 120149486	Valid: 1	Degree: 3
+Entry number: 1882	Address: 120149487	Valid: 1	Degree: 2
+Entry number: 1883	Address: 120149488	Valid: 1	Degree: 1
+Entry number: 1884	Address: 120149487	Valid: 1	Degree: 3
+Entry number: 1885	Address: 120149488	Valid: 1	Degree: 2
+Entry number: 1886	Address: 120149489	Valid: 1	Degree: 1
+Entry number: 1887	Address: 120149488	Valid: 1	Degree: 3
+Entry number: 1888	Address: 120149489	Valid: 1	Degree: 2
+Entry number: 1889	Address: 120149490	Valid: 1	Degree: 1
+Entry number: 1890	Address: 120149489	Valid: 1	Degree: 3
+Entry number: 1891	Address: 120149490	Valid: 1	Degree: 2
+Entry number: 1892	Address: 120149491	Valid: 1	Degree: 1
+Entry number: 1893	Address: 120149490	Valid: 1	Degree: 3
+Entry number: 1894	Address: 120149491	Valid: 1	Degree: 2
+Entry number: 1895	Address: 120149492	Valid: 1	Degree: 1
+Entry number: 1896	Address: 120149491	Valid: 1	Degree: 3
+Entry number: 1897	Address: 120149492	Valid: 1	Degree: 2
+Entry number: 1898	Address: 120149493	Valid: 1	Degree: 1
+Entry number: 1899	Address: 120149492	Valid: 1	Degree: 3
+Entry number: 1900	Address: 120149493	Valid: 1	Degree: 2
+Entry number: 1901	Address: 120149494	Valid: 1	Degree: 1
+Entry number: 1902	Address: 120149493	Valid: 1	Degree: 3
+Entry number: 1903	Address: 120149494	Valid: 1	Degree: 2
+Entry number: 1904	Address: 120149495	Valid: 1	Degree: 1
+Entry number: 1905	Address: 120149494	Valid: 1	Degree: 3
+Entry number: 1906	Address: 120149495	Valid: 1	Degree: 2
+Entry number: 1907	Address: 120149496	Valid: 1	Degree: 1
+Entry number: 1908	Address: 120149495	Valid: 1	Degree: 3
+Entry number: 1909	Address: 120149496	Valid: 1	Degree: 2
+Entry number: 1910	Address: 120149497	Valid: 1	Degree: 1
+Entry number: 1911	Address: 120149496	Valid: 1	Degree: 3
+Entry number: 1912	Address: 120149497	Valid: 1	Degree: 2
+Entry number: 1913	Address: 120149498	Valid: 1	Degree: 1
+Entry number: 1914	Address: 120149497	Valid: 1	Degree: 3
+Entry number: 1915	Address: 120149498	Valid: 1	Degree: 2
+Entry number: 1916	Address: 120149499	Valid: 1	Degree: 1
+Entry number: 1917	Address: 120149498	Valid: 1	Degree: 3
+Entry number: 1918	Address: 120149499	Valid: 1	Degree: 2
+Entry number: 1919	Address: 120149500	Valid: 1	Degree: 1
+Entry number: 1920	Address: 120149499	Valid: 1	Degree: 3
+Entry number: 1921	Address: 120149500	Valid: 1	Degree: 2
+Entry number: 1922	Address: 120149501	Valid: 1	Degree: 1
+Entry number: 1923	Address: 120149500	Valid: 1	Degree: 3
+Entry number: 1924	Address: 120149501	Valid: 1	Degree: 2
+Entry number: 1925	Address: 120149502	Valid: 1	Degree: 1
+Entry number: 1926	Address: 120149501	Valid: 1	Degree: 3
+Entry number: 1927	Address: 120149502	Valid: 1	Degree: 2
+Entry number: 1928	Address: 120149503	Valid: 1	Degree: 1
+Entry number: 1929	Address: 120149502	Valid: 1	Degree: 3
+Entry number: 1930	Address: 120149503	Valid: 1	Degree: 2
+Entry number: 1931	Address: 120149504	Valid: 1	Degree: 1
+Entry number: 1932	Address: 120149503	Valid: 1	Degree: 3
+Entry number: 1933	Address: 120149504	Valid: 1	Degree: 2
+Entry number: 1934	Address: 120149505	Valid: 1	Degree: 1
+Entry number: 1935	Address: 120149504	Valid: 1	Degree: 3
+Entry number: 1936	Address: 120149505	Valid: 1	Degree: 2
+Entry number: 1937	Address: 120149506	Valid: 1	Degree: 1
+Entry number: 1938	Address: 105326403	Valid: 1	Degree: 3
+Entry number: 1939	Address: 105326404	Valid: 1	Degree: 2
+Entry number: 1940	Address: 105326405	Valid: 1	Degree: 1
+Entry number: 1941	Address: 105326404	Valid: 1	Degree: 3
+Entry number: 1942	Address: 105326405	Valid: 1	Degree: 2
+Entry number: 1943	Address: 105326406	Valid: 1	Degree: 1
+Entry number: 1944	Address: 105326405	Valid: 1	Degree: 3
+Entry number: 1945	Address: 105326406	Valid: 1	Degree: 2
+Entry number: 1946	Address: 105326407	Valid: 1	Degree: 1
+Entry number: 1947	Address: 105326406	Valid: 1	Degree: 3
+Entry number: 1948	Address: 105326407	Valid: 1	Degree: 2
+Entry number: 1949	Address: 105326408	Valid: 1	Degree: 1
+Entry number: 1950	Address: 105326407	Valid: 1	Degree: 3
+Entry number: 1951	Address: 105326408	Valid: 1	Degree: 2
+Entry number: 1952	Address: 105326409	Valid: 1	Degree: 1
+Entry number: 1953	Address: 105326408	Valid: 1	Degree: 3
+Entry number: 1954	Address: 105326409	Valid: 1	Degree: 2
+Entry number: 1955	Address: 105326410	Valid: 1	Degree: 1
+Entry number: 1956	Address: 105326409	Valid: 1	Degree: 3
+Entry number: 1957	Address: 105326410	Valid: 1	Degree: 2
+Entry number: 1958	Address: 105326411	Valid: 1	Degree: 1
+Entry number: 1959	Address: 105326410	Valid: 1	Degree: 3
+Entry number: 1960	Address: 105326411	Valid: 1	Degree: 2
+Entry number: 1961	Address: 105326412	Valid: 1	Degree: 1
+Entry number: 1962	Address: 105326411	Valid: 1	Degree: 3
+Entry number: 1963	Address: 105326412	Valid: 1	Degree: 2
+Entry number: 1964	Address: 105326413	Valid: 1	Degree: 1
+Entry number: 1965	Address: 105326412	Valid: 1	Degree: 3
+Entry number: 1966	Address: 105326413	Valid: 1	Degree: 2
+Entry number: 1967	Address: 105326414	Valid: 1	Degree: 1
+Entry number: 1968	Address: 105326413	Valid: 1	Degree: 3
+Entry number: 1969	Address: 105326414	Valid: 1	Degree: 2
+Entry number: 1970	Address: 105326415	Valid: 1	Degree: 1
+Entry number: 1971	Address: 105326414	Valid: 1	Degree: 3
+Entry number: 1972	Address: 105326415	Valid: 1	Degree: 2
+Entry number: 1973	Address: 105326416	Valid: 1	Degree: 1
+Entry number: 1974	Address: 105326415	Valid: 1	Degree: 3
+Entry number: 1975	Address: 105326416	Valid: 1	Degree: 2
+Entry number: 1976	Address: 105326417	Valid: 1	Degree: 1
+Entry number: 1977	Address: 105326416	Valid: 1	Degree: 3
+Entry number: 1978	Address: 105326417	Valid: 1	Degree: 2
+Entry number: 1979	Address: 105326418	Valid: 1	Degree: 1
+Entry number: 1980	Address: 105326417	Valid: 1	Degree: 3
+Entry number: 1981	Address: 105326418	Valid: 1	Degree: 2
+Entry number: 1982	Address: 105326419	Valid: 1	Degree: 1
+Entry number: 1983	Address: 105326418	Valid: 1	Degree: 3
+Entry number: 1984	Address: 105326419	Valid: 1	Degree: 2
+Entry number: 1985	Address: 105326420	Valid: 1	Degree: 1
+Entry number: 1986	Address: 105326419	Valid: 1	Degree: 3
+Entry number: 1987	Address: 105326420	Valid: 1	Degree: 2
+Entry number: 1988	Address: 105326421	Valid: 1	Degree: 1
+Entry number: 1989	Address: 105326420	Valid: 1	Degree: 3
+Entry number: 1990	Address: 105326421	Valid: 1	Degree: 2
+Entry number: 1991	Address: 105326422	Valid: 1	Degree: 1
+Entry number: 1992	Address: 105326421	Valid: 1	Degree: 3
+Entry number: 1993	Address: 105326422	Valid: 1	Degree: 2
+Entry number: 1994	Address: 105326423	Valid: 1	Degree: 1
+Entry number: 1995	Address: 105326422	Valid: 1	Degree: 3
+Entry number: 1996	Address: 105326423	Valid: 1	Degree: 2
+Entry number: 1997	Address: 105326424	Valid: 1	Degree: 1
+Entry number: 1998	Address: 105326423	Valid: 1	Degree: 3
+Entry number: 1999	Address: 105326424	Valid: 1	Degree: 2
+Entry number: 2000	Address: 105326425	Valid: 1	Degree: 1
+Entry number: 2001	Address: 105326424	Valid: 1	Degree: 3
+Entry number: 2002	Address: 105326425	Valid: 1	Degree: 2
+Entry number: 2003	Address: 105326426	Valid: 1	Degree: 1
+Entry number: 2004	Address: 105326425	Valid: 1	Degree: 3
+Entry number: 2005	Address: 105326426	Valid: 1	Degree: 2
+Entry number: 2006	Address: 105326427	Valid: 1	Degree: 1
+Entry number: 2007	Address: 105326426	Valid: 1	Degree: 3
+Entry number: 2008	Address: 105326427	Valid: 1	Degree: 2
+Entry number: 2009	Address: 105326428	Valid: 1	Degree: 1
+Entry number: 2010	Address: 105326427	Valid: 1	Degree: 3
+Entry number: 2011	Address: 105326428	Valid: 1	Degree: 2
+Entry number: 2012	Address: 105326429	Valid: 1	Degree: 1
+Entry number: 2013	Address: 105326428	Valid: 1	Degree: 3
+Entry number: 2014	Address: 105326429	Valid: 1	Degree: 2
+Entry number: 2015	Address: 105326430	Valid: 1	Degree: 1
+Entry number: 2016	Address: 105326429	Valid: 1	Degree: 3
+Entry number: 2017	Address: 105326430	Valid: 1	Degree: 2
+Entry number: 2018	Address: 105326431	Valid: 1	Degree: 1
+Entry number: 2019	Address: 105326430	Valid: 1	Degree: 3
+Entry number: 2020	Address: 105326431	Valid: 1	Degree: 2
+Entry number: 2021	Address: 105326432	Valid: 1	Degree: 1
+Entry number: 2022	Address: 105326431	Valid: 1	Degree: 3
+Entry number: 2023	Address: 105326432	Valid: 1	Degree: 2
+Entry number: 2024	Address: 105326433	Valid: 1	Degree: 1
+Entry number: 2025	Address: 105326432	Valid: 1	Degree: 3
+Entry number: 2026	Address: 105326433	Valid: 1	Degree: 2
+Entry number: 2027	Address: 105326434	Valid: 1	Degree: 1
+Entry number: 2028	Address: 105326433	Valid: 1	Degree: 3
+Entry number: 2029	Address: 105326434	Valid: 1	Degree: 2
+Entry number: 2030	Address: 105326435	Valid: 1	Degree: 1
+Entry number: 2031	Address: 105326434	Valid: 1	Degree: 3
+Entry number: 2032	Address: 105326435	Valid: 1	Degree: 2
+Entry number: 2033	Address: 105326436	Valid: 1	Degree: 1
+Entry number: 2034	Address: 105326435	Valid: 1	Degree: 3
+Entry number: 2035	Address: 105326436	Valid: 1	Degree: 2
+Entry number: 2036	Address: 105326437	Valid: 1	Degree: 1
+Entry number: 2037	Address: 105326436	Valid: 1	Degree: 3
+Entry number: 2038	Address: 105326437	Valid: 1	Degree: 2
+Entry number: 2039	Address: 105326438	Valid: 1	Degree: 1
+Entry number: 2040	Address: 105326437	Valid: 1	Degree: 3
+Entry number: 2041	Address: 105326438	Valid: 1	Degree: 2
+Entry number: 2042	Address: 105326439	Valid: 1	Degree: 1
+Entry number: 2043	Address: 105326438	Valid: 1	Degree: 3
+Entry number: 2044	Address: 105326439	Valid: 1	Degree: 2
+Entry number: 2045	Address: 105326440	Valid: 1	Degree: 1
+Entry number: 2046	Address: 105326439	Valid: 1	Degree: 3
+Entry number: 2047	Address: 105326440	Valid: 1	Degree: 2
