@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdint.h>
-#include "spp_dev.h"
+#include "ppf_spp_dev.h"
+#include "perceptron.h"
 
 
 #include "cache.h"

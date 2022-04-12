@@ -163,7 +163,7 @@ void CACHE::prefetcher_cycle_operate() {
         if(record_table_ind <  REC_TB_SIZE) {
             record_table[record_table_ind] = {total_training_count, useful_training_count,
                                               total_prediction_count, true_prediction_count,
-                                              pf_requested, pf_useful,
+                                                pf_requested, pf_useful,
                                               cache_operate_count, cache_hit_count};
             record_table_ind++;
         }

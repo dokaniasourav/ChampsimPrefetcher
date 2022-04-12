@@ -31,7 +31,8 @@ files=(
 #      )
 
 prefs=(
-      "ppf_ip_stride"
+      "next_line_degree_3"
+      "next_line_degree_5"
       )
 
 #Looping through all the pre-fetchers

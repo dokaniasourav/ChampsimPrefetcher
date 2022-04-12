@@ -164,7 +164,9 @@ uint64_t get_hash(uint64_t key) {
 
 void SIGNATURE_TABLE::read_and_update_sig(uint64_t page, uint32_t page_offset, uint32_t &last_sig, uint32_t &curr_sig,
                                           int32_t &delta) {
-    uint32_t set = get_hash(page) % ST_SET, match = ST_WAY, partial_page = page & ST_TAG_MASK;
+    uint32_t set = get_hash(page) % ST_SET;
+    uint32_t match = ST_WAY;
+    uint32_t partial_page = page & ST_TAG_MASK;
     uint8_t ST_hit = 0;
     int sig_delta = 0;
 
