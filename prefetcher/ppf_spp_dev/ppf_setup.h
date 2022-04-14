@@ -19,6 +19,7 @@ constexpr int INCREMENT(int &X) {
 struct transfer_buff_entry {
     int valid = 0;
     int last_pred = 0;                            // indicates the prediction that was made by Perceptron
+    uint64_t pf_address;
 
     uint32_t page_number = 0;
     uint32_t page_offset = 0;
@@ -28,7 +29,6 @@ struct transfer_buff_entry {
 
 transfer_buff_entry trans_buff[TRANSFER_BUFFER_ENTRIES];
 
-int bias;
 int transfer_buffer_index;
 
 constexpr int NUM_FEATURES_USED = 4;
@@ -37,6 +37,7 @@ constexpr int PPF_THRESHOLD = 5;
 constexpr int FT_PAGE_BIT_LOC = 10;
 constexpr int FT_PAGES_TOTAL = (1 << FT_PAGE_BIT_LOC);
 
+int ft_page_bias;
 int ft_page_add[FT_PAGES_TOTAL];
 int ft_page_num[ST_SET * ST_WAY];
 int ft_page_off[ST_SET * ST_WAY];
@@ -45,24 +46,27 @@ int ft_page_sig[ST_SET * ST_WAY];
 void retrain_ppf(int trans_buffer_index, int useful);
 int ppf_decision(transfer_buff_entry entry_values);
 
+unordered_map<uint64_t, vector<int>> inverted_address;
+
+
 void retrain_ppf(int ptr_to_trans_buff, int useful) {
     int index_pn = trans_buff[ptr_to_trans_buff].page_number;
     int index_po = trans_buff[ptr_to_trans_buff].page_offset;
-    int index_pa = trans_buff[ptr_to_trans_buff].page_address;
     int index_ps = trans_buff[ptr_to_trans_buff].page_signature;
+    int index_pa = trans_buff[ptr_to_trans_buff].page_address;
 
     if (useful) {
         INCREMENT(ft_page_num[index_pn]);
         INCREMENT(ft_page_off[index_po]);
         INCREMENT(ft_page_sig[index_ps]);
         INCREMENT(ft_page_add[index_pa]);
-        INCREMENT(bias);
+        INCREMENT(ft_page_bias);
     } else {
         DECREMENT(ft_page_num[index_pn]);
         DECREMENT(ft_page_off[index_po]);
         DECREMENT(ft_page_sig[index_ps]);
         DECREMENT(ft_page_add[index_pa]);
-        DECREMENT(bias);
+        DECREMENT(ft_page_bias);
     }
     trans_buff[ptr_to_trans_buff].valid = 0;
 }
@@ -79,7 +83,7 @@ int ppf_decision(transfer_buff_entry entry_values) {
     int index_ps = entry_values.page_signature & (ST_SET*ST_WAY - 1);
     int index_pa = entry_values.page_address   & (FT_PAGES_TOTAL - 1);
 
-    int feature[NUM_FEATURES_USED] = {bias,
+    int feature[NUM_FEATURES_USED] = {ft_page_bias,
                                       ft_page_num[index_pn],
                                       ft_page_off[index_po],
                                       ft_page_sig[index_ps],

@@ -10,8 +10,17 @@ PREFETCH_FILTER FILTER;
 GLOBAL_REGISTER GHR;
 
 void CACHE::prefetcher_initialize() {
-    std::cout << NAME << "SPP DEV Prefetcher"
-    std::endl;
+    std::cout << NAME << "SPP DEV Prefetcher" << std::endl;
+
+    ft_page_bias = 0;
+    for(int i=0; i < (ST_SET*ST_WAY); i++) {
+        ft_page_num[i] = 0;
+        ft_page_off[i] = 0;
+        ft_page_sig[i] = 0;
+    }
+    for(int i=0; i < FT_PAGES_TOTAL; i++) {
+        ft_page_add[i] = 0;
+    }
 }
 
 void CACHE::prefetcher_cycle_operate() {}
@@ -32,12 +41,12 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
     // Percentage of useful prefetch
     GHR.global_accuracy = GHR.pf_issued ? ((100 * GHR.pf_useful) / GHR.pf_issued) : 0;
 
+    /*
     SPP_DP( std::cout << std::endl << "[ChampSim] " << __func__ << " addr: "
             << hex << addr << " cache_line: " << (addr >> LOG2_BLOCK_SIZE);
             std::cout << " page: " << page << " page_offset: " << dec << page_offset
             << std::endl;);
 
-    /*
     // Stage 1: Read and update a sig stored in ST
     // last_sig and delta are used to update (sig, delta) correlation in PT
     // curr_sig is used to read prefetch candidates in PT
@@ -68,9 +77,9 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
         do_lookahead = 0;
         for (uint32_t i = pf_q_head; i < pf_q_tail; i++) {
             if (confidence_q[i] >= PF_THRESHOLD) {
-                uint64_t pf_addr = (base_addr & ~(BLOCK_SIZE - 1)) + (delta_q[i] << LOG2_BLOCK_SIZE);
+                uint64_t pf_address = (base_addr & ~(BLOCK_SIZE - 1)) + (delta_q[i] << LOG2_BLOCK_SIZE);
 
-                if ((addr & ~(PAGE_SIZE - 1)) == (pf_addr & ~(PAGE_SIZE - 1))) {
+                if ((addr & ~(PAGE_SIZE - 1)) == (pf_address & ~(PAGE_SIZE - 1))) {
                     // Prefetch request is in the same physical page
 
                     transfer_buff_entry entry_values;
@@ -78,12 +87,13 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                     entry_values.page_offset = page_offset;
                     entry_values.page_signature = curr_sig;
                     entry_values.page_address = addr;
+                    entry_values.pf_address = pf_address;
 
                     int ppf_value = ppf_decision(entry_values);
                     if(ppf_value > PPF_THRESHOLD) {
-                        if (FILTER.check(pf_addr,
+                        if (FILTER.check(pf_address,
                                          ((confidence_q[i] >= FILL_THRESHOLD) ? SPP_L2C_PREFETCH : SPP_LLC_PREFETCH))) {
-                            int success = prefetch_line(pf_addr, (confidence_q[i] >= FILL_THRESHOLD), 0);
+                            int success = prefetch_line(pf_address, (confidence_q[i] >= FILL_THRESHOLD), 0);
                             // Use addr (not base_addr) to obey the same
                             // physical page boundary
                             if(success == 1) {
@@ -93,13 +103,25 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                                         GHR.pf_issued >>= 1;
                                         GHR.pf_useful >>= 1;
                                     }
-                                    // WUSS-UP
                                     /*
                                     SPP_DP(std::cout << "[ChampSim] SPP L2 prefetch issued GHR.pf_issued: " << GHR.pf_issued
                                                      << " GHR.pf_useful: " << GHR.pf_useful << std::endl;);
                                     */
                                 }
                                 MOVE_PTR_UP(transfer_buffer_index);
+                                uint64_t old_pf_address = trans_buff[transfer_buffer_index].pf_address;
+                                if (inverted_address.find(old_pf_address) != inverted_address.end()) {
+                                    for (uint32_t i = 0; i < inverted_address[old_pf_address].size(); ++i) {
+                                        if (inverted_address[old_pf_address][i] == ptr_to_trans_buff) {
+                                            inverted_address[old_pf_address].erase(inverted_address[old_pf_address].begin() + i);
+                                            break;
+                                        }
+                                    }
+                                    if (inverted_address[old_pf_address].size() == 0) {
+                                        inverted_address.erase(old_pf_address);
+                                    }
+                                }
+                                inverted_address[pf_address].push_back(transfer_buffer_index);
 
                                 if(trans_buff[transfer_buffer_index].valid == 1) {
                                     retrain_ppf(transfer_buffer_index, 0);
@@ -109,9 +131,9 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                                 trans_buff[transfer_buffer_index] = entry_values;
                                 /*
                                 SPP_DP(std::cout << "[ChampSim] " << __func__ << " base_addr: " << hex << base_addr
-                                                 << " pf_addr: "
-                                                 << pf_addr;
-                                               std::cout << " pf_cache_line: " << (pf_addr >> LOG2_BLOCK_SIZE);
+                                                 << " pf_address: "
+                                                 << pf_address;
+                                               std::cout << " pf_cache_line: " << (pf_address >> LOG2_BLOCK_SIZE);
                                                std::cout << " prefetch_delta: " << dec << delta_q[i] << " confidence: "
                                                          << confidence_q[i];
                                                std::cout << " depth: " << i << " fill_level: "
@@ -128,7 +150,7 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
 #ifdef GHR_ON
                     // Store this prefetch request in GHR to bootstrap SPP learning when
                     // we see a ST miss (i.e., accessing a new page)
-                    GHR.update_entry(curr_sig, confidence_q[i], (pf_addr >> LOG2_BLOCK_SIZE) & 0x3F, delta_q[i]);
+                    GHR.update_entry(curr_sig, confidence_q[i], (pf_address >> LOG2_BLOCK_SIZE) & 0x3F, delta_q[i]);
 #endif
                 }
                 do_lookahead = 1;
@@ -162,14 +184,12 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
     return metadata_in;
 }
 
-uint32_t
-CACHE::prefetcher_cache_fill(uint64_t addr, uint32_t set, uint32_t match, uint8_t prefetch, uint64_t evicted_addr,
-                             uint32_t metadata_in) {
+uint32_t CACHE::prefetcher_cache_fill(uint64_t addr, uint32_t set, uint32_t match, uint8_t prefetch,
+                                      uint64_t evicted_addr, uint32_t metadata_in) {
 #ifdef FILTER_ON
     SPP_DP(std::cout << std::endl;);
     FILTER.check(evicted_addr, L2C_EVICT);
 #endif
-
     return metadata_in;
 }
 
@@ -508,6 +528,13 @@ bool PREFETCH_FILTER::check(uint64_t check_addr, FILTER_REQUEST filter_request) 
                                          << std::endl;);
                 */
             }
+            if(inverted_address.find(check_addr) != inverted_address.end()) {
+                for(auto & ind: inverted_address[check_addr]) {
+                    if(trans_buff[ind].valid == 1) {
+                        retrain_ppf(trans_buff, ind, 1);        // 1 means the entry was useful
+                    }
+                }
+            }
             break;
 
         case L2C_EVICT:
@@ -519,6 +546,14 @@ bool PREFETCH_FILTER::check(uint64_t check_addr, FILTER_REQUEST filter_request) 
             valid[quotient] = 0;
             useful[quotient] = 0;
             remainder_tag[quotient] = 0;
+
+            if(inverted_address.find(check_addr) != inverted_address.end()) {
+                for(auto & ind: inverted_address[check_addr]) {
+                    if(trans_buff[ind].valid == 1) {
+                        retrain_ppf(trans_buff, ind, 0);        // 0 means the entry was useless
+                    }
+                }
+            }
             break;
 
         default:
