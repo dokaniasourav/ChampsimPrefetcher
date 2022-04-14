@@ -1,3 +1,4 @@
+#include <unordered_map>
 #define WEIGHT_BITS 5
 
 /*
@@ -31,8 +32,7 @@ transfer_buff_entry trans_buff[TRANSFER_BUFFER_ENTRIES];
 
 int transfer_buffer_index;
 
-constexpr int NUM_FEATURES_USED = 4;
-constexpr int PPF_THRESHOLD = 5;
+constexpr int PPF_THRESHOLD = -50000;
 
 constexpr int FT_PAGE_BIT_LOC = 10;
 constexpr int FT_PAGES_TOTAL = (1 << FT_PAGE_BIT_LOC);
@@ -46,14 +46,11 @@ int ft_page_sig[ST_SET * ST_WAY];
 void retrain_ppf(int trans_buffer_index, int useful);
 int ppf_decision(transfer_buff_entry entry_values);
 
-unordered_map<uint64_t, vector<int>> inverted_address;
-
-
 void retrain_ppf(int ptr_to_trans_buff, int useful) {
-    int index_pn = trans_buff[ptr_to_trans_buff].page_number;
-    int index_po = trans_buff[ptr_to_trans_buff].page_offset;
-    int index_ps = trans_buff[ptr_to_trans_buff].page_signature;
-    int index_pa = trans_buff[ptr_to_trans_buff].page_address;
+    int index_pn = trans_buff[ptr_to_trans_buff].page_number    & (ST_SET*ST_WAY - 1);
+    int index_po = trans_buff[ptr_to_trans_buff].page_offset    & (ST_SET*ST_WAY - 1);
+    int index_ps = trans_buff[ptr_to_trans_buff].page_signature & (ST_SET*ST_WAY - 1);
+    int index_pa = trans_buff[ptr_to_trans_buff].page_address   & (FT_PAGES_TOTAL - 1);
 
     if (useful) {
         INCREMENT(ft_page_num[index_pn]);
@@ -76,22 +73,16 @@ void retrain_ppf(int ptr_to_trans_buff, int useful) {
  * */
 int ppf_decision(transfer_buff_entry entry_values) {
 
-    int sum = 0;
-
     int index_pn = entry_values.page_number    & (ST_SET*ST_WAY - 1);
     int index_po = entry_values.page_offset    & (ST_SET*ST_WAY - 1);
     int index_ps = entry_values.page_signature & (ST_SET*ST_WAY - 1);
     int index_pa = entry_values.page_address   & (FT_PAGES_TOTAL - 1);
 
-    int feature[NUM_FEATURES_USED] = {ft_page_bias,
-                                      ft_page_num[index_pn],
-                                      ft_page_off[index_po],
-                                      ft_page_sig[index_ps],
-                                      ft_page_add[index_pa]};
+    int feature_sum = ft_page_bias;
+    feature_sum += ft_page_num[index_pn];
+    feature_sum += ft_page_off[index_po];
+    feature_sum += ft_page_sig[index_ps];
+    feature_sum += ft_page_add[index_pa];
 
-    for (int i = 0; i < NUM_FEATURES_USED; i++) {
-        sum += feature[i];
-    }
-
-    return sum;
+    return feature_sum;
 }
