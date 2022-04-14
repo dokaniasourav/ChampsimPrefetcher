@@ -188,7 +188,7 @@ void va_ampm_reset_cl_prefetch(uint64_t v_addr)
 
 void CACHE::l2c_prefetcher_initialize()
 {
-  cout << "CPU " << cpu << " L2C Virtual Address Space AMPM-Lite Prefetcher" << endl;
+  std::cout << "CPU " << cpu << " L2C Virtual Address Space AMPM-Lite Prefetcher" << endl;
 
   l2c_va_ampm_lite_region_lru = 0;
   for (int i = 0; i < L2C_VA_AMPM_LITE_REGION_COUNT; i++) {

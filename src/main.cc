@@ -65,43 +65,43 @@ void print_roi_stats(uint32_t cpu, CACHE *cache) {
     }
 
     if (TOTAL_ACCESS > 0) {
-        cout << cache->NAME;
-        cout << " TOTAL     ACCESS: " << setw(10) << TOTAL_ACCESS << "  HIT: " << setw(10) << TOTAL_HIT << "  MISS: "
+        std::cout << cache->NAME;
+        std::cout << " TOTAL     ACCESS: " << setw(10) << TOTAL_ACCESS << "  HIT: " << setw(10) << TOTAL_HIT << "  MISS: "
              << setw(10) << TOTAL_MISS << endl;
 
-        cout << cache->NAME;
-        cout << " LOAD      ACCESS: " << setw(10) << cache->roi_access[cpu][0] << "  HIT: " << setw(10)
+        std::cout << cache->NAME;
+        std::cout << " LOAD      ACCESS: " << setw(10) << cache->roi_access[cpu][0] << "  HIT: " << setw(10)
              << cache->roi_hit[cpu][0] << "  MISS: " << setw(10)
              << cache->roi_miss[cpu][0] << endl;
 
-        cout << cache->NAME;
-        cout << " RFO       ACCESS: " << setw(10) << cache->roi_access[cpu][1] << "  HIT: " << setw(10)
+        std::cout << cache->NAME;
+        std::cout << " RFO       ACCESS: " << setw(10) << cache->roi_access[cpu][1] << "  HIT: " << setw(10)
              << cache->roi_hit[cpu][1] << "  MISS: " << setw(10)
              << cache->roi_miss[cpu][1] << endl;
 
-        cout << cache->NAME;
-        cout << " PREFETCH  ACCESS: " << setw(10) << cache->roi_access[cpu][2] << "  HIT: " << setw(10)
+        std::cout << cache->NAME;
+        std::cout << " PREFETCH  ACCESS: " << setw(10) << cache->roi_access[cpu][2] << "  HIT: " << setw(10)
              << cache->roi_hit[cpu][2] << "  MISS: " << setw(10)
              << cache->roi_miss[cpu][2] << endl;
 
-        cout << cache->NAME;
-        cout << " WRITEBACK ACCESS: " << setw(10) << cache->roi_access[cpu][3] << "  HIT: " << setw(10)
+        std::cout << cache->NAME;
+        std::cout << " WRITEBACK ACCESS: " << setw(10) << cache->roi_access[cpu][3] << "  HIT: " << setw(10)
              << cache->roi_hit[cpu][3] << "  MISS: " << setw(10)
              << cache->roi_miss[cpu][3] << endl;
 
-        cout << cache->NAME;
-        cout << " TRANSLATION ACCESS: " << setw(10) << cache->roi_access[cpu][4] << "  HIT: " << setw(10)
+        std::cout << cache->NAME;
+        std::cout << " TRANSLATION ACCESS: " << setw(10) << cache->roi_access[cpu][4] << "  HIT: " << setw(10)
              << cache->roi_hit[cpu][4] << "  MISS: " << setw(10)
              << cache->roi_miss[cpu][4] << endl;
 
-        cout << cache->NAME;
-        cout << " PREFETCH  REQUESTED: " << setw(10) << cache->pf_requested << "  ISSUED: " << setw(10)
+        std::cout << cache->NAME;
+        std::cout << " PREFETCH  REQUESTED: " << setw(10) << cache->pf_requested << "  ISSUED: " << setw(10)
              << cache->pf_issued;
-        cout << "  USEFUL: " << setw(10) << cache->pf_useful << "  USELESS: " << setw(10) << cache->pf_useless << endl;
+        std::cout << "  USEFUL: " << setw(10) << cache->pf_useful << "  USELESS: " << setw(10) << cache->pf_useless << endl;
 
-        cout << cache->NAME;
-        cout << " AVERAGE MISS LATENCY: " << (1.0 * (cache->total_miss_latency)) / TOTAL_MISS << " cycles" << endl;
-        // cout << " AVERAGE MISS LATENCY: " <<
+        std::cout << cache->NAME;
+        std::cout << " AVERAGE MISS LATENCY: " << (1.0 * (cache->total_miss_latency)) / TOTAL_MISS << " cycles" << endl;
+        // std::cout << " AVERAGE MISS LATENCY: " <<
         // (cache->total_miss_latency)/TOTAL_MISS << " cycles " <<
         // cache->total_miss_latency << "/" << TOTAL_MISS<< endl;
     }
@@ -117,27 +117,27 @@ void print_sim_stats(uint32_t cpu, CACHE *cache) {
     }
 
     if (TOTAL_ACCESS > 0) {
-        cout << cache->NAME;
-        cout << " TOTAL     ACCESS: " << setw(10) << TOTAL_ACCESS << "  HIT: " << setw(10) << TOTAL_HIT << "  MISS: "
+        std::cout << cache->NAME;
+        std::cout << " TOTAL     ACCESS: " << setw(10) << TOTAL_ACCESS << "  HIT: " << setw(10) << TOTAL_HIT << "  MISS: "
              << setw(10) << TOTAL_MISS << endl;
 
-        cout << cache->NAME;
-        cout << " LOAD      ACCESS: " << setw(10) << cache->sim_access[cpu][0] << "  HIT: " << setw(10)
+        std::cout << cache->NAME;
+        std::cout << " LOAD      ACCESS: " << setw(10) << cache->sim_access[cpu][0] << "  HIT: " << setw(10)
              << cache->sim_hit[cpu][0] << "  MISS: " << setw(10)
              << cache->sim_miss[cpu][0] << endl;
 
-        cout << cache->NAME;
-        cout << " RFO       ACCESS: " << setw(10) << cache->sim_access[cpu][1] << "  HIT: " << setw(10)
+        std::cout << cache->NAME;
+        std::cout << " RFO       ACCESS: " << setw(10) << cache->sim_access[cpu][1] << "  HIT: " << setw(10)
              << cache->sim_hit[cpu][1] << "  MISS: " << setw(10)
              << cache->sim_miss[cpu][1] << endl;
 
-        cout << cache->NAME;
-        cout << " PREFETCH  ACCESS: " << setw(10) << cache->sim_access[cpu][2] << "  HIT: " << setw(10)
+        std::cout << cache->NAME;
+        std::cout << " PREFETCH  ACCESS: " << setw(10) << cache->sim_access[cpu][2] << "  HIT: " << setw(10)
              << cache->sim_hit[cpu][2] << "  MISS: " << setw(10)
              << cache->sim_miss[cpu][2] << endl;
 
-        cout << cache->NAME;
-        cout << " WRITEBACK ACCESS: " << setw(10) << cache->sim_access[cpu][3] << "  HIT: " << setw(10)
+        std::cout << cache->NAME;
+        std::cout << " WRITEBACK ACCESS: " << setw(10) << cache->sim_access[cpu][3] << "  HIT: " << setw(10)
              << cache->sim_hit[cpu][3] << "  MISS: " << setw(10)
              << cache->sim_miss[cpu][3] << endl;
     }
@@ -145,59 +145,59 @@ void print_sim_stats(uint32_t cpu, CACHE *cache) {
 
 void print_branch_stats() {
     for (uint32_t i = 0; i < NUM_CPUS; i++) {
-        cout << endl << "CPU " << i << " Branch Prediction Accuracy: ";
-        cout << (100.0 * (ooo_cpu[i]->num_branch - ooo_cpu[i]->branch_mispredictions)) / ooo_cpu[i]->num_branch;
-        cout << "% MPKI: "
+        std::cout << endl << "CPU " << i << " Branch Prediction Accuracy: ";
+        std::cout << (100.0 * (ooo_cpu[i]->num_branch - ooo_cpu[i]->branch_mispredictions)) / ooo_cpu[i]->num_branch;
+        std::cout << "% MPKI: "
              << (1000.0 * ooo_cpu[i]->branch_mispredictions) / (ooo_cpu[i]->num_retired - warmup_instructions);
-        cout << " Average ROB Occupancy at Mispredict: "
+        std::cout << " Average ROB Occupancy at Mispredict: "
              << (1.0 * ooo_cpu[i]->total_rob_occupancy_at_branch_mispredict) / ooo_cpu[i]->branch_mispredictions
              << endl;
 
         /*
-        cout << "Branch types" << endl;
-        cout << "NOT_BRANCH: " << ooo_cpu[i]->total_branch_types[0] << " " <<
+        std::cout << "Branch types" << endl;
+        std::cout << "NOT_BRANCH: " << ooo_cpu[i]->total_branch_types[0] << " " <<
         (100.0*ooo_cpu[i]->total_branch_types[0])/(ooo_cpu[i]->num_retired -
-        ooo_cpu[i]->begin_sim_instr) << "%" << endl; cout << "BRANCH_DIRECT_JUMP: "
+        ooo_cpu[i]->begin_sim_instr) << "%" << endl; std::cout << "BRANCH_DIRECT_JUMP: "
         << ooo_cpu[i]->total_branch_types[1] << " " <<
         (100.0*ooo_cpu[i]->total_branch_types[1])/(ooo_cpu[i]->num_retired -
-        ooo_cpu[i]->begin_sim_instr) << "%" << endl; cout << "BRANCH_INDIRECT: " <<
+        ooo_cpu[i]->begin_sim_instr) << "%" << endl; std::cout << "BRANCH_INDIRECT: " <<
         ooo_cpu[i]->total_branch_types[2] << " " <<
         (100.0*ooo_cpu[i]->total_branch_types[2])/(ooo_cpu[i]->num_retired -
-        ooo_cpu[i]->begin_sim_instr) << "%" << endl; cout << "BRANCH_CONDITIONAL: "
+        ooo_cpu[i]->begin_sim_instr) << "%" << endl; std::cout << "BRANCH_CONDITIONAL: "
         << ooo_cpu[i]->total_branch_types[3] << " " <<
         (100.0*ooo_cpu[i]->total_branch_types[3])/(ooo_cpu[i]->num_retired -
-        ooo_cpu[i]->begin_sim_instr) << "%" << endl; cout << "BRANCH_DIRECT_CALL: "
+        ooo_cpu[i]->begin_sim_instr) << "%" << endl; std::cout << "BRANCH_DIRECT_CALL: "
         << ooo_cpu[i]->total_branch_types[4] << " " <<
         (100.0*ooo_cpu[i]->total_branch_types[4])/(ooo_cpu[i]->num_retired -
-        ooo_cpu[i]->begin_sim_instr) << "%" << endl; cout << "BRANCH_INDIRECT_CALL:
+        ooo_cpu[i]->begin_sim_instr) << "%" << endl; std::cout << "BRANCH_INDIRECT_CALL:
         " << ooo_cpu[i]->total_branch_types[5] << " " <<
         (100.0*ooo_cpu[i]->total_branch_types[5])/(ooo_cpu[i]->num_retired -
-        ooo_cpu[i]->begin_sim_instr) << "%" << endl; cout << "BRANCH_RETURN: " <<
+        ooo_cpu[i]->begin_sim_instr) << "%" << endl; std::cout << "BRANCH_RETURN: " <<
         ooo_cpu[i]->total_branch_types[6] << " " <<
         (100.0*ooo_cpu[i]->total_branch_types[6])/(ooo_cpu[i]->num_retired -
-        ooo_cpu[i]->begin_sim_instr) << "%" << endl; cout << "BRANCH_OTHER: " <<
+        ooo_cpu[i]->begin_sim_instr) << "%" << endl; std::cout << "BRANCH_OTHER: " <<
         ooo_cpu[i]->total_branch_types[7] << " " <<
         (100.0*ooo_cpu[i]->total_branch_types[7])/(ooo_cpu[i]->num_retired -
         ooo_cpu[i]->begin_sim_instr) << "%" << endl << endl;
         */
 
-        cout << "Branch type MPKI" << endl;
-        cout << "BRANCH_DIRECT_JUMP: "
+        std::cout << "Branch type MPKI" << endl;
+        std::cout << "BRANCH_DIRECT_JUMP: "
              << (1000.0 * ooo_cpu[i]->branch_type_misses[1] / (ooo_cpu[i]->num_retired - ooo_cpu[i]->begin_sim_instr))
              << endl;
-        cout << "BRANCH_INDIRECT: "
+        std::cout << "BRANCH_INDIRECT: "
              << (1000.0 * ooo_cpu[i]->branch_type_misses[2] / (ooo_cpu[i]->num_retired - ooo_cpu[i]->begin_sim_instr))
              << endl;
-        cout << "BRANCH_CONDITIONAL: "
+        std::cout << "BRANCH_CONDITIONAL: "
              << (1000.0 * ooo_cpu[i]->branch_type_misses[3] / (ooo_cpu[i]->num_retired - ooo_cpu[i]->begin_sim_instr))
              << endl;
-        cout << "BRANCH_DIRECT_CALL: "
+        std::cout << "BRANCH_DIRECT_CALL: "
              << (1000.0 * ooo_cpu[i]->branch_type_misses[4] / (ooo_cpu[i]->num_retired - ooo_cpu[i]->begin_sim_instr))
              << endl;
-        cout << "BRANCH_INDIRECT_CALL: "
+        std::cout << "BRANCH_INDIRECT_CALL: "
              << (1000.0 * ooo_cpu[i]->branch_type_misses[5] / (ooo_cpu[i]->num_retired - ooo_cpu[i]->begin_sim_instr))
              << endl;
-        cout << "BRANCH_RETURN: "
+        std::cout << "BRANCH_RETURN: "
              << (1000.0 * ooo_cpu[i]->branch_type_misses[6] / (ooo_cpu[i]->num_retired - ooo_cpu[i]->begin_sim_instr))
              << endl << endl;
     }
@@ -286,11 +286,11 @@ void finish_warmup() {
     // PAGE_TABLE_LATENCY = 100;
     // SWAP_LATENCY = 100000;
 
-    cout << endl;
+    std::cout << endl;
     for (uint32_t i = 0; i < NUM_CPUS; i++) {
-        cout << "Warmup complete CPU " << i << " instructions: " << ooo_cpu[i]->num_retired << " cycles: "
+        std::cout << "Warmup complete CPU " << i << " instructions: " << ooo_cpu[i]->num_retired << " cycles: "
              << ooo_cpu[i]->current_cycle;
-        cout << " (Simulation time: " << elapsed_hour << " hr " << elapsed_minute << " min " << elapsed_second
+        std::cout << " (Simulation time: " << elapsed_hour << " hr " << elapsed_minute << " min " << elapsed_second
              << " sec) " << endl;
 
         ooo_cpu[i]->begin_sim_cycle = ooo_cpu[i]->current_cycle;
@@ -309,7 +309,7 @@ void finish_warmup() {
         for (auto it = caches.rbegin(); it != caches.rend(); ++it)
             reset_cache_stats(i, *it);
     }
-    cout << endl;
+    std::cout << endl;
 
     // reset DRAM stats
     for (uint32_t i = 0; i < DRAM_CHANNELS; i++) {
@@ -321,7 +321,7 @@ void finish_warmup() {
 }
 
 void signal_handler(int signal) {
-    cout << "Caught signal: " << signal << endl;
+    std::cout << "Caught signal: " << signal << endl;
     exit(1);
 }
 
@@ -333,7 +333,7 @@ int main(int argc, char **argv) {
     sigIntHandler.sa_flags = 0;
     sigaction(SIGINT, &sigIntHandler, NULL);
 
-    cout << endl << "*** ChampSim Multicore Out-of-Order Simulator ***" << endl << endl;
+    std::cout << endl << "*** ChampSim Multicore Out-of-Order Simulator ***" << endl << endl;
 
     // initialize knobs
     uint8_t show_heartbeat = 1;
@@ -370,9 +370,9 @@ int main(int argc, char **argv) {
         }
     }
 
-    cout << "Warmup Instructions: " << warmup_instructions << endl;
-    cout << "Simulation Instructions: " << simulation_instructions << endl;
-    cout << "Number of CPUs: " << NUM_CPUS << endl;
+    std::cout << "Warmup Instructions: " << warmup_instructions << endl;
+    std::cout << "Simulation Instructions: " << simulation_instructions << endl;
+    std::cout << "Number of CPUs: " << NUM_CPUS << endl;
 
     long long int dram_size =
             DRAM_CHANNELS * DRAM_RANKS * DRAM_BANKS * DRAM_ROWS * DRAM_COLUMNS * BLOCK_SIZE / 1024 / 1024; // in MiB
@@ -460,10 +460,10 @@ int main(int argc, char **argv) {
                 float heartbeat_ipc = (1.0 * ooo_cpu[i]->num_retired - ooo_cpu[i]->last_sim_instr) /
                                       (ooo_cpu[i]->current_cycle - ooo_cpu[i]->last_sim_cycle);
 
-                cout << "Heartbeat CPU " << i << " instructions: " << ooo_cpu[i]->num_retired << " cycles: "
+                std::cout << "Heartbeat CPU " << i << " instructions: " << ooo_cpu[i]->num_retired << " cycles: "
                      << ooo_cpu[i]->current_cycle;
-                cout << " heartbeat IPC: " << heartbeat_ipc << " cumulative IPC: " << cumulative_ipc;
-                cout << " (Simulation time: " << elapsed_hour << " hr " << elapsed_minute << " min " << elapsed_second
+                std::cout << " heartbeat IPC: " << heartbeat_ipc << " cumulative IPC: " << cumulative_ipc;
+                std::cout << " (Simulation time: " << elapsed_hour << " hr " << elapsed_minute << " min " << elapsed_second
                      << " sec) " << endl;
                 ooo_cpu[i]->next_print_instruction += STAT_PRINTING_PERIOD;
 
@@ -490,10 +490,10 @@ int main(int argc, char **argv) {
                 ooo_cpu[i]->finish_sim_instr = ooo_cpu[i]->num_retired - ooo_cpu[i]->begin_sim_instr;
                 ooo_cpu[i]->finish_sim_cycle = ooo_cpu[i]->current_cycle - ooo_cpu[i]->begin_sim_cycle;
 
-                cout << "Finished CPU " << i << " instructions: " << ooo_cpu[i]->finish_sim_instr << " cycles: "
+                std::cout << "Finished CPU " << i << " instructions: " << ooo_cpu[i]->finish_sim_instr << " cycles: "
                      << ooo_cpu[i]->finish_sim_cycle;
-                cout << " cumulative IPC: " << ((float) ooo_cpu[i]->finish_sim_instr / ooo_cpu[i]->finish_sim_cycle);
-                cout << " (Simulation time: " << elapsed_hour << " hr " << elapsed_minute << " min " << elapsed_second
+                std::cout << " cumulative IPC: " << ((float) ooo_cpu[i]->finish_sim_instr / ooo_cpu[i]->finish_sim_cycle);
+                std::cout << " (Simulation time: " << elapsed_hour << " hr " << elapsed_minute << " min " << elapsed_second
                      << " sec) " << endl;
 
                 for (auto it = caches.rbegin(); it != caches.rend(); ++it)
@@ -507,26 +507,26 @@ int main(int argc, char **argv) {
     elapsed_minute -= elapsed_hour * 60;
     elapsed_second -= (elapsed_hour * 3600 + elapsed_minute * 60);
 
-    cout << endl << "ChampSim completed all CPUs" << endl;
+    std::cout << endl << "ChampSim completed all CPUs" << endl;
     if (NUM_CPUS > 1) {
-        cout << endl << "Total Simulation Statistics (not including warmup)" << endl;
+        std::cout << endl << "Total Simulation Statistics (not including warmup)" << endl;
         for (uint32_t i = 0; i < NUM_CPUS; i++) {
-            cout << endl
+            std::cout << endl
                  << "CPU " << i
                  << " cumulative IPC: " << (float) (ooo_cpu[i]->num_retired - ooo_cpu[i]->begin_sim_instr) /
                                            (ooo_cpu[i]->current_cycle - ooo_cpu[i]->begin_sim_cycle);
-            cout << " instructions: " << ooo_cpu[i]->num_retired - ooo_cpu[i]->begin_sim_instr
+            std::cout << " instructions: " << ooo_cpu[i]->num_retired - ooo_cpu[i]->begin_sim_instr
                  << " cycles: " << ooo_cpu[i]->current_cycle - ooo_cpu[i]->begin_sim_cycle << endl;
             for (auto it = caches.rbegin(); it != caches.rend(); ++it)
                 print_sim_stats(i, *it);
         }
     }
 
-    cout << endl << "Region of Interest Statistics" << endl;
+    std::cout << endl << "Region of Interest Statistics" << endl;
     for (uint32_t i = 0; i < NUM_CPUS; i++) {
-        cout << endl << "CPU " << i << " cumulative IPC: "
+        std::cout << endl << "CPU " << i << " cumulative IPC: "
              << ((float) ooo_cpu[i]->finish_sim_instr / ooo_cpu[i]->finish_sim_cycle);
-        cout << " instructions: " << ooo_cpu[i]->finish_sim_instr << " cycles: " << ooo_cpu[i]->finish_sim_cycle
+        std::cout << " instructions: " << ooo_cpu[i]->finish_sim_instr << " cycles: " << ooo_cpu[i]->finish_sim_cycle
              << endl;
         for (auto it = caches.rbegin(); it != caches.rend(); ++it)
             print_roi_stats(i, *it);

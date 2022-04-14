@@ -59,13 +59,12 @@ public:
 
     SIGNATURE_TABLE() {
         /*
-      std::cout << "Initialize SIGNATURE TABLE" << std::endl;
-      std::cout << "ST_SET: " << ST_SET << std::endl;
-      std::cout << "ST_WAY: " << ST_WAY << std::endl;
-      std::cout << "ST_TAG_BIT: " << ST_TAG_BIT << std::endl;
+          std::cout << "Initialize SIGNATURE TABLE" << std::endl;
+          std::cout << "ST_SET: " << ST_SET << std::endl;
+          std::cout << "ST_WAY: " << ST_WAY << std::endl;
+          std::cout << "ST_TAG_BIT: " << ST_TAG_BIT << std::endl;
+         //std::cout << "ST_TAG_MASK: " << hex << ST_TAG_MASK << std::dec << std::endl;
          */
-
-//    std::cout << "ST_TAG_MASK: " << hex << ST_TAG_MASK << std::dec << std::endl;
         for (uint32_t set = 0; set < ST_SET; set++)
             for (uint32_t way = 0; way < ST_WAY; way++) {
                 valid[set][way] = 0;

@@ -165,8 +165,8 @@ void RegRead(UINT32 i, UINT32 index)
     }
     */
 
-    //cout << r << " " << REG_StringShort((REG)r) << " " ;
-    //cout << REG_StringShort((REG)r) << " " ;
+    //std::cout << r << " " << REG_StringShort((REG)r) << " " ;
+    //std::cout << REG_StringShort((REG)r) << " " ;
 
     //printf("%d ", (int)r);
 
@@ -207,8 +207,8 @@ void RegWrite(REG i, UINT32 index)
     }
     */
 
-    //cout << "<" << r << " " << REG_StringShort((REG)r) << "> ";
-    //cout << "<" << REG_StringShort((REG)r) << "> ";
+    //std::cout << "<" << r << " " << REG_StringShort((REG)r) << "> ";
+    //std::cout << "<" << REG_StringShort((REG)r) << "> ";
 
     //printf("<%d> ", (int)r);
 
@@ -403,7 +403,7 @@ int main(int argc, char *argv[])
     out = fopen(fileName, "ab");
     if (!out) 
     {
-        cout << "Couldn't open output trace file. Exiting." << endl;
+        std::cout << "Couldn't open output trace file. Exiting." << endl;
         exit(1);
     }
 

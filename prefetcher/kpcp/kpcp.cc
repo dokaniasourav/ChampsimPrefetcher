@@ -747,8 +747,8 @@ uint32_t CACHE::prefetcher_cache_fill(uint64_t v_addr, uint64_t addr, uint32_t s
           useless_depth[cpu][evicted_depth]++;
 
           L2_PF_DEBUG(if (warmup_complete[cpu]) {
-            cout << "Useless pf_addr: " << hex << evicted_cl << dec << " delta: " << table[l2_st_match].delta[evicted_block];
-            cout << " depth: " << table[l2_st_match].depth[evicted_block] << endl;
+           << "Useless pf_addr: " << hex << evicted_cl << dec << " delta: " << table[l2_st_match].delta[evicted_block];
+           << " depth: " << table[l2_st_match].depth[evicted_block] << std::endl;
           });
 
           // Notify sampler

@@ -2,7 +2,7 @@
 
 #include "ooo_cpu.h"
 
-void O3_CPU::prefetcher_initialize() { std::cout << "CPU " << cpu << " next line instruction prefetcher" << endl; }
+void O3_CPU::prefetcher_initialize() { std::cout << "CPU " << cpu << " next line instruction prefetcher" << std::endl; }
 
 void O3_CPU::prefetcher_branch_operate(uint64_t ip, uint8_t branch_type, uint64_t branch_target) {}
 

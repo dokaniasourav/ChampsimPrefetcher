@@ -201,7 +201,7 @@ void O3_CPU::init_instruction(ooo_model_instr arch_instr)
   if (arch_instr.is_branch) {
 
     DP(if (warmup_complete[cpu]) {
-      cout << "[BRANCH] instr_id: " << instr_unique_id << " ip: " << hex << arch_instr.ip << dec << " taken: " << +arch_instr.branch_taken << endl;
+      std::cout << "[BRANCH] instr_id: " << instr_unique_id << " ip: " << hex << arch_instr.ip << dec << " taken: " << +arch_instr.branch_taken << endl;
     });
 
     num_branch++;
@@ -599,8 +599,8 @@ void O3_CPU::do_memory_scheduling(champsim::circular_buffer<ooo_model_instr>::it
         num_added++;
       } else {
         DP(if (warmup_complete[cpu]) {
-          cout << "[LQ] " << __func__ << " instr_id: " << rob_it->instr_id;
-          cout << " cannot be added in the load queue occupancy: " << std::count_if(std::begin(LQ), std::end(LQ), is_valid<LSQ_ENTRY>())
+          std::cout << "[LQ] " << __func__ << " instr_id: " << rob_it->instr_id;
+          std::cout << " cannot be added in the load queue occupancy: " << std::count_if(std::begin(LQ), std::end(LQ), is_valid<LSQ_ENTRY>())
                << " cycle: " << current_cycle << endl;
         });
       }
@@ -620,8 +620,8 @@ void O3_CPU::do_memory_scheduling(champsim::circular_buffer<ooo_model_instr>::it
         }
       } else {
         DP(if (warmup_complete[cpu]) {
-          cout << "[SQ] " << __func__ << " instr_id: " << rob_it->instr_id;
-          cout << " cannot be added in the store queue occupancy: " << std::count_if(std::begin(SQ), std::end(SQ), is_valid<LSQ_ENTRY>())
+          std::cout << "[SQ] " << __func__ << " instr_id: " << rob_it->instr_id;
+          std::cout << " cannot be added in the store queue occupancy: " << std::count_if(std::begin(SQ), std::end(SQ), is_valid<LSQ_ENTRY>())
                << " cycle: " << current_cycle << endl;
         });
       }
@@ -637,8 +637,8 @@ void O3_CPU::do_memory_scheduling(champsim::circular_buffer<ooo_model_instr>::it
       rob_it->executed = INFLIGHT;
 
     DP(if (warmup_complete[cpu]) {
-      cout << "[ROB] " << __func__ << " instr_id: " << rob_it->instr_id;
-      cout << " scheduled all num_mem_ops: " << rob_it->num_mem_ops << endl;
+      std::cout << "[ROB] " << __func__ << " instr_id: " << rob_it->instr_id;
+      std::cout << " scheduled all num_mem_ops: " << rob_it->num_mem_ops << endl;
     });
   }
 }
@@ -656,9 +656,9 @@ void O3_CPU::do_sq_forward_to_lq(LSQ_ENTRY& sq_entry, LSQ_ENTRY& lq_entry)
     inflight_mem_executions++;
 
   DP(if (warmup_complete[cpu]) {
-    cout << "[LQ] " << __func__ << " instr_id: " << lq_entry.instr_id << hex;
-    cout << " full_addr: " << lq_entry.physical_address << dec << " is forwarded by store instr_id: ";
-    cout << sq_entry.instr_id << " remain_num_ops: " << lq_entry.rob_index->num_mem_ops << " cycle: " << current_cycle << endl;
+    std::cout << "[LQ] " << __func__ << " instr_id: " << lq_entry.instr_id << hex;
+    std::cout << " full_addr: " << lq_entry.physical_address << dec << " is forwarded by store instr_id: ";
+    std::cout << sq_entry.instr_id << " remain_num_ops: " << lq_entry.rob_index->num_mem_ops << " cycle: " << current_cycle << endl;
   });
 
   LSQ_ENTRY empty_entry;
@@ -1117,7 +1117,7 @@ void O3_CPU::retire_rob()
     }
 
     // release ROB entry
-    DP(if (warmup_complete[cpu]) { cout << "[ROB] " << __func__ << " instr_id: " << ROB.front().instr_id << " is retired" << endl; });
+    DP(if (warmup_complete[cpu]) { std::cout << "[ROB] " << __func__ << " instr_id: " << ROB.front().instr_id << " is retired" << endl; });
 
     ROB.pop_front();
     completed_executions--;
