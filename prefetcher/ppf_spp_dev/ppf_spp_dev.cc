@@ -10,18 +10,19 @@ PREFETCH_FILTER FILTER;
 GLOBAL_REGISTER GHR;
 
 unordered_map<uint64_t, vector<int>> inverted_address;
+extern string trace_name;
 
 void CACHE::prefetcher_initialize() {
     std::cout << NAME << "SPP DEV Prefetcher" << std::endl;
 
     ft_page_bias = 0;
     for(int i=0; i < (ST_SET*ST_WAY); i++) {
-        ft_page_num[i] = 0;
-        ft_page_off[i] = 0;
-        ft_page_sig[i] = 0;
+        ft_page_num[i] = 10;
+        ft_page_off[i] = 11;
+        ft_page_sig[i] = 12;
     }
     for(int i=0; i < FT_PAGES_TOTAL; i++) {
-        ft_page_add[i] = 0;
+        ft_page_add[i] = 13;
     }
 
     /********************* CREATE DATA DIRECTORY**************************/
@@ -48,10 +49,9 @@ void CACHE::prefetcher_cycle_operate() {
     if(cycle_operate_count > next_cycle_update) {
         next_cycle_update += CYCLE_UPDATE_INTERVAL;
         if(record_table_ind <  REC_TB_SIZE) {
-            record_table[record_table_ind] = {total_training_count, useful_training_count,
-                                              total_prediction_count, true_prediction_count,
-                                              pf_requested, pf_useful,
-                                              cache_operate_count, cache_hit_count};
+            record_table[record_table_ind] = {total_training_count, useful_training_count, total_prediction_count,
+                                              true_prediction_count, pf_requested, pf_useful,
+                                              cache_operate_count, cache_hit_count, cycle_operate_count};
             record_table_ind++;
         }
     }
@@ -63,6 +63,11 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
     uint32_t page_offset = (addr >> LOG2_BLOCK_SIZE) & (PAGE_SIZE / BLOCK_SIZE - 1);
     uint32_t last_sig = 0, curr_sig = 0, confidence_q[MSHR_SIZE], depth = 0;
     int32_t delta = 0, delta_q[MSHR_SIZE];
+
+    cache_operate_count++;
+    if (cache_hit) {
+        cache_hit_count++;
+    }
 
     for (uint32_t i = 0; i < MSHR_SIZE; i++) {
         confidence_q[i] = 0;
@@ -123,6 +128,7 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
 
                     int ppf_value = ppf_decision(entry_values);
                     if(ppf_value > PPF_THRESHOLD) {
+                        true_prediction_count++;
                         if (FILTER.check(pf_address,
                                          ((confidence_q[i] >= FILL_THRESHOLD) ? SPP_L2C_PREFETCH : SPP_LLC_PREFETCH))) {
                             int success = prefetch_line(pf_address, (confidence_q[i] >= FILL_THRESHOLD), 0);
@@ -227,9 +233,11 @@ uint32_t CACHE::prefetcher_cache_fill(uint64_t addr, uint32_t set, uint32_t matc
 
 void CACHE::prefetcher_final_stats() {
     ofstream my_file;
+    std::cout << "Printing the final status " << std::endl;
+
     my_file.open(dir_name + "/prefetcher_stat_" + NAME + ".csv");
     my_file << "index, total_training, useful_training, total_prediction, true_prediction, "
-               "total_prefetch, useful_prefetch, cache_operate, cache_hit" << std::endl;
+               "total_prefetch, useful_prefetch, cache_operate, cache_hit, cycle_operate_count" << std::endl;
     for (int i = 0; i < record_table_ind; i++) {
         my_file << i << ", "  << record_table[i].total_training
                 << ", "  << record_table[i].useful_training
@@ -238,14 +246,16 @@ void CACHE::prefetcher_final_stats() {
                 << ", "  << record_table[i].total_prefetch
                 << ", "  << record_table[i].useful_prefetch
                 << ", "  << record_table[i].cache_operate
-                << ", "  << record_table[i].cache_hit << std::endl;
+                << ", "  << record_table[i].cache_hit
+                << ", "  << record_table[i].cycle_operate
+                << std::endl;
     }
     my_file << std::endl;
     my_file.close();
 
 
     my_file.open(dir_name + "/inverted_address_" + NAME + ".csv");
-    my_file << "index, address, array, ip_fold_1, pf_degree, valid, ppf_prediction" << std::endl;
+    my_file << "index, address, array, page_number, page_offset, page_address, page_signature" << std::endl;
     int ind = 0;
     for(auto & it:inverted_address) {
         my_file << ++ind << ", " << it.first << ", ( ";
@@ -255,22 +265,22 @@ void CACHE::prefetcher_final_stats() {
         my_file << "), ( ";
 
         for(auto & el: it.second) {
-            my_file << trans_buff[el].ip_fold_1 << " ";
+            my_file << trans_buff[el].page_number << " ";
         }
         my_file << "), ( ";
 
         for(auto & el: it.second) {
-            my_file << trans_buff[el].pf_degree << " ";
+            my_file << trans_buff[el].page_offset << " ";
         }
         my_file << "), ( ";
 
         for(auto & el: it.second) {
-            my_file << trans_buff[el].valid << " ";
+            my_file << trans_buff[el].page_address << " ";
         }
         my_file << "), ( ";
 
         for(auto & el: it.second) {
-            my_file << trans_buff[el].ppf_prediction << " ";
+            my_file << trans_buff[el].page_signature << " ";
         }
         my_file << ")" << std::endl;
     }

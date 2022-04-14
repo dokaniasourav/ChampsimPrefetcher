@@ -30,10 +30,11 @@ files=(
 #      "spp_dev"
 #      "next_line_degree_3"
 #      "next_line_degree_5"
+#      "ppf_next_line_5"
 #      )
 
 prefs=(
-      "ppf_next_line_5"
+      "ppf_spp_dev"
       )
 
 #Looping through all the pre-fetchers
@@ -54,7 +55,7 @@ do
   echo ""
   ls bin
 
-  for i in {0..19}
+  for i in {5..8}
   do
     echo ""
     echo "Submitting job for the file ${files[$i]} with $pref2 prefetcher"

@@ -1,4 +1,9 @@
 #include <unordered_map>
+#include <sys/stat.h>
+#include <iomanip>
+#include <fstream>
+#include <ctime>
+#include <string>
 #define WEIGHT_BITS 5
 
 /*
@@ -43,6 +48,38 @@ int ft_page_num[ST_SET * ST_WAY];
 int ft_page_off[ST_SET * ST_WAY];
 int ft_page_sig[ST_SET * ST_WAY];
 
+
+/*********************************************************************************************************************/
+#define REC_TB_SIZE 2048
+struct recorder_str {
+    uint64_t total_training;
+    uint64_t useful_training;
+    uint64_t total_prediction;
+    uint64_t true_prediction;
+    uint64_t total_prefetch;
+    uint64_t useful_prefetch;
+    uint64_t cache_operate;
+    uint64_t cache_hit;
+    uint64_t cycle_operate;
+};
+
+std::string dir_name;
+
+int record_table_ind = 0;
+uint64_t next_cycle_update = 0;
+recorder_str record_table[REC_TB_SIZE];
+constexpr int CYCLE_UPDATE_INTERVAL = 1000000;
+
+uint64_t cache_operate_count = 0;
+uint64_t cycle_operate_count = 0;
+uint64_t cache_hit_count = 0;
+
+uint64_t total_training_count = 0;
+uint64_t useful_training_count = 0;
+uint64_t total_prediction_count = 0;
+uint64_t true_prediction_count = 0;
+/*********************************************************************************************************************/
+
 void retrain_ppf(int trans_buffer_index, int useful);
 int ppf_decision(transfer_buff_entry entry_values);
 
@@ -51,6 +88,11 @@ void retrain_ppf(int ptr_to_trans_buff, int useful) {
     int index_po = trans_buff[ptr_to_trans_buff].page_offset    & (ST_SET*ST_WAY - 1);
     int index_ps = trans_buff[ptr_to_trans_buff].page_signature & (ST_SET*ST_WAY - 1);
     int index_pa = trans_buff[ptr_to_trans_buff].page_address   & (FT_PAGES_TOTAL - 1);
+
+    total_training_count++;
+    if(useful) {
+        useful_training_count++;
+    }
 
     if (useful) {
         INCREMENT(ft_page_num[index_pn]);
@@ -84,35 +126,8 @@ int ppf_decision(transfer_buff_entry entry_values) {
     feature_sum += ft_page_sig[index_ps];
     feature_sum += ft_page_add[index_pa];
 
+    total_prediction_count++;
+
     return feature_sum;
 }
-
-/**********************************************************************************************************************/
-
-#define REC_TB_SIZE 2048
-struct recorder_str {
-    uint64_t total_training;
-    uint64_t useful_training;
-    uint64_t total_prediction;
-    uint64_t true_prediction;
-    uint64_t total_prefetch;
-    uint64_t useful_prefetch;
-    uint64_t cache_operate;
-    uint64_t cache_hit;
-};
-string dir_name;
-
-int record_table_ind = 0;
-uint64_t next_cycle_update = 0;
-recorder_str record_table[REC_TB_SIZE];
-constexpr int CYCLE_UPDATE_INTERVAL = 1000000;
-
-uint64_t cache_operate_count = 0;
-uint64_t cycle_operate_count = 0;
-uint64_t cache_hit_count = 0;
-
-uint64_t total_training_count = 0;
-uint64_t useful_training_count = 0;
-uint64_t total_prediction_count = 0;
-uint64_t true_prediction_count = 0;
 
