@@ -93,6 +93,7 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                                         GHR.pf_issued >>= 1;
                                         GHR.pf_useful >>= 1;
                                     }
+                                    // WUSS-UP
                                     /*
                                     SPP_DP(std::cout << "[ChampSim] SPP L2 prefetch issued GHR.pf_issued: " << GHR.pf_issued
                                                      << " GHR.pf_useful: " << GHR.pf_useful << std::endl;);
