@@ -23,9 +23,39 @@ void CACHE::prefetcher_initialize() {
     for(int i=0; i < FT_PAGES_TOTAL; i++) {
         ft_page_add[i] = 0;
     }
+
+    /********************* CREATE DATA DIRECTORY**************************/
+    auto t = std::time(nullptr);
+    auto tm = *std::localtime(&t);
+    std::ostringstream oss;
+    oss << std::put_time(&tm, "./data/ppf-spp-dev_%Y%m%d%H%M%S_");
+    size_t f_ind = trace_name.find_last_of('/');
+    if (f_ind != string::npos) {
+        dir_name = oss.str() + trace_name.substr(f_ind+1, 3);
+    } else {
+        dir_name = oss.str() + std::to_string(rand() % 10000);
+    }
+    std::cout << NAME << " -- Directory Name = " << dir_name << std::endl;
+    struct stat sst = {0};
+    if (stat(dir_name.c_str(), &sst) == -1) {
+        mkdir(dir_name.c_str(), 0777);
+    }
+    /********************* END FILE OPERATIONS **************************/
 }
 
-void CACHE::prefetcher_cycle_operate() {}
+void CACHE::prefetcher_cycle_operate() {
+    cycle_operate_count++;
+    if(cycle_operate_count > next_cycle_update) {
+        next_cycle_update += CYCLE_UPDATE_INTERVAL;
+        if(record_table_ind <  REC_TB_SIZE) {
+            record_table[record_table_ind] = {total_training_count, useful_training_count,
+                                              total_prediction_count, true_prediction_count,
+                                              pf_requested, pf_useful,
+                                              cache_operate_count, cache_hit_count};
+            record_table_ind++;
+        }
+    }
+}
 
 uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                                          uint8_t cache_hit, uint8_t type, uint32_t metadata_in) {
@@ -195,7 +225,58 @@ uint32_t CACHE::prefetcher_cache_fill(uint64_t addr, uint32_t set, uint32_t matc
     return metadata_in;
 }
 
-void CACHE::prefetcher_final_stats() {}
+void CACHE::prefetcher_final_stats() {
+    ofstream my_file;
+    my_file.open(dir_name + "/prefetcher_stat_" + NAME + ".csv");
+    my_file << "index, total_training, useful_training, total_prediction, true_prediction, "
+               "total_prefetch, useful_prefetch, cache_operate, cache_hit" << std::endl;
+    for (int i = 0; i < record_table_ind; i++) {
+        my_file << i << ", "  << record_table[i].total_training
+                << ", "  << record_table[i].useful_training
+                << ", "  << record_table[i].total_prediction
+                << ", "  << record_table[i].true_prediction
+                << ", "  << record_table[i].total_prefetch
+                << ", "  << record_table[i].useful_prefetch
+                << ", "  << record_table[i].cache_operate
+                << ", "  << record_table[i].cache_hit << std::endl;
+    }
+    my_file << std::endl;
+    my_file.close();
+
+
+    my_file.open(dir_name + "/inverted_address_" + NAME + ".csv");
+    my_file << "index, address, array, ip_fold_1, pf_degree, valid, ppf_prediction" << std::endl;
+    int ind = 0;
+    for(auto & it:inverted_address) {
+        my_file << ++ind << ", " << it.first << ", ( ";
+        for(auto & el: it.second) {
+            my_file << el << " ";
+        }
+        my_file << "), ( ";
+
+        for(auto & el: it.second) {
+            my_file << trans_buff[el].ip_fold_1 << " ";
+        }
+        my_file << "), ( ";
+
+        for(auto & el: it.second) {
+            my_file << trans_buff[el].pf_degree << " ";
+        }
+        my_file << "), ( ";
+
+        for(auto & el: it.second) {
+            my_file << trans_buff[el].valid << " ";
+        }
+        my_file << "), ( ";
+
+        for(auto & el: it.second) {
+            my_file << trans_buff[el].ppf_prediction << " ";
+        }
+        my_file << ")" << std::endl;
+    }
+    my_file << std::endl;
+    my_file.close();
+}
 
 // TODO_: Find a good 64-bit hash function
 uint64_t get_hash(uint64_t key) {

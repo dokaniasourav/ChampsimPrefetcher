@@ -32,7 +32,7 @@ transfer_buff_entry trans_buff[TRANSFER_BUFFER_ENTRIES];
 
 int transfer_buffer_index;
 
-constexpr int PPF_THRESHOLD = -50000;
+constexpr int PPF_THRESHOLD = 0;
 
 constexpr int FT_PAGE_BIT_LOC = 10;
 constexpr int FT_PAGES_TOTAL = (1 << FT_PAGE_BIT_LOC);
@@ -86,3 +86,33 @@ int ppf_decision(transfer_buff_entry entry_values) {
 
     return feature_sum;
 }
+
+/**********************************************************************************************************************/
+
+#define REC_TB_SIZE 2048
+struct recorder_str {
+    uint64_t total_training;
+    uint64_t useful_training;
+    uint64_t total_prediction;
+    uint64_t true_prediction;
+    uint64_t total_prefetch;
+    uint64_t useful_prefetch;
+    uint64_t cache_operate;
+    uint64_t cache_hit;
+};
+string dir_name;
+
+int record_table_ind = 0;
+uint64_t next_cycle_update = 0;
+recorder_str record_table[REC_TB_SIZE];
+constexpr int CYCLE_UPDATE_INTERVAL = 1000000;
+
+uint64_t cache_operate_count = 0;
+uint64_t cycle_operate_count = 0;
+uint64_t cache_hit_count = 0;
+
+uint64_t total_training_count = 0;
+uint64_t useful_training_count = 0;
+uint64_t total_prediction_count = 0;
+uint64_t true_prediction_count = 0;
+
