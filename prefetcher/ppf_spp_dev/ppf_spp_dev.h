@@ -1,3 +1,5 @@
+#include <cstdint>
+
 #ifndef SPP_H
 #define SPP_H
 
@@ -6,8 +8,6 @@
 #define FILTER_ON
 #define GHR_ON
 #define SPP_SANITY_CHECK
-
-#include <stdint.h>
 
 //#define SPP_DEBUG_PRINT
 #ifdef SPP_DEBUG_PRINT
@@ -54,8 +54,8 @@ uint64_t get_hash(uint64_t key);
 
 class SIGNATURE_TABLE {
 public:
-    bool valid[ST_SET][ST_WAY];
-    uint32_t tag[ST_SET][ST_WAY], last_offset[ST_SET][ST_WAY], sig[ST_SET][ST_WAY], lru[ST_SET][ST_WAY];
+    bool valid[ST_SET][ST_WAY]{};
+    uint32_t tag[ST_SET][ST_WAY]{}, last_offset[ST_SET][ST_WAY]{}, sig[ST_SET][ST_WAY]{}, lru[ST_SET][ST_WAY]{};
 
     SIGNATURE_TABLE() {
         /*
@@ -67,7 +67,7 @@ public:
          */
         for (uint32_t set = 0; set < ST_SET; set++)
             for (uint32_t way = 0; way < ST_WAY; way++) {
-                valid[set][way] = 0;
+                valid[set][way] = false;
                 tag[set][way] = 0;
                 last_offset[set][way] = 0;
                 sig[set][way] = 0;
@@ -75,14 +75,14 @@ public:
             }
     };
 
-    void
-    read_and_update_sig(uint64_t page, uint32_t page_offset, uint32_t &last_sig, uint32_t &curr_sig, int32_t &delta);
+    void read_and_update_sig(uint64_t page, uint32_t page_offset, uint32_t &last_sig,
+                             uint32_t &curr_sig, int32_t &delta);
 };
 
 class PATTERN_TABLE {
 public:
-    int delta[PT_SET][PT_WAY];
-    uint32_t c_delta[PT_SET][PT_WAY], c_sig[PT_SET];
+    int delta[PT_SET][PT_WAY]{};
+    uint32_t c_delta[PT_SET][PT_WAY]{}, c_sig[PT_SET]{};
 
     PATTERN_TABLE() {
         /*
@@ -93,7 +93,6 @@ public:
         std::cout << "C_SIG_BIT: " << C_SIG_BIT << std::endl;
         std::cout << "C_DELTA_BIT: " << C_DELTA_BIT << std::endl;
          */
-
         for (uint32_t set = 0; set < PT_SET; set++) {
             for (uint32_t way = 0; way < PT_WAY; way++) {
                 delta[set][way] = 0;
@@ -114,9 +113,9 @@ public:
 
 class PREFETCH_FILTER {
 public:
-    uint64_t remainder_tag[FILTER_SET];
-    bool valid[FILTER_SET], // Consider this as "prefetched"
-    useful[FILTER_SET]; // Consider this as "used"
+    uint64_t remainder_tag[FILTER_SET]{};
+    bool valid[FILTER_SET]{}, // Consider this as "prefetched"
+    useful[FILTER_SET]{}; // Consider this as "used"
 
     PREFETCH_FILTER() {
         /*
@@ -126,8 +125,8 @@ public:
 
         for (uint32_t set = 0; set < FILTER_SET; set++) {
             remainder_tag[set] = 0;
-            valid[set] = 0;
-            useful[set] = 0;
+            valid[set] = false;
+            useful[set] = false;
         }
     }
 
@@ -141,9 +140,9 @@ public:
             global_accuracy; // Alpha value in Section III. Equation 3
 
     // Global History Register (GHR) entries
-    uint8_t valid[MAX_GHR_ENTRY];
-    uint32_t sig[MAX_GHR_ENTRY], confidence[MAX_GHR_ENTRY], offset[MAX_GHR_ENTRY];
-    int delta[MAX_GHR_ENTRY];
+    uint8_t valid[MAX_GHR_ENTRY]{};
+    uint32_t sig[MAX_GHR_ENTRY]{}, confidence[MAX_GHR_ENTRY]{}, offset[MAX_GHR_ENTRY]{};
+    int delta[MAX_GHR_ENTRY]{};
 
     GLOBAL_REGISTER() {
         pf_useful = 0;
@@ -163,5 +162,4 @@ public:
 
     uint32_t check_entry(uint32_t page_offset);
 };
-
 #endif
