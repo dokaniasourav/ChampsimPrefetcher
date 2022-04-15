@@ -17,7 +17,7 @@ VirtualMemory vmem(8589934592, 1 << 12, 5, 1, 200);
 
 MEMORY_CONTROLLER DRAM(1.25);
 CACHE LLC("LLC", 1.0, 6, 2048, 16, 32, 32, 32, 64, 19, 1, 1, 1, LOG2_BLOCK_SIZE, 0, 0, 0, 5, &DRAM, CACHE::pref_t::pprefetcherDno, CACHE::repl_t::rreplacementDlru);
-CACHE cpu0_L2C("cpu0_L2C", 1.0, 5, 1024, 8, 32, 32, 16, 32, 9, 1, 1, 1, LOG2_BLOCK_SIZE, 0, 0, 0, 5, &LLC, CACHE::pref_t::pprefetcherDppf_spp_dev, CACHE::repl_t::rreplacementDlru);
+CACHE cpu0_L2C("cpu0_L2C", 1.0, 5, 1024, 8, 32, 32, 16, 32, 9, 1, 1, 1, LOG2_BLOCK_SIZE, 0, 0, 0, 5, &LLC, CACHE::pref_t::pprefetcherDspp_dev, CACHE::repl_t::rreplacementDlru);
 CACHE cpu0_L1D("cpu0_L1D", 1.0, 4, 64, 12, 64, 64, 8, 16, 4, 1, 2, 2, LOG2_BLOCK_SIZE, 0, 1, 0, 5, &cpu0_L2C, CACHE::pref_t::pprefetcherDno, CACHE::repl_t::rreplacementDlru);
 PageTableWalker cpu0_PTW("cpu0_PTW", 0, 3, 1, 2, 1, 4, 2, 4, 4, 8, 16, 5, 2, 2, 0, &cpu0_L1D);
 CACHE cpu0_STLB("cpu0_STLB", 1.0, 2, 1024, 8, 32, 32, 16, 32, 9, 1, 1, 1, LOG2_PAGE_SIZE, 0, 0, 0, 5, &cpu0_PTW, CACHE::pref_t::pprefetcherDno, CACHE::repl_t::rreplacementDlru);

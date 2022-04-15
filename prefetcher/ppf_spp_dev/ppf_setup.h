@@ -19,7 +19,7 @@ constexpr int INCREMENT(int &X) {
 #define DECREMENT(X) (X = (X == (0-(1<<(WEIGHT_BITS-1)))) ?X:X-1)
 #define THRESHOLD(X) (X = (X > 0) ?1:0)
 
-#define TRANSFER_BUFFER_ENTRIES 1024
+#define TRANSFER_BUFFER_ENTRIES 2048
 #define MOVE_PTR_UP(X) (X = (X == (TRANSFER_BUFFER_ENTRIES-1) ?0:X+1))
 
 struct transfer_buff_entry {
@@ -84,10 +84,10 @@ void retrain_ppf(int trans_buffer_index, int useful);
 int ppf_decision(transfer_buff_entry entry_values);
 
 void retrain_ppf(int ptr_to_trans_buff, int useful) {
-    int index_pn = trans_buff[ptr_to_trans_buff].page_number    & (ST_SET*ST_WAY - 1);
-    int index_po = trans_buff[ptr_to_trans_buff].page_offset    & (ST_SET*ST_WAY - 1);
-    int index_ps = trans_buff[ptr_to_trans_buff].page_signature & (ST_SET*ST_WAY - 1);
-    int index_pa = trans_buff[ptr_to_trans_buff].page_address   & (FT_PAGES_TOTAL - 1);
+    int index_pn = trans_buff[ptr_to_trans_buff].page_number   ;
+    int index_po = trans_buff[ptr_to_trans_buff].page_offset   ;
+    int index_ps = trans_buff[ptr_to_trans_buff].page_signature;
+    int index_pa = trans_buff[ptr_to_trans_buff].page_address  ;
 
     total_training_count++;
     if(useful) {

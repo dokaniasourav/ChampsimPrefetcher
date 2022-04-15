@@ -10,7 +10,9 @@ PATTERN_TABLE PT;
 PREFETCH_FILTER FILTER;
 GLOBAL_REGISTER GHR;
 
-void CACHE::prefetcher_initialize() {}
+void CACHE::prefetcher_initialize() {
+    std::cout << "SPP-DEV original prefetcher" << std::endl;
+}
 
 void CACHE::prefetcher_cycle_operate() {}
 
@@ -32,10 +34,8 @@ CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip, uint8_t cache_hit, u
     // Percentage of useful prefetch
     GHR.global_accuracy = GHR.pf_issued ? ((100 * GHR.pf_useful) / GHR.pf_issued) : 0;
 
-    SPP_DP<< std::endl
-                << "[ChampSim] " << __func__ << " addr: " << hex << addr << " cache_line: "
-                << (addr >> LOG2_BLOCK_SIZE);
-                   std::cout << " page: " << page << " page_offset: " << dec << page_offset << std::endl;);
+    SPP_DP(std::cout << "[ChampSim] " << __func__ << " addr: " << hex << addr << " cache_line: "
+    << (addr >> LOG2_BLOCK_SIZE) " page: " << page << " page_offset: " << dec << page_offset << std::endl;);
 
     // Stage 1: Read and update a sig stored in ST
     // last_sig and delta are used to update (sig, delta) correlation in PT

@@ -34,28 +34,57 @@ files=(
 #      )
 
 prefs=(
-      "ppf_spp_dev"
+      "spp_dev"
       )
 
 #Looping through all the pre-fetchers
 for pref in "${prefs[@]}"
 do
+
+  pref_cpp_file="prefetcher/$pref/$pref.cc"
+  if [ -f "$pref_cpp_file" ]; then
+    echo "$pref_cpp_file exists, proceed submit new jobs"
+  else
+    echo
+    echo "$pref_cpp_file does not exist, check the pf folder. We will exit now"
+    exit
+  fi
+
   python3 set_pref_name.py "$pref"
-  ./config.py my_config.json
+
+  check_pf=$(grep "\"prefetcher\": \"$pref\"" my_config.json -wc)
+  if [ "$check_pf" == "0" ]; then
+    echo
+    echo "Prefetcher $pref not set, some error must have occurred. We will exit now"
+    exit
+  fi
+
   pref2=$(echo "$pref" | tr _ -)
-
   echo "Delete $pref2 from bin folder"
-  rm "bin/champsim_$pref2"
-
+  bin_file="bin/champsim_$pref2"
+  rm "$bin_file" "bin/champsim"
   echo "Starting build of $pref2 prefetcher"
+
+  ./config.py my_config.json
   make
-  cp bin/champsim "bin/champsim_$pref2"
+
+  cp bin/champsim "$bin_file"
   rm bin/champsim
+
+  if [ -f "$bin_file" ]; then
+    echo
+    echo "$bin_file exists, proceed submit new jobs"
+  else
+    echo
+    echo "$bin_file does not exist, some error in make command. We will exit now"
+    exit
+  fi
+
   echo "Copied and removed"
   echo ""
-  ls bin
 
-  for i in {5..8}
+
+  for i in {0..19}
   do
     echo ""
     echo "Submitting job for the file ${files[$i]} with $pref2 prefetcher"

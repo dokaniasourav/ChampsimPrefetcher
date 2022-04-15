@@ -83,17 +83,16 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
             << hex << addr << " cache_line: " << (addr >> LOG2_BLOCK_SIZE);
             std::cout << " page: " << page << " page_offset: " << dec << page_offset
             << std::endl;);
-    /**/
+    /*
     // Stage 1: Read and update a sig stored in ST
     // last_sig and delta are used to update (sig, delta) correlation in PT
     // curr_sig is used to read prefetch candidates in PT
 
     // Also check the prefetch filter in parallel to update global accuracy
     // counters
-    /**/
+    */
 
     ST.read_and_update_sig(page, page_offset, last_sig, curr_sig, delta);
-
     FILTER.check(addr, L2C_DEMAND);
 
     // Stage 2: Update delta patterns stored in PT
@@ -126,6 +125,30 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                     entry_values.page_address = addr;
                     entry_values.pf_address = pf_address;
 
+                    MOVE_PTR_UP(transfer_buffer_index);
+
+                    /**********  Update the entry of old transfer buffer entry  ********************************/
+                    uint64_t old_pf_address = trans_buff[transfer_buffer_index].pf_address;
+                    if (inverted_address.find(old_pf_address) != inverted_address.end()) {
+                        for (uint32_t i = 0; i < inverted_address[old_pf_address].size(); ++i) {
+                            if (inverted_address[old_pf_address][i] == transfer_buffer_index) {
+                                inverted_address[old_pf_address].erase(inverted_address[old_pf_address].begin() + i);
+                                break;
+                            }
+                        }
+                        if (inverted_address[old_pf_address].size() == 0) {
+                            inverted_address.erase(old_pf_address);
+                        }
+                    }
+                    inverted_address[pf_address].push_back(transfer_buffer_index);
+
+                    if(trans_buff[transfer_buffer_index].valid == 1) {
+                        retrain_ppf(transfer_buffer_index, 0);
+                    }
+                    entry_values.valid = 1;
+                    entry_values.last_pred = ppf_value;
+                    trans_buff[transfer_buffer_index] = entry_values;
+
                     int ppf_value = ppf_decision(entry_values);
                     if(ppf_value > PPF_THRESHOLD) {
                         true_prediction_count++;
@@ -146,27 +169,6 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                                                      << " GHR.pf_useful: " << GHR.pf_useful << std::endl;);
                                     /**/
                                 }
-                                MOVE_PTR_UP(transfer_buffer_index);
-                                uint64_t old_pf_address = trans_buff[transfer_buffer_index].pf_address;
-                                if (inverted_address.find(old_pf_address) != inverted_address.end()) {
-                                    for (uint32_t i = 0; i < inverted_address[old_pf_address].size(); ++i) {
-                                        if (inverted_address[old_pf_address][i] == transfer_buffer_index) {
-                                            inverted_address[old_pf_address].erase(inverted_address[old_pf_address].begin() + i);
-                                            break;
-                                        }
-                                    }
-                                    if (inverted_address[old_pf_address].size() == 0) {
-                                        inverted_address.erase(old_pf_address);
-                                    }
-                                }
-                                inverted_address[pf_address].push_back(transfer_buffer_index);
-
-                                if(trans_buff[transfer_buffer_index].valid == 1) {
-                                    retrain_ppf(transfer_buffer_index, 0);
-                                }
-                                entry_values.valid = 1;
-                                entry_values.last_pred = ppf_value;
-                                trans_buff[transfer_buffer_index] = entry_values;
                                 /**/
                                 SPP_DP(std::cout << "[ChampSim] " << __func__ << " base_addr: " << hex << base_addr
                                                  << " pf_address: "

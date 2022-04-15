@@ -1,0 +1,23 @@
+Started running file 607.cactuBSSN_s-2421B.champsimtrace.xz at time Thu Apr 14 13:08:05 CDT 2022 with prefetcher ppf-spp-dev
+
+*** ChampSim Multicore Out-of-Order Simulator ***
+
+Warmup Instructions: 200000000
+Simulation Instructions: 1000000000
+Number of CPUs: 1
+Off-chip DRAM Size: 4 GiB Channels: 1 Width: 64-bit Data Rate: 3200 MT/s
+
+VirtualMemory physical capacity: 8588881920 num_ppages: 2096895
+VirtualMemory page size: 4096 log2_page_size: 12
+
+CPU 0 runs /home/faculty/p/pgratz/dpc3_traces/607.cactuBSSN_s-2421B.champsimtrace.xz
+CPU 0 Bimodal branch predictor
+Basic BTB sets: 1024 ways: 8 indirect buffer size: 4096 RAS size: 64
+cpu0_L2CSPP DEV Prefetcher
+cpu0_L2C -- Directory Name = ./data/ppf-spp-dev_20220414130805_607
+Heartbeat CPU 0 instructions: 10000001 cycles: 3699673 heartbeat IPC: 2.70294 cumulative IPC: 2.70294 (Simulation time: 0 hr 0 min 56 sec) 
+Heartbeat CPU 0 instructions: 20000004 cycles: 7398096 heartbeat IPC: 2.70386 cumulative IPC: 2.7034 (Simulation time: 0 hr 1 min 53 sec) 
+Heartbeat CPU 0 instructions: 30000002 cycles: 11097689 heartbeat IPC: 2.703 cumulative IPC: 2.70327 (Simulation time: 0 hr 2 min 50 sec) 
+Heartbeat CPU 0 instructions: 40000002 cycles: 14797209 heartbeat IPC: 2.70305 cumulative IPC: 2.70321 (Simulation time: 0 hr 3 min 46 sec) 
+Heartbeat CPU 0 instructions: 50000003 cycles: 18496822 heartbeat IPC: 2.70299 cumulative IPC: 2.70317 (Simulation time: 0 hr 4 min 43 sec) 
+***************** Done with 607.cactuBSSN_s-2421B.champsimtrace.xz using ppf-spp-dev, on Thu Apr 14 13:13:14 CDT 2022 ******************
