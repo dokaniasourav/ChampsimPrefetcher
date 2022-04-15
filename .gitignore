@@ -2,6 +2,10 @@
 /logs
 /bin
 /obj
-*.d
-*.o
-*.log
+**/*.d
+**/*.log
+/btb/basic_btb/basic_btb.o
+/branch/bimodal1/bimodal.o
+/src/*.o
+/prefetcher/*/*.o
+/replacement/*/*.o
