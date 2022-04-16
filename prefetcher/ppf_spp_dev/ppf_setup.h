@@ -80,22 +80,37 @@ int FEATURE_VAR_NAME_6[NUM_FT_INST_ADD];
 
 /*********************************************************************************************************************/
 #define REC_TB_SIZE 2048
+
+#define RECORDER_VAR_NAME_01 total_training
+#define RECORDER_VAR_NAME_02 useful_training
+#define RECORDER_VAR_NAME_03 total_prediction
+#define RECORDER_VAR_NAME_04 true_prediction
+#define RECORDER_VAR_NAME_05 total_prefetch
+#define RECORDER_VAR_NAME_06 useful_prefetch
+#define RECORDER_VAR_NAME_07 cache_operate
+#define RECORDER_VAR_NAME_08 cache_hit
+#define RECORDER_VAR_NAME_09 cycle_operate
+#define RECORDER_VAR_NAME_10 add_repl_count
+#define RECORDER_VAR_NAME_11 add_push_count
+#define RECORDER_VAR_NAME_12 success_pref
+
+
 struct recorder_str {
-    uint64_t total_training;
-    uint64_t useful_training;
-    uint64_t total_prediction;
-    uint64_t true_prediction;
-    uint64_t total_prefetch;
-    uint64_t useful_prefetch;
-    uint64_t cache_operate;
-    uint64_t cache_hit;
-    uint64_t cycle_operate;
-    uint64_t add_repl_count;
-    uint64_t add_push_count;
+    uint64_t RECORDER_VAR_NAME_01;
+    uint64_t RECORDER_VAR_NAME_02;
+    uint64_t RECORDER_VAR_NAME_03;
+    uint64_t RECORDER_VAR_NAME_04;
+    uint64_t RECORDER_VAR_NAME_05;
+    uint64_t RECORDER_VAR_NAME_06;
+    uint64_t RECORDER_VAR_NAME_07;
+    uint64_t RECORDER_VAR_NAME_08;
+    uint64_t RECORDER_VAR_NAME_09;
+    uint64_t RECORDER_VAR_NAME_10;
+    uint64_t RECORDER_VAR_NAME_11;
+    uint64_t RECORDER_VAR_NAME_12;
 };
 
 std::string dir_name;
-
 int record_table_ind = 0;
 uint64_t next_cycle_update = 0;
 recorder_str record_table[REC_TB_SIZE];

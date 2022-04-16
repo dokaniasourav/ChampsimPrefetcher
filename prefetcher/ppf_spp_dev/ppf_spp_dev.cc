@@ -37,7 +37,7 @@ void CACHE::prefetcher_initialize() {
 
     for(auto & rec_ind : record_table) {
         rec_ind = {0, 0, 0, 0, 0, 0,
-                   0, 0, 0, 0};
+                   0, 0, 0, 0, 0};
     }
 
     /********************* CREATE DATA DIRECTORY**************************/
@@ -169,6 +169,7 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                             // Use addr (not base_addr) to obey the same
                             // physical page boundary
                             if(success == 1) {
+                                record_table[record_table_ind].success_pref++;
                                 if (confidence_q[i] >= FILL_THRESHOLD) {
                                     GHR.pf_issued++;
                                     if (GHR.pf_issued > GLOBAL_COUNTER_MAX) {
@@ -230,19 +231,35 @@ void CACHE::prefetcher_final_stats() {
     std::cout << "Printing the final status " << std::endl;
 
     my_file.open(dir_name + "/prefetcher_stat_" + NAME + ".csv");
-    my_file << "index, total_training, useful_training, total_prediction, true_prediction, "
-               "total_prefetch, useful_prefetch, cache_operate, cache_hit, cycle_operate_count" << std::endl;
-    for (int i = 0; i < record_table_ind; i++) {
-        my_file << i
-                << ", "  << record_table[i].total_training
-                << ", "  << record_table[i].useful_training
-                << ", "  << record_table[i].total_prediction
-                << ", "  << record_table[i].true_prediction
-                << ", "  << record_table[i].total_prefetch
-                << ", "  << record_table[i].useful_prefetch
-                << ", "  << record_table[i].cache_operate
-                << ", "  << record_table[i].cache_hit
-                << ", "  << record_table[i].cycle_operate
+    my_file <<  "index,"
+                ", " DEF_AS_STR(RECORDER_VAR_NAME_01)
+                ", " DEF_AS_STR(RECORDER_VAR_NAME_02)
+                ", " DEF_AS_STR(RECORDER_VAR_NAME_03)
+                ", " DEF_AS_STR(RECORDER_VAR_NAME_04)
+                ", " DEF_AS_STR(RECORDER_VAR_NAME_05)
+                ", " DEF_AS_STR(RECORDER_VAR_NAME_06)
+                ", " DEF_AS_STR(RECORDER_VAR_NAME_07)
+                ", " DEF_AS_STR(RECORDER_VAR_NAME_08)
+                ", " DEF_AS_STR(RECORDER_VAR_NAME_09)
+                ", " DEF_AS_STR(RECORDER_VAR_NAME_10)
+                ", " DEF_AS_STR(RECORDER_VAR_NAME_11)
+                ", " DEF_AS_STR(RECORDER_VAR_NAME_12)
+                << std::endl;
+
+    for (auto index = 0; index < record_table_ind; index++) {
+        my_file << index
+                << ", " << record_table[index].RECORDER_VAR_NAME_01
+                << ", " << record_table[index].RECORDER_VAR_NAME_02
+                << ", " << record_table[index].RECORDER_VAR_NAME_03
+                << ", " << record_table[index].RECORDER_VAR_NAME_04
+                << ", " << record_table[index].RECORDER_VAR_NAME_05
+                << ", " << record_table[index].RECORDER_VAR_NAME_06
+                << ", " << record_table[index].RECORDER_VAR_NAME_07
+                << ", " << record_table[index].RECORDER_VAR_NAME_08
+                << ", " << record_table[index].RECORDER_VAR_NAME_09
+                << ", " << record_table[index].RECORDER_VAR_NAME_10
+                << ", " << record_table[index].RECORDER_VAR_NAME_11
+                << ", " << record_table[index].RECORDER_VAR_NAME_12
                 << std::endl;
     }
     my_file << std::endl;
@@ -250,13 +267,14 @@ void CACHE::prefetcher_final_stats() {
 
 
     my_file.open(dir_name + "/inverted_address_" + NAME + ".csv");
-    my_file << "index, address, array, "
-               DEF_AS_STR(FEATURE_VAR_NAME_1) ", "
-               DEF_AS_STR(FEATURE_VAR_NAME_2) ", "
-               DEF_AS_STR(FEATURE_VAR_NAME_3) ", "
-               DEF_AS_STR(FEATURE_VAR_NAME_4) ", "
-               DEF_AS_STR(FEATURE_VAR_NAME_5) ", "
-               DEF_AS_STR(FEATURE_VAR_NAME_6) ", " << std::endl;
+    my_file << "index, address, array"
+               ", " DEF_AS_STR(FEATURE_VAR_NAME_1)
+               ", " DEF_AS_STR(FEATURE_VAR_NAME_2)
+               ", " DEF_AS_STR(FEATURE_VAR_NAME_3)
+               ", " DEF_AS_STR(FEATURE_VAR_NAME_4)
+               ", " DEF_AS_STR(FEATURE_VAR_NAME_5)
+               ", " DEF_AS_STR(FEATURE_VAR_NAME_6)
+               << std::endl;
 
     uint32_t ind = 0;
     uint32_t ind_val;
