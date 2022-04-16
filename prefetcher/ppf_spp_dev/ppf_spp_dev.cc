@@ -1,5 +1,5 @@
 #include <iostream>
-#include <stdint.h>
+#include <cstdint>
 #include "ppf_spp_dev.h"
 #include "ppf_setup.h"
 #include "cache.h"
@@ -9,7 +9,7 @@ PATTERN_TABLE PT;
 PREFETCH_FILTER FILTER;
 GLOBAL_REGISTER GHR;
 
-unordered_map<uint64_t, vector<int>> inverted_address;
+unordered_map<uint64_t, vector<uint32_t>> inverted_address;
 extern string trace_name;
 
 void CACHE::prefetcher_initialize() {
@@ -108,7 +108,6 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
 #endif
         uint32_t lookahead_way = PT_WAY;
         PT.read_pattern(curr_sig, delta_q, confidence_q, lookahead_way, lookahead_conf, pf_q_tail, depth);
-
         do_lookahead = 0;
         for (uint32_t i = pf_q_head; i < pf_q_tail; i++) {
             if (confidence_q[i] >= PF_THRESHOLD) {
@@ -116,21 +115,19 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
 
                 if ((addr & ~(PAGE_SIZE - 1)) == (pf_address & ~(PAGE_SIZE - 1))) {
                     // Prefetch request is in the same physical page
-
                     transfer_buff_entry entry_values;
-                    entry_values.page_number = page;
-                    entry_values.page_offset = page_offset;
-                    entry_values.page_signature = curr_sig;
-                    entry_values.page_address = addr;
-                    entry_values.pf_address = pf_address;
-
-                    MOVE_PTR_UP(transfer_buffer_index);
+                    entry_values.ind_page_number = page;
+                    entry_values.ind_page_offset = page_offset;
+                    entry_values.ind_page_signature = curr_sig;
+                    entry_values.ind_page_address = addr;
+                    entry_values.ind_prefetch_add = pf_address;
+                    MOVE_PTR_UP(t_buffer_index);
 
                     /**********  Update the entry of old transfer buffer entry  ********************************/
-                    uint64_t old_pf_address = trans_buff[transfer_buffer_index].pf_address;
+                    uint64_t old_pf_address = trans_buff[t_buffer_index].ind_prefetch_add;
                     if (inverted_address.find(old_pf_address) != inverted_address.end()) {
                         for (uint32_t j = 0; j < inverted_address[old_pf_address].size(); ++j) {
-                            if (inverted_address[old_pf_address][j] == transfer_buffer_index) {
+                            if (inverted_address[old_pf_address][j] == t_buffer_index) {
                                 inverted_address[old_pf_address].erase(inverted_address[old_pf_address].begin() + j);
                                 break;
                             }
@@ -139,16 +136,17 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                             inverted_address.erase(old_pf_address);
                         }
                     }
-                    inverted_address[pf_address].push_back(transfer_buffer_index);
+                    inverted_address[pf_address].push_back(t_buffer_index);
 
-                    if(trans_buff[transfer_buffer_index].valid == 1) {
-                        retrain_ppf(transfer_buffer_index, 0);
+                    /**********  New entries to the transfer buffer  ********************************/
+                    if(trans_buff[t_buffer_index].valid == 1) {
+                        retrain_ppf(t_buffer_index, 0);
                     }
 
                     int ppf_value = ppf_decision(entry_values);
                     entry_values.valid = 1;
                     entry_values.last_pred = ppf_value;
-                    trans_buff[transfer_buffer_index] = entry_values;
+                    trans_buff[t_buffer_index] = entry_values;
 
                     if(ppf_value > PPF_THRESHOLD) {
                         true_prediction_count++;
@@ -167,7 +165,7 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                                     /*
                                     SPP_DP(std::cout << "[ChampSim] SPP L2 prefetch issued GHR.pf_issued: " << GHR.pf_issued
                                                      << " GHR.pf_useful: " << GHR.pf_useful << std::endl;);
-                                    /**/
+                                    */
                                 }
                                 /*
                                 SPP_DP(std::cout << "[ChampSim] " << __func__ << " base_addr: " << hex << base_addr
@@ -179,7 +177,7 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                                                std::cout << " depth: " << i << " fill_level: "
                                                          << ((confidence_q[i] >= FILL_THRESHOLD) ? FILL_L2 : FILL_LLC)
                                                          << std::endl;);
-                                                         /**/
+                                                         */
                             }
                         }
                     } else {
@@ -269,22 +267,22 @@ void CACHE::prefetcher_final_stats() {
         my_file << "), ( ";
 
         for(auto & el: it.second) {
-            my_file << trans_buff[el].page_number << " ";
+            my_file << trans_buff[el].ind_page_number << " ";
         }
         my_file << "), ( ";
 
         for(auto & el: it.second) {
-            my_file << trans_buff[el].page_offset << " ";
+            my_file << trans_buff[el].ind_page_offset << " ";
         }
         my_file << "), ( ";
 
         for(auto & el: it.second) {
-            my_file << trans_buff[el].page_address << " ";
+            my_file << trans_buff[el].ind_page_address << " ";
         }
         my_file << "), ( ";
 
         for(auto & el: it.second) {
-            my_file << trans_buff[el].page_signature << " ";
+            my_file << trans_buff[el].ind_page_signature << " ";
         }
         my_file << ")" << std::endl;
     }
@@ -379,7 +377,7 @@ void SIGNATURE_TABLE::read_and_update_sig(uint64_t page, uint32_t page_offset, u
                 sig[set][match] = 0;
                 curr_sig = sig[set][match];
                 last_offset[set][match] = page_offset;
-                /*
+                /**
                 SPP_DP(std::cout << "[ST] " << __func__ << " miss set: " << set << " way: " << match;
                                std::cout << " valid: " << valid[set][match] << " victim tag: " << hex << tag[set][match]
                                          << " new tag: " << partial_page;
@@ -614,7 +612,7 @@ bool PREFETCH_FILTER::check(uint64_t check_addr, FILTER_REQUEST filter_request) 
 
         case L2C_DEMAND:
             if ((remainder_tag[quotient] == remainder) && (useful[quotient] == 0)) {
-                useful[quotient] = 1;
+                useful[quotient] = true;
                 if (valid[quotient])
                     GHR.pf_useful++;
                 /**
@@ -629,7 +627,6 @@ bool PREFETCH_FILTER::check(uint64_t check_addr, FILTER_REQUEST filter_request) 
                                          << std::endl;);
                 **/
             }
-
             if(inverted_address.find(check_addr) != inverted_address.end()) {
                 for(auto & ind: inverted_address[check_addr]) {
                     if(trans_buff[ind].valid == 1) {

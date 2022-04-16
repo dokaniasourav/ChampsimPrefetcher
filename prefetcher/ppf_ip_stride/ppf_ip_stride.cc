@@ -383,11 +383,9 @@ int func_ip_fold_1(uint64_t ip) {
 }
 
 void retrain_ppf(transfer_buff_entry *trans_buff, int ptr_to_trans_buff, int useful) {
-    int index_ip_fold_1;
-    int index_degree;
 
-    index_ip_fold_1 = trans_buff[ptr_to_trans_buff].ip_fold_1;
-    index_degree = trans_buff[ptr_to_trans_buff].pf_degree - 1;
+    int index_ip_fold_1 = trans_buff[ptr_to_trans_buff].ip_fold_1;
+    int index_degree = trans_buff[ptr_to_trans_buff].pf_degree - 1;
     // index_degree is 1 less than the actual degree, e.g., for degree=1, it should index entry number 0
 
     total_training_count++;

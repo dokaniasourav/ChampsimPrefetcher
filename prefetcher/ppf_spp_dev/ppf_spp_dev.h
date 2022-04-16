@@ -85,7 +85,7 @@ public:
     uint32_t c_delta[PT_SET][PT_WAY]{}, c_sig[PT_SET]{};
 
     PATTERN_TABLE() {
-        /*
+        /**
         std::cout << std::endl << "Initialize PATTERN TABLE" << std::endl;
         std::cout << "PT_SET: " << PT_SET << std::endl;
         std::cout << "PT_WAY: " << PT_WAY << std::endl;

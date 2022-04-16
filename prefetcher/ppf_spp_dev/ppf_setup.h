@@ -25,25 +25,26 @@ constexpr int INCREMENT(int &X) {
 struct transfer_buff_entry {
     int valid = 0;
     int last_pred = 0;                            // indicates the prediction that was made by Perceptron
-    uint64_t pf_address;
 
-    uint32_t page_number = 0;
-    uint32_t page_offset = 0;
-    uint32_t page_address = 0;
-    uint32_t page_signature = 0;
+    uint32_t ind_page_number = 0;
+    uint32_t ind_page_offset = 0;
+    uint32_t ind_page_address = 0;
+    uint32_t ind_page_signature = 0;
+    uint32_t ind_prefetch_add = 0;
 };
 
 transfer_buff_entry trans_buff[TRANSFER_BUFFER_ENTRIES];
 
-int transfer_buffer_index;
+uint32_t t_buffer_index;
 
 constexpr int PPF_THRESHOLD = 0;
 
-constexpr int FT_PAGE_BIT_LOC = 10;
-constexpr int FT_PAGES_TOTAL = (1 << FT_PAGE_BIT_LOC);
+#define NUM_FT_PAGE_ADD (1 << 10)
+#define NUM_FT_PREF_ADD (1 << 10)
 
 int ft_page_bias;
-int ft_page_add[FT_PAGES_TOTAL];
+int ft_page_add[NUM_FT_PAGE_ADD];
+int ft_pref_add[NUM_FT_PREF_ADD];
 int ft_page_num[ST_SET * ST_WAY];
 int ft_page_off[ST_SET * ST_WAY];
 int ft_page_sig[ST_SET * ST_WAY];
@@ -80,14 +81,15 @@ uint64_t total_prediction_count = 0;
 uint64_t true_prediction_count = 0;
 /*********************************************************************************************************************/
 
-void retrain_ppf(int trans_buffer_index, int useful);
+void retrain_ppf(uint32_t index, int useful);
 int ppf_decision(transfer_buff_entry entry_values);
 
-void retrain_ppf(int ptr_to_trans_buff, int useful) {
-    int index_pn = trans_buff[ptr_to_trans_buff].page_number   ;
-    int index_po = trans_buff[ptr_to_trans_buff].page_offset   ;
-    int index_ps = trans_buff[ptr_to_trans_buff].page_signature;
-    int index_pa = trans_buff[ptr_to_trans_buff].page_address  ;
+void retrain_ppf(uint32_t index, int useful) {
+    uint32_t index_pg_no = trans_buff[index].ind_page_number     & (ST_SET * ST_WAY - 1);
+    uint32_t index_pg_of = trans_buff[index].ind_page_offset     & (ST_SET * ST_WAY - 1);
+    uint32_t index_pg_si = trans_buff[index].ind_page_signature  & (ST_SET * ST_WAY - 1);
+    uint32_t index_pg_ad = trans_buff[index].ind_page_address    & (NUM_FT_PAGE_ADD - 1);
+    uint32_t index_pf_ad = trans_buff[index].ind_page_address    & (NUM_FT_PAGE_ADD - 1);
 
     total_training_count++;
     if(useful) {
@@ -95,39 +97,41 @@ void retrain_ppf(int ptr_to_trans_buff, int useful) {
     }
 
     if (useful) {
-        INCREMENT(ft_page_num[index_pn]);
-        INCREMENT(ft_page_off[index_po]);
-        INCREMENT(ft_page_sig[index_ps]);
-        INCREMENT(ft_page_add[index_pa]);
+        INCREMENT(ft_page_num[index_pg_no]);
+        INCREMENT(ft_page_off[index_pg_of]);
+        INCREMENT(ft_page_sig[index_pg_si]);
+        INCREMENT(ft_page_add[index_pg_ad]);
+        INCREMENT(ft_pref_add[index_pf_ad]);
         INCREMENT(ft_page_bias);
     } else {
-        DECREMENT(ft_page_num[index_pn]);
-        DECREMENT(ft_page_off[index_po]);
-        DECREMENT(ft_page_sig[index_ps]);
-        DECREMENT(ft_page_add[index_pa]);
+        DECREMENT(ft_page_num[index_pg_no]);
+        DECREMENT(ft_page_off[index_pg_of]);
+        DECREMENT(ft_page_sig[index_pg_si]);
+        DECREMENT(ft_page_add[index_pg_ad]);
+        DECREMENT(ft_pref_add[index_pf_ad]);
         DECREMENT(ft_page_bias);
     }
-    trans_buff[ptr_to_trans_buff].valid = 0;
+    trans_buff[index].valid = 0;
 }
 
 /*
  * Returns the sum of weight index array
  * */
 int ppf_decision(transfer_buff_entry entry_values) {
-
-    int index_pn = entry_values.page_number    & (ST_SET*ST_WAY - 1);
-    int index_po = entry_values.page_offset    & (ST_SET*ST_WAY - 1);
-    int index_ps = entry_values.page_signature & (ST_SET*ST_WAY - 1);
-    int index_pa = entry_values.page_address   & (FT_PAGES_TOTAL - 1);
+    uint32_t index_pg_no = entry_values.ind_page_number    & (ST_SET * ST_WAY - 1);
+    uint32_t index_pg_of = entry_values.ind_page_offset    & (ST_SET * ST_WAY - 1);
+    uint32_t index_pg_si = entry_values.ind_page_signature & (ST_SET * ST_WAY - 1);
+    uint32_t index_pg_ad = entry_values.ind_page_address   & (NUM_FT_PAGE_ADD - 1);
+    uint32_t index_pf_ad = entry_values.ind_prefetch_add   & (NUM_FT_PAGE_ADD - 1);
 
     int feature_sum = ft_page_bias;
-    feature_sum += ft_page_num[index_pn];
-    feature_sum += ft_page_off[index_po];
-    feature_sum += ft_page_sig[index_ps];
-    feature_sum += ft_page_add[index_pa];
+    feature_sum += ft_page_num[index_pg_no];
+    feature_sum += ft_page_off[index_pg_of];
+    feature_sum += ft_page_sig[index_pg_si];
+    feature_sum += ft_page_add[index_pg_ad];
+    feature_sum += ft_pref_add[index_pf_ad];
 
     total_prediction_count++;
-
     return feature_sum;
 }
 
