@@ -235,7 +235,8 @@ void CACHE::prefetcher_final_stats() {
 
     my_file.open(dir_name + "/inverted_address_" + NAME + ".csv");
     my_file << "index, address, array, page_number, page_offset, page_signature, page_address, pref_address" << std::endl;
-    int ind = 0;
+    uint32_t ind = 0;
+    uint32_t ind_val;
     for(auto & it:inverted_address) {
         my_file << ++ind << ", " << it.first << ", ( ";
         for(auto & el: it.second) {
@@ -244,27 +245,32 @@ void CACHE::prefetcher_final_stats() {
         my_file << "), ( ";
 
         for(auto & el: it.second) {
-            my_file << ft_page_num[trans_buff[el].ind_page_number] << " ";
+            ind_val =  trans_buff[el].ind_page_number & (ST_SET * ST_WAY - 1);
+            my_file << "{" << ind_val << ":" << ft_page_num[ind_val] << "} ";
         }
         my_file << "), ( ";
 
         for(auto & el: it.second) {
-            my_file << ft_page_off[trans_buff[el].ind_page_offset] << " ";
+            ind_val =  trans_buff[el].ind_page_offset & (ST_SET * ST_WAY - 1);
+            my_file << "{" << ind_val << ":" << ft_page_off[ind_val] << "} ";
         }
         my_file << "), ( ";
 
         for(auto & el: it.second) {
-            my_file << ft_page_sig[trans_buff[el].ind_page_signature] << " ";
+            ind_val =  trans_buff[el].ind_page_signature & (ST_SET * ST_WAY - 1);
+            my_file << "{" << ind_val << ":" << ft_page_sig[ind_val] << "} ";
         }
         my_file << "), ( ";
 
         for(auto & el: it.second) {
-            my_file << ft_page_add[trans_buff[el].ind_page_address] << " ";
+            ind_val =  trans_buff[el].ind_page_address & (ST_SET * ST_WAY - 1);
+            my_file << "{" << ind_val << ":" << ft_page_add[ind_val] << "} ";
         }
         my_file << "), ( ";
 
         for(auto & el: it.second) {
-            my_file << ft_pref_add [trans_buff[el].ind_prefetch_add] << " ";
+            ind_val =  trans_buff[el].ind_prefetch_add & (ST_SET * ST_WAY - 1);
+            my_file << "{" << ind_val << ":" << ft_pref_add[ind_val] << "} ";
         }
         my_file << ")" << std::endl;
     }
