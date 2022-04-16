@@ -89,7 +89,7 @@ void retrain_ppf(uint32_t index, int useful) {
     uint32_t index_pg_of = trans_buff[index].ind_page_offset     & (ST_SET * ST_WAY - 1);
     uint32_t index_pg_si = trans_buff[index].ind_page_signature  & (ST_SET * ST_WAY - 1);
     uint32_t index_pg_ad = trans_buff[index].ind_page_address    & (NUM_FT_PAGE_ADD - 1);
-    uint32_t index_pf_ad = trans_buff[index].ind_page_address    & (NUM_FT_PAGE_ADD - 1);
+    uint32_t index_pf_ad = trans_buff[index].ind_prefetch_add    & (NUM_FT_PREF_ADD - 1);
 
     total_training_count++;
     if(useful) {
@@ -122,7 +122,7 @@ int ppf_decision(transfer_buff_entry entry_values) {
     uint32_t index_pg_of = entry_values.ind_page_offset    & (ST_SET * ST_WAY - 1);
     uint32_t index_pg_si = entry_values.ind_page_signature & (ST_SET * ST_WAY - 1);
     uint32_t index_pg_ad = entry_values.ind_page_address   & (NUM_FT_PAGE_ADD - 1);
-    uint32_t index_pf_ad = entry_values.ind_prefetch_add   & (NUM_FT_PAGE_ADD - 1);
+    uint32_t index_pf_ad = entry_values.ind_prefetch_add   & (NUM_FT_PREF_ADD - 1);
 
     int feature_sum = ft_page_bias;
     feature_sum += ft_page_num[index_pg_no];

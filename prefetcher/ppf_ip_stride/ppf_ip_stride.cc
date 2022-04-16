@@ -13,15 +13,15 @@
 
 constexpr int PREFETCH_DEGREE = 3;
 constexpr int TRANSFER_BUFFER_ENTRIES = 2048;                // entries of transfer buffer
-constexpr int NUM_FEATURES_USED = 3;                    // defines the number of features used by us in this perceptron (including bias)
-constexpr int FT_DEGREE_ENTRIES = pow(2, ceil(log2(PREFETCH_DEGREE)));        // entries of degree feature table
-constexpr int FT_IP_FOLD_1_BITS = 10;                    // define the final folding bits of IP as feature 1 (e.g. 10-bit folded IP)
-constexpr int FT_IP_FOLD_1_ENTRIES = 1 << FT_IP_FOLD_1_BITS;        // entries of IP folding 1 feature table
+constexpr int NUM_FEATURES_USED = 3;                         // defines the number of features used by us in this perceptron (including bias)
+constexpr int FT_DEGREE_ENTRIES = 4;    // entries of degree feature table
+constexpr int FT_IP_FOLD_1_BITS = 10;                       // define the final folding bits of IP as feature 1 (e.g. 10-bit folded IP)
+constexpr int FT_IP_FOLD_1_ENTRIES = 1 << FT_IP_FOLD_1_BITS;// entries of IP folding 1 feature table
 
-#define INCREMENT(X) (X = (X==15) ? X : X+1)
-#define DECREMENT(X) (X = (X==-16) ? X : X-1)
-#define THRESHOLD(X) (X = (X>0) ? 1 : 0)
-#define MOVE_PTR_UP(X) (X = (X == (TRANSFER_BUFFER_ENTRIES-1) ? 0 : X+1))
+#define INCREMENT(X)    ((X) = ((X) == 15) ? (X) : (X) + 1)
+#define DECREMENT(X)    ((X) = ((X) ==-16) ? (X) : (X) - 1)
+#define THRESHOLD(X)    ((X) = ((X) >   0) ? 1 : 0)
+#define MOVE_PTR_UP(X)  ((X) = ((X) == (TRANSFER_BUFFER_ENTRIES-1) ? 0 : (X) + 1))
 
 struct tracker_entry {
     uint64_t ip = 0;              // the IP we're tracking

@@ -17,12 +17,15 @@ void CACHE::prefetcher_initialize() {
     srand(time(nullptr));
     ft_page_bias = 0;
     for(int i=0; i < (ST_SET*ST_WAY); i++) {
-        ft_page_num[i] = 10;
-        ft_page_off[i] = 11;
-        ft_page_sig[i] = 12;
+        ft_page_num[i] = 0;
+        ft_page_off[i] = 0;
+        ft_page_sig[i] = 0;
     }
     for(int & pa : ft_page_add) {
-        pa = 13;
+        pa = 0;
+    }
+    for(int & pa : ft_pref_add) {
+        pa = 0;
     }
 
     /********************* CREATE DATA DIRECTORY**************************/
@@ -111,11 +114,11 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                 if ((addr & ~(PAGE_SIZE - 1)) == (pf_address & ~(PAGE_SIZE - 1))) {
                     // Prefetch request is in the same physical page
                     transfer_buff_entry entry_values;
-                    entry_values.ind_page_number = page;
-                    entry_values.ind_page_offset = page_offset;
-                    entry_values.ind_page_signature = curr_sig;
-                    entry_values.ind_page_address = addr;
-                    entry_values.ind_prefetch_add = pf_address;
+                    entry_values.ind_page_number = page        ;     /*  & (ST_SET * ST_WAY - 1); */
+                    entry_values.ind_page_offset = page_offset ;     /*  & (ST_SET * ST_WAY - 1); */
+                    entry_values.ind_page_signature = curr_sig ;     /*  & (ST_SET * ST_WAY - 1); */
+                    entry_values.ind_page_address = addr       ;     /*  & (NUM_FT_PAGE_ADD - 1); */
+                    entry_values.ind_prefetch_add = pf_address ;     /*  & (NUM_FT_PREF_ADD - 1); */
                     MOVE_PTR_UP(t_buffer_index);
 
                     /**********  Update the entry of old transfer buffer entry  ********************************/
@@ -231,7 +234,7 @@ void CACHE::prefetcher_final_stats() {
 
 
     my_file.open(dir_name + "/inverted_address_" + NAME + ".csv");
-    my_file << "index, address, array, page_number, page_offset, page_address, page_signature" << std::endl;
+    my_file << "index, address, array, page_number, page_offset, page_signature, page_address, pref_address" << std::endl;
     int ind = 0;
     for(auto & it:inverted_address) {
         my_file << ++ind << ", " << it.first << ", ( ";
@@ -241,22 +244,27 @@ void CACHE::prefetcher_final_stats() {
         my_file << "), ( ";
 
         for(auto & el: it.second) {
-            my_file << trans_buff[el].ind_page_number << " ";
+            my_file << ft_page_num[trans_buff[el].ind_page_number] << " ";
         }
         my_file << "), ( ";
 
         for(auto & el: it.second) {
-            my_file << trans_buff[el].ind_page_offset << " ";
+            my_file << ft_page_off[trans_buff[el].ind_page_offset] << " ";
         }
         my_file << "), ( ";
 
         for(auto & el: it.second) {
-            my_file << trans_buff[el].ind_page_address << " ";
+            my_file << ft_page_sig[trans_buff[el].ind_page_signature] << " ";
         }
         my_file << "), ( ";
 
         for(auto & el: it.second) {
-            my_file << trans_buff[el].ind_page_signature << " ";
+            my_file << ft_page_add[trans_buff[el].ind_page_address] << " ";
+        }
+        my_file << "), ( ";
+
+        for(auto & el: it.second) {
+            my_file << ft_pref_add [trans_buff[el].ind_prefetch_add] << " ";
         }
         my_file << ")" << std::endl;
     }
