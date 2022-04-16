@@ -13,26 +13,31 @@ unordered_map<uint64_t, vector<uint32_t>> inverted_address;
 extern string trace_name;
 
 void CACHE::prefetcher_initialize() {
-    std::cout << NAME << "SPP DEV Prefetcher" << std::endl;
+    std::cout << NAME << " SPP DEV Prefetcher" << std::endl;
     srand(time(nullptr));
     ft_page_bias = 0;
-    for(int & var_val : FEATURE_VAR_NAME_1) {
+    for(auto & var_val : FEATURE_VAR_NAME_1) {
         var_val = 0;
     }
-    for(int & var_val : FEATURE_VAR_NAME_2) {
+    for(auto & var_val : FEATURE_VAR_NAME_2) {
         var_val = 0;
     }
-    for(int & var_val : FEATURE_VAR_NAME_3) {
+    for(auto & var_val : FEATURE_VAR_NAME_3) {
         var_val = 0;
     }
-    for(int & var_val : FEATURE_VAR_NAME_4) {
+    for(auto & var_val : FEATURE_VAR_NAME_4) {
         var_val = 0;
     }
-    for(int & var_val : FEATURE_VAR_NAME_5) {
+    for(auto & var_val : FEATURE_VAR_NAME_5) {
         var_val = 0;
     }
-    for(int & var_val : FEATURE_VAR_NAME_6) {
+    for(auto & var_val : FEATURE_VAR_NAME_6) {
         var_val = 0;
+    }
+
+    for(auto & rec_ind : record_table) {
+        rec_ind = {0, 0, 0, 0, 0, 0,
+                   0, 0, 0, 0};
     }
 
     /********************* CREATE DATA DIRECTORY**************************/
@@ -54,14 +59,14 @@ void CACHE::prefetcher_initialize() {
 }
 
 void CACHE::prefetcher_cycle_operate() {
-    cycle_operate_count++;
-    if(cycle_operate_count > next_cycle_update) {
+    record_table[record_table_ind].cycle_operate++;
+    if(record_table[record_table_ind].cycle_operate > next_cycle_update) {
         next_cycle_update += CYCLE_UPDATE_INTERVAL;
-        if(record_table_ind <  REC_TB_SIZE) {
-            record_table[record_table_ind] = {total_training_count, useful_training_count, total_prediction_count,
-                                              true_prediction_count, pf_requested, pf_useful,
-                                              cache_operate_count, cache_hit_count, cycle_operate_count};
+        if(record_table_ind <  (REC_TB_SIZE-2)) {
+            record_table[record_table_ind].total_prefetch = pf_requested;
+            record_table[record_table_ind].useful_prefetch = pf_useful;
             record_table_ind++;
+            record_table[record_table_ind] =  record_table[record_table_ind-1];
         }
     }
 }
@@ -73,9 +78,9 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
     uint32_t last_sig = 0, curr_sig = 0, confidence_q[MSHR_SIZE], depth = 0;
     int32_t delta = 0, delta_q[MSHR_SIZE];
 
-    cache_operate_count++;
+    record_table[record_table_ind].cache_operate++;
     if (cache_hit) {
-        cache_hit_count++;
+        record_table[record_table_ind].cache_hit++;
     }
 
     for (uint32_t i = 0; i < MSHR_SIZE; i++) {
@@ -133,7 +138,9 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                     if (inverted_address.find(old_pf_address) != inverted_address.end()) {
                         for (uint32_t j = 0; j < inverted_address[old_pf_address].size(); ++j) {
                             if (inverted_address[old_pf_address][j] == t_buffer_index) {
-                                inverted_address[old_pf_address].erase(inverted_address[old_pf_address].begin() + j);
+                                inverted_address[old_pf_address].erase(
+                                        inverted_address[old_pf_address].begin() + j);
+                                record_table[record_table_ind].add_repl_count++;
                                 break;
                             }
                         }
@@ -141,6 +148,7 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                             inverted_address.erase(old_pf_address);
                         }
                     }
+                    record_table[record_table_ind].add_push_count++;
                     inverted_address[pf_address].push_back(t_buffer_index);
 
                     /**********  New entries to the transfer buffer  ********************************/
@@ -154,7 +162,7 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                     trans_buff[t_buffer_index] = entry_values;
 
                     if(ppf_value > PPF_THRESHOLD) {
-                        true_prediction_count++;
+                        record_table[record_table_ind].true_prediction++;
                         if (FILTER.check(pf_address,
                                          ((confidence_q[i] >= FILL_THRESHOLD) ? SPP_L2C_PREFETCH : SPP_LLC_PREFETCH))) {
                             int success = prefetch_line(pf_address, (confidence_q[i] >= FILL_THRESHOLD), 0);
@@ -225,7 +233,8 @@ void CACHE::prefetcher_final_stats() {
     my_file << "index, total_training, useful_training, total_prediction, true_prediction, "
                "total_prefetch, useful_prefetch, cache_operate, cache_hit, cycle_operate_count" << std::endl;
     for (int i = 0; i < record_table_ind; i++) {
-        my_file << i << ", "  << record_table[i].total_training
+        my_file << i
+                << ", "  << record_table[i].total_training
                 << ", "  << record_table[i].useful_training
                 << ", "  << record_table[i].total_prediction
                 << ", "  << record_table[i].true_prediction

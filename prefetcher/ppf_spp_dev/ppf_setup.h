@@ -90,6 +90,8 @@ struct recorder_str {
     uint64_t cache_operate;
     uint64_t cache_hit;
     uint64_t cycle_operate;
+    uint64_t add_repl_count;
+    uint64_t add_push_count;
 };
 
 std::string dir_name;
@@ -99,14 +101,6 @@ uint64_t next_cycle_update = 0;
 recorder_str record_table[REC_TB_SIZE];
 constexpr int CYCLE_UPDATE_INTERVAL = 1000000;
 
-uint64_t cache_operate_count = 0;
-uint64_t cycle_operate_count = 0;
-uint64_t cache_hit_count = 0;
-
-uint64_t total_training_count = 0;
-uint64_t useful_training_count = 0;
-uint64_t total_prediction_count = 0;
-uint64_t true_prediction_count = 0;
 /*********************************************************************************************************************/
 
 void retrain_ppf(uint32_t index, int useful);
@@ -130,9 +124,9 @@ void retrain_ppf(uint32_t index, int useful) {
         DECREMENT(INDEX_TO(FEATURE_VAR_NAME_6, trans_buff[index].FEATURE_IND_NAME_6 ));
     }
     trans_buff[index].valid = 0;
-    total_training_count++;
+    record_table[record_table_ind].total_training++;
     if(useful) {
-        useful_training_count++;
+        record_table[record_table_ind].useful_training++;
     }
 }
 
@@ -149,7 +143,7 @@ int ppf_decision(transfer_buff_entry entry_values) {
     feature_sum += INDEX_TO(FEATURE_VAR_NAME_5, entry_values.FEATURE_IND_NAME_5);
     feature_sum += INDEX_TO(FEATURE_VAR_NAME_6, entry_values.FEATURE_IND_NAME_6);
 
-    total_prediction_count++;
+    record_table[record_table_ind].total_prediction++;
     return feature_sum;
 }
 
