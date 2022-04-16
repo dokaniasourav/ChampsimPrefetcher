@@ -16,16 +16,23 @@ void CACHE::prefetcher_initialize() {
     std::cout << NAME << "SPP DEV Prefetcher" << std::endl;
     srand(time(nullptr));
     ft_page_bias = 0;
-    for(int i=0; i < (ST_SET*ST_WAY); i++) {
-        ft_page_num[i] = 0;
-        ft_page_off[i] = 0;
-        ft_page_sig[i] = 0;
+    for(int & var_val : FEATURE_VAR_NAME_1) {
+        var_val = 0;
     }
-    for(int & pa : ft_page_add) {
-        pa = 0;
+    for(int & var_val : FEATURE_VAR_NAME_2) {
+        var_val = 0;
     }
-    for(int & pa : ft_pref_add) {
-        pa = 0;
+    for(int & var_val : FEATURE_VAR_NAME_3) {
+        var_val = 0;
+    }
+    for(int & var_val : FEATURE_VAR_NAME_4) {
+        var_val = 0;
+    }
+    for(int & var_val : FEATURE_VAR_NAME_5) {
+        var_val = 0;
+    }
+    for(int & var_val : FEATURE_VAR_NAME_6) {
+        var_val = 0;
     }
 
     /********************* CREATE DATA DIRECTORY**************************/
@@ -39,7 +46,6 @@ void CACHE::prefetcher_initialize() {
     } else {
         dir_name = oss.str() + std::to_string(rand() % 10000);
     }
-    std::cout << NAME << " -- Directory Name = " << dir_name << std::endl;
     struct stat sst = {0};
     if (stat(dir_name.c_str(), &sst) == -1) {
         mkdir(dir_name.c_str(), 0777);
@@ -114,15 +120,16 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                 if ((addr & ~(PAGE_SIZE - 1)) == (pf_address & ~(PAGE_SIZE - 1))) {
                     // Prefetch request is in the same physical page
                     transfer_buff_entry entry_values;
-                    entry_values.ind_page_number = page        ;     /*  & (ST_SET * ST_WAY - 1); */
-                    entry_values.ind_page_offset = page_offset ;     /*  & (ST_SET * ST_WAY - 1); */
-                    entry_values.ind_page_signature = curr_sig ;     /*  & (ST_SET * ST_WAY - 1); */
-                    entry_values.ind_page_address = addr       ;     /*  & (NUM_FT_PAGE_ADD - 1); */
-                    entry_values.ind_prefetch_add = pf_address ;     /*  & (NUM_FT_PREF_ADD - 1); */
+                    entry_values.index_page_num = page        ;     /*  & (ST_SET * ST_WAY - 1); */
+                    entry_values.index_page_off = page_offset ;     /*  & (ST_SET * ST_WAY - 1); */
+                    entry_values.index_page_sig = curr_sig ;        /*  & (ST_SET * ST_WAY - 1); */
+                    entry_values.index_page_add = addr       ;      /*  & (NUM_FT_PAGE_ADD - 1); */
+                    entry_values.index_pref_add = pf_address ;      /*  & (NUM_FT_PREF_ADD - 1); */
+                    entry_values.index_inst_add = (ip >> LOG2_BLOCK_SIZE);
                     MOVE_PTR_UP(t_buffer_index);
 
                     /**********  Update the entry of old transfer buffer entry  ********************************/
-                    uint64_t old_pf_address = trans_buff[t_buffer_index].ind_prefetch_add;
+                    uint64_t old_pf_address = trans_buff[t_buffer_index].index_pref_add;
                     if (inverted_address.find(old_pf_address) != inverted_address.end()) {
                         for (uint32_t j = 0; j < inverted_address[old_pf_address].size(); ++j) {
                             if (inverted_address[old_pf_address][j] == t_buffer_index) {
@@ -234,45 +241,58 @@ void CACHE::prefetcher_final_stats() {
 
 
     my_file.open(dir_name + "/inverted_address_" + NAME + ".csv");
-    my_file << "index, address, array, page_number, page_offset, page_signature, page_address, pref_address" << std::endl;
+    my_file << "index, address, array, "
+               DEF_AS_STR(FEATURE_VAR_NAME_1) ", "
+               DEF_AS_STR(FEATURE_VAR_NAME_2) ", "
+               DEF_AS_STR(FEATURE_VAR_NAME_3) ", "
+               DEF_AS_STR(FEATURE_VAR_NAME_4) ", "
+               DEF_AS_STR(FEATURE_VAR_NAME_5) ", "
+               DEF_AS_STR(FEATURE_VAR_NAME_6) ", " << std::endl;
+
     uint32_t ind = 0;
     uint32_t ind_val;
     for(auto & it:inverted_address) {
-        my_file << ++ind << ", " << it.first << ", ( ";
+        my_file << ++ind << ", " << it.first << ", ";
         for(auto & el: it.second) {
             my_file << el << " ";
         }
-        my_file << "), ( ";
+        my_file << ", ";
 
         for(auto & el: it.second) {
-            ind_val =  trans_buff[el].ind_page_number & (ST_SET * ST_WAY - 1);
-            my_file << "{" << ind_val << ":" << ft_page_num[ind_val] << "} ";
+            ind_val =  trans_buff[el].FEATURE_IND_NAME_1;
+            my_file << "{" << std::hex << ind_val << ":" << INDEX_TO(FEATURE_VAR_NAME_1, ind_val) << "} ";
         }
-        my_file << "), ( ";
+        my_file << ", ";
 
         for(auto & el: it.second) {
-            ind_val =  trans_buff[el].ind_page_offset & (ST_SET * ST_WAY - 1);
-            my_file << "{" << ind_val << ":" << ft_page_off[ind_val] << "} ";
+            ind_val =  trans_buff[el].FEATURE_IND_NAME_2;
+            my_file << "{" << std::hex << ind_val << ":" << INDEX_TO(FEATURE_VAR_NAME_2, ind_val) << "} ";
         }
-        my_file << "), ( ";
+        my_file << ", ";
 
         for(auto & el: it.second) {
-            ind_val =  trans_buff[el].ind_page_signature & (ST_SET * ST_WAY - 1);
-            my_file << "{" << ind_val << ":" << ft_page_sig[ind_val] << "} ";
+            ind_val =  trans_buff[el].FEATURE_IND_NAME_3;
+            my_file << "{" << std::hex << ind_val << ":" << INDEX_TO(FEATURE_VAR_NAME_3, ind_val) << "} ";
         }
-        my_file << "), ( ";
+        my_file << ", ";
 
         for(auto & el: it.second) {
-            ind_val =  trans_buff[el].ind_page_address & (ST_SET * ST_WAY - 1);
-            my_file << "{" << ind_val << ":" << ft_page_add[ind_val] << "} ";
+            ind_val =  trans_buff[el].FEATURE_IND_NAME_4;
+            my_file << "{" << std::hex << ind_val << ":" << INDEX_TO(FEATURE_VAR_NAME_4, ind_val) << "} ";
         }
-        my_file << "), ( ";
+        my_file << ", ";
 
         for(auto & el: it.second) {
-            ind_val =  trans_buff[el].ind_prefetch_add & (ST_SET * ST_WAY - 1);
-            my_file << "{" << ind_val << ":" << ft_pref_add[ind_val] << "} ";
+            ind_val =  trans_buff[el].FEATURE_IND_NAME_5;
+            my_file << "{" << std::hex << ind_val << ":" << INDEX_TO(FEATURE_VAR_NAME_5, ind_val) << "} ";
         }
-        my_file << ")" << std::endl;
+        my_file << ", ";
+
+        for(auto & el: it.second) {
+            ind_val =  trans_buff[el].FEATURE_IND_NAME_6;
+            my_file << "{" << std::hex << ind_val << ":" << INDEX_TO(FEATURE_VAR_NAME_6, ind_val) << "} ";
+        }
+        my_file << std::endl;
     }
     my_file << std::endl;
     my_file.close();
