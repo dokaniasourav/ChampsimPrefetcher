@@ -54,4 +54,4 @@ mkdir -p "$logger_dir"
 mv logDump_* "$logger_dir"
 echo "Log files moved to $logger_dir"
 
-### Add more ChampSim runs below.
+### Add more ChampSim runs below

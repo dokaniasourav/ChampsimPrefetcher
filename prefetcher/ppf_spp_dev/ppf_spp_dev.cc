@@ -125,12 +125,12 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                 if ((addr & ~(PAGE_SIZE - 1)) == (pf_address & ~(PAGE_SIZE - 1))) {
                     // Prefetch request is in the same physical page
                     transfer_buff_entry entry_values;
-                    entry_values.index_page_num = get_hash(page);
+                    entry_values.index_page_num = page;
                     entry_values.index_page_off = page_offset;
                     entry_values.index_page_sig = curr_sig;
-                    entry_values.index_page_add = get_hash(addr >> (LOG2_BLOCK_SIZE + LOG2_PAGE_SIZE));
-                    entry_values.index_pref_add = (pf_address >> LOG2_BLOCK_SIZE);
-                    entry_values.index_inst_add = (ip >> LOG2_BLOCK_SIZE);
+                    entry_values.index_page_add = addr;
+                    entry_values.index_pref_add = pf_address;
+                    entry_values.index_inst_add = ip;
                     MOVE_PTR_UP(t_buffer_index);
 
                     /**********  Update the entry of old transfer buffer entry  ********************************/
@@ -161,12 +161,12 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                     entry_values.last_pred = ppf_value;
                     trans_buff[t_buffer_index] = entry_values;
 
-                    INDEX_TO(FEATURE_DEBUG_NAME_1, entry_values.FEATURE_IND_NAME_1)++;
-                    INDEX_TO(FEATURE_DEBUG_NAME_2, entry_values.FEATURE_IND_NAME_2)++;
-                    INDEX_TO(FEATURE_DEBUG_NAME_3, entry_values.FEATURE_IND_NAME_3)++;
-                    INDEX_TO(FEATURE_DEBUG_NAME_4, entry_values.FEATURE_IND_NAME_4)++;
-                    INDEX_TO(FEATURE_DEBUG_NAME_5, entry_values.FEATURE_IND_NAME_5)++;
-                    INDEX_TO(FEATURE_DEBUG_NAME_6, entry_values.FEATURE_IND_NAME_6)++;
+                    INDEX_TO(FEATURE_DEBUG_NAME_1, (entry_values.FEATURE_IND_NAME_1 >> FEATURE_PAD_VAL_1))++;
+                    INDEX_TO(FEATURE_DEBUG_NAME_2, (entry_values.FEATURE_IND_NAME_2 >> FEATURE_PAD_VAL_2))++;
+                    INDEX_TO(FEATURE_DEBUG_NAME_3, (entry_values.FEATURE_IND_NAME_3 >> FEATURE_PAD_VAL_3))++;
+                    INDEX_TO(FEATURE_DEBUG_NAME_4, (entry_values.FEATURE_IND_NAME_4 >> FEATURE_PAD_VAL_4))++;
+                    INDEX_TO(FEATURE_DEBUG_NAME_5, (entry_values.FEATURE_IND_NAME_5 >> FEATURE_PAD_VAL_5))++;
+                    INDEX_TO(FEATURE_DEBUG_NAME_6, (entry_values.FEATURE_IND_NAME_6 >> FEATURE_PAD_VAL_6))++;
 
                     if(ppf_value > PPF_THRESHOLD) {
                         record_table[record_table_ind].true_prediction++;

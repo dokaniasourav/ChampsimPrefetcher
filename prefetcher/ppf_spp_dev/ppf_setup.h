@@ -32,16 +32,31 @@ int xyz;
 #define FEATURE_IND_NAME_5 index_pref_add
 #define FEATURE_IND_NAME_6 index_inst_add
 
+//#define FEATURE_PAD_VAL_1 12
+//#define FEATURE_PAD_VAL_2 0
+//#define FEATURE_PAD_VAL_3 0
+//#define FEATURE_PAD_VAL_4 12
+//#define FEATURE_PAD_VAL_5 6
+//#define FEATURE_PAD_VAL_6 6
+
+#define FEATURE_PAD_VAL_1 0
+#define FEATURE_PAD_VAL_2 0
+#define FEATURE_PAD_VAL_3 0
+#define FEATURE_PAD_VAL_4 0
+#define FEATURE_PAD_VAL_5 0
+#define FEATURE_PAD_VAL_6 0
+
+
 struct transfer_buff_entry {
     int valid = 0;
     int last_pred = 0;                            // indicates the prediction that was made by Perceptron
 
-    uint32_t FEATURE_IND_NAME_1 = 0;
-    uint32_t FEATURE_IND_NAME_2 = 0;
-    uint32_t FEATURE_IND_NAME_3 = 0;
-    uint32_t FEATURE_IND_NAME_4 = 0;
-    uint32_t FEATURE_IND_NAME_5 = 0;
-    uint32_t FEATURE_IND_NAME_6 = 0;
+    uint64_t FEATURE_IND_NAME_1 = 0;
+    uint64_t FEATURE_IND_NAME_2 = 0;
+    uint64_t FEATURE_IND_NAME_3 = 0;
+    uint64_t FEATURE_IND_NAME_4 = 0;
+    uint64_t FEATURE_IND_NAME_5 = 0;
+    uint64_t FEATURE_IND_NAME_6 = 0;
 };
 
 transfer_buff_entry trans_buff[TRANSFER_BUFFER_ENTRIES];
@@ -136,20 +151,28 @@ void retrain_ppf(uint32_t index, int useful);
 int ppf_decision(transfer_buff_entry entry_values);
 
 void retrain_ppf(uint32_t index, int useful) {
+
+    uint32_t index_var_1 = (trans_buff[index].FEATURE_IND_NAME_1 >> FEATURE_PAD_VAL_1);
+    uint32_t index_var_2 = (trans_buff[index].FEATURE_IND_NAME_2 >> FEATURE_PAD_VAL_2);
+    uint32_t index_var_3 = (trans_buff[index].FEATURE_IND_NAME_3 >> FEATURE_PAD_VAL_3);
+    uint32_t index_var_4 = (trans_buff[index].FEATURE_IND_NAME_4 >> FEATURE_PAD_VAL_4);
+    uint32_t index_var_5 = (trans_buff[index].FEATURE_IND_NAME_5 >> FEATURE_PAD_VAL_5);
+    uint32_t index_var_6 = (trans_buff[index].FEATURE_IND_NAME_6 >> FEATURE_PAD_VAL_6);
+
     if (useful) {
-        INCREMENT(INDEX_TO(FEATURE_VAR_NAME_1, trans_buff[index].FEATURE_IND_NAME_1 ));
-        INCREMENT(INDEX_TO(FEATURE_VAR_NAME_2, trans_buff[index].FEATURE_IND_NAME_2 ));
-        INCREMENT(INDEX_TO(FEATURE_VAR_NAME_3, trans_buff[index].FEATURE_IND_NAME_3 ));
-        INCREMENT(INDEX_TO(FEATURE_VAR_NAME_4, trans_buff[index].FEATURE_IND_NAME_4 ));
-        INCREMENT(INDEX_TO(FEATURE_VAR_NAME_5, trans_buff[index].FEATURE_IND_NAME_5 ));
-        INCREMENT(INDEX_TO(FEATURE_VAR_NAME_6, trans_buff[index].FEATURE_IND_NAME_6 ));
+        INCREMENT(INDEX_TO(FEATURE_VAR_NAME_1, index_var_1 ));
+        INCREMENT(INDEX_TO(FEATURE_VAR_NAME_2, index_var_2 ));
+        INCREMENT(INDEX_TO(FEATURE_VAR_NAME_3, index_var_3 ));
+        INCREMENT(INDEX_TO(FEATURE_VAR_NAME_4, index_var_4 ));
+        INCREMENT(INDEX_TO(FEATURE_VAR_NAME_5, index_var_5 ));
+        INCREMENT(INDEX_TO(FEATURE_VAR_NAME_6, index_var_6 ));
     } else {
-        DECREMENT(INDEX_TO(FEATURE_VAR_NAME_1, trans_buff[index].FEATURE_IND_NAME_1 ));
-        DECREMENT(INDEX_TO(FEATURE_VAR_NAME_2, trans_buff[index].FEATURE_IND_NAME_2 ));
-        DECREMENT(INDEX_TO(FEATURE_VAR_NAME_3, trans_buff[index].FEATURE_IND_NAME_3 ));
-        DECREMENT(INDEX_TO(FEATURE_VAR_NAME_4, trans_buff[index].FEATURE_IND_NAME_4 ));
-        DECREMENT(INDEX_TO(FEATURE_VAR_NAME_5, trans_buff[index].FEATURE_IND_NAME_5 ));
-        DECREMENT(INDEX_TO(FEATURE_VAR_NAME_6, trans_buff[index].FEATURE_IND_NAME_6 ));
+        DECREMENT(INDEX_TO(FEATURE_VAR_NAME_1, index_var_1 ));
+        DECREMENT(INDEX_TO(FEATURE_VAR_NAME_2, index_var_2 ));
+        DECREMENT(INDEX_TO(FEATURE_VAR_NAME_3, index_var_3 ));
+        DECREMENT(INDEX_TO(FEATURE_VAR_NAME_4, index_var_4 ));
+        DECREMENT(INDEX_TO(FEATURE_VAR_NAME_5, index_var_5 ));
+        DECREMENT(INDEX_TO(FEATURE_VAR_NAME_6, index_var_6 ));
     }
     trans_buff[index].valid = 0;
     record_table[record_table_ind].total_training++;
@@ -163,13 +186,20 @@ void retrain_ppf(uint32_t index, int useful) {
  * */
 int ppf_decision(transfer_buff_entry entry_values) {
 
+    uint32_t index_var_1 = (entry_values.FEATURE_IND_NAME_1 >> FEATURE_PAD_VAL_1);
+    uint32_t index_var_2 = (entry_values.FEATURE_IND_NAME_2 >> FEATURE_PAD_VAL_2);
+    uint32_t index_var_3 = (entry_values.FEATURE_IND_NAME_3 >> FEATURE_PAD_VAL_3);
+    uint32_t index_var_4 = (entry_values.FEATURE_IND_NAME_4 >> FEATURE_PAD_VAL_4);
+    uint32_t index_var_5 = (entry_values.FEATURE_IND_NAME_5 >> FEATURE_PAD_VAL_5);
+    uint32_t index_var_6 = (entry_values.FEATURE_IND_NAME_6 >> FEATURE_PAD_VAL_6);
+
     int feature_sum = ft_page_bias;
-    feature_sum += INDEX_TO(FEATURE_VAR_NAME_1, entry_values.FEATURE_IND_NAME_1);
-    feature_sum += INDEX_TO(FEATURE_VAR_NAME_2, entry_values.FEATURE_IND_NAME_2);
-    feature_sum += INDEX_TO(FEATURE_VAR_NAME_3, entry_values.FEATURE_IND_NAME_3);
-    feature_sum += INDEX_TO(FEATURE_VAR_NAME_4, entry_values.FEATURE_IND_NAME_4);
-    feature_sum += INDEX_TO(FEATURE_VAR_NAME_5, entry_values.FEATURE_IND_NAME_5);
-    feature_sum += INDEX_TO(FEATURE_VAR_NAME_6, entry_values.FEATURE_IND_NAME_6);
+    feature_sum += INDEX_TO(FEATURE_VAR_NAME_1, index_var_1);
+    feature_sum += INDEX_TO(FEATURE_VAR_NAME_2, index_var_2);
+    feature_sum += INDEX_TO(FEATURE_VAR_NAME_3, index_var_3);
+    feature_sum += INDEX_TO(FEATURE_VAR_NAME_4, index_var_4);
+    feature_sum += INDEX_TO(FEATURE_VAR_NAME_5, index_var_5);
+    feature_sum += INDEX_TO(FEATURE_VAR_NAME_6, index_var_6);
 
     record_table[record_table_ind].total_prediction++;
     return feature_sum;
