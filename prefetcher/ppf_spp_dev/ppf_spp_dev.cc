@@ -125,10 +125,10 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                 if ((addr & ~(PAGE_SIZE - 1)) == (pf_address & ~(PAGE_SIZE - 1))) {
                     // Prefetch request is in the same physical page
                     transfer_buff_entry entry_values;
-                    entry_values.index_page_num = (page ^ (page >> 16));
+                    entry_values.index_page_num = get_hash(page);
                     entry_values.index_page_off = page_offset;
                     entry_values.index_page_sig = curr_sig;
-                    entry_values.index_page_add = addr;
+                    entry_values.index_page_add = get_hash(addr >> (LOG2_BLOCK_SIZE + LOG2_PAGE_SIZE));
                     entry_values.index_pref_add = (pf_address >> LOG2_BLOCK_SIZE);
                     entry_values.index_inst_add = (ip >> LOG2_BLOCK_SIZE);
                     MOVE_PTR_UP(t_buffer_index);
@@ -238,7 +238,7 @@ void CACHE::prefetcher_final_stats() {
     std::cout << "Printing the final status " << std::endl;
 
     my_file.open(dir_name + "/prefetcher_stat_" + NAME + ".csv");
-    my_file <<  "index,"
+    my_file <<  "index"
                 ", " DEF_AS_STR(RECORDER_VAR_NAME_01)
                 ", " DEF_AS_STR(RECORDER_VAR_NAME_02)
                 ", " DEF_AS_STR(RECORDER_VAR_NAME_03)
@@ -274,7 +274,7 @@ void CACHE::prefetcher_final_stats() {
 
 
     my_file.open(dir_name + "/feature_debug_" + NAME + ".csv");
-    my_file <<  "index,"
+    my_file <<  "index"
                 ", " DEF_AS_STR(FEATURE_DEBUG_NAME_1)
                 ", " DEF_AS_STR(FEATURE_DEBUG_NAME_2)
                 ", " DEF_AS_STR(FEATURE_DEBUG_NAME_3)
