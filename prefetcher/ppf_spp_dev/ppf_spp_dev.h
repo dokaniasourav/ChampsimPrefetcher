@@ -17,8 +17,11 @@
 #endif
 
 // Signature table parameters
-#define ST_SET 1
+//#define ST_SET 1
+//#define ST_WAY 256
+#define ST_SET 4
 #define ST_WAY 256
+
 #define ST_TAG_BIT 16
 #define ST_TAG_MASK ((1 << ST_TAG_BIT) - 1)
 #define SIG_SHIFT 3
@@ -27,10 +30,16 @@
 #define SIG_DELTA_BIT 7
 
 // Pattern table parameters
-#define PT_SET 512
-#define PT_WAY 4
-#define C_SIG_BIT 4
-#define C_DELTA_BIT 4
+//#define PT_SET 512
+//#define PT_WAY 4
+#define PT_SET 1024
+#define PT_WAY 8
+
+//#define C_SIG_BIT 4
+//#define C_DELTA_BIT 4
+#define C_SIG_BIT 5
+#define C_DELTA_BIT 5
+
 #define C_SIG_MAX ((1 << C_SIG_BIT) - 1)
 #define C_DELTA_MAX ((1 << C_DELTA_BIT) - 1)
 
@@ -39,13 +48,18 @@
 #define REMAINDER_BIT 6
 #define HASH_BIT (QUOTIENT_BIT + REMAINDER_BIT + 1)
 #define FILTER_SET (1 << QUOTIENT_BIT)
-#define FILL_THRESHOLD 90
-#define PF_THRESHOLD 25
+
+//#define FILL_THRESHOLD 90
+//#define PF_THRESHOLD 25
+#define FILL_THRESHOLD 50
+#define PF_THRESHOLD 20
 
 // Global register parameters
 #define GLOBAL_COUNTER_BIT 10
 #define GLOBAL_COUNTER_MAX ((1 << GLOBAL_COUNTER_BIT) - 1)
-#define MAX_GHR_ENTRY 8
+
+//#define MAX_GHR_ENTRY 8
+#define MAX_GHR_ENTRY 16
 
 enum FILTER_REQUEST {
     SPP_L2C_PREFETCH, SPP_LLC_PREFETCH, L2C_DEMAND, L2C_EVICT
