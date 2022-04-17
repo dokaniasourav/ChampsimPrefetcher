@@ -13,7 +13,7 @@ unordered_map<uint64_t, vector<uint32_t>> inverted_address;
 extern string trace_name;
 
 void CACHE::prefetcher_initialize() {
-    std::cout << NAME << " SPP DEV Prefetcher" << std::endl;
+    std::cout << NAME << " PPF SPP DEV Prefetcher" << std::endl;
     srand(time(nullptr));
     ft_page_bias = 0;
     for(auto & var_val : FEATURE_VAR_NAME_1) {
