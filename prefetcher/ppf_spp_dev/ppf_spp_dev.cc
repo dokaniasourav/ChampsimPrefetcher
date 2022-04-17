@@ -149,7 +149,7 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                         }
                     }
                     record_table[record_table_ind].add_push_count++;
-                    inverted_address[pf_address].push_back(t_buffer_index);
+                    inverted_address[entry_values.index_pref_add].push_back(t_buffer_index);
 
                     /**********  New entries to the transfer buffer  ********************************/
                     if(trans_buff[t_buffer_index].valid == 1) {
@@ -310,6 +310,8 @@ void CACHE::prefetcher_final_stats() {
     uint32_t ind = 0;
     uint32_t ind_val;
     for(auto & it:inverted_address) {
+        if(ind > 8000)
+            break;
         my_file << ++ind << ", " << it.first << ", ";
         for(auto & el: it.second) {
             my_file << el << " ";
