@@ -37,7 +37,7 @@ void CACHE::prefetcher_initialize() {
 
     for(auto & rec_ind : record_table) {
         rec_ind = {0, 0, 0, 0, 0, 0,
-                   0, 0, 0, 0, 0};
+                   0, 0, 0, 0, 0, 0};
     }
 
     /********************* CREATE DATA DIRECTORY**************************/
@@ -125,11 +125,11 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                 if ((addr & ~(PAGE_SIZE - 1)) == (pf_address & ~(PAGE_SIZE - 1))) {
                     // Prefetch request is in the same physical page
                     transfer_buff_entry entry_values;
-                    entry_values.index_page_num = page        ;     /*  & (ST_SET * ST_WAY - 1); */
-                    entry_values.index_page_off = page_offset ;     /*  & (ST_SET * ST_WAY - 1); */
-                    entry_values.index_page_sig = curr_sig ;        /*  & (ST_SET * ST_WAY - 1); */
-                    entry_values.index_page_add = addr       ;      /*  & (NUM_FT_PAGE_ADD - 1); */
-                    entry_values.index_pref_add = pf_address ;      /*  & (NUM_FT_PREF_ADD - 1); */
+                    entry_values.index_page_num = (page ^ (page >> 16));
+                    entry_values.index_page_off = page_offset;
+                    entry_values.index_page_sig = curr_sig;
+                    entry_values.index_page_add = addr;
+                    entry_values.index_pref_add = (pf_address >> LOG2_BLOCK_SIZE);
                     entry_values.index_inst_add = (ip >> LOG2_BLOCK_SIZE);
                     MOVE_PTR_UP(t_buffer_index);
 
@@ -160,6 +160,13 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                     entry_values.valid = 1;
                     entry_values.last_pred = ppf_value;
                     trans_buff[t_buffer_index] = entry_values;
+
+                    INDEX_TO(FEATURE_DEBUG_NAME_1, entry_values.FEATURE_IND_NAME_1)++;
+                    INDEX_TO(FEATURE_DEBUG_NAME_2, entry_values.FEATURE_IND_NAME_2)++;
+                    INDEX_TO(FEATURE_DEBUG_NAME_3, entry_values.FEATURE_IND_NAME_3)++;
+                    INDEX_TO(FEATURE_DEBUG_NAME_4, entry_values.FEATURE_IND_NAME_4)++;
+                    INDEX_TO(FEATURE_DEBUG_NAME_5, entry_values.FEATURE_IND_NAME_5)++;
+                    INDEX_TO(FEATURE_DEBUG_NAME_6, entry_values.FEATURE_IND_NAME_6)++;
 
                     if(ppf_value > PPF_THRESHOLD) {
                         record_table[record_table_ind].true_prediction++;
@@ -266,6 +273,30 @@ void CACHE::prefetcher_final_stats() {
     my_file.close();
 
 
+    my_file.open(dir_name + "/feature_debug_" + NAME + ".csv");
+    my_file <<  "index,"
+                ", " DEF_AS_STR(FEATURE_DEBUG_NAME_1)
+                ", " DEF_AS_STR(FEATURE_DEBUG_NAME_2)
+                ", " DEF_AS_STR(FEATURE_DEBUG_NAME_3)
+                ", " DEF_AS_STR(FEATURE_DEBUG_NAME_4)
+                ", " DEF_AS_STR(FEATURE_DEBUG_NAME_5)
+                ", " DEF_AS_STR(FEATURE_DEBUG_NAME_6)
+            << std::endl;
+
+    for (auto index = 0; index < 1024; index++) {
+        my_file << index
+                << ", " << INDEX_TO(FEATURE_DEBUG_NAME_1, index)
+                << ", " << INDEX_TO(FEATURE_DEBUG_NAME_2, index)
+                << ", " << INDEX_TO(FEATURE_DEBUG_NAME_3, index)
+                << ", " << INDEX_TO(FEATURE_DEBUG_NAME_4, index)
+                << ", " << INDEX_TO(FEATURE_DEBUG_NAME_5, index)
+                << ", " << INDEX_TO(FEATURE_DEBUG_NAME_6, index)
+                << std::endl;
+    }
+    my_file << std::endl;
+    my_file.close();
+
+
     my_file.open(dir_name + "/inverted_address_" + NAME + ".csv");
     my_file << "index, address, array"
                ", " DEF_AS_STR(FEATURE_VAR_NAME_1)
@@ -282,44 +313,43 @@ void CACHE::prefetcher_final_stats() {
         my_file << ++ind << ", " << it.first << ", ";
         for(auto & el: it.second) {
             my_file << el << " ";
-        }
-        my_file << ", ";
+        } my_file << ", ";
 
         for(auto & el: it.second) {
             ind_val =  trans_buff[el].FEATURE_IND_NAME_1;
-            my_file << "{" << std::hex << ind_val << ":" << INDEX_TO(FEATURE_VAR_NAME_1, ind_val) << "} ";
-        }
-        my_file << ", ";
+            my_file << "{" << std::hex << ind_val << ": ";
+            my_file << INDEX_TO(FEATURE_VAR_NAME_1, ind_val) << "} ";
+        } my_file << ", ";
 
         for(auto & el: it.second) {
             ind_val =  trans_buff[el].FEATURE_IND_NAME_2;
-            my_file << "{" << std::hex << ind_val << ":" << INDEX_TO(FEATURE_VAR_NAME_2, ind_val) << "} ";
-        }
-        my_file << ", ";
+            my_file << "{" << std::hex << ind_val << ": ";
+            my_file << INDEX_TO(FEATURE_VAR_NAME_2, ind_val) << "} ";
+        } my_file << ", ";
 
         for(auto & el: it.second) {
             ind_val =  trans_buff[el].FEATURE_IND_NAME_3;
-            my_file << "{" << std::hex << ind_val << ":" << INDEX_TO(FEATURE_VAR_NAME_3, ind_val) << "} ";
-        }
-        my_file << ", ";
+            my_file << "{" << std::hex << ind_val << ": ";
+            my_file << INDEX_TO(FEATURE_VAR_NAME_3, ind_val) << "} ";
+        } my_file << ", ";
 
         for(auto & el: it.second) {
             ind_val =  trans_buff[el].FEATURE_IND_NAME_4;
-            my_file << "{" << std::hex << ind_val << ":" << INDEX_TO(FEATURE_VAR_NAME_4, ind_val) << "} ";
-        }
-        my_file << ", ";
+            my_file << "{" << std::hex << ind_val << ": ";
+            my_file << INDEX_TO(FEATURE_VAR_NAME_4, ind_val) << "} ";
+        } my_file << ", ";
 
         for(auto & el: it.second) {
-            ind_val =  trans_buff[el].FEATURE_IND_NAME_5;
-            my_file << "{" << std::hex << ind_val << ":" << INDEX_TO(FEATURE_VAR_NAME_5, ind_val) << "} ";
-        }
-        my_file << ", ";
+            ind_val = trans_buff[el].FEATURE_IND_NAME_5;
+            my_file << "{" << std::hex << ind_val << ": ";
+            my_file << INDEX_TO(FEATURE_VAR_NAME_5, ind_val) << "} ";
+        } my_file << ", ";
 
         for(auto & el: it.second) {
             ind_val =  trans_buff[el].FEATURE_IND_NAME_6;
-            my_file << "{" << std::hex << ind_val << ":" << INDEX_TO(FEATURE_VAR_NAME_6, ind_val) << "} ";
-        }
-        my_file << std::endl;
+            my_file << "{" << std::hex << ind_val << ": ";
+            my_file << INDEX_TO(FEATURE_VAR_NAME_6, ind_val) << "} ";
+        } my_file << std::endl;
     }
     my_file << std::endl;
     my_file.close();

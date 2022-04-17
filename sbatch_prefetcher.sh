@@ -84,7 +84,7 @@ do
   echo ""
 
 
-  for i in {0..7}
+  for i in {0..19}
   do
     echo ""
     echo "Submitting job for the file ${files[$i]} with $pref2 prefetcher"

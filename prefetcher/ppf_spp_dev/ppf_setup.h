@@ -67,6 +67,20 @@ constexpr int PPF_THRESHOLD = 0;
 #define FEATURE_VAR_NAME_5 ft_pref_add
 #define FEATURE_VAR_NAME_6 ft_inst_add
 
+#define FEATURE_DEBUG_NAME_1 ft_page_num_debug
+#define FEATURE_DEBUG_NAME_2 ft_page_off_debug
+#define FEATURE_DEBUG_NAME_3 ft_page_sig_debug
+#define FEATURE_DEBUG_NAME_4 ft_page_add_debug
+#define FEATURE_DEBUG_NAME_5 ft_pref_add_debug
+#define FEATURE_DEBUG_NAME_6 ft_inst_add_debug
+
+uint64_t FEATURE_DEBUG_NAME_1[NUM_FT_PAGE_NUM];
+uint64_t FEATURE_DEBUG_NAME_2[NUM_FT_PAGE_OFF];
+uint64_t FEATURE_DEBUG_NAME_3[NUM_FT_INST_SIG];
+uint64_t FEATURE_DEBUG_NAME_4[NUM_FT_PAGE_ADD];
+uint64_t FEATURE_DEBUG_NAME_5[NUM_FT_PREF_ADD];
+uint64_t FEATURE_DEBUG_NAME_6[NUM_FT_INST_ADD];
+
 int ft_page_bias;
 int FEATURE_VAR_NAME_1[NUM_FT_PAGE_NUM];
 int FEATURE_VAR_NAME_2[NUM_FT_PAGE_OFF];
@@ -122,7 +136,6 @@ void retrain_ppf(uint32_t index, int useful);
 int ppf_decision(transfer_buff_entry entry_values);
 
 void retrain_ppf(uint32_t index, int useful) {
-
     if (useful) {
         INCREMENT(INDEX_TO(FEATURE_VAR_NAME_1, trans_buff[index].FEATURE_IND_NAME_1 ));
         INCREMENT(INDEX_TO(FEATURE_VAR_NAME_2, trans_buff[index].FEATURE_IND_NAME_2 ));
