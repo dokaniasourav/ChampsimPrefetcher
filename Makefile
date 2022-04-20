@@ -25,14 +25,14 @@ clean:
 	 find prefetcher/no -name \*.d -delete
 	 find prefetcher/no_instr -name \*.o -delete
 	 find prefetcher/no_instr -name \*.d -delete
-	 find prefetcher/spp_dev_agg -name \*.o -delete
-	 find prefetcher/spp_dev_agg -name \*.d -delete
+	 find prefetcher/ppf_spp_dev_3 -name \*.o -delete
+	 find prefetcher/ppf_spp_dev_3 -name \*.d -delete
 	 find branch/bimodal1 -name \*.o -delete
 	 find branch/bimodal1 -name \*.d -delete
 	 find btb/basic_btb -name \*.o -delete
 	 find btb/basic_btb -name \*.d -delete
 
-bin/champsim: $(patsubst %.cc,%.o,$(wildcard src/*.cc)) obj/repl_rreplacementDlru.a obj/pref_pprefetcherDno.a obj/pref_pprefetcherDno_instr.a obj/pref_pprefetcherDspp_dev_agg.a obj/bpred_bbranchDbimodal1.a obj/btb_bbtbDbasic_btb.a
+bin/champsim: $(patsubst %.cc,%.o,$(wildcard src/*.cc)) obj/repl_rreplacementDlru.a obj/pref_pprefetcherDno.a obj/pref_pprefetcherDno_instr.a obj/pref_pprefetcherDppf_spp_dev_3.a obj/bpred_bbranchDbimodal1.a obj/btb_bbtbDbasic_btb.a
 	$(CXX) $(LDFLAGS) -o $@ $^ $(LDLIBS)
 
 replacement/lru/%.o: CFLAGS += -Ireplacement/lru
@@ -56,10 +56,10 @@ obj/pref_pprefetcherDno_instr.a: $(patsubst %.cc,%.o,$(wildcard prefetcher/no_in
 	@mkdir -p $(dir $@)
 	ar -rcs $@ $^
 
-prefetcher/spp_dev_agg/%.o: CFLAGS += -Iprefetcher/spp_dev_agg
-prefetcher/spp_dev_agg/%.o: CXXFLAGS += -Iprefetcher/spp_dev_agg
-prefetcher/spp_dev_agg/%.o: CXXFLAGS +=  -Dprefetcher_initialize=pref_pprefetcherDspp_dev_agg_initialize -Dprefetcher_cache_operate=pref_pprefetcherDspp_dev_agg_cache_operate -Dprefetcher_cache_fill=pref_pprefetcherDspp_dev_agg_cache_fill -Dprefetcher_cycle_operate=pref_pprefetcherDspp_dev_agg_cycle_operate -Dprefetcher_final_stats=pref_pprefetcherDspp_dev_agg_final_stats -Dl1d_prefetcher_initialize=pref_pprefetcherDspp_dev_agg_initialize -Dl2c_prefetcher_initialize=pref_pprefetcherDspp_dev_agg_initialize -Dllc_prefetcher_initialize=pref_pprefetcherDspp_dev_agg_initialize -Dl1d_prefetcher_operate=pref_pprefetcherDspp_dev_agg_cache_operate -Dl2c_prefetcher_operate=pref_pprefetcherDspp_dev_agg_cache_operate -Dllc_prefetcher_operate=pref_pprefetcherDspp_dev_agg_cache_operate -Dl1d_prefetcher_cache_fill=pref_pprefetcherDspp_dev_agg_cache_fill -Dl2c_prefetcher_cache_fill=pref_pprefetcherDspp_dev_agg_cache_fill -Dllc_prefetcher_cache_fill=pref_pprefetcherDspp_dev_agg_cache_fill -Dl1d_prefetcher_final_stats=pref_pprefetcherDspp_dev_agg_final_stats -Dl2c_prefetcher_final_stats=pref_pprefetcherDspp_dev_agg_final_stats -Dllc_prefetcher_final_stats=pref_pprefetcherDspp_dev_agg_final_stats
-obj/pref_pprefetcherDspp_dev_agg.a: $(patsubst %.cc,%.o,$(wildcard prefetcher/spp_dev_agg/*.cc)) $(patsubst %.c,%.o,$(wildcard prefetcher/spp_dev_agg/*.c))
+prefetcher/ppf_spp_dev_3/%.o: CFLAGS += -Iprefetcher/ppf_spp_dev_3
+prefetcher/ppf_spp_dev_3/%.o: CXXFLAGS += -Iprefetcher/ppf_spp_dev_3
+prefetcher/ppf_spp_dev_3/%.o: CXXFLAGS +=  -Dprefetcher_initialize=pref_pprefetcherDppf_spp_dev_3_initialize -Dprefetcher_cache_operate=pref_pprefetcherDppf_spp_dev_3_cache_operate -Dprefetcher_cache_fill=pref_pprefetcherDppf_spp_dev_3_cache_fill -Dprefetcher_cycle_operate=pref_pprefetcherDppf_spp_dev_3_cycle_operate -Dprefetcher_final_stats=pref_pprefetcherDppf_spp_dev_3_final_stats -Dl1d_prefetcher_initialize=pref_pprefetcherDppf_spp_dev_3_initialize -Dl2c_prefetcher_initialize=pref_pprefetcherDppf_spp_dev_3_initialize -Dllc_prefetcher_initialize=pref_pprefetcherDppf_spp_dev_3_initialize -Dl1d_prefetcher_operate=pref_pprefetcherDppf_spp_dev_3_cache_operate -Dl2c_prefetcher_operate=pref_pprefetcherDppf_spp_dev_3_cache_operate -Dllc_prefetcher_operate=pref_pprefetcherDppf_spp_dev_3_cache_operate -Dl1d_prefetcher_cache_fill=pref_pprefetcherDppf_spp_dev_3_cache_fill -Dl2c_prefetcher_cache_fill=pref_pprefetcherDppf_spp_dev_3_cache_fill -Dllc_prefetcher_cache_fill=pref_pprefetcherDppf_spp_dev_3_cache_fill -Dl1d_prefetcher_final_stats=pref_pprefetcherDppf_spp_dev_3_final_stats -Dl2c_prefetcher_final_stats=pref_pprefetcherDppf_spp_dev_3_final_stats -Dllc_prefetcher_final_stats=pref_pprefetcherDppf_spp_dev_3_final_stats
+obj/pref_pprefetcherDppf_spp_dev_3.a: $(patsubst %.cc,%.o,$(wildcard prefetcher/ppf_spp_dev_3/*.cc)) $(patsubst %.c,%.o,$(wildcard prefetcher/ppf_spp_dev_3/*.c))
 	@mkdir -p $(dir $@)
 	ar -rcs $@ $^
 
@@ -81,7 +81,7 @@ obj/btb_bbtbDbasic_btb.a: $(patsubst %.cc,%.o,$(wildcard btb/basic_btb/*.cc)) $(
 -include $(wildcard replacement/lru/*.d)
 -include $(wildcard prefetcher/no/*.d)
 -include $(wildcard prefetcher/no_instr/*.d)
--include $(wildcard prefetcher/spp_dev_agg/*.d)
+-include $(wildcard prefetcher/ppf_spp_dev_3/*.d)
 -include $(wildcard branch/bimodal1/*.d)
 -include $(wildcard btb/basic_btb/*.d)
 

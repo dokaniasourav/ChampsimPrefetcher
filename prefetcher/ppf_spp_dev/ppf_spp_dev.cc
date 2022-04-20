@@ -34,6 +34,12 @@ void CACHE::prefetcher_initialize() {
     for(auto & var_val : FEATURE_VAR_NAME_6) {
         var_val = 0;
     }
+    for(auto & var_val : FEATURE_VAR_NAME_7) {
+        var_val = 0;
+    }
+    for(auto & var_val : FEATURE_VAR_NAME_8) {
+        var_val = 0;
+    }
 
     for(auto & rec_ind : record_table) {
         rec_ind = {0, 0, 0, 0, 0, 0,
@@ -61,6 +67,7 @@ void CACHE::prefetcher_initialize() {
 void CACHE::prefetcher_cycle_operate() {
     record_table[record_table_ind].cycle_operate++;
     if(record_table[record_table_ind].cycle_operate > next_cycle_update) {
+//        std::cout << record_table[record_table_ind].cycle_operate << std::endl;
         next_cycle_update += CYCLE_UPDATE_INTERVAL;
         if(record_table_ind <  (REC_TB_SIZE-2)) {
             record_table[record_table_ind].total_prefetch = pf_requested;
@@ -118,6 +125,7 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
         uint32_t lookahead_way = PT_WAY;
         PT.read_pattern(curr_sig, delta_q, confidence_q, lookahead_way, lookahead_conf, pf_q_tail, depth);
         do_lookahead = 0;
+
         for (uint32_t i = pf_q_head; i < pf_q_tail; i++) {
             if (confidence_q[i] >= PF_THRESHOLD) {
                 uint64_t pf_address = (base_addr & ~(BLOCK_SIZE - 1)) + (delta_q[i] << LOG2_BLOCK_SIZE);
@@ -135,7 +143,6 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                     entry_values.index_misc_val = (page + pf_address + (ip>>6));
 
                     MOVE_PTR_UP(t_buffer_index);
-
                     /**********  Update the entry of old transfer buffer entry  ********************************/
                     uint64_t old_pf_address = trans_buff[t_buffer_index].index_pref_add;
                     if (inverted_address.find(old_pf_address) != inverted_address.end()) {
@@ -143,7 +150,6 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                             if (inverted_address[old_pf_address][j] == t_buffer_index) {
                                 inverted_address[old_pf_address].erase(
                                         inverted_address[old_pf_address].begin() + j);
-                                record_table[record_table_ind].add_repl_count++;
                                 break;
                             }
                         }
@@ -151,7 +157,6 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                             inverted_address.erase(old_pf_address);
                         }
                     }
-                    record_table[record_table_ind].add_push_count++;
                     inverted_address[entry_values.index_pref_add].push_back(t_buffer_index);
 
                     /**********  New entries to the transfer buffer  ********************************/
@@ -163,6 +168,7 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                     entry_values.valid = 1;
                     entry_values.last_pred = ppf_value;
                     trans_buff[t_buffer_index] = entry_values;
+
 
                     INDEX_TO(FEATURE_DEBUG_NAME_1, (entry_values.FEATURE_IND_NAME_1 >> FEATURE_PAD_VAL_1))++;
                     INDEX_TO(FEATURE_DEBUG_NAME_2, (entry_values.FEATURE_IND_NAME_2 >> FEATURE_PAD_VAL_2))++;
@@ -177,17 +183,15 @@ uint32_t CACHE::prefetcher_cache_operate(uint64_t addr, uint64_t ip,
                         record_table[record_table_ind].true_prediction++;
                         if (FILTER.check(pf_address,
                                          ((confidence_q[i] >= FILL_THRESHOLD) ? SPP_L2C_PREFETCH : SPP_LLC_PREFETCH))) {
-                            int success = prefetch_line(pf_address, (confidence_q[i] >= FILL_THRESHOLD), 0);
+                            prefetch_line(pf_address, (confidence_q[i] >= FILL_THRESHOLD), 0);
                             // Use addr (not base_addr) to obey the same
                             // physical page boundary
-                            if(success == 1) {
-                                record_table[record_table_ind].success_pref++;
-                                if (confidence_q[i] >= FILL_THRESHOLD) {
-                                    GHR.pf_issued++;
-                                    if (GHR.pf_issued > GLOBAL_COUNTER_MAX) {
-                                        GHR.pf_issued >>= 1;
-                                        GHR.pf_useful >>= 1;
-                                    }
+                            record_table[record_table_ind].success_pref++;
+                            if (confidence_q[i] >= FILL_THRESHOLD) {
+                                GHR.pf_issued++;
+                                if (GHR.pf_issued > GLOBAL_COUNTER_MAX) {
+                                    GHR.pf_issued >>= 1;
+                                    GHR.pf_useful >>= 1;
                                 }
                             }
                         }
@@ -321,8 +325,10 @@ void CACHE::prefetcher_final_stats() {
     uint32_t ind = 0;
     uint32_t ind_val;
     for(auto & it:inverted_address) {
-        if(ind > 8000)
+        if(ind > 8000) {
+            std::cout << "Error Occurred in inverted index log \n";
             break;
+        }
         my_file << ++ind << ", " << it.first << ", ";
         for(auto & el: it.second) {
             my_file << el << " ";

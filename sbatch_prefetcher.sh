@@ -34,7 +34,7 @@ files=(
 #      )
 
 prefs=(
-      "spp_dev_agg"
+      "ppf_spp_dev_3"
       )
 
 #Looping through all the pre-fetchers
@@ -84,7 +84,7 @@ do
   echo ""
 
 
-  for i in {0..3}
+  for i in {0..19}
   do
     echo ""
     echo "Submitting job for the file ${files[$i]} with $pref2 prefetcher"

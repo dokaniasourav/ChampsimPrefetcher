@@ -128,9 +128,9 @@ int FEATURE_VAR_NAME_8[NUM_FT_MISC_VAL];
 #define RECORDER_VAR_NAME_07 cache_operate
 #define RECORDER_VAR_NAME_08 cache_hit
 #define RECORDER_VAR_NAME_09 cycle_operate
-#define RECORDER_VAR_NAME_10 add_repl_count
-#define RECORDER_VAR_NAME_11 add_push_count
-#define RECORDER_VAR_NAME_12 success_pref
+#define RECORDER_VAR_NAME_10 success_pref
+#define RECORDER_VAR_NAME_11 prefetch_accuracy
+#define RECORDER_VAR_NAME_12 extra_var_1
 
 
 struct recorder_str {
@@ -152,7 +152,7 @@ std::string dir_name;
 int record_table_ind = 0;
 uint64_t next_cycle_update = 0;
 recorder_str record_table[REC_TB_SIZE];
-constexpr int CYCLE_UPDATE_INTERVAL = 1000000;
+constexpr int CYCLE_UPDATE_INTERVAL = 100000;
 
 /*********************************************************************************************************************/
 

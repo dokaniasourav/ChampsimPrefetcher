@@ -72,13 +72,6 @@ public:
     uint32_t tag[ST_SET][ST_WAY]{}, last_offset[ST_SET][ST_WAY]{}, sig[ST_SET][ST_WAY]{}, lru[ST_SET][ST_WAY]{};
 
     SIGNATURE_TABLE() {
-        /*
-          std::cout << "Initialize SIGNATURE TABLE" << std::endl;
-          std::cout << "ST_SET: " << ST_SET << std::endl;
-          std::cout << "ST_WAY: " << ST_WAY << std::endl;
-          std::cout << "ST_TAG_BIT: " << ST_TAG_BIT << std::endl;
-         //std::cout << "ST_TAG_MASK: " << hex << ST_TAG_MASK << std::dec << std::endl;
-         */
         for (uint32_t set = 0; set < ST_SET; set++)
             for (uint32_t way = 0; way < ST_WAY; way++) {
                 valid[set][way] = false;
@@ -99,14 +92,6 @@ public:
     uint32_t c_delta[PT_SET][PT_WAY]{}, c_sig[PT_SET]{};
 
     PATTERN_TABLE() {
-        /**
-        std::cout << std::endl << "Initialize PATTERN TABLE" << std::endl;
-        std::cout << "PT_SET: " << PT_SET << std::endl;
-        std::cout << "PT_WAY: " << PT_WAY << std::endl;
-        std::cout << "SIG_DELTA_BIT: " << SIG_DELTA_BIT << std::endl;
-        std::cout << "C_SIG_BIT: " << C_SIG_BIT << std::endl;
-        std::cout << "C_DELTA_BIT: " << C_DELTA_BIT << std::endl;
-         */
         for (uint32_t set = 0; set < PT_SET; set++) {
             for (uint32_t way = 0; way < PT_WAY; way++) {
                 delta[set][way] = 0;

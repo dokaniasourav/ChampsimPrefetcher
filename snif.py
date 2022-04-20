@@ -9,7 +9,7 @@ from pprint import pprint
 # dir_names = ['output/prefetcher_220321/', 'output/prefetcher_220322/', 'output/prefetcher_220323/',
 #              'output/prefetcher_220330', 'output/prefetcher_220331/']
 
-dir_names = ['output/prefetcher_220414']
+dir_names = ['output/prefetcher_ppf_spp_dev_3']
 filenames = []
 for dir_name in dir_names:
     for filename in os.listdir(dir_name):
@@ -20,8 +20,7 @@ temp = {}
 pref_name = 'spp_dev'
 
 for filename in filenames:
-    if filename.endswith('.txt') and 'out_spp-dev' in filename:
-
+    if filename.endswith('.txt') and 'out_ppf-spp-dev-3' in filename:
         file_cont = open(filename, 'r').read()
         filename = filename.split('/')[-1]
         lines = file_cont.split('\n')
