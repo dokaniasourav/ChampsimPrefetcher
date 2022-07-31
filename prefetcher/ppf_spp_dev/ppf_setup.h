@@ -8,14 +8,6 @@
 #define POS_MAX_WEIGHT ((1<<(WEIGHT_BITS-1))-1)
 #define NEG_MAX_WEIGHT (0-(1<<(WEIGHT_BITS-1)))
 
-/*
-constexpr int INCREMENT(int &X) {
-    X += 1;
-    if(X == ((1<<WEIGHT_BITS) - 1)) {
-        X = ((1 << WEIGHT_BITS) - 1);
-    }
-}
- */
 
 int xyz;
 
